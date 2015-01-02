@@ -31,14 +31,6 @@
     if ([objectData isKindOfClass:[NSDictionary class]]) {
         NSDictionary *dic = (NSDictionary *)objectData;
         
-//        @property (nonatomic, strong) NSArray *coffeeArray;
-//        @property (nonatomic, strong) NSArray *foodArray;
-//        @property (nonatomic, strong) NSArray *drinkArray;
-//        @property (nonatomic, strong) NSArray *juiceArray;
-//        @property (nonatomic, strong) NSArray *milkteaArray;
-//        @property (nonatomic, strong) NSArray *milkflakeArray;
-//        @property (nonatomic, strong) NSArray *flowerteaArray;
-        
         _coffeeArray = [dic objectForKeyedSubscript:@"coffee"];
         NSLog(@"_coffeeArray = %d",_coffeeArray.count);
         

@@ -9,23 +9,12 @@
 /* Begin PBXBuildFile section */
 		7607EAA31A470F0300AB8E4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7607EAA21A470F0300AB8E4D /* main.m */; };
 		7607EAA61A470F0300AB8E4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7607EAA51A470F0300AB8E4D /* AppDelegate.m */; };
-		7607EAA91A470F0300AB8E4D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7607EAA81A470F0300AB8E4D /* RootViewController.m */; };
-		7607EAAC1A470F0300AB8E4D /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7607EAAB1A470F0300AB8E4D /* DataViewController.m */; };
-		7607EAAF1A470F0300AB8E4D /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7607EAAE1A470F0300AB8E4D /* ModelController.m */; };
 		7607EAB21A470F0300AB8E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7607EAB01A470F0300AB8E4D /* Main.storyboard */; };
 		7607EAB41A470F0300AB8E4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7607EAB31A470F0300AB8E4D /* Images.xcassets */; };
 		7607EAB71A470F0300AB8E4D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7607EAB51A470F0300AB8E4D /* LaunchScreen.xib */; };
 		7607EAC31A470F0300AB8E4D /* xiaokafeiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7607EAC21A470F0300AB8E4D /* xiaokafeiTests.m */; };
-		760C50CA1A4D438F00273836 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760C50C91A4D438F00273836 /* ListViewController.m */; };
-		760C50D41A4D43EC00273836 /* PJRInfoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 760C50CD1A4D43EC00273836 /* PJRInfoScrollView.m */; };
-		760C50D51A4D43EC00273836 /* PJRPageScrollingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 760C50CF1A4D43EC00273836 /* PJRPageScrollingView.m */; };
-		760C50D61A4D43EC00273836 /* PJRTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 760C50D11A4D43EC00273836 /* PJRTopView.m */; };
-		760C50D71A4D43EC00273836 /* UILabel+UILabelDynamicHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 760C50D31A4D43EC00273836 /* UILabel+UILabelDynamicHeight.m */; };
-		760C50DA1A4D448000273836 /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 760C50D91A4D448000273836 /* ListItem.m */; };
-		760C50DD1A4D44E500273836 /* ListDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 760C50DC1A4D44E500273836 /* ListDetailViewController.m */; };
 		761F47401A54E5F100B98C3F /* FirstPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 761F473F1A54E5F100B98C3F /* FirstPageViewController.m */; };
 		761FD8D81A480427009D1A40 /* xiaokafei.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 761FD8D71A480427009D1A40 /* xiaokafei.geojson */; };
-		767ED2D71A470F53004B874A /* AccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 767ED2D61A470F53004B874A /* AccessViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,37 +33,15 @@
 		7607EAA21A470F0300AB8E4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7607EAA41A470F0300AB8E4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7607EAA51A470F0300AB8E4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7607EAA71A470F0300AB8E4D /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		7607EAA81A470F0300AB8E4D /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		7607EAAA1A470F0300AB8E4D /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
-		7607EAAB1A470F0300AB8E4D /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
-		7607EAAD1A470F0300AB8E4D /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
-		7607EAAE1A470F0300AB8E4D /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
 		7607EAB11A470F0300AB8E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7607EAB31A470F0300AB8E4D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7607EAB61A470F0300AB8E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7607EABC1A470F0300AB8E4D /* xiaokafeiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xiaokafeiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7607EAC11A470F0300AB8E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7607EAC21A470F0300AB8E4D /* xiaokafeiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xiaokafeiTests.m; sourceTree = "<group>"; };
-		760C50C81A4D438F00273836 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
-		760C50C91A4D438F00273836 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
-		760C50CC1A4D43EC00273836 /* PJRInfoScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJRInfoScrollView.h; sourceTree = "<group>"; };
-		760C50CD1A4D43EC00273836 /* PJRInfoScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJRInfoScrollView.m; sourceTree = "<group>"; };
-		760C50CE1A4D43EC00273836 /* PJRPageScrollingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJRPageScrollingView.h; sourceTree = "<group>"; };
-		760C50CF1A4D43EC00273836 /* PJRPageScrollingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJRPageScrollingView.m; sourceTree = "<group>"; };
-		760C50D01A4D43EC00273836 /* PJRTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PJRTopView.h; sourceTree = "<group>"; };
-		760C50D11A4D43EC00273836 /* PJRTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PJRTopView.m; sourceTree = "<group>"; };
-		760C50D21A4D43EC00273836 /* UILabel+UILabelDynamicHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+UILabelDynamicHeight.h"; sourceTree = "<group>"; };
-		760C50D31A4D43EC00273836 /* UILabel+UILabelDynamicHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+UILabelDynamicHeight.m"; sourceTree = "<group>"; };
-		760C50D81A4D448000273836 /* ListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItem.h; sourceTree = "<group>"; };
-		760C50D91A4D448000273836 /* ListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItem.m; sourceTree = "<group>"; };
-		760C50DB1A4D44E500273836 /* ListDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListDetailViewController.h; sourceTree = "<group>"; };
-		760C50DC1A4D44E500273836 /* ListDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListDetailViewController.m; sourceTree = "<group>"; };
 		761F473E1A54E5F100B98C3F /* FirstPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPageViewController.h; sourceTree = "<group>"; };
 		761F473F1A54E5F100B98C3F /* FirstPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPageViewController.m; sourceTree = "<group>"; };
 		761FD8D71A480427009D1A40 /* xiaokafei.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xiaokafei.geojson; sourceTree = "<group>"; };
-		767ED2D51A470F53004B874A /* AccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessViewController.h; sourceTree = "<group>"; };
-		767ED2D61A470F53004B874A /* AccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,11 +83,11 @@
 		7607EA9F1A470F0300AB8E4D /* xiaokafei */ = {
 			isa = PBXGroup;
 			children = (
-				761F473A1A54E4F900B98C3F /* CollectionView效果的 */,
-				760C50C71A4D434900273836 /* 滑动效果的 */,
-				760C50C61A4D432300273836 /* 翻页效果的 */,
 				761FD8D91A481D8D009D1A40 /* Access */,
 				7607EAA01A470F0300AB8E4D /* Supporting Files */,
+				761F473D1A54E5C800B98C3F /* Control */,
+				761F473C1A54E5C200B98C3F /* View */,
+				761F473B1A54E5BD00B98C3F /* Model */,
 			);
 			path = xiaokafei;
 			sourceTree = "<group>";
@@ -128,6 +95,7 @@
 		7607EAA01A470F0300AB8E4D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				76C634E81A56B0D300EE7A24 /* Resource */,
 				761FD8D71A480427009D1A40 /* xiaokafei.geojson */,
 				7607EAB31A470F0300AB8E4D /* Images.xcassets */,
 				7607EAB51A470F0300AB8E4D /* LaunchScreen.xib */,
@@ -152,80 +120,6 @@
 				7607EAC11A470F0300AB8E4D /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		760C50C31A4D42D000273836 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				760C50D81A4D448000273836 /* ListItem.h */,
-				760C50D91A4D448000273836 /* ListItem.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		760C50C41A4D42FC00273836 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				760C50CB1A4D43EC00273836 /* ScrollView */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		760C50C51A4D430E00273836 /* Control */ = {
-			isa = PBXGroup;
-			children = (
-				760C50C81A4D438F00273836 /* ListViewController.h */,
-				760C50C91A4D438F00273836 /* ListViewController.m */,
-				760C50DB1A4D44E500273836 /* ListDetailViewController.h */,
-				760C50DC1A4D44E500273836 /* ListDetailViewController.m */,
-			);
-			name = Control;
-			sourceTree = "<group>";
-		};
-		760C50C61A4D432300273836 /* 翻页效果的 */ = {
-			isa = PBXGroup;
-			children = (
-				761FD8DC1A481D9F009D1A40 /* Model */,
-				761FD8DB1A481D9B009D1A40 /* View */,
-				761FD8DA1A481D95009D1A40 /* Control */,
-			);
-			name = "翻页效果的";
-			sourceTree = "<group>";
-		};
-		760C50C71A4D434900273836 /* 滑动效果的 */ = {
-			isa = PBXGroup;
-			children = (
-				760C50C31A4D42D000273836 /* Model */,
-				760C50C41A4D42FC00273836 /* View */,
-				760C50C51A4D430E00273836 /* Control */,
-			);
-			name = "滑动效果的";
-			sourceTree = "<group>";
-		};
-		760C50CB1A4D43EC00273836 /* ScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				760C50CC1A4D43EC00273836 /* PJRInfoScrollView.h */,
-				760C50CD1A4D43EC00273836 /* PJRInfoScrollView.m */,
-				760C50CE1A4D43EC00273836 /* PJRPageScrollingView.h */,
-				760C50CF1A4D43EC00273836 /* PJRPageScrollingView.m */,
-				760C50D01A4D43EC00273836 /* PJRTopView.h */,
-				760C50D11A4D43EC00273836 /* PJRTopView.m */,
-				760C50D21A4D43EC00273836 /* UILabel+UILabelDynamicHeight.h */,
-				760C50D31A4D43EC00273836 /* UILabel+UILabelDynamicHeight.m */,
-			);
-			name = ScrollView;
-			path = View;
-			sourceTree = "<group>";
-		};
-		761F473A1A54E4F900B98C3F /* CollectionView效果的 */ = {
-			isa = PBXGroup;
-			children = (
-				761F473D1A54E5C800B98C3F /* Control */,
-				761F473C1A54E5C200B98C3F /* View */,
-				761F473B1A54E5BD00B98C3F /* Model */,
-			);
-			name = "CollectionView效果的";
 			sourceTree = "<group>";
 		};
 		761F473B1A54E5BD00B98C3F /* Model */ = {
@@ -261,33 +155,11 @@
 			name = Access;
 			sourceTree = "<group>";
 		};
-		761FD8DA1A481D95009D1A40 /* Control */ = {
-			isa = PBXGroup;
-			children = (
-				7607EAA71A470F0300AB8E4D /* RootViewController.h */,
-				7607EAA81A470F0300AB8E4D /* RootViewController.m */,
-				7607EAAA1A470F0300AB8E4D /* DataViewController.h */,
-				7607EAAB1A470F0300AB8E4D /* DataViewController.m */,
-				767ED2D51A470F53004B874A /* AccessViewController.h */,
-				767ED2D61A470F53004B874A /* AccessViewController.m */,
-			);
-			name = Control;
-			sourceTree = "<group>";
-		};
-		761FD8DB1A481D9B009D1A40 /* View */ = {
+		76C634E81A56B0D300EE7A24 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		761FD8DC1A481D9F009D1A40 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7607EAAD1A470F0300AB8E4D /* ModelController.h */,
-				7607EAAE1A470F0300AB8E4D /* ModelController.m */,
-			);
-			name = Model;
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,20 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				760C50D51A4D43EC00273836 /* PJRPageScrollingView.m in Sources */,
-				760C50D41A4D43EC00273836 /* PJRInfoScrollView.m in Sources */,
-				767ED2D71A470F53004B874A /* AccessViewController.m in Sources */,
-				760C50D61A4D43EC00273836 /* PJRTopView.m in Sources */,
 				761F47401A54E5F100B98C3F /* FirstPageViewController.m in Sources */,
-				7607EAAC1A470F0300AB8E4D /* DataViewController.m in Sources */,
-				760C50CA1A4D438F00273836 /* ListViewController.m in Sources */,
-				760C50D71A4D43EC00273836 /* UILabel+UILabelDynamicHeight.m in Sources */,
 				7607EAA61A470F0300AB8E4D /* AppDelegate.m in Sources */,
-				760C50DA1A4D448000273836 /* ListItem.m in Sources */,
-				7607EAAF1A470F0300AB8E4D /* ModelController.m in Sources */,
-				760C50DD1A4D44E500273836 /* ListDetailViewController.m in Sources */,
 				7607EAA31A470F0300AB8E4D /* main.m in Sources */,
-				7607EAA91A470F0300AB8E4D /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
