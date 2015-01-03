@@ -15,6 +15,7 @@
 		7607EAC31A470F0300AB8E4D /* xiaokafeiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7607EAC21A470F0300AB8E4D /* xiaokafeiTests.m */; };
 		761F47401A54E5F100B98C3F /* FirstPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 761F473F1A54E5F100B98C3F /* FirstPageViewController.m */; };
 		761FD8D81A480427009D1A40 /* xiaokafei.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 761FD8D71A480427009D1A40 /* xiaokafei.geojson */; };
+		76D489521A57B294005CB8B3 /* button_coffee.png in Resources */ = {isa = PBXBuildFile; fileRef = 76D489511A57B294005CB8B3 /* button_coffee.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		761F473E1A54E5F100B98C3F /* FirstPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPageViewController.h; sourceTree = "<group>"; };
 		761F473F1A54E5F100B98C3F /* FirstPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPageViewController.m; sourceTree = "<group>"; };
 		761FD8D71A480427009D1A40 /* xiaokafei.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xiaokafei.geojson; sourceTree = "<group>"; };
+		76D489511A57B294005CB8B3 /* button_coffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_coffee.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +160,17 @@
 		76C634E81A56B0D300EE7A24 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				76D4893C1A57A5E3005CB8B3 /* Button */,
 			);
 			name = Resource;
+			sourceTree = "<group>";
+		};
+		76D4893C1A57A5E3005CB8B3 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				76D489511A57B294005CB8B3 /* button_coffee.png */,
+			);
+			name = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +258,7 @@
 				761FD8D81A480427009D1A40 /* xiaokafei.geojson in Resources */,
 				7607EAB71A470F0300AB8E4D /* LaunchScreen.xib in Resources */,
 				7607EAB41A470F0300AB8E4D /* Images.xcassets in Resources */,
+				76D489521A57B294005CB8B3 /* button_coffee.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

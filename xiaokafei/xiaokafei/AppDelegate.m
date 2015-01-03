@@ -18,8 +18,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
+    //init data
     [self initData];
+    
+    //隐藏statusbar
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:NO];
     
     return YES;
 }
