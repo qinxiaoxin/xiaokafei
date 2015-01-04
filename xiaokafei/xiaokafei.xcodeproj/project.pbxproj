@@ -15,7 +15,13 @@
 		7607EAC31A470F0300AB8E4D /* xiaokafeiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7607EAC21A470F0300AB8E4D /* xiaokafeiTests.m */; };
 		761F47401A54E5F100B98C3F /* FirstPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 761F473F1A54E5F100B98C3F /* FirstPageViewController.m */; };
 		761FD8D81A480427009D1A40 /* xiaokafei.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 761FD8D71A480427009D1A40 /* xiaokafei.geojson */; };
-		76D489521A57B294005CB8B3 /* button_coffee.png in Resources */ = {isa = PBXBuildFile; fileRef = 76D489511A57B294005CB8B3 /* button_coffee.png */; };
+		769FF26A1A595C5E00FF091E /* button_drink@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 769FF2691A595C5E00FF091E /* button_drink@2x.png */; };
+		769FF26C1A595D4D00FF091E /* button_juice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 769FF26B1A595D4D00FF091E /* button_juice@2x.png */; };
+		769FF26E1A59607B00FF091E /* button_coffee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 769FF26D1A59607B00FF091E /* button_coffee@2x.png */; };
+		769FF2701A59612300FF091E /* button_milktea@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 769FF26F1A59612300FF091E /* button_milktea@2x.png */; };
+		769FF2721A59621B00FF091E /* button_flowertea@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 769FF2711A59621B00FF091E /* button_flowertea@2x.png */; };
+		769FF2741A5962A100FF091E /* button_milkflake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 769FF2731A5962A100FF091E /* button_milkflake@2x.png */; };
+		769FF2761A59639400FF091E /* button_food@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 769FF2751A59639400FF091E /* button_food@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +49,13 @@
 		761F473E1A54E5F100B98C3F /* FirstPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPageViewController.h; sourceTree = "<group>"; };
 		761F473F1A54E5F100B98C3F /* FirstPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPageViewController.m; sourceTree = "<group>"; };
 		761FD8D71A480427009D1A40 /* xiaokafei.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xiaokafei.geojson; sourceTree = "<group>"; };
-		76D489511A57B294005CB8B3 /* button_coffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_coffee.png; sourceTree = "<group>"; };
+		769FF2691A595C5E00FF091E /* button_drink@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_drink@2x.png"; sourceTree = "<group>"; };
+		769FF26B1A595D4D00FF091E /* button_juice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_juice@2x.png"; sourceTree = "<group>"; };
+		769FF26D1A59607B00FF091E /* button_coffee@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_coffee@2x.png"; sourceTree = "<group>"; };
+		769FF26F1A59612300FF091E /* button_milktea@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_milktea@2x.png"; sourceTree = "<group>"; };
+		769FF2711A59621B00FF091E /* button_flowertea@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_flowertea@2x.png"; sourceTree = "<group>"; };
+		769FF2731A5962A100FF091E /* button_milkflake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_milkflake@2x.png"; sourceTree = "<group>"; };
+		769FF2751A59639400FF091E /* button_food@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_food@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +180,13 @@
 		76D4893C1A57A5E3005CB8B3 /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				76D489511A57B294005CB8B3 /* button_coffee.png */,
+				769FF2751A59639400FF091E /* button_food@2x.png */,
+				769FF2691A595C5E00FF091E /* button_drink@2x.png */,
+				769FF26B1A595D4D00FF091E /* button_juice@2x.png */,
+				769FF26D1A59607B00FF091E /* button_coffee@2x.png */,
+				769FF26F1A59612300FF091E /* button_milktea@2x.png */,
+				769FF2711A59621B00FF091E /* button_flowertea@2x.png */,
+				769FF2731A5962A100FF091E /* button_milkflake@2x.png */,
 			);
 			name = Button;
 			sourceTree = "<group>";
@@ -222,7 +240,6 @@
 				TargetAttributes = {
 					7607EA9C1A470F0300AB8E4D = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = CAC7F4A6XJ;
 					};
 					7607EABB1A470F0300AB8E4D = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -255,10 +272,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7607EAB21A470F0300AB8E4D /* Main.storyboard in Resources */,
+				769FF2741A5962A100FF091E /* button_milkflake@2x.png in Resources */,
+				769FF26A1A595C5E00FF091E /* button_drink@2x.png in Resources */,
 				761FD8D81A480427009D1A40 /* xiaokafei.geojson in Resources */,
+				769FF26C1A595D4D00FF091E /* button_juice@2x.png in Resources */,
+				769FF2761A59639400FF091E /* button_food@2x.png in Resources */,
+				769FF2721A59621B00FF091E /* button_flowertea@2x.png in Resources */,
+				769FF2701A59612300FF091E /* button_milktea@2x.png in Resources */,
+				769FF26E1A59607B00FF091E /* button_coffee@2x.png in Resources */,
 				7607EAB71A470F0300AB8E4D /* LaunchScreen.xib in Resources */,
 				7607EAB41A470F0300AB8E4D /* Images.xcassets in Resources */,
-				76D489521A57B294005CB8B3 /* button_coffee.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Xin Qin (VM8R672L59)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = xiaokafei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -415,7 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Xin Qin (VM8R672L59)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = xiaokafei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -35,28 +35,28 @@
         NSDictionary *dic = (NSDictionary *)objectData;
         
         _coffeeArray = [dic objectForKeyedSubscript:@"coffee"];
-        NSLog(@"_coffeeArray = %d",_coffeeArray.count);
+//        NSLog(@"_coffeeArray = %d",_coffeeArray.count);
         
         _foodArray = [dic objectForKeyedSubscript:@"food"];
-        NSLog(@"_foodArray = %d",_foodArray.count);
+//        NSLog(@"_foodArray = %d",_foodArray.count);
         
         _drinkArray = [dic objectForKeyedSubscript:@"drink"];
-        NSLog(@"_drinkArray = %d",_drinkArray.count);
+//        NSLog(@"_drinkArray = %d",_drinkArray.count);
         
         _juiceArray = [dic objectForKeyedSubscript:@"juice"];
-        NSLog(@"_juiceArray = %d",_juiceArray.count);
+//        NSLog(@"_juiceArray = %d",_juiceArray.count);
         
         _milkteaArray = [dic objectForKeyedSubscript:@"milk_tea"];
-        NSLog(@"_milkteaArray = %d",_milkteaArray.count);
+//        NSLog(@"_milkteaArray = %d",_milkteaArray.count);
         
         _milkflakeArray = [dic objectForKeyedSubscript:@"milk_flake"];
-        NSLog(@"_milkflakeArray = %d",_milkflakeArray.count);
+//        NSLog(@"_milkflakeArray = %d",_milkflakeArray.count);
         
         _flowerteaArray = [dic objectForKeyedSubscript:@"flower_tea"];
-        NSLog(@"_flowerteaArray = %d",_flowerteaArray.count);
+//        NSLog(@"_flowerteaArray = %d",_flowerteaArray.count);
         
         _cakeArray = [dic objectForKeyedSubscript:@"cake"];
-        NSLog(@"_cakeArray = %d",_cakeArray.count);
+//        NSLog(@"_cakeArray = %d",_cakeArray.count);
         
     }else
         NSLog(@"error while deserializing the JSON data !");
