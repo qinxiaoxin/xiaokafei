@@ -20,7 +20,7 @@
     
     
     //启动画面停留时间
-    [NSThread sleepForTimeInterval:2.f];
+    [NSThread sleepForTimeInterval:5.f];
     
     //init data
     [self initData];

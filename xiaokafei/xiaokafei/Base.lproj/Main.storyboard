@@ -3,6 +3,18 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="迷你简柏青.ttf">
+            <string>MINIj4gj</string>
+            <string>MINIj4gj</string>
+            <string>MINIj4gj</string>
+            <string>MINIj4gj</string>
+            <string>MINIj4gj</string>
+            <string>MINIj4gj</string>
+            <string>MINIj4gj</string>
+            <string>MINIj4gj</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Data View Controller-->
         <scene sceneID="snT-py-3hH">
@@ -78,80 +90,80 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3w-92-t9m">
                                 <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="50"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="10"/>
-                                <state key="normal" title="Food">
+                                <state key="normal" title="简餐糕点">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xvQ-is-ywW" kind="modal" modalTransitionStyle="partialCurl" id="aCQ-ng-ExR"/>
+                                    <segue destination="xvQ-is-ywW" kind="modal" identifier="Food_List" modalTransitionStyle="crossDissolve" id="aCQ-ng-ExR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYd-5D-g0M">
                                 <rect key="frame" x="400" y="235" width="270" height="165"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
-                                <state key="normal" title="Cocktail">
+                                <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="40"/>
+                                <state key="normal" title="鸡尾酒">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xvQ-is-ywW" kind="modal" modalTransitionStyle="partialCurl" id="mNS-z4-TOR"/>
+                                    <segue destination="xvQ-is-ywW" kind="modal" identifier="Cocktail_List" modalTransitionStyle="crossDissolve" id="mNS-z4-TOR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVx-Y8-4MP">
                                 <rect key="frame" x="670" y="608" width="354" height="160"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
-                                <state key="normal" title="Milk Shake">
+                                <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="40"/>
+                                <state key="normal" title="奶昔">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xvQ-is-ywW" kind="modal" modalTransitionStyle="partialCurl" id="XZk-uu-O9L"/>
+                                    <segue destination="xvQ-is-ywW" kind="modal" identifier="MilkShake_List" modalTransitionStyle="crossDissolve" id="XZk-uu-O9L"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E51-bg-EeE">
                                 <rect key="frame" x="670" y="400" width="354" height="208"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
-                                <state key="normal" title="Flower Tea">
+                                <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="40"/>
+                                <state key="normal" title="花茶">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xvQ-is-ywW" kind="modal" modalTransitionStyle="partialCurl" id="nR7-RC-a0Z"/>
+                                    <segue destination="xvQ-is-ywW" kind="modal" identifier="FlowerTea_List" modalTransitionStyle="crossDissolve" id="nR7-RC-a0Z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgW-rS-8AS">
                                 <rect key="frame" x="670" y="0.0" width="354" height="400"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="25"/>
-                                <state key="normal" title="Juice">
+                                <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="40"/>
+                                <state key="normal" title="果汁">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xvQ-is-ywW" kind="modal" modalTransitionStyle="partialCurl" id="scD-ZP-4xv"/>
+                                    <segue destination="xvQ-is-ywW" kind="modal" identifier="Juice_List" modalTransitionStyle="crossDissolve" id="scD-ZP-4xv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhu-6f-WV1">
                                 <rect key="frame" x="400" y="0.0" width="270" height="240"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
-                                <state key="normal" title="Milk Tea">
+                                <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="40"/>
+                                <state key="normal" title="奶茶">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xvQ-is-ywW" kind="modal" modalTransitionStyle="partialCurl" id="VpU-qu-h7T"/>
+                                    <segue destination="xvQ-is-ywW" kind="modal" identifier="MilkTea_List" modalTransitionStyle="crossDissolve" id="VpU-qu-h7T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkO-Yb-dmr">
                                 <rect key="frame" x="0.0" y="400" width="670" height="368"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="35"/>
-                                <state key="normal" title="Coffee">
+                                <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="55"/>
+                                <state key="normal" title="咖啡">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xvQ-is-ywW" kind="modal" modalTransitionStyle="partialCurl" id="ozl-Cd-8Y4"/>
+                                    <segue destination="xvQ-is-ywW" kind="modal" identifier="Coffee_List" modalTransitionStyle="crossDissolve" id="ozl-Cd-8Y4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -164,10 +176,10 @@
             </objects>
             <point key="canvasLocation" x="-1965" y="708"/>
         </scene>
-        <!--View Controller-->
+        <!--Ist View Controller-->
         <scene sceneID="pq4-x4-5W1">
             <objects>
-                <viewController id="xvQ-is-ywW" sceneMemberID="viewController">
+                <viewController id="xvQ-is-ywW" customClass="LIstViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tDy-ho-Rg9"/>
                         <viewControllerLayoutGuide type="bottom" id="7cq-1J-fQG"/>
@@ -187,12 +199,35 @@
                                     <segue destination="chT-Ai-wAU" kind="modal" modalTransitionStyle="crossDissolve" id="9L6-tB-fJG"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="IFi-PC-z5J">
+                                <rect key="frame" x="112" y="64" width="800" height="640"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="fSX-uy-lrz" style="IBUITableViewCellStyleDefault" id="vii-s9-z01">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vii-s9-z01" id="jUx-je-cnU">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fSX-uy-lrz">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="30"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="ppE-LS-pmK"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="tableView" destination="IFi-PC-z5J" id="Xjt-8q-S7X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="srp-AE-3V5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
