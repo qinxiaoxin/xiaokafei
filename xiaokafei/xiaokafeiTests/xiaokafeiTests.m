@@ -42,7 +42,7 @@
     NSArray *familyNames =[[NSArray alloc]initWithArray:[UIFont familyNames]];
     NSArray *fontNames;
     NSInteger indFamily, indFont;
-    NSLog(@"[familyNames count]===%d",[familyNames count]);
+    NSLog(@"[familyNames count]===%lu",(unsigned long)[familyNames count]);
     for(indFamily=0;indFamily<[familyNames count];++indFamily)
         
     {
