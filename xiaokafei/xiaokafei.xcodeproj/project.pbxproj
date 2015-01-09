@@ -14,12 +14,12 @@
 		7607EAB41A470F0300AB8E4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7607EAB31A470F0300AB8E4D /* Images.xcassets */; };
 		7607EAB71A470F0300AB8E4D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7607EAB51A470F0300AB8E4D /* LaunchScreen.xib */; };
 		7607EAC31A470F0300AB8E4D /* xiaokafeiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7607EAC21A470F0300AB8E4D /* xiaokafeiTests.m */; };
-		761582101A5D3CFB0049ED84 /* launch1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7615820E1A5D3CFB0049ED84 /* launch1.png */; };
-		761582111A5D3CFB0049ED84 /* launch2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7615820F1A5D3CFB0049ED84 /* launch2.png */; };
 		761FD8D81A480427009D1A40 /* xiaokafei.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 761FD8D71A480427009D1A40 /* xiaokafei.geojson */; };
 		768CFF1A1A5D1C020092F2B8 /* 迷你简柏青.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 768CFF191A5D1C020092F2B8 /* 迷你简柏青.ttf */; };
 		768CFF201A5D21720092F2B8 /* FirstPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768CFF1F1A5D21720092F2B8 /* FirstPageViewController.m */; };
 		768CFF231A5D21800092F2B8 /* LIstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768CFF221A5D21800092F2B8 /* LIstViewController.m */; };
+		769749D41A5FAF5F00A76FCD /* launch_des.png in Resources */ = {isa = PBXBuildFile; fileRef = 769749D21A5FAF5F00A76FCD /* launch_des.png */; };
+		769749D51A5FAF5F00A76FCD /* launch_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 769749D31A5FAF5F00A76FCD /* launch_title.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,7 @@
 /* Begin PBXFileReference section */
 		76049FF41A5ECB5200F80D24 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		76049FF51A5ECB5200F80D24 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		7607EA9D1A470F0300AB8E4D /* xiaokafei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xiaokafei.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7607EA9D1A470F0300AB8E4D /* 小咖啡点餐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "小咖啡点餐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7607EAA11A470F0300AB8E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7607EAA21A470F0300AB8E4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7607EAA41A470F0300AB8E4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,14 +46,14 @@
 		7607EABC1A470F0300AB8E4D /* xiaokafeiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xiaokafeiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7607EAC11A470F0300AB8E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7607EAC21A470F0300AB8E4D /* xiaokafeiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xiaokafeiTests.m; sourceTree = "<group>"; };
-		7615820E1A5D3CFB0049ED84 /* launch1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch1.png; sourceTree = "<group>"; };
-		7615820F1A5D3CFB0049ED84 /* launch2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch2.png; sourceTree = "<group>"; };
 		761FD8D71A480427009D1A40 /* xiaokafei.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xiaokafei.geojson; sourceTree = "<group>"; };
 		768CFF191A5D1C020092F2B8 /* 迷你简柏青.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "迷你简柏青.ttf"; sourceTree = "<group>"; };
 		768CFF1E1A5D21720092F2B8 /* FirstPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPageViewController.h; sourceTree = "<group>"; };
 		768CFF1F1A5D21720092F2B8 /* FirstPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPageViewController.m; sourceTree = "<group>"; };
 		768CFF211A5D21800092F2B8 /* LIstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIstViewController.h; sourceTree = "<group>"; };
 		768CFF221A5D21800092F2B8 /* LIstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIstViewController.m; sourceTree = "<group>"; };
+		769749D21A5FAF5F00A76FCD /* launch_des.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_des.png; sourceTree = "<group>"; };
+		769749D31A5FAF5F00A76FCD /* launch_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_title.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 		7607EA9E1A470F0300AB8E4D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7607EA9D1A470F0300AB8E4D /* xiaokafei.app */,
+				7607EA9D1A470F0300AB8E4D /* 小咖啡点餐.app */,
 				7607EABC1A470F0300AB8E4D /* xiaokafeiTests.xctest */,
 			);
 			name = Products;
@@ -182,8 +182,8 @@
 		76C24AEC1A5A7C8B00FFF530 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
-				7615820E1A5D3CFB0049ED84 /* launch1.png */,
-				7615820F1A5D3CFB0049ED84 /* launch2.png */,
+				769749D21A5FAF5F00A76FCD /* launch_des.png */,
+				769749D31A5FAF5F00A76FCD /* launch_title.png */,
 			);
 			name = LaunchScreen;
 			sourceTree = "<group>";
@@ -222,7 +222,7 @@
 			);
 			name = xiaokafei;
 			productName = xiaokafei;
-			productReference = 7607EA9D1A470F0300AB8E4D /* xiaokafei.app */;
+			productReference = 7607EA9D1A470F0300AB8E4D /* 小咖啡点餐.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7607EABB1A470F0300AB8E4D /* xiaokafeiTests */ = {
@@ -254,6 +254,7 @@
 				TargetAttributes = {
 					7607EA9C1A470F0300AB8E4D = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 4TPR59UCQV;
 					};
 					7607EABB1A470F0300AB8E4D = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -286,12 +287,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7607EAB21A470F0300AB8E4D /* Main.storyboard in Resources */,
+				769749D51A5FAF5F00A76FCD /* launch_title.png in Resources */,
 				768CFF1A1A5D1C020092F2B8 /* 迷你简柏青.ttf in Resources */,
 				761FD8D81A480427009D1A40 /* xiaokafei.geojson in Resources */,
-				761582111A5D3CFB0049ED84 /* launch2.png in Resources */,
 				7607EAB71A470F0300AB8E4D /* LaunchScreen.xib in Resources */,
-				761582101A5D3CFB0049ED84 /* launch1.png in Resources */,
 				7607EAB41A470F0300AB8E4D /* Images.xcassets in Resources */,
+				769749D41A5FAF5F00A76FCD /* launch_des.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,8 +442,8 @@
 				INFOPLIST_FILE = xiaokafei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a75baace-5901-4dd0-bebb-a5a875404202";
+				PRODUCT_NAME = "小咖啡点餐";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -454,8 +455,8 @@
 				INFOPLIST_FILE = xiaokafei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a75baace-5901-4dd0-bebb-a5a875404202";
+				PRODUCT_NAME = "小咖啡点餐";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

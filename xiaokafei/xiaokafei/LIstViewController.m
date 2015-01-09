@@ -9,7 +9,7 @@
 #import "LIstViewController.h"
 #import "DetailViewController.h"
 
-@interface LIstViewController ()<UITableViewDataSource>
+@interface LIstViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -22,7 +22,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.tableView.dataSource = self;
+    self.tableView.delegate = self;
     [self.tableView reloadData];
+    [self.tableView setContentOffset:self.offset animated:NO];
     
 }
 
@@ -33,9 +35,11 @@
 
 #pragma mark - Navigation
 
-- (void)prepareImageViewController:(DetailViewController *)dvc toDisplayPhoto:(NSDictionary *)dictionary
+- (void)prepareDetailViewController:(DetailViewController *)dvc toDisplayPhoto:(NSDictionary *)dictionary
 {
-    dvc.title = [dictionary valueForKeyPath:@"name"];
+    dvc.aArray = self.array;
+    dvc.offset = self.offset;
+    dvc.aTitle = [dictionary valueForKeyPath:@"name"];
 //    ivc.imageURL = [FlickrFetcher URLforPhoto:dictionary format:FlickrPhotoFormatLarge];
 
 }
@@ -50,7 +54,7 @@
         if (indexPath) {
             if ([segue.identifier isEqualToString:@"List_Detail"]) {
                 if ([segue.destinationViewController isKindOfClass:[DetailViewController class]]) {
-                    [self prepareImageViewController:segue.destinationViewController toDisplayPhoto:self.array[indexPath.row]];
+                    [self prepareDetailViewController:segue.destinationViewController toDisplayPhoto:self.array[indexPath.row]];
                 }
             }
         }
@@ -80,6 +84,13 @@
     cell.textLabel.text = [dic valueForKeyPath:@"name"];
     cell.backgroundColor = [UIColor colorWithRed:51 / 255.f green:51 / 255.f blue:51 / 255.f alpha:1.f];
     return cell;
+}
+
+#pragma mark - Table view delegate
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    self.offset = scrollView.contentOffset;
 }
 
 @end

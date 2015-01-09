@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7607EA9C1A470F0300AB8E4D"
-               BuildableName = "xiaokafei.app"
+               BuildableName = "&#x5c0f;&#x5496;&#x5561;&#x70b9;&#x9910;.app"
                BlueprintName = "xiaokafei"
                ReferencedContainer = "container:xiaokafei.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7607EA9C1A470F0300AB8E4D"
-            BuildableName = "xiaokafei.app"
+            BuildableName = "&#x5c0f;&#x5496;&#x5561;&#x70b9;&#x9910;.app"
             BlueprintName = "xiaokafei"
             ReferencedContainer = "container:xiaokafei.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7607EA9C1A470F0300AB8E4D"
-            BuildableName = "xiaokafei.app"
+            BuildableName = "&#x5c0f;&#x5496;&#x5561;&#x70b9;&#x9910;.app"
             BlueprintName = "xiaokafei"
             ReferencedContainer = "container:xiaokafei.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7607EA9C1A470F0300AB8E4D"
-            BuildableName = "xiaokafei.app"
+            BuildableName = "&#x5c0f;&#x5496;&#x5561;&#x70b9;&#x9910;.app"
             BlueprintName = "xiaokafei"
             ReferencedContainer = "container:xiaokafei.xcodeproj">
          </BuildableReference>

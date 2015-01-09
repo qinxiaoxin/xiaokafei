@@ -11,5 +11,6 @@
 @interface LIstViewController : UIViewController
 
 @property (nonatomic, strong) NSArray *array;
+@property (nonatomic, assign) CGPoint offset;
 
 @end
