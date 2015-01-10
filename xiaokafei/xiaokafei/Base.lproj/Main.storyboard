@@ -38,7 +38,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xvQ-is-ywW" kind="modal" identifier="Food_List" modalTransitionStyle="crossDissolve" id="aCQ-ng-ExR"/>
+                                    <segue destination="xvQ-is-ywW" kind="presentation" identifier="Food_List" modalTransitionStyle="crossDissolve" id="aCQ-ng-ExR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYd-5D-g0M">
@@ -49,7 +49,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xvQ-is-ywW" kind="modal" identifier="Cocktail_List" modalTransitionStyle="crossDissolve" id="mNS-z4-TOR"/>
+                                    <segue destination="xvQ-is-ywW" kind="presentation" identifier="Cocktail_List" modalTransitionStyle="crossDissolve" id="mNS-z4-TOR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVx-Y8-4MP">
@@ -60,7 +60,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xvQ-is-ywW" kind="modal" identifier="MilkShake_List" modalTransitionStyle="crossDissolve" id="XZk-uu-O9L"/>
+                                    <segue destination="xvQ-is-ywW" kind="presentation" identifier="MilkShake_List" modalTransitionStyle="crossDissolve" id="XZk-uu-O9L"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E51-bg-EeE">
@@ -71,7 +71,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xvQ-is-ywW" kind="modal" identifier="FlowerTea_List" modalTransitionStyle="crossDissolve" id="nR7-RC-a0Z"/>
+                                    <segue destination="xvQ-is-ywW" kind="presentation" identifier="FlowerTea_List" modalTransitionStyle="crossDissolve" id="nR7-RC-a0Z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgW-rS-8AS">
@@ -82,7 +82,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xvQ-is-ywW" kind="modal" identifier="Juice_List" modalTransitionStyle="crossDissolve" id="scD-ZP-4xv"/>
+                                    <segue destination="xvQ-is-ywW" kind="presentation" identifier="Juice_List" modalTransitionStyle="crossDissolve" id="scD-ZP-4xv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhu-6f-WV1">
@@ -93,7 +93,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xvQ-is-ywW" kind="modal" identifier="MilkTea_List" modalTransitionStyle="crossDissolve" id="VpU-qu-h7T"/>
+                                    <segue destination="xvQ-is-ywW" kind="presentation" identifier="MilkTea_List" modalTransitionStyle="crossDissolve" id="VpU-qu-h7T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkO-Yb-dmr">
@@ -104,7 +104,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xvQ-is-ywW" kind="modal" identifier="Coffee_List" modalTransitionStyle="crossDissolve" id="ozl-Cd-8Y4"/>
+                                    <segue destination="xvQ-is-ywW" kind="presentation" identifier="Coffee_List" modalTransitionStyle="crossDissolve" id="ozl-Cd-8Y4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -137,7 +137,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="chT-Ai-wAU" kind="modal" modalTransitionStyle="crossDissolve" id="9L6-tB-fJG"/>
+                                    <segue destination="chT-Ai-wAU" kind="presentation" identifier="List_First" modalTransitionStyle="crossDissolve" id="9L6-tB-fJG"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="IFi-PC-z5J">
@@ -158,7 +158,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="abC-GQ-sHL" kind="modal" identifier="List_Detail" modalTransitionStyle="crossDissolve" id="aNL-Sp-oyQ"/>
+                                            <segue destination="abC-GQ-sHL" kind="presentation" identifier="List_Detail" modalTransitionStyle="crossDissolve" id="aNL-Sp-oyQ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -175,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="srp-AE-3V5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-816" y="708"/>
+            <point key="canvasLocation" x="-782" y="708"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="tbl-kF-Rll">
@@ -197,7 +197,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xvQ-is-ywW" kind="modal" identifier="Detail_List" modalTransitionStyle="crossDissolve" id="lmG-eD-ywH"/>
+                                    <segue destination="xvQ-is-ywW" kind="presentation" identifier="Detail_List" modalTransitionStyle="crossDissolve" id="lmG-eD-ywH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFB-VY-hFS">
@@ -216,6 +216,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="lCk-07-bZb"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
@@ -224,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VxN-U0-VWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="317" y="708"/>
+            <point key="canvasLocation" x="408" y="708"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

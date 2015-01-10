@@ -475,7 +475,7 @@
 				INFOPLIST_FILE = xiaokafeiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xiaokafei.app/xiaokafei";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/小咖啡点餐.app/小咖啡点餐";
 			};
 			name = Debug;
 		};
@@ -490,7 +490,7 @@
 				INFOPLIST_FILE = xiaokafeiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xiaokafei.app/xiaokafei";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/小咖啡点餐.app/小咖啡点餐";
 			};
 			name = Release;
 		};
