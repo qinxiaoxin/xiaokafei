@@ -10,6 +10,6 @@
 
 @interface ListView : UIView
 
-@property (nonatomic, strong) NSArray *array;
+- (id)initWithFrame:(CGRect)frame passArray:(NSArray *)array;
 
 @end

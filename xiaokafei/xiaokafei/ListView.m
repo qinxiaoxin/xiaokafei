@@ -10,25 +10,30 @@
 
 @implementation ListView
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame passArray:(NSArray *)array
 {
     self = [super initWithFrame:frame];
+    
     if (self) {
-        [self initView:_array.count];
+        
+        self.frame = CGRectMake(0, 0, LIST_VIEW_BUTTON_WIDTH, array.count * LIST_VIEW_BUTTON_HEIGHT);
+        
+        for (int i = 0; i < array.count; i ++) {
+            
+            UIButton *listViewButton = [[UIButton alloc] initWithFrame:CGRectMake(0, LIST_VIEW_BUTTON_HEIGHT * i, LIST_VIEW_BUTTON_WIDTH, LIST_VIEW_BUTTON_HEIGHT)];
+            NSDictionary *dic = [array objectAtIndex:i];
+            NSString *title = [dic valueForKeyPath:@"name"];
+            [listViewButton setTitle:title forState:UIControlStateNormal];
+            [listViewButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+            listViewButton.titleLabel.tintColor = [UIColor whiteColor];
+            listViewButton.titleLabel.font = [UIFont fontWithName:@"MINIj4gj" size:50.f];
+            
+            [self addSubview:listViewButton];
+        }
+
     }
     
     return self;
-}
-
-- (void)initView:(int)count
-{
-    self.frame = CGRectMake(0, 0, LIST_VIEW_BUTTON_WIDTH, _array.count * LIST_VIEW_BUTTON_HEIGHT);
-    
-    for (int i = 0; i < count; i ++) {
-        UIButton *listViewButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, LIST_VIEW_BUTTON_WIDTH, LIST_VIEW_BUTTON_HEIGHT)];
-        
-        [self addSubview:listViewButton];
-    }
 }
 
 /*
