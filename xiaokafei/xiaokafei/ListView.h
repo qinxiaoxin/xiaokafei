@@ -12,4 +12,6 @@
 
 - (id)initWithFrame:(CGRect)frame passArray:(NSArray *)array;
 
+@property (nonatomic, weak) id<ListViewButtonProtocol> delegate;
+
 @end

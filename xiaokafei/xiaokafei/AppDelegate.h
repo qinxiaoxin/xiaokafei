@@ -24,9 +24,10 @@
 @end
 
 
-//@protocol <#protocol name#> <NSObject>
-//
-//<#methods#>
-//
-//@end
+@protocol ListViewButtonProtocol <NSObject>
+
+@required
+- (void)listViewButtonClick:(NSString *)title;
+
+@end
 

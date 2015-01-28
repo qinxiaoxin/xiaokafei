@@ -119,7 +119,7 @@
         <!--Ist View Controller-->
         <scene sceneID="pq4-x4-5W1">
             <objects>
-                <viewController id="xvQ-is-ywW" customClass="LIstViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LVC" id="xvQ-is-ywW" customClass="LIstViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tDy-ho-Rg9"/>
                         <viewControllerLayoutGuide type="bottom" id="7cq-1J-fQG"/>
@@ -159,7 +159,7 @@
         <!--Detail View Controller-->
         <scene sceneID="tbl-kF-Rll">
             <objects>
-                <viewController id="abC-GQ-sHL" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DVC" id="abC-GQ-sHL" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fki-ze-fwQ"/>
                         <viewControllerLayoutGuide type="bottom" id="Yyh-oB-hwS"/>

@@ -27,6 +27,7 @@
             [listViewButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
             listViewButton.titleLabel.tintColor = [UIColor whiteColor];
             listViewButton.titleLabel.font = [UIFont fontWithName:@"MINIj4gj" size:50.f];
+            [listViewButton addTarget:self action:@selector(listViewButtonClick:) forControlEvents:UIControlEventTouchUpInside];
             
             [self addSubview:listViewButton];
         }
@@ -36,12 +37,11 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)listViewButtonClick:(id)sender
+{
+    UIButton *button = (UIButton *)sender;
+    NSString *title = button.titleLabel.text;
+    [_delegate listViewButtonClick:title];
 }
-*/
 
 @end

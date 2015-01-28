@@ -11,7 +11,7 @@
 
 #import "ListView.h"
 
-@interface LIstViewController ()
+@interface LIstViewController ()<ListViewButtonProtocol>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
@@ -24,9 +24,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
     //init view
     [self initView];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,9 +44,32 @@
 - (void)initView
 {
     ListView *lv = [[ListView alloc] initWithFrame:CGRectZero passArray:self.array];
-    _scrollView.contentSize = CGSizeMake(0, lv.frame.size.height);
+    lv.delegate = self;
     
+    _scrollView.contentSize = CGSizeMake(0, lv.frame.size.height);
+    _scrollView.contentOffset = self.offset;
+
     [_scrollView addSubview:lv];
+}
+
+#pragma mark - ListViewButtonProtocol
+
+- (void)listViewButtonClick:(NSString *)title
+{
+    //Mark scorlView offset
+    CGPoint offset = _scrollView.contentOffset;
+    
+    //Turn to...
+    DetailViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"DVC"];
+    dvc.aTitle = title;
+    dvc.aArray = self.array;
+    dvc.offset = offset;
+    dvc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    
+    [self presentViewController:dvc animated:YES completion:^{
+        
+    }];
+    
 }
 
 @end

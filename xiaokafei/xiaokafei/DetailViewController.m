@@ -29,25 +29,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark Navigation
 
-#pragma mark - Navigation
-
-- (void)prepareListViewController:(LIstViewController *)lvc toDisplayArray:(NSArray *)array
+- (void)prepareListViewController:(LIstViewController *)lvc toArray:(NSArray *)array
 {
     lvc.array = array;
     lvc.offset = self.offset;
 }
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
     if ([segue.identifier isEqualToString:@"Detail_List"]) {
         if ([segue.destinationViewController isKindOfClass:[LIstViewController class]]) {
-            [self prepareListViewController:segue.destinationViewController toDisplayArray:self.aArray];
+//            LIstViewController *lvc = [self.storyboard instantiateViewControllerWithIdentifier:@"LVC"];
+//            lvc.array = self.aArray;
+            [self prepareListViewController:segue.destinationViewController toArray:self.aArray];
         }
     }
 }
-
 
 @end
