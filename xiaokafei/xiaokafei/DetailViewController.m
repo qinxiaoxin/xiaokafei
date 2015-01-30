@@ -12,16 +12,19 @@
 @interface DetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *appTipLable;
 
 @end
 
 @implementation DetailViewController
 
+int a;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _titleLabel.text = self.aTitle;
+    [self initView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,7 +32,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark Navigation
+
+#pragma mark - initView
+
+- (void)initView
+{
+    _titleLabel.text = self.aTitle;
+    _appTipLable.alpha = 0.f;
+    a = 0;
+}
+
+
+#pragma mark - Navigation
 
 - (void)prepareListViewController:(LIstViewController *)lvc toArray:(NSArray *)array
 {
@@ -41,11 +55,32 @@
 {
     if ([segue.identifier isEqualToString:@"Detail_List"]) {
         if ([segue.destinationViewController isKindOfClass:[LIstViewController class]]) {
-//            LIstViewController *lvc = [self.storyboard instantiateViewControllerWithIdentifier:@"LVC"];
-//            lvc.array = self.aArray;
             [self prepareListViewController:segue.destinationViewController toArray:self.aArray];
         }
     }
 }
+
+#pragma mark - Action
+
+- (IBAction)orderAction:(id)sender
+{
+    if (a == 10) {
+        UIAlertView *av = [[UIAlertView alloc] initWithTitle:nil message:@"Opppsssss......您是大胃王" delegate:self cancelButtonTitle:@"擦" otherButtonTitles:nil, nil];
+        [av show];
+        return;
+    }
+    
+    a++;
+    NSString *order = [NSString stringWithFormat:@"+%d",a];
+    _appTipLable.text = order;
+
+     _appTipLable.alpha = 1.f;
+     [UIView animateWithDuration:0.5f animations:^{
+         _appTipLable.alpha = 0.f;
+     } completion:^(BOOL finished) {
+         
+     }];
+}
+
 
 @end
