@@ -8,17 +8,19 @@
 
 #import "DetailViewController.h"
 #import "LIstViewController.h"
+#import "ImageViewBorder.h"
 
-@interface DetailViewController ()
+@interface DetailViewController (){
+    int a;
+}
 
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *appTipLable;
+
+@property (strong, nonatomic) ImageViewBorder *imageView;
 
 @end
 
 @implementation DetailViewController
-
-int a;
 
 
 - (void)viewDidLoad {
@@ -37,9 +39,18 @@ int a;
 
 - (void)initView
 {
-    _titleLabel.text = self.aTitle;
     _appTipLable.alpha = 0.f;
+    
     a = 0;
+    
+    //UIImageIVew
+    UIImage *image = [UIImage imageNamed:@"IMG_2088.JPG"];
+    
+    _imageView = [[ImageViewBorder alloc] initWithImage:image];
+    _imageView.frame = CGRectMake(self.view.center.x - RECTANGLE_WIDTH / 2, self.view.center.y - RECTANGLE_HEIGHT / 2, RECTANGLE_WIDTH, RECTANGLE_HEIGHT);
+    _imageView.contentMode = UIViewContentModeScaleAspectFit;
+    [self.view addSubview:_imageView];
+    
 }
 
 
@@ -59,6 +70,7 @@ int a;
         }
     }
 }
+
 
 #pragma mark - Action
 

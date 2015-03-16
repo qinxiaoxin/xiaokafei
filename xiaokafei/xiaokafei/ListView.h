@@ -14,4 +14,6 @@
 
 @property (nonatomic, weak) id<ListViewButtonProtocol> delegate;
 
+@property (nonatomic, strong) NSString *passTitle;
+
 @end

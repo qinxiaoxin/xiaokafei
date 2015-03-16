@@ -39,6 +39,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 #pragma mark - init view
 
 - (void)initView
@@ -52,6 +53,7 @@
     [_scrollView addSubview:lv];
 }
 
+
 #pragma mark - ListViewButtonProtocol
 
 - (void)listViewButtonClick:(NSString *)title
@@ -61,7 +63,7 @@
     
     //Turn to...
     DetailViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"DVC"];
-    dvc.aTitle = title;
+//    dvc.aTitle = title;
     dvc.aArray = self.array;
     dvc.offset = offset;
     dvc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;

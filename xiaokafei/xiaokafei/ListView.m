@@ -22,7 +22,11 @@
             
             UIButton *listViewButton = [[UIButton alloc] initWithFrame:CGRectMake(0, LIST_VIEW_BUTTON_HEIGHT * i, LIST_VIEW_BUTTON_WIDTH, LIST_VIEW_BUTTON_HEIGHT)];
             NSDictionary *dic = [array objectAtIndex:i];
-            NSString *title = [dic valueForKeyPath:@"name"];
+            NSString *name = [dic valueForKeyPath:@"name"];
+            NSString *ename = [dic valueForKeyPath:@"ename"];
+            self.passTitle = [NSString stringWithFormat:@"%@(%@)",name,ename];
+            NSString *price = [dic valueForKeyPath:@"price"];
+            NSString *title = [NSString stringWithFormat:@"%@(%@) %@",name,ename,price];
             [listViewButton setTitle:title forState:UIControlStateNormal];
             [listViewButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
             listViewButton.titleLabel.tintColor = [UIColor whiteColor];
@@ -39,8 +43,7 @@
 
 - (void)listViewButtonClick:(id)sender
 {
-    UIButton *button = (UIButton *)sender;
-    NSString *title = button.titleLabel.text;
+    NSString *title = self.passTitle;
     [_delegate listViewButtonClick:title];
 }
 

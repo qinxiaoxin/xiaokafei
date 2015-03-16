@@ -32,5 +32,11 @@
  *  Distance
  */
 
-#define LIST_VIEW_BUTTON_WIDTH                 800
-#define LIST_VIEW_BUTTON_HEIGHT                100
+#define LIST_VIEW_BUTTON_WIDTH                 800.f
+#define LIST_VIEW_BUTTON_HEIGHT                100.f
+
+
+#define RECTANGLE_WIDTH                        1000.f
+#define RECTANGLE_HEIGHT                       500.f
+
+#define RECTANGLE_BORDER_WIDTH                  10.f

@@ -22,6 +22,8 @@
 		7609CB821A7B5B9E00B4513C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7609CB811A7B5B9E00B4513C /* libsqlite3.0.dylib */; };
 		7609CB881A7B643B00B4513C /* FMDBService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7609CB871A7B643B00B4513C /* FMDBService.m */; };
 		761FD8D81A480427009D1A40 /* xiaokafei.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 761FD8D71A480427009D1A40 /* xiaokafei.geojson */; };
+		76518F311AB6D0960050C9B7 /* IMG_2088.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76518F301AB6D0960050C9B7 /* IMG_2088.JPG */; };
+		76518F351AB6FA210050C9B7 /* ImageViewBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 76518F341AB6FA210050C9B7 /* ImageViewBorder.m */; };
 		76856AEB1A74A97D00DF030C /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76856AEA1A74A97D00DF030C /* ListView.m */; };
 		768CFF1A1A5D1C020092F2B8 /* 迷你简柏青.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 768CFF191A5D1C020092F2B8 /* 迷你简柏青.ttf */; };
 		768CFF201A5D21720092F2B8 /* FirstPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768CFF1F1A5D21720092F2B8 /* FirstPageViewController.m */; };
@@ -70,6 +72,9 @@
 		7609CB861A7B643B00B4513C /* FMDBService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBService.h; sourceTree = "<group>"; };
 		7609CB871A7B643B00B4513C /* FMDBService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBService.m; sourceTree = "<group>"; };
 		761FD8D71A480427009D1A40 /* xiaokafei.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xiaokafei.geojson; sourceTree = "<group>"; };
+		76518F301AB6D0960050C9B7 /* IMG_2088.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2088.JPG; sourceTree = "<group>"; };
+		76518F331AB6FA210050C9B7 /* ImageViewBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewBorder.h; sourceTree = "<group>"; };
+		76518F341AB6FA210050C9B7 /* ImageViewBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewBorder.m; sourceTree = "<group>"; };
 		76856AE91A74A97D00DF030C /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
 		76856AEA1A74A97D00DF030C /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
 		76856AEF1A74AB6300DF030C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -213,6 +218,7 @@
 		761F473C1A54E5C200B98C3F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				76518F321AB6F9FC0050C9B7 /* ImageView Border */,
 				76856AE81A74A96100DF030C /* ListView */,
 			);
 			name = View;
@@ -240,6 +246,23 @@
 			name = Delegate;
 			sourceTree = "<group>";
 		};
+		76518F2F1AB6D05C0050C9B7 /* photo material */ = {
+			isa = PBXGroup;
+			children = (
+				76518F301AB6D0960050C9B7 /* IMG_2088.JPG */,
+			);
+			name = "photo material";
+			sourceTree = "<group>";
+		};
+		76518F321AB6F9FC0050C9B7 /* ImageView Border */ = {
+			isa = PBXGroup;
+			children = (
+				76518F331AB6FA210050C9B7 /* ImageViewBorder.h */,
+				76518F341AB6FA210050C9B7 /* ImageViewBorder.m */,
+			);
+			name = "ImageView Border";
+			sourceTree = "<group>";
+		};
 		76856AE81A74A96100DF030C /* ListView */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +275,7 @@
 		76C24AEC1A5A7C8B00FFF530 /* pictures */ = {
 			isa = PBXGroup;
 			children = (
+				76518F2F1AB6D05C0050C9B7 /* photo material */,
 				769749D21A5FAF5F00A76FCD /* launch_des.png */,
 				769749D31A5FAF5F00A76FCD /* launch_title.png */,
 			);
@@ -340,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7607EAB21A470F0300AB8E4D /* Main.storyboard in Resources */,
+				76518F311AB6D0960050C9B7 /* IMG_2088.JPG in Resources */,
 				769749D51A5FAF5F00A76FCD /* launch_title.png in Resources */,
 				768CFF1A1A5D1C020092F2B8 /* 迷你简柏青.ttf in Resources */,
 				761FD8D81A480427009D1A40 /* xiaokafei.geojson in Resources */,
@@ -370,6 +395,7 @@
 				768CFF231A5D21800092F2B8 /* LIstViewController.m in Sources */,
 				7609CB7C1A7B5AB400B4513C /* FMDatabaseAdditions.m in Sources */,
 				7609CB7F1A7B5AB400B4513C /* FMResultSet.m in Sources */,
+				76518F351AB6FA210050C9B7 /* ImageViewBorder.m in Sources */,
 				76856AEB1A74A97D00DF030C /* ListView.m in Sources */,
 				7609CB7D1A7B5AB400B4513C /* FMDatabasePool.m in Sources */,
 				7609CB7E1A7B5AB400B4513C /* FMDatabaseQueue.m in Sources */,
@@ -504,7 +530,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "小咖啡点餐";
-				PROVISIONING_PROFILE = "1daf13ae-1bd0-4bd1-90e9-2c14b17f9a46";
+				PROVISIONING_PROFILE = "f67a787c-c3d3-41f0-aee8-efd67ef0078f";
 			};
 			name = Debug;
 		};
@@ -518,7 +544,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "小咖啡点餐";
-				PROVISIONING_PROFILE = "1daf13ae-1bd0-4bd1-90e9-2c14b17f9a46";
+				PROVISIONING_PROFILE = "f67a787c-c3d3-41f0-aee8-efd67ef0078f";
 			};
 			name = Release;
 		};

@@ -10,7 +10,7 @@
 
 @interface DetailViewController : UIViewController
 
-@property (nonatomic, copy) NSString *aTitle;
+//@property (nonatomic, copy) NSString *aTitle;
 @property (nonatomic, copy) NSArray *aArray;
 @property (nonatomic, assign) CGPoint offset;
 
