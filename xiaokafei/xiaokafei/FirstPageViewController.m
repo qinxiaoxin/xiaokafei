@@ -11,6 +11,8 @@
 
 @interface FirstPageViewController ()
 
+@property (nonatomic, strong) RCDraggableButton *avatar;
+
 @end
 
 @implementation FirstPageViewController
@@ -34,43 +36,48 @@
 
 - (void)myOrderButton
 {
-    RCDraggableButton *avatar = [[RCDraggableButton alloc] initInView:self.view WithFrame:CGRectMake(SCREEN_WIDTH - MY_ORDER_BUTTON_DIAMETER, 0, MY_ORDER_BUTTON_DIAMETER, MY_ORDER_BUTTON_DIAMETER)];
-    self.myOrderOffset = avatar.frame;
-    [avatar setBackgroundImage:[UIImage imageNamed:@"avatar"] forState:UIControlStateNormal];
-    [avatar setAutoDocking:NO];
+    _avatar = [[RCDraggableButton alloc] initInView:self.view WithFrame:CGRectMake(SCREEN_WIDTH - MY_ORDER_BUTTON_DIAMETER, 0, MY_ORDER_BUTTON_DIAMETER, MY_ORDER_BUTTON_DIAMETER)];
     
-    avatar.longPressBlock = ^(RCDraggableButton *avatar) {
+//    NSLog(@"%f",self.myOrderOffset.origin.y);
+    
+    if (self.myOrderOffset.origin.y > 0) {
+        _avatar.frame = self.myOrderOffset;
+    }
+    
+    [_avatar setBackgroundImage:[UIImage imageNamed:@"avatar"] forState:UIControlStateNormal];
+    [_avatar setAutoDocking:NO];
+    
+    _avatar.longPressBlock = ^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in customView ===  LongPress!!! ===");
         //More todo here.
         
     };
     
-    avatar.tapBlock = ^(RCDraggableButton *avatar) {
+    _avatar.tapBlock = ^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in customView ===  Tap!!! ===");
         //More todo here.
         
     };
     
-    avatar.draggingBlock = ^(RCDraggableButton *avatar) {
+    _avatar.draggingBlock = ^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in customView === Dragging!!! ===");
         //More todo here.
         
     };
     
-    avatar.dragDoneBlock = ^(RCDraggableButton *avatar) {
+    _avatar.dragDoneBlock = ^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in customView === DragDone!!! ===");
-        self.myOrderOffset = avatar.frame;
         //More todo here.
         
     };
     
-    avatar.autoDockingBlock = ^(RCDraggableButton *avatar) {
+    _avatar.autoDockingBlock = ^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in customView === AutoDocking!!! ===");
         //More todo here.
         
     };
     
-    avatar.autoDockingDoneBlock = ^(RCDraggableButton *avatar) {
+    _avatar.autoDockingDoneBlock = ^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in customView === AutoDockingDone!!! ===");
         //More todo here.
         
@@ -83,7 +90,7 @@
 - (void)prepareListViewController:(LIstViewController *)lvc toArray:(NSArray *)array
 {
     lvc.array = array;
-    lvc.myOrderOffset = self.myOrderOffset;
+    lvc.myOrderOffset = _avatar.frame;
 }
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation

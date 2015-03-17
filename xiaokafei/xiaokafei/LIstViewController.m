@@ -11,10 +11,14 @@
 
 #import "ListView.h"
 
+#import "FirstPageViewController.h"
+
 @interface LIstViewController ()<ListViewButtonProtocol>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
+
+@property (strong, nonatomic) RCDraggableButton *avatar;
 
 @end
 
@@ -63,43 +67,42 @@
 
 - (void)myOrderButton
 {
-    RCDraggableButton *avatar = [[RCDraggableButton alloc] initInView:self.view WithFrame:CGRectMake(0, 0, MY_ORDER_BUTTON_DIAMETER, MY_ORDER_BUTTON_DIAMETER)];
-    avatar.frame = self.myOrderOffset;
-    [avatar setBackgroundImage:[UIImage imageNamed:@"avatar"] forState:UIControlStateNormal];
-    [avatar setAutoDocking:NO];
+    _avatar = [[RCDraggableButton alloc] initInView:self.view WithFrame:CGRectMake(0, 0, MY_ORDER_BUTTON_DIAMETER, MY_ORDER_BUTTON_DIAMETER)];
+    _avatar.frame = self.myOrderOffset;
+    [_avatar setBackgroundImage:[UIImage imageNamed:@"avatar"] forState:UIControlStateNormal];
+    [_avatar setAutoDocking:NO];
     
-    avatar.longPressBlock = ^(RCDraggableButton *avatar) {
+    _avatar.longPressBlock = ^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in customView ===  LongPress!!! ===");
         //More todo here.
         
     };
     
-    avatar.tapBlock = ^(RCDraggableButton *avatar) {
+    _avatar.tapBlock = ^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in customView ===  Tap!!! ===");
         //More todo here.
         
     };
     
-    avatar.draggingBlock = ^(RCDraggableButton *avatar) {
+    _avatar.draggingBlock = ^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in customView === Dragging!!! ===");
         //More todo here.
         
     };
     
-    avatar.dragDoneBlock = ^(RCDraggableButton *avatar) {
+    _avatar.dragDoneBlock = ^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in customView === DragDone!!! ===");
         //More todo here.
-        self.myOrderOffset = avatar.frame;
         
     };
     
-    avatar.autoDockingBlock = ^(RCDraggableButton *avatar) {
+    _avatar.autoDockingBlock = ^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in customView === AutoDocking!!! ===");
         //More todo here.
         
     };
     
-    avatar.autoDockingDoneBlock = ^(RCDraggableButton *avatar) {
+    _avatar.autoDockingDoneBlock = ^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in customView === AutoDockingDone!!! ===");
         //More todo here.
         
@@ -117,13 +120,29 @@
     dvc.tag = tag;
     dvc.aArray = self.array;
     dvc.offset = _scrollView.contentOffset;
-    dvc.myOrderOffset = self.myOrderOffset;
+    dvc.myOrderOffset = _avatar.frame;
     dvc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     
     [self presentViewController:dvc animated:YES completion:^{
         
     }];
     
+}
+
+#pragma mark - Navigation
+
+- (void)prepareListViewController:(FirstPageViewController *)fpvc toCGRect:(CGRect)rect
+{
+    fpvc.myOrderOffset = rect;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"List_First"]) {
+        if ([segue.destinationViewController isKindOfClass:[FirstPageViewController class]]) {
+            [self prepareListViewController:segue.destinationViewController toCGRect:_avatar.frame];
+        }
+    }
 }
 
 @end
