@@ -12,6 +12,7 @@
             <string>MINIj4gj</string>
             <string>MINIj4gj</string>
             <string>MINIj4gj</string>
+            <string>MINIj4gj</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -28,10 +29,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3w-92-t9m">
-                                <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
                                 <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="50"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="10"/>
-                                <state key="normal" title="简餐糕点">
+                                <state key="normal" title="简餐小食">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -53,7 +54,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVx-Y8-4MP">
                                 <rect key="frame" x="670" y="608" width="354" height="160"/>
                                 <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="40"/>
-                                <state key="normal" title="奶昔">
+                                <state key="normal" title="奶昔、沙冰">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -103,6 +104,18 @@
                                 </state>
                                 <connections>
                                     <segue destination="xvQ-is-ywW" kind="presentation" identifier="Coffee_List" modalTransitionStyle="crossDissolve" id="ozl-Cd-8Y4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzZ-bA-GUR">
+                                <rect key="frame" x="0.0" y="192" width="400" height="200"/>
+                                <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="50"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="10"/>
+                                <state key="normal" title="糕点">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xvQ-is-ywW" kind="presentation" identifier="Cake_List" modalTransitionStyle="crossDissolve" id="mBa-0O-EwQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -210,6 +223,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lmG-eD-ywH"/>
+        <segue reference="mBa-0O-EwQ"/>
     </inferredMetricsTieBreakers>
 </document>

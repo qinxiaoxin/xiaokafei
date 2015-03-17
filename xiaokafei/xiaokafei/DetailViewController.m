@@ -8,7 +8,6 @@
 
 #import "DetailViewController.h"
 #import "LIstViewController.h"
-#import "ImageViewBorder.h"
 
 @interface DetailViewController (){
     int a;
@@ -16,7 +15,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *appTipLable;
 
-@property (strong, nonatomic) ImageViewBorder *imageView;
+@property (strong, nonatomic) UIImageView *imageView;
+@property (strong, nonatomic) UIView *imageViewBorder;
 
 @end
 
@@ -44,13 +44,28 @@
     a = 0;
     
     //UIImageIVew
-    UIImage *image = [UIImage imageNamed:@"IMG_2088.JPG"];
-    
-    _imageView = [[ImageViewBorder alloc] initWithImage:image];
-    _imageView.frame = CGRectMake(self.view.center.x - RECTANGLE_WIDTH / 2, self.view.center.y - RECTANGLE_HEIGHT / 2, RECTANGLE_WIDTH, RECTANGLE_HEIGHT);
-    _imageView.contentMode = UIViewContentModeScaleAspectFit;
-    [self.view addSubview:_imageView];
-    
+    if (![self.aImageStr isEqualToString:@""]){
+        UIImage *image = [UIImage imageNamed:_aImageStr];
+        _imageView = [[UIImageView alloc] initWithImage:image];
+        _imageView.frame = CGRectMake(self.view.center.x - RECTANGLE_WIDTH / 2, self.view.center.y - RECTANGLE_HEIGHT / 2, RECTANGLE_WIDTH, RECTANGLE_HEIGHT);
+        _imageView.contentMode = UIViewContentModeScaleAspectFit;
+        _imageView.layer.shadowColor = [UIColor blackColor].CGColor;
+        _imageView.layer.shadowOffset = CGSizeMake(0, 0);
+        _imageView.layer.shadowOpacity = 0.8f;
+        _imageView.layer.shadowRadius = SHADOW_RADIUS;
+        [self.view addSubview:_imageView];
+        
+        //计算出ImageView 中填充内容的长、高
+        float widthRatio = _imageView.bounds.size.width / _imageView.image.size.width;
+        float heightRatio = _imageView.bounds.size.height / _imageView.image.size.height;
+        float scale = MIN(widthRatio, heightRatio);
+        float imageWidth = scale * _imageView.image.size.width;
+        float imageHeight = scale * _imageView.image.size.height;
+        _imageViewBorder = [[UIView alloc] initWithFrame:CGRectMake(_imageView.center.x - imageWidth / 2 - RECTANGLE_BORDER_WIDTH, _imageView.center.y - imageHeight / 2 - RECTANGLE_BORDER_WIDTH, imageWidth + RECTANGLE_BORDER_WIDTH, imageHeight + RECTANGLE_BORDER_WIDTH)];
+        _imageViewBorder.layer.borderWidth = RECTANGLE_BORDER_WIDTH;
+        _imageViewBorder.layer.borderColor = [UIColor blackColor].CGColor;
+        [self.view addSubview:_imageViewBorder];
+    }
 }
 
 

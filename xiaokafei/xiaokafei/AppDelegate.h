@@ -27,7 +27,7 @@
 @protocol ListViewButtonProtocol <NSObject>
 
 @required
-- (void)listViewButtonClick:(NSString *)title;
+- (void)listViewButtonClick:(NSInteger)tag;
 
 @end
 

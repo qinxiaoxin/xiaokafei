@@ -39,4 +39,6 @@
 #define RECTANGLE_WIDTH                        1000.f
 #define RECTANGLE_HEIGHT                       500.f
 
-#define RECTANGLE_BORDER_WIDTH                  10.f
+#define RECTANGLE_BORDER_WIDTH                  15.f
+
+#define SHADOW_RADIUS                           20.f

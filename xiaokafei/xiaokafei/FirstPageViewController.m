@@ -67,6 +67,10 @@
         if ([segue.destinationViewController isKindOfClass:[LIstViewController class]]) {
             [self prepareListViewController:segue.destinationViewController toArray:(NSArray *)((AppDelegate *)[[UIApplication sharedApplication] delegate]).milkflakeArray];
         }
+    }else if ([segue.identifier isEqualToString:@"Cake_List"]) {
+        if ([segue.destinationViewController isKindOfClass:[LIstViewController class]]) {
+            [self prepareListViewController:segue.destinationViewController toArray:(NSArray *)((AppDelegate *)[[UIApplication sharedApplication] delegate]).cakeArray];
+        }
     }
 }
 

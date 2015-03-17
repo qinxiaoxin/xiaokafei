@@ -56,14 +56,15 @@
 
 #pragma mark - ListViewButtonProtocol
 
-- (void)listViewButtonClick:(NSString *)title
+- (void)listViewButtonClick:(NSInteger)tag
 {
     //Mark scorlView offset
     CGPoint offset = _scrollView.contentOffset;
     
     //Turn to...
     DetailViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"DVC"];
-//    dvc.aTitle = title;
+    NSDictionary *dic = [self.array objectAtIndex:tag];
+    dvc.aImageStr = [dic valueForKeyPath:@"image"];
     dvc.aArray = self.array;
     dvc.offset = offset;
     dvc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
