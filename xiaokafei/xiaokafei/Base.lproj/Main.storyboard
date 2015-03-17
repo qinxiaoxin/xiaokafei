@@ -155,9 +155,9 @@
                                 <rect key="frame" x="112" y="90" width="800" height="585"/>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="提示：上滑查看更多" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Oi-HX-bQU">
-                                <rect key="frame" x="29" y="198" width="30" height="300"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="40" y="284" width="20" height="200"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -232,8 +232,48 @@
             </objects>
             <point key="canvasLocation" x="408" y="708"/>
         </scene>
+        <!--My Order View Controller-->
+        <scene sceneID="fub-cC-rbB">
+            <objects>
+                <viewController storyboardIdentifier="MyOrderViewController" id="qs1-Ux-Wii" customClass="MyOrderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fms-5j-tzH"/>
+                        <viewControllerLayoutGuide type="bottom" id="76y-D8-cwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R8a-Ep-r6R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="06y-Bv-SRF">
+                                <rect key="frame" x="10" y="10" width="300" height="460"/>
+                                <color key="backgroundColor" red="0.14117647059999999" green="0.29803921570000003" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cQg-Wo-hGy">
+                                <rect key="frame" x="20" y="20" width="280" height="440"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is the PlayNDropView" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48J-1q-xif">
+                                <rect key="frame" x="48" y="206" width="225" height="67"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                    <connections>
+                        <outlet property="blueBoard" destination="06y-Bv-SRF" id="uMw-q1-NEu"/>
+                        <outlet property="whiteBoard" destination="cQg-Wo-hGy" id="yTS-nV-lqw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tUK-sB-iH1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1209" y="656"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mBa-0O-EwQ"/>
+        <segue reference="lmG-eD-ywH"/>
     </inferredMetricsTieBreakers>
 </document>

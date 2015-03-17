@@ -1,958 +1,3153 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		76049FF61A5ECB5200F80D24 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76049FF51A5ECB5200F80D24 /* DetailViewController.m */; };
-		7607EAA31A470F0300AB8E4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7607EAA21A470F0300AB8E4D /* main.m */; };
-		7607EAA61A470F0300AB8E4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7607EAA51A470F0300AB8E4D /* AppDelegate.m */; };
-		7607EAB21A470F0300AB8E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7607EAB01A470F0300AB8E4D /* Main.storyboard */; };
-		7607EAB41A470F0300AB8E4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7607EAB31A470F0300AB8E4D /* Images.xcassets */; };
-		7607EAB71A470F0300AB8E4D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7607EAB51A470F0300AB8E4D /* LaunchScreen.xib */; };
-		7607EAC31A470F0300AB8E4D /* xiaokafeiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7607EAC21A470F0300AB8E4D /* xiaokafeiTests.m */; };
-		7609CB7B1A7B5AB400B4513C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7609CB711A7B5AB400B4513C /* FMDatabase.m */; };
-		7609CB7C1A7B5AB400B4513C /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7609CB731A7B5AB400B4513C /* FMDatabaseAdditions.m */; };
-		7609CB7D1A7B5AB400B4513C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7609CB751A7B5AB400B4513C /* FMDatabasePool.m */; };
-		7609CB7E1A7B5AB400B4513C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7609CB771A7B5AB400B4513C /* FMDatabaseQueue.m */; };
-		7609CB7F1A7B5AB400B4513C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7609CB7A1A7B5AB400B4513C /* FMResultSet.m */; };
-		7609CB821A7B5B9E00B4513C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7609CB811A7B5B9E00B4513C /* libsqlite3.0.dylib */; };
-		7609CB881A7B643B00B4513C /* FMDBService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7609CB871A7B643B00B4513C /* FMDBService.m */; };
-		761FD8D81A480427009D1A40 /* xiaokafei.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 761FD8D71A480427009D1A40 /* xiaokafei.geojson */; };
-		765CEA141AB7F4D300CC3E80 /* BigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 765CEA131AB7F4D300CC3E80 /* BigImageViewController.m */; };
-		765CEA181AB817FA00CC3E80 /* RCDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 765CEA171AB817FA00CC3E80 /* RCDraggableButton.m */; };
-		76856AEB1A74A97D00DF030C /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76856AEA1A74A97D00DF030C /* ListView.m */; };
-		76898FB61AB823C30046491F /* avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76898FB51AB823C30046491F /* avatar@2x.png */; };
-		76898FFF1AB848AA0046491F /* IMG_1381.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FB91AB848AA0046491F /* IMG_1381.JPG */; };
-		768990001AB848AA0046491F /* IMG_1384.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FBA1AB848AA0046491F /* IMG_1384.JPG */; };
-		768990011AB848AA0046491F /* IMG_1385.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FBB1AB848AA0046491F /* IMG_1385.JPG */; };
-		768990021AB848AA0046491F /* IMG_1386.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FBC1AB848AA0046491F /* IMG_1386.JPG */; };
-		768990031AB848AA0046491F /* IMG_2008.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FBD1AB848AA0046491F /* IMG_2008.JPG */; };
-		768990041AB848AA0046491F /* IMG_2088.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FBE1AB848AA0046491F /* IMG_2088.JPG */; };
-		768990051AB848AA0046491F /* IMG_2013.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FC01AB848AA0046491F /* IMG_2013.JPG */; };
-		768990061AB848AA0046491F /* IMG_2042.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FC11AB848AA0046491F /* IMG_2042.JPG */; };
-		768990071AB848AA0046491F /* IMG_2060.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FC21AB848AA0046491F /* IMG_2060.JPG */; };
-		768990081AB848AA0046491F /* IMG_2089.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FC31AB848AA0046491F /* IMG_2089.JPG */; };
-		768990091AB848AA0046491F /* IMG_1514.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FC51AB848AA0046491F /* IMG_1514.JPG */; };
-		7689900A1AB848AA0046491F /* IMG_1530.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FC61AB848AA0046491F /* IMG_1530.JPG */; };
-		7689900B1AB848AA0046491F /* IMG_1555.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FC71AB848AA0046491F /* IMG_1555.JPG */; };
-		7689900C1AB848AA0046491F /* IMG_1985.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FC81AB848AA0046491F /* IMG_1985.JPG */; };
-		7689900D1AB848AA0046491F /* IMG_2010.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FC91AB848AA0046491F /* IMG_2010.JPG */; };
-		7689900E1AB848AA0046491F /* IMG_1425.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FCB1AB848AA0046491F /* IMG_1425.JPG */; };
-		7689900F1AB848AA0046491F /* IMG_1468.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FCC1AB848AA0046491F /* IMG_1468.JPG */; };
-		768990101AB848AA0046491F /* IMG_1482.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FCD1AB848AA0046491F /* IMG_1482.JPG */; };
-		768990111AB848AA0046491F /* IMG_1487.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FCE1AB848AA0046491F /* IMG_1487.JPG */; };
-		768990121AB848AA0046491F /* IMG_1531.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FCF1AB848AA0046491F /* IMG_1531.JPG */; };
-		768990131AB848AA0046491F /* IMG_1987.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FD01AB848AA0046491F /* IMG_1987.JPG */; };
-		768990141AB848AA0046491F /* IMG_1990.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FD11AB848AA0046491F /* IMG_1990.JPG */; };
-		768990151AB848AA0046491F /* IMG_1993.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FD21AB848AA0046491F /* IMG_1993.JPG */; };
-		768990161AB848AA0046491F /* IMG_1996.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FD31AB848AA0046491F /* IMG_1996.JPG */; };
-		768990171AB848AA0046491F /* IMG_2001.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FD41AB848AA0046491F /* IMG_2001.JPG */; };
-		768990181AB848AA0046491F /* IMG_2030.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FD51AB848AA0046491F /* IMG_2030.JPG */; };
-		768990191AB848AA0046491F /* IMG_2037.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FD61AB848AA0046491F /* IMG_2037.JPG */; };
-		7689901A1AB848AA0046491F /* IMG_2038.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FD71AB848AA0046491F /* IMG_2038.JPG */; };
-		7689901B1AB848AA0046491F /* IMG_2039.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FD81AB848AA0046491F /* IMG_2039.JPG */; };
-		7689901C1AB848AA0046491F /* IMG_2043.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FD91AB848AA0046491F /* IMG_2043.JPG */; };
-		7689901D1AB848AA0046491F /* IMG_2044.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FDA1AB848AA0046491F /* IMG_2044.JPG */; };
-		7689901E1AB848AA0046491F /* IMG_2051.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FDB1AB848AA0046491F /* IMG_2051.JPG */; };
-		7689901F1AB848AA0046491F /* IMG_2057.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FDC1AB848AA0046491F /* IMG_2057.JPG */; };
-		768990201AB848AA0046491F /* IMG_2058.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FDD1AB848AA0046491F /* IMG_2058.JPG */; };
-		768990211AB848AA0046491F /* IMG_2059.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FDE1AB848AA0046491F /* IMG_2059.JPG */; };
-		768990221AB848AA0046491F /* IMG_2086.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FDF1AB848AA0046491F /* IMG_2086.JPG */; };
-		768990231AB848AA0046491F /* IMG_2087.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FE01AB848AA0046491F /* IMG_2087.JPG */; };
-		768990241AB848AA0046491F /* IMG_2090.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FE11AB848AA0046491F /* IMG_2090.JPG */; };
-		768990251AB848AA0046491F /* IMG_1420.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FE31AB848AA0046491F /* IMG_1420.JPG */; };
-		768990261AB848AA0046491F /* IMG_1539.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FE41AB848AA0046491F /* IMG_1539.JPG */; };
-		768990271AB848AA0046491F /* IMG_1546.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FE51AB848AA0046491F /* IMG_1546.JPG */; };
-		768990281AB848AA0046491F /* IMG_1547.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FE61AB848AA0046491F /* IMG_1547.JPG */; };
-		768990291AB848AA0046491F /* IMG_1580.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FE71AB848AA0046491F /* IMG_1580.JPG */; };
-		7689902A1AB848AA0046491F /* IMG_1581.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FE81AB848AA0046491F /* IMG_1581.JPG */; };
-		7689902B1AB848AA0046491F /* IMG_1587.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FE91AB848AA0046491F /* IMG_1587.JPG */; };
-		7689902C1AB848AA0046491F /* IMG_1522.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FEB1AB848AA0046491F /* IMG_1522.JPG */; };
-		7689902D1AB848AA0046491F /* IMG_1529.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FEC1AB848AA0046491F /* IMG_1529.JPG */; };
-		7689902E1AB848AA0046491F /* IMG_1554.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FED1AB848AA0046491F /* IMG_1554.JPG */; };
-		7689902F1AB848AA0046491F /* IMG_1588.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FEE1AB848AA0046491F /* IMG_1588.JPG */; };
-		768990301AB848AA0046491F /* IMG_1642.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FEF1AB848AA0046491F /* IMG_1642.JPG */; };
-		768990311AB848AA0046491F /* IMG_1643.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FF01AB848AA0046491F /* IMG_1643.JPG */; };
-		768990321AB848AA0046491F /* IMG_2055.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FF11AB848AA0046491F /* IMG_2055.JPG */; };
-		768990331AB848AA0046491F /* IMG_2056.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FF21AB848AA0046491F /* IMG_2056.JPG */; };
-		768990341AB848AA0046491F /* IMG_2009.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FF41AB848AA0046491F /* IMG_2009.JPG */; };
-		768990351AB848AA0046491F /* IMG_2015.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FF51AB848AA0046491F /* IMG_2015.JPG */; };
-		768990361AB848AA0046491F /* IMG_2020.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FF61AB848AA0046491F /* IMG_2020.JPG */; };
-		768990371AB848AA0046491F /* IMG_1419.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FF81AB848AA0046491F /* IMG_1419.JPG */; };
-		768990381AB848AA0046491F /* IMG_1471.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FF91AB848AA0046491F /* IMG_1471.JPG */; };
-		768990391AB848AA0046491F /* IMG_1489.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FFA1AB848AA0046491F /* IMG_1489.JPG */; };
-		7689903A1AB848AA0046491F /* IMG_1757.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FFB1AB848AA0046491F /* IMG_1757.JPG */; };
-		7689903B1AB848AA0046491F /* IMG_1774.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FFC1AB848AA0046491F /* IMG_1774.JPG */; };
-		7689903C1AB848AA0046491F /* IMG_1803.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FFD1AB848AA0046491F /* IMG_1803.JPG */; };
-		7689903D1AB848AA0046491F /* IMG_1804.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FFE1AB848AA0046491F /* IMG_1804.JPG */; };
-		768990401AB84A5B0046491F /* MyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7689903F1AB84A5B0046491F /* MyOrderViewController.m */; };
-		768990441AB8523C0046491F /* CCMPlayNDropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 768990431AB8523C0046491F /* CCMPlayNDropView.m */; };
-		768990471AB852680046491F /* CCMBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 768990461AB852680046491F /* CCMBorderView.m */; };
-		768CFF1A1A5D1C020092F2B8 /* 迷你简柏青.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 768CFF191A5D1C020092F2B8 /* 迷你简柏青.ttf */; };
-		768CFF201A5D21720092F2B8 /* FirstPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768CFF1F1A5D21720092F2B8 /* FirstPageViewController.m */; };
-		768CFF231A5D21800092F2B8 /* LIstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768CFF221A5D21800092F2B8 /* LIstViewController.m */; };
-		769749D41A5FAF5F00A76FCD /* launch_des.png in Resources */ = {isa = PBXBuildFile; fileRef = 769749D21A5FAF5F00A76FCD /* launch_des.png */; };
-		769749D51A5FAF5F00A76FCD /* launch_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 769749D31A5FAF5F00A76FCD /* launch_title.png */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		7607EABD1A470F0300AB8E4D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7607EA951A470F0300AB8E4D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7607EA9C1A470F0300AB8E4D;
-			remoteInfo = xiaokafei;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		76049FF41A5ECB5200F80D24 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		76049FF51A5ECB5200F80D24 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		7607EA9D1A470F0300AB8E4D /* 小咖啡点餐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "小咖啡点餐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7607EAA11A470F0300AB8E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7607EAA21A470F0300AB8E4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7607EAA41A470F0300AB8E4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7607EAA51A470F0300AB8E4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7607EAB11A470F0300AB8E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7607EAB31A470F0300AB8E4D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7607EAB61A470F0300AB8E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		7607EABC1A470F0300AB8E4D /* xiaokafeiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xiaokafeiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7607EAC11A470F0300AB8E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7607EAC21A470F0300AB8E4D /* xiaokafeiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xiaokafeiTests.m; sourceTree = "<group>"; };
-		7609CB701A7B5AB400B4513C /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		7609CB711A7B5AB400B4513C /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		7609CB721A7B5AB400B4513C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		7609CB731A7B5AB400B4513C /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		7609CB741A7B5AB400B4513C /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		7609CB751A7B5AB400B4513C /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		7609CB761A7B5AB400B4513C /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		7609CB771A7B5AB400B4513C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		7609CB781A7B5AB400B4513C /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
-		7609CB791A7B5AB400B4513C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		7609CB7A1A7B5AB400B4513C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		7609CB811A7B5B9E00B4513C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		7609CB841A7B612B00B4513C /* MacroUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroUtils.h; sourceTree = "<group>"; };
-		7609CB861A7B643B00B4513C /* FMDBService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBService.h; sourceTree = "<group>"; };
-		7609CB871A7B643B00B4513C /* FMDBService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBService.m; sourceTree = "<group>"; };
-		761FD8D71A480427009D1A40 /* xiaokafei.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = xiaokafei.geojson; sourceTree = "<group>"; };
-		765CEA121AB7F4D300CC3E80 /* BigImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigImageViewController.h; sourceTree = "<group>"; };
-		765CEA131AB7F4D300CC3E80 /* BigImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigImageViewController.m; sourceTree = "<group>"; };
-		765CEA161AB817FA00CC3E80 /* RCDraggableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDraggableButton.h; sourceTree = "<group>"; };
-		765CEA171AB817FA00CC3E80 /* RCDraggableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDraggableButton.m; sourceTree = "<group>"; };
-		76856AE91A74A97D00DF030C /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
-		76856AEA1A74A97D00DF030C /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
-		76856AEF1A74AB6300DF030C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		76898FB51AB823C30046491F /* avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar@2x.png"; sourceTree = "<group>"; };
-		76898FB91AB848AA0046491F /* IMG_1381.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1381.JPG; sourceTree = "<group>"; };
-		76898FBA1AB848AA0046491F /* IMG_1384.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1384.JPG; sourceTree = "<group>"; };
-		76898FBB1AB848AA0046491F /* IMG_1385.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1385.JPG; sourceTree = "<group>"; };
-		76898FBC1AB848AA0046491F /* IMG_1386.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1386.JPG; sourceTree = "<group>"; };
-		76898FBD1AB848AA0046491F /* IMG_2008.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2008.JPG; sourceTree = "<group>"; };
-		76898FBE1AB848AA0046491F /* IMG_2088.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2088.JPG; sourceTree = "<group>"; };
-		76898FC01AB848AA0046491F /* IMG_2013.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2013.JPG; sourceTree = "<group>"; };
-		76898FC11AB848AA0046491F /* IMG_2042.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2042.JPG; sourceTree = "<group>"; };
-		76898FC21AB848AA0046491F /* IMG_2060.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2060.JPG; sourceTree = "<group>"; };
-		76898FC31AB848AA0046491F /* IMG_2089.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2089.JPG; sourceTree = "<group>"; };
-		76898FC51AB848AA0046491F /* IMG_1514.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1514.JPG; sourceTree = "<group>"; };
-		76898FC61AB848AA0046491F /* IMG_1530.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1530.JPG; sourceTree = "<group>"; };
-		76898FC71AB848AA0046491F /* IMG_1555.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1555.JPG; sourceTree = "<group>"; };
-		76898FC81AB848AA0046491F /* IMG_1985.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1985.JPG; sourceTree = "<group>"; };
-		76898FC91AB848AA0046491F /* IMG_2010.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2010.JPG; sourceTree = "<group>"; };
-		76898FCB1AB848AA0046491F /* IMG_1425.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1425.JPG; sourceTree = "<group>"; };
-		76898FCC1AB848AA0046491F /* IMG_1468.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1468.JPG; sourceTree = "<group>"; };
-		76898FCD1AB848AA0046491F /* IMG_1482.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1482.JPG; sourceTree = "<group>"; };
-		76898FCE1AB848AA0046491F /* IMG_1487.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1487.JPG; sourceTree = "<group>"; };
-		76898FCF1AB848AA0046491F /* IMG_1531.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1531.JPG; sourceTree = "<group>"; };
-		76898FD01AB848AA0046491F /* IMG_1987.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1987.JPG; sourceTree = "<group>"; };
-		76898FD11AB848AA0046491F /* IMG_1990.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1990.JPG; sourceTree = "<group>"; };
-		76898FD21AB848AA0046491F /* IMG_1993.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1993.JPG; sourceTree = "<group>"; };
-		76898FD31AB848AA0046491F /* IMG_1996.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1996.JPG; sourceTree = "<group>"; };
-		76898FD41AB848AA0046491F /* IMG_2001.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2001.JPG; sourceTree = "<group>"; };
-		76898FD51AB848AA0046491F /* IMG_2030.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2030.JPG; sourceTree = "<group>"; };
-		76898FD61AB848AA0046491F /* IMG_2037.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2037.JPG; sourceTree = "<group>"; };
-		76898FD71AB848AA0046491F /* IMG_2038.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2038.JPG; sourceTree = "<group>"; };
-		76898FD81AB848AA0046491F /* IMG_2039.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2039.JPG; sourceTree = "<group>"; };
-		76898FD91AB848AA0046491F /* IMG_2043.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2043.JPG; sourceTree = "<group>"; };
-		76898FDA1AB848AA0046491F /* IMG_2044.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2044.JPG; sourceTree = "<group>"; };
-		76898FDB1AB848AA0046491F /* IMG_2051.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2051.JPG; sourceTree = "<group>"; };
-		76898FDC1AB848AA0046491F /* IMG_2057.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2057.JPG; sourceTree = "<group>"; };
-		76898FDD1AB848AA0046491F /* IMG_2058.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2058.JPG; sourceTree = "<group>"; };
-		76898FDE1AB848AA0046491F /* IMG_2059.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2059.JPG; sourceTree = "<group>"; };
-		76898FDF1AB848AA0046491F /* IMG_2086.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2086.JPG; sourceTree = "<group>"; };
-		76898FE01AB848AA0046491F /* IMG_2087.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2087.JPG; sourceTree = "<group>"; };
-		76898FE11AB848AA0046491F /* IMG_2090.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2090.JPG; sourceTree = "<group>"; };
-		76898FE31AB848AA0046491F /* IMG_1420.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1420.JPG; sourceTree = "<group>"; };
-		76898FE41AB848AA0046491F /* IMG_1539.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1539.JPG; sourceTree = "<group>"; };
-		76898FE51AB848AA0046491F /* IMG_1546.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1546.JPG; sourceTree = "<group>"; };
-		76898FE61AB848AA0046491F /* IMG_1547.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1547.JPG; sourceTree = "<group>"; };
-		76898FE71AB848AA0046491F /* IMG_1580.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1580.JPG; sourceTree = "<group>"; };
-		76898FE81AB848AA0046491F /* IMG_1581.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1581.JPG; sourceTree = "<group>"; };
-		76898FE91AB848AA0046491F /* IMG_1587.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1587.JPG; sourceTree = "<group>"; };
-		76898FEB1AB848AA0046491F /* IMG_1522.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1522.JPG; sourceTree = "<group>"; };
-		76898FEC1AB848AA0046491F /* IMG_1529.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1529.JPG; sourceTree = "<group>"; };
-		76898FED1AB848AA0046491F /* IMG_1554.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1554.JPG; sourceTree = "<group>"; };
-		76898FEE1AB848AA0046491F /* IMG_1588.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1588.JPG; sourceTree = "<group>"; };
-		76898FEF1AB848AA0046491F /* IMG_1642.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1642.JPG; sourceTree = "<group>"; };
-		76898FF01AB848AA0046491F /* IMG_1643.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1643.JPG; sourceTree = "<group>"; };
-		76898FF11AB848AA0046491F /* IMG_2055.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2055.JPG; sourceTree = "<group>"; };
-		76898FF21AB848AA0046491F /* IMG_2056.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2056.JPG; sourceTree = "<group>"; };
-		76898FF41AB848AA0046491F /* IMG_2009.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2009.JPG; sourceTree = "<group>"; };
-		76898FF51AB848AA0046491F /* IMG_2015.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2015.JPG; sourceTree = "<group>"; };
-		76898FF61AB848AA0046491F /* IMG_2020.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2020.JPG; sourceTree = "<group>"; };
-		76898FF81AB848AA0046491F /* IMG_1419.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1419.JPG; sourceTree = "<group>"; };
-		76898FF91AB848AA0046491F /* IMG_1471.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1471.JPG; sourceTree = "<group>"; };
-		76898FFA1AB848AA0046491F /* IMG_1489.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1489.JPG; sourceTree = "<group>"; };
-		76898FFB1AB848AA0046491F /* IMG_1757.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1757.JPG; sourceTree = "<group>"; };
-		76898FFC1AB848AA0046491F /* IMG_1774.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1774.JPG; sourceTree = "<group>"; };
-		76898FFD1AB848AA0046491F /* IMG_1803.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1803.JPG; sourceTree = "<group>"; };
-		76898FFE1AB848AA0046491F /* IMG_1804.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1804.JPG; sourceTree = "<group>"; };
-		7689903E1AB84A5B0046491F /* MyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderViewController.h; sourceTree = "<group>"; };
-		7689903F1AB84A5B0046491F /* MyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderViewController.m; sourceTree = "<group>"; };
-		768990421AB8523C0046491F /* CCMPlayNDropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMPlayNDropView.h; sourceTree = "<group>"; };
-		768990431AB8523C0046491F /* CCMPlayNDropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMPlayNDropView.m; sourceTree = "<group>"; };
-		768990451AB852680046491F /* CCMBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMBorderView.h; sourceTree = "<group>"; };
-		768990461AB852680046491F /* CCMBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMBorderView.m; sourceTree = "<group>"; };
-		768CFF191A5D1C020092F2B8 /* 迷你简柏青.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "迷你简柏青.ttf"; sourceTree = "<group>"; };
-		768CFF1E1A5D21720092F2B8 /* FirstPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPageViewController.h; sourceTree = "<group>"; };
-		768CFF1F1A5D21720092F2B8 /* FirstPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPageViewController.m; sourceTree = "<group>"; };
-		768CFF211A5D21800092F2B8 /* LIstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIstViewController.h; sourceTree = "<group>"; };
-		768CFF221A5D21800092F2B8 /* LIstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIstViewController.m; sourceTree = "<group>"; };
-		769749D21A5FAF5F00A76FCD /* launch_des.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_des.png; sourceTree = "<group>"; };
-		769749D31A5FAF5F00A76FCD /* launch_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_title.png; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		7607EA9A1A470F0300AB8E4D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7609CB821A7B5B9E00B4513C /* libsqlite3.0.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7607EAB91A470F0300AB8E4D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		7607EA941A470F0300AB8E4D = {
-			isa = PBXGroup;
-			children = (
-				7607EA9F1A470F0300AB8E4D /* xiaokafei */,
-				7607EABF1A470F0300AB8E4D /* xiaokafeiTests */,
-				7607EA9E1A470F0300AB8E4D /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		7607EA9E1A470F0300AB8E4D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7607EA9D1A470F0300AB8E4D /* 小咖啡点餐.app */,
-				7607EABC1A470F0300AB8E4D /* xiaokafeiTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7607EA9F1A470F0300AB8E4D /* xiaokafei */ = {
-			isa = PBXGroup;
-			children = (
-				7607EAA01A470F0300AB8E4D /* Supporting Files */,
-				761FD8D91A481D8D009D1A40 /* Delegate */,
-				7609CB851A7B63C200B4513C /* Service */,
-				761F473B1A54E5BD00B98C3F /* Model */,
-				761F473C1A54E5C200B98C3F /* View */,
-				761F473D1A54E5C800B98C3F /* Control */,
-			);
-			path = xiaokafei;
-			sourceTree = "<group>";
-		};
-		7607EAA01A470F0300AB8E4D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7609CB841A7B612B00B4513C /* MacroUtils.h */,
-				7607EAB31A470F0300AB8E4D /* Images.xcassets */,
-				7607EAA11A470F0300AB8E4D /* Info.plist */,
-				7607EAA21A470F0300AB8E4D /* main.m */,
-				76856AEF1A74AB6300DF030C /* PrefixHeader.pch */,
-				761FD8D71A480427009D1A40 /* xiaokafei.geojson */,
-				768CFF191A5D1C020092F2B8 /* 迷你简柏青.ttf */,
-				7607EAB51A470F0300AB8E4D /* LaunchScreen.xib */,
-				7607EAB01A470F0300AB8E4D /* Main.storyboard */,
-				7609CB831A7B5BB000B4513C /* frameworks & libraries */,
-				7609CB6F1A7B5AB400B4513C /* fmdb */,
-				76C24AEC1A5A7C8B00FFF530 /* pictures */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7607EABF1A470F0300AB8E4D /* xiaokafeiTests */ = {
-			isa = PBXGroup;
-			children = (
-				7607EAC21A470F0300AB8E4D /* xiaokafeiTests.m */,
-				7607EAC01A470F0300AB8E4D /* Supporting Files */,
-			);
-			path = xiaokafeiTests;
-			sourceTree = "<group>";
-		};
-		7607EAC01A470F0300AB8E4D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7607EAC11A470F0300AB8E4D /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7609CB6F1A7B5AB400B4513C /* fmdb */ = {
-			isa = PBXGroup;
-			children = (
-				7609CB701A7B5AB400B4513C /* FMDatabase.h */,
-				7609CB711A7B5AB400B4513C /* FMDatabase.m */,
-				7609CB721A7B5AB400B4513C /* FMDatabaseAdditions.h */,
-				7609CB731A7B5AB400B4513C /* FMDatabaseAdditions.m */,
-				7609CB741A7B5AB400B4513C /* FMDatabasePool.h */,
-				7609CB751A7B5AB400B4513C /* FMDatabasePool.m */,
-				7609CB761A7B5AB400B4513C /* FMDatabaseQueue.h */,
-				7609CB771A7B5AB400B4513C /* FMDatabaseQueue.m */,
-				7609CB781A7B5AB400B4513C /* FMDB.h */,
-				7609CB791A7B5AB400B4513C /* FMResultSet.h */,
-				7609CB7A1A7B5AB400B4513C /* FMResultSet.m */,
-			);
-			path = fmdb;
-			sourceTree = "<group>";
-		};
-		7609CB831A7B5BB000B4513C /* frameworks & libraries */ = {
-			isa = PBXGroup;
-			children = (
-				7609CB811A7B5B9E00B4513C /* libsqlite3.0.dylib */,
-			);
-			name = "frameworks & libraries";
-			sourceTree = "<group>";
-		};
-		7609CB851A7B63C200B4513C /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				7609CB861A7B643B00B4513C /* FMDBService.h */,
-				7609CB871A7B643B00B4513C /* FMDBService.m */,
-			);
-			name = Service;
-			sourceTree = "<group>";
-		};
-		761F473B1A54E5BD00B98C3F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		761F473C1A54E5C200B98C3F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				768990411AB8523C0046491F /* CCMPlayNDropView */,
-				765CEA151AB817DA00CC3E80 /* MyOrderButton */,
-				76856AE81A74A96100DF030C /* ListView */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		761F473D1A54E5C800B98C3F /* Control */ = {
-			isa = PBXGroup;
-			children = (
-				768CFF1E1A5D21720092F2B8 /* FirstPageViewController.h */,
-				768CFF1F1A5D21720092F2B8 /* FirstPageViewController.m */,
-				768CFF211A5D21800092F2B8 /* LIstViewController.h */,
-				768CFF221A5D21800092F2B8 /* LIstViewController.m */,
-				76049FF41A5ECB5200F80D24 /* DetailViewController.h */,
-				76049FF51A5ECB5200F80D24 /* DetailViewController.m */,
-				765CEA121AB7F4D300CC3E80 /* BigImageViewController.h */,
-				765CEA131AB7F4D300CC3E80 /* BigImageViewController.m */,
-				7689903E1AB84A5B0046491F /* MyOrderViewController.h */,
-				7689903F1AB84A5B0046491F /* MyOrderViewController.m */,
-			);
-			name = Control;
-			sourceTree = "<group>";
-		};
-		761FD8D91A481D8D009D1A40 /* Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				7607EAA41A470F0300AB8E4D /* AppDelegate.h */,
-				7607EAA51A470F0300AB8E4D /* AppDelegate.m */,
-			);
-			name = Delegate;
-			sourceTree = "<group>";
-		};
-		765CEA151AB817DA00CC3E80 /* MyOrderButton */ = {
-			isa = PBXGroup;
-			children = (
-				765CEA161AB817FA00CC3E80 /* RCDraggableButton.h */,
-				765CEA171AB817FA00CC3E80 /* RCDraggableButton.m */,
-			);
-			name = MyOrderButton;
-			sourceTree = "<group>";
-		};
-		76856AE81A74A96100DF030C /* ListView */ = {
-			isa = PBXGroup;
-			children = (
-				76856AE91A74A97D00DF030C /* ListView.h */,
-				76856AEA1A74A97D00DF030C /* ListView.m */,
-			);
-			name = ListView;
-			sourceTree = "<group>";
-		};
-		76898FB81AB848AA0046491F /* 咖啡 */ = {
-			isa = PBXGroup;
-			children = (
-				76898FB91AB848AA0046491F /* IMG_1381.JPG */,
-				76898FBA1AB848AA0046491F /* IMG_1384.JPG */,
-				76898FBB1AB848AA0046491F /* IMG_1385.JPG */,
-				76898FBC1AB848AA0046491F /* IMG_1386.JPG */,
-				76898FBD1AB848AA0046491F /* IMG_2008.JPG */,
-				76898FBE1AB848AA0046491F /* IMG_2088.JPG */,
-			);
-			path = "咖啡";
-			sourceTree = "<group>";
-		};
-		76898FBF1AB848AA0046491F /* 奶昔，沙冰 */ = {
-			isa = PBXGroup;
-			children = (
-				76898FC01AB848AA0046491F /* IMG_2013.JPG */,
-				76898FC11AB848AA0046491F /* IMG_2042.JPG */,
-				76898FC21AB848AA0046491F /* IMG_2060.JPG */,
-				76898FC31AB848AA0046491F /* IMG_2089.JPG */,
-			);
-			path = "奶昔，沙冰";
-			sourceTree = "<group>";
-		};
-		76898FC41AB848AA0046491F /* 奶茶 */ = {
-			isa = PBXGroup;
-			children = (
-				76898FC51AB848AA0046491F /* IMG_1514.JPG */,
-				76898FC61AB848AA0046491F /* IMG_1530.JPG */,
-				76898FC71AB848AA0046491F /* IMG_1555.JPG */,
-				76898FC81AB848AA0046491F /* IMG_1985.JPG */,
-				76898FC91AB848AA0046491F /* IMG_2010.JPG */,
-			);
-			path = "奶茶";
-			sourceTree = "<group>";
-		};
-		76898FCA1AB848AA0046491F /* 果汁 */ = {
-			isa = PBXGroup;
-			children = (
-				76898FCB1AB848AA0046491F /* IMG_1425.JPG */,
-				76898FCC1AB848AA0046491F /* IMG_1468.JPG */,
-				76898FCD1AB848AA0046491F /* IMG_1482.JPG */,
-				76898FCE1AB848AA0046491F /* IMG_1487.JPG */,
-				76898FCF1AB848AA0046491F /* IMG_1531.JPG */,
-				76898FD01AB848AA0046491F /* IMG_1987.JPG */,
-				76898FD11AB848AA0046491F /* IMG_1990.JPG */,
-				76898FD21AB848AA0046491F /* IMG_1993.JPG */,
-				76898FD31AB848AA0046491F /* IMG_1996.JPG */,
-				76898FD41AB848AA0046491F /* IMG_2001.JPG */,
-				76898FD51AB848AA0046491F /* IMG_2030.JPG */,
-				76898FD61AB848AA0046491F /* IMG_2037.JPG */,
-				76898FD71AB848AA0046491F /* IMG_2038.JPG */,
-				76898FD81AB848AA0046491F /* IMG_2039.JPG */,
-				76898FD91AB848AA0046491F /* IMG_2043.JPG */,
-				76898FDA1AB848AA0046491F /* IMG_2044.JPG */,
-				76898FDB1AB848AA0046491F /* IMG_2051.JPG */,
-				76898FDC1AB848AA0046491F /* IMG_2057.JPG */,
-				76898FDD1AB848AA0046491F /* IMG_2058.JPG */,
-				76898FDE1AB848AA0046491F /* IMG_2059.JPG */,
-				76898FDF1AB848AA0046491F /* IMG_2086.JPG */,
-				76898FE01AB848AA0046491F /* IMG_2087.JPG */,
-				76898FE11AB848AA0046491F /* IMG_2090.JPG */,
-			);
-			path = "果汁";
-			sourceTree = "<group>";
-		};
-		76898FE21AB848AA0046491F /* 简餐小食 */ = {
-			isa = PBXGroup;
-			children = (
-				76898FE31AB848AA0046491F /* IMG_1420.JPG */,
-				76898FE41AB848AA0046491F /* IMG_1539.JPG */,
-				76898FE51AB848AA0046491F /* IMG_1546.JPG */,
-				76898FE61AB848AA0046491F /* IMG_1547.JPG */,
-				76898FE71AB848AA0046491F /* IMG_1580.JPG */,
-				76898FE81AB848AA0046491F /* IMG_1581.JPG */,
-				76898FE91AB848AA0046491F /* IMG_1587.JPG */,
-			);
-			path = "简餐小食";
-			sourceTree = "<group>";
-		};
-		76898FEA1AB848AA0046491F /* 糕点 */ = {
-			isa = PBXGroup;
-			children = (
-				76898FEB1AB848AA0046491F /* IMG_1522.JPG */,
-				76898FEC1AB848AA0046491F /* IMG_1529.JPG */,
-				76898FED1AB848AA0046491F /* IMG_1554.JPG */,
-				76898FEE1AB848AA0046491F /* IMG_1588.JPG */,
-				76898FEF1AB848AA0046491F /* IMG_1642.JPG */,
-				76898FF01AB848AA0046491F /* IMG_1643.JPG */,
-				76898FF11AB848AA0046491F /* IMG_2055.JPG */,
-				76898FF21AB848AA0046491F /* IMG_2056.JPG */,
-			);
-			path = "糕点";
-			sourceTree = "<group>";
-		};
-		76898FF31AB848AA0046491F /* 花茶 */ = {
-			isa = PBXGroup;
-			children = (
-				76898FF41AB848AA0046491F /* IMG_2009.JPG */,
-				76898FF51AB848AA0046491F /* IMG_2015.JPG */,
-				76898FF61AB848AA0046491F /* IMG_2020.JPG */,
-			);
-			path = "花茶";
-			sourceTree = "<group>";
-		};
-		76898FF71AB848AA0046491F /* 鸡尾酒 */ = {
-			isa = PBXGroup;
-			children = (
-				76898FF81AB848AA0046491F /* IMG_1419.JPG */,
-				76898FF91AB848AA0046491F /* IMG_1471.JPG */,
-				76898FFA1AB848AA0046491F /* IMG_1489.JPG */,
-				76898FFB1AB848AA0046491F /* IMG_1757.JPG */,
-				76898FFC1AB848AA0046491F /* IMG_1774.JPG */,
-				76898FFD1AB848AA0046491F /* IMG_1803.JPG */,
-				76898FFE1AB848AA0046491F /* IMG_1804.JPG */,
-			);
-			path = "鸡尾酒";
-			sourceTree = "<group>";
-		};
-		768990411AB8523C0046491F /* CCMPlayNDropView */ = {
-			isa = PBXGroup;
-			children = (
-				768990451AB852680046491F /* CCMBorderView.h */,
-				768990461AB852680046491F /* CCMBorderView.m */,
-				768990421AB8523C0046491F /* CCMPlayNDropView.h */,
-				768990431AB8523C0046491F /* CCMPlayNDropView.m */,
-			);
-			path = CCMPlayNDropView;
-			sourceTree = "<group>";
-		};
-		76C24AEC1A5A7C8B00FFF530 /* pictures */ = {
-			isa = PBXGroup;
-			children = (
-				76898FB81AB848AA0046491F /* 咖啡 */,
-				76898FBF1AB848AA0046491F /* 奶昔，沙冰 */,
-				76898FC41AB848AA0046491F /* 奶茶 */,
-				76898FCA1AB848AA0046491F /* 果汁 */,
-				76898FE21AB848AA0046491F /* 简餐小食 */,
-				76898FEA1AB848AA0046491F /* 糕点 */,
-				76898FF31AB848AA0046491F /* 花茶 */,
-				76898FF71AB848AA0046491F /* 鸡尾酒 */,
-				769749D21A5FAF5F00A76FCD /* launch_des.png */,
-				769749D31A5FAF5F00A76FCD /* launch_title.png */,
-				76898FB51AB823C30046491F /* avatar@2x.png */,
-			);
-			name = pictures;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		7607EA9C1A470F0300AB8E4D /* xiaokafei */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7607EAC61A470F0300AB8E4D /* Build configuration list for PBXNativeTarget "xiaokafei" */;
-			buildPhases = (
-				7607EA991A470F0300AB8E4D /* Sources */,
-				7607EA9A1A470F0300AB8E4D /* Frameworks */,
-				7607EA9B1A470F0300AB8E4D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = xiaokafei;
-			productName = xiaokafei;
-			productReference = 7607EA9D1A470F0300AB8E4D /* 小咖啡点餐.app */;
-			productType = "com.apple.product-type.application";
-		};
-		7607EABB1A470F0300AB8E4D /* xiaokafeiTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7607EAC91A470F0300AB8E4D /* Build configuration list for PBXNativeTarget "xiaokafeiTests" */;
-			buildPhases = (
-				7607EAB81A470F0300AB8E4D /* Sources */,
-				7607EAB91A470F0300AB8E4D /* Frameworks */,
-				7607EABA1A470F0300AB8E4D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7607EABE1A470F0300AB8E4D /* PBXTargetDependency */,
-			);
-			name = xiaokafeiTests;
-			productName = xiaokafeiTests;
-			productReference = 7607EABC1A470F0300AB8E4D /* xiaokafeiTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		7607EA951A470F0300AB8E4D /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Xin Qin";
-				TargetAttributes = {
-					7607EA9C1A470F0300AB8E4D = {
-						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 4TPR59UCQV;
-					};
-					7607EABB1A470F0300AB8E4D = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 7607EA9C1A470F0300AB8E4D;
-					};
-				};
-			};
-			buildConfigurationList = 7607EA981A470F0300AB8E4D /* Build configuration list for PBXProject "xiaokafei" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 7607EA941A470F0300AB8E4D;
-			productRefGroup = 7607EA9E1A470F0300AB8E4D /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				7607EA9C1A470F0300AB8E4D /* xiaokafei */,
-				7607EABB1A470F0300AB8E4D /* xiaokafeiTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		7607EA9B1A470F0300AB8E4D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				768990111AB848AA0046491F /* IMG_1487.JPG in Resources */,
-				76898FFF1AB848AA0046491F /* IMG_1381.JPG in Resources */,
-				7689902A1AB848AA0046491F /* IMG_1581.JPG in Resources */,
-				768990231AB848AA0046491F /* IMG_2087.JPG in Resources */,
-				7607EAB21A470F0300AB8E4D /* Main.storyboard in Resources */,
-				7689900C1AB848AA0046491F /* IMG_1985.JPG in Resources */,
-				768990251AB848AA0046491F /* IMG_1420.JPG in Resources */,
-				7689900E1AB848AA0046491F /* IMG_1425.JPG in Resources */,
-				768990171AB848AA0046491F /* IMG_2001.JPG in Resources */,
-				7689902F1AB848AA0046491F /* IMG_1588.JPG in Resources */,
-				768990081AB848AA0046491F /* IMG_2089.JPG in Resources */,
-				768990291AB848AA0046491F /* IMG_1580.JPG in Resources */,
-				768990261AB848AA0046491F /* IMG_1539.JPG in Resources */,
-				768990221AB848AA0046491F /* IMG_2086.JPG in Resources */,
-				7689901E1AB848AA0046491F /* IMG_2051.JPG in Resources */,
-				7689903B1AB848AA0046491F /* IMG_1774.JPG in Resources */,
-				768990051AB848AA0046491F /* IMG_2013.JPG in Resources */,
-				768990181AB848AA0046491F /* IMG_2030.JPG in Resources */,
-				769749D51A5FAF5F00A76FCD /* launch_title.png in Resources */,
-				768990001AB848AA0046491F /* IMG_1384.JPG in Resources */,
-				768990391AB848AA0046491F /* IMG_1489.JPG in Resources */,
-				768990211AB848AA0046491F /* IMG_2059.JPG in Resources */,
-				768CFF1A1A5D1C020092F2B8 /* 迷你简柏青.ttf in Resources */,
-				761FD8D81A480427009D1A40 /* xiaokafei.geojson in Resources */,
-				7689900A1AB848AA0046491F /* IMG_1530.JPG in Resources */,
-				7689902E1AB848AA0046491F /* IMG_1554.JPG in Resources */,
-				768990381AB848AA0046491F /* IMG_1471.JPG in Resources */,
-				7607EAB71A470F0300AB8E4D /* LaunchScreen.xib in Resources */,
-				7689901B1AB848AA0046491F /* IMG_2039.JPG in Resources */,
-				768990131AB848AA0046491F /* IMG_1987.JPG in Resources */,
-				768990361AB848AA0046491F /* IMG_2020.JPG in Resources */,
-				768990091AB848AA0046491F /* IMG_1514.JPG in Resources */,
-				768990341AB848AA0046491F /* IMG_2009.JPG in Resources */,
-				768990311AB848AA0046491F /* IMG_1643.JPG in Resources */,
-				7689903D1AB848AA0046491F /* IMG_1804.JPG in Resources */,
-				7689900F1AB848AA0046491F /* IMG_1468.JPG in Resources */,
-				7689902C1AB848AA0046491F /* IMG_1522.JPG in Resources */,
-				768990161AB848AA0046491F /* IMG_1996.JPG in Resources */,
-				7689902B1AB848AA0046491F /* IMG_1587.JPG in Resources */,
-				768990241AB848AA0046491F /* IMG_2090.JPG in Resources */,
-				7689901D1AB848AA0046491F /* IMG_2044.JPG in Resources */,
-				768990281AB848AA0046491F /* IMG_1547.JPG in Resources */,
-				768990071AB848AA0046491F /* IMG_2060.JPG in Resources */,
-				7689901A1AB848AA0046491F /* IMG_2038.JPG in Resources */,
-				7689903C1AB848AA0046491F /* IMG_1803.JPG in Resources */,
-				768990041AB848AA0046491F /* IMG_2088.JPG in Resources */,
-				7689903A1AB848AA0046491F /* IMG_1757.JPG in Resources */,
-				768990141AB848AA0046491F /* IMG_1990.JPG in Resources */,
-				7689900D1AB848AA0046491F /* IMG_2010.JPG in Resources */,
-				7607EAB41A470F0300AB8E4D /* Images.xcassets in Resources */,
-				768990271AB848AA0046491F /* IMG_1546.JPG in Resources */,
-				76898FB61AB823C30046491F /* avatar@2x.png in Resources */,
-				768990021AB848AA0046491F /* IMG_1386.JPG in Resources */,
-				768990101AB848AA0046491F /* IMG_1482.JPG in Resources */,
-				768990371AB848AA0046491F /* IMG_1419.JPG in Resources */,
-				768990351AB848AA0046491F /* IMG_2015.JPG in Resources */,
-				768990191AB848AA0046491F /* IMG_2037.JPG in Resources */,
-				768990321AB848AA0046491F /* IMG_2055.JPG in Resources */,
-				768990201AB848AA0046491F /* IMG_2058.JPG in Resources */,
-				7689901F1AB848AA0046491F /* IMG_2057.JPG in Resources */,
-				7689901C1AB848AA0046491F /* IMG_2043.JPG in Resources */,
-				768990031AB848AA0046491F /* IMG_2008.JPG in Resources */,
-				7689902D1AB848AA0046491F /* IMG_1529.JPG in Resources */,
-				768990011AB848AA0046491F /* IMG_1385.JPG in Resources */,
-				768990301AB848AA0046491F /* IMG_1642.JPG in Resources */,
-				7689900B1AB848AA0046491F /* IMG_1555.JPG in Resources */,
-				768990121AB848AA0046491F /* IMG_1531.JPG in Resources */,
-				769749D41A5FAF5F00A76FCD /* launch_des.png in Resources */,
-				768990061AB848AA0046491F /* IMG_2042.JPG in Resources */,
-				768990331AB848AA0046491F /* IMG_2056.JPG in Resources */,
-				768990151AB848AA0046491F /* IMG_1993.JPG in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7607EABA1A470F0300AB8E4D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		7607EA991A470F0300AB8E4D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				76049FF61A5ECB5200F80D24 /* DetailViewController.m in Sources */,
-				7607EAA61A470F0300AB8E4D /* AppDelegate.m in Sources */,
-				7609CB881A7B643B00B4513C /* FMDBService.m in Sources */,
-				7607EAA31A470F0300AB8E4D /* main.m in Sources */,
-				768990471AB852680046491F /* CCMBorderView.m in Sources */,
-				768990441AB8523C0046491F /* CCMPlayNDropView.m in Sources */,
-				768CFF231A5D21800092F2B8 /* LIstViewController.m in Sources */,
-				7609CB7C1A7B5AB400B4513C /* FMDatabaseAdditions.m in Sources */,
-				765CEA181AB817FA00CC3E80 /* RCDraggableButton.m in Sources */,
-				7609CB7F1A7B5AB400B4513C /* FMResultSet.m in Sources */,
-				765CEA141AB7F4D300CC3E80 /* BigImageViewController.m in Sources */,
-				76856AEB1A74A97D00DF030C /* ListView.m in Sources */,
-				7609CB7D1A7B5AB400B4513C /* FMDatabasePool.m in Sources */,
-				7609CB7E1A7B5AB400B4513C /* FMDatabaseQueue.m in Sources */,
-				768990401AB84A5B0046491F /* MyOrderViewController.m in Sources */,
-				768CFF201A5D21720092F2B8 /* FirstPageViewController.m in Sources */,
-				7609CB7B1A7B5AB400B4513C /* FMDatabase.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7607EAB81A470F0300AB8E4D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7607EAC31A470F0300AB8E4D /* xiaokafeiTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7607EABE1A470F0300AB8E4D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7607EA9C1A470F0300AB8E4D /* xiaokafei */;
-			targetProxy = 7607EABD1A470F0300AB8E4D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		7607EAB01A470F0300AB8E4D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7607EAB11A470F0300AB8E4D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7607EAB51A470F0300AB8E4D /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7607EAB61A470F0300AB8E4D /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		7607EAC41A470F0300AB8E4D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 2;
-			};
-			name = Debug;
-		};
-		7607EAC51A470F0300AB8E4D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 2;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		7607EAC71A470F0300AB8E4D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: ZICHEN WANG (CE27WTEZZH)";
-				GCC_PREFIX_HEADER = "$(SRCROOT)/xiaokafei/PrefixHeader.pch";
-				INFOPLIST_FILE = xiaokafei/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "小咖啡点餐";
-				PROVISIONING_PROFILE = "f67a787c-c3d3-41f0-aee8-efd67ef0078f";
-			};
-			name = Debug;
-		};
-		7607EAC81A470F0300AB8E4D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: ZICHEN WANG (CE27WTEZZH)";
-				GCC_PREFIX_HEADER = "$(SRCROOT)/xiaokafei/PrefixHeader.pch";
-				INFOPLIST_FILE = xiaokafei/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "小咖啡点餐";
-				PROVISIONING_PROFILE = "f67a787c-c3d3-41f0-aee8-efd67ef0078f";
-			};
-			name = Release;
-		};
-		7607EACA1A470F0300AB8E4D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = xiaokafeiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/小咖啡点餐.app/小咖啡点餐";
-			};
-			name = Debug;
-		};
-		7607EACB1A470F0300AB8E4D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = xiaokafeiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/小咖啡点餐.app/小咖啡点餐";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		7607EA981A470F0300AB8E4D /* Build configuration list for PBXProject "xiaokafei" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7607EAC41A470F0300AB8E4D /* Debug */,
-				7607EAC51A470F0300AB8E4D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7607EAC61A470F0300AB8E4D /* Build configuration list for PBXNativeTarget "xiaokafei" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7607EAC71A470F0300AB8E4D /* Debug */,
-				7607EAC81A470F0300AB8E4D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7607EAC91A470F0300AB8E4D /* Build configuration list for PBXNativeTarget "xiaokafeiTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7607EACA1A470F0300AB8E4D /* Debug */,
-				7607EACB1A470F0300AB8E4D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 7607EA951A470F0300AB8E4D /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>091F1B708CFE47AB31CBB1C5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EA5019F9736D5EFE20823951</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>76049FF41A5ECB5200F80D24</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DetailViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76049FF51A5ECB5200F80D24</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DetailViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76049FF61A5ECB5200F80D24</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76049FF51A5ECB5200F80D24</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7607EA941A470F0300AB8E4D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7607EA9F1A470F0300AB8E4D</string>
+				<string>7607EABF1A470F0300AB8E4D</string>
+				<string>7607EA9E1A470F0300AB8E4D</string>
+				<string>E75140C8E5E073833CB5B68C</string>
+				<string>F4AFFB38A5F82C83D12F92A9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EA951A470F0300AB8E4D</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0610</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Xin Qin</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>7607EA9C1A470F0300AB8E4D</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.1.1</string>
+						<key>DevelopmentTeam</key>
+						<string>4TPR59UCQV</string>
+					</dict>
+					<key>7607EABB1A470F0300AB8E4D</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.1.1</string>
+						<key>TestTargetID</key>
+						<string>7607EA9C1A470F0300AB8E4D</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>7607EA981A470F0300AB8E4D</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7607EA941A470F0300AB8E4D</string>
+			<key>productRefGroup</key>
+			<string>7607EA9E1A470F0300AB8E4D</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>7607EA9C1A470F0300AB8E4D</string>
+				<string>7607EABB1A470F0300AB8E4D</string>
+			</array>
+		</dict>
+		<key>7607EA981A470F0300AB8E4D</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7607EAC41A470F0300AB8E4D</string>
+				<string>7607EAC51A470F0300AB8E4D</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7607EA991A470F0300AB8E4D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>76049FF61A5ECB5200F80D24</string>
+				<string>7607EAA61A470F0300AB8E4D</string>
+				<string>7609CB881A7B643B00B4513C</string>
+				<string>7607EAA31A470F0300AB8E4D</string>
+				<string>768990471AB852680046491F</string>
+				<string>768990441AB8523C0046491F</string>
+				<string>768CFF231A5D21800092F2B8</string>
+				<string>7609CB7C1A7B5AB400B4513C</string>
+				<string>765CEA181AB817FA00CC3E80</string>
+				<string>7609CB7F1A7B5AB400B4513C</string>
+				<string>765CEA141AB7F4D300CC3E80</string>
+				<string>76856AEB1A74A97D00DF030C</string>
+				<string>7609CB7D1A7B5AB400B4513C</string>
+				<string>7609CB7E1A7B5AB400B4513C</string>
+				<string>768990401AB84A5B0046491F</string>
+				<string>768CFF201A5D21720092F2B8</string>
+				<string>7609CB7B1A7B5AB400B4513C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7607EA9A1A470F0300AB8E4D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7609CB821A7B5B9E00B4513C</string>
+				<string>091F1B708CFE47AB31CBB1C5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7607EA9B1A470F0300AB8E4D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>768990111AB848AA0046491F</string>
+				<string>76898FFF1AB848AA0046491F</string>
+				<string>7689902A1AB848AA0046491F</string>
+				<string>768990231AB848AA0046491F</string>
+				<string>7607EAB21A470F0300AB8E4D</string>
+				<string>7689900C1AB848AA0046491F</string>
+				<string>768990251AB848AA0046491F</string>
+				<string>7689900E1AB848AA0046491F</string>
+				<string>768990171AB848AA0046491F</string>
+				<string>7689902F1AB848AA0046491F</string>
+				<string>768990081AB848AA0046491F</string>
+				<string>768990291AB848AA0046491F</string>
+				<string>768990261AB848AA0046491F</string>
+				<string>768990221AB848AA0046491F</string>
+				<string>7689901E1AB848AA0046491F</string>
+				<string>7689903B1AB848AA0046491F</string>
+				<string>768990051AB848AA0046491F</string>
+				<string>768990181AB848AA0046491F</string>
+				<string>769749D51A5FAF5F00A76FCD</string>
+				<string>768990001AB848AA0046491F</string>
+				<string>768990391AB848AA0046491F</string>
+				<string>768990211AB848AA0046491F</string>
+				<string>768CFF1A1A5D1C020092F2B8</string>
+				<string>761FD8D81A480427009D1A40</string>
+				<string>7689900A1AB848AA0046491F</string>
+				<string>7689902E1AB848AA0046491F</string>
+				<string>768990381AB848AA0046491F</string>
+				<string>7607EAB71A470F0300AB8E4D</string>
+				<string>7689901B1AB848AA0046491F</string>
+				<string>768990131AB848AA0046491F</string>
+				<string>768990361AB848AA0046491F</string>
+				<string>768990091AB848AA0046491F</string>
+				<string>768990341AB848AA0046491F</string>
+				<string>768990311AB848AA0046491F</string>
+				<string>7689903D1AB848AA0046491F</string>
+				<string>7689900F1AB848AA0046491F</string>
+				<string>7689902C1AB848AA0046491F</string>
+				<string>768990161AB848AA0046491F</string>
+				<string>7689902B1AB848AA0046491F</string>
+				<string>768990241AB848AA0046491F</string>
+				<string>7689901D1AB848AA0046491F</string>
+				<string>768990281AB848AA0046491F</string>
+				<string>768990071AB848AA0046491F</string>
+				<string>7689901A1AB848AA0046491F</string>
+				<string>7689903C1AB848AA0046491F</string>
+				<string>768990041AB848AA0046491F</string>
+				<string>7689903A1AB848AA0046491F</string>
+				<string>768990141AB848AA0046491F</string>
+				<string>7689900D1AB848AA0046491F</string>
+				<string>7607EAB41A470F0300AB8E4D</string>
+				<string>768990271AB848AA0046491F</string>
+				<string>76898FB61AB823C30046491F</string>
+				<string>768990021AB848AA0046491F</string>
+				<string>768990101AB848AA0046491F</string>
+				<string>768990371AB848AA0046491F</string>
+				<string>768990351AB848AA0046491F</string>
+				<string>768990191AB848AA0046491F</string>
+				<string>768990321AB848AA0046491F</string>
+				<string>768990201AB848AA0046491F</string>
+				<string>7689901F1AB848AA0046491F</string>
+				<string>7689901C1AB848AA0046491F</string>
+				<string>768990031AB848AA0046491F</string>
+				<string>7689902D1AB848AA0046491F</string>
+				<string>768990011AB848AA0046491F</string>
+				<string>768990301AB848AA0046491F</string>
+				<string>7689900B1AB848AA0046491F</string>
+				<string>768990121AB848AA0046491F</string>
+				<string>769749D41A5FAF5F00A76FCD</string>
+				<string>768990061AB848AA0046491F</string>
+				<string>768990331AB848AA0046491F</string>
+				<string>768990151AB848AA0046491F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7607EA9C1A470F0300AB8E4D</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>7607EAC61A470F0300AB8E4D</string>
+			<key>buildPhases</key>
+			<array>
+				<string>FAE3CC0BEB161DC034E70E62</string>
+				<string>7607EA991A470F0300AB8E4D</string>
+				<string>7607EA9A1A470F0300AB8E4D</string>
+				<string>7607EA9B1A470F0300AB8E4D</string>
+				<string>A889E32936E243EFCAF1C74F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>xiaokafei</string>
+			<key>productName</key>
+			<string>xiaokafei</string>
+			<key>productReference</key>
+			<string>7607EA9D1A470F0300AB8E4D</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>7607EA9D1A470F0300AB8E4D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>&#23567;&#21654;&#21857;&#28857;&#39184;.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7607EA9E1A470F0300AB8E4D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7607EA9D1A470F0300AB8E4D</string>
+				<string>7607EABC1A470F0300AB8E4D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EA9F1A470F0300AB8E4D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7607EAA01A470F0300AB8E4D</string>
+				<string>761FD8D91A481D8D009D1A40</string>
+				<string>7609CB851A7B63C200B4513C</string>
+				<string>761F473B1A54E5BD00B98C3F</string>
+				<string>761F473C1A54E5C200B98C3F</string>
+				<string>761F473D1A54E5C800B98C3F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>xiaokafei</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EAA01A470F0300AB8E4D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7609CB841A7B612B00B4513C</string>
+				<string>7607EAB31A470F0300AB8E4D</string>
+				<string>7607EAA11A470F0300AB8E4D</string>
+				<string>7607EAA21A470F0300AB8E4D</string>
+				<string>76856AEF1A74AB6300DF030C</string>
+				<string>761FD8D71A480427009D1A40</string>
+				<string>768CFF191A5D1C020092F2B8</string>
+				<string>7607EAB51A470F0300AB8E4D</string>
+				<string>7607EAB01A470F0300AB8E4D</string>
+				<string>7609CB831A7B5BB000B4513C</string>
+				<string>7609CB6F1A7B5AB400B4513C</string>
+				<string>76C24AEC1A5A7C8B00FFF530</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EAA11A470F0300AB8E4D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EAA21A470F0300AB8E4D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EAA31A470F0300AB8E4D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7607EAA21A470F0300AB8E4D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7607EAA41A470F0300AB8E4D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EAA51A470F0300AB8E4D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EAA61A470F0300AB8E4D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7607EAA51A470F0300AB8E4D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7607EAB01A470F0300AB8E4D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7607EAB11A470F0300AB8E4D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EAB11A470F0300AB8E4D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EAB21A470F0300AB8E4D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7607EAB01A470F0300AB8E4D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7607EAB31A470F0300AB8E4D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EAB41A470F0300AB8E4D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7607EAB31A470F0300AB8E4D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7607EAB51A470F0300AB8E4D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7607EAB61A470F0300AB8E4D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EAB61A470F0300AB8E4D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EAB71A470F0300AB8E4D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7607EAB51A470F0300AB8E4D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7607EAB81A470F0300AB8E4D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7607EAC31A470F0300AB8E4D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7607EAB91A470F0300AB8E4D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7607EABA1A470F0300AB8E4D</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>7607EABB1A470F0300AB8E4D</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>7607EAC91A470F0300AB8E4D</string>
+			<key>buildPhases</key>
+			<array>
+				<string>7607EAB81A470F0300AB8E4D</string>
+				<string>7607EAB91A470F0300AB8E4D</string>
+				<string>7607EABA1A470F0300AB8E4D</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>7607EABE1A470F0300AB8E4D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>xiaokafeiTests</string>
+			<key>productName</key>
+			<string>xiaokafeiTests</string>
+			<key>productReference</key>
+			<string>7607EABC1A470F0300AB8E4D</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>7607EABC1A470F0300AB8E4D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>xiaokafeiTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7607EABD1A470F0300AB8E4D</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>7607EA951A470F0300AB8E4D</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>7607EA9C1A470F0300AB8E4D</string>
+			<key>remoteInfo</key>
+			<string>xiaokafei</string>
+		</dict>
+		<key>7607EABE1A470F0300AB8E4D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>7607EA9C1A470F0300AB8E4D</string>
+			<key>targetProxy</key>
+			<string>7607EABD1A470F0300AB8E4D</string>
+		</dict>
+		<key>7607EABF1A470F0300AB8E4D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7607EAC21A470F0300AB8E4D</string>
+				<string>7607EAC01A470F0300AB8E4D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>xiaokafeiTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EAC01A470F0300AB8E4D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7607EAC11A470F0300AB8E4D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EAC11A470F0300AB8E4D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EAC21A470F0300AB8E4D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>xiaokafeiTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7607EAC31A470F0300AB8E4D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7607EAC21A470F0300AB8E4D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7607EAC41A470F0300AB8E4D</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7607EAC51A470F0300AB8E4D</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7607EAC61A470F0300AB8E4D</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7607EAC71A470F0300AB8E4D</string>
+				<string>7607EAC81A470F0300AB8E4D</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7607EAC71A470F0300AB8E4D</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>7674F7253FCE7F8D97A50825</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer: ZICHEN WANG (CE27WTEZZH)</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>$(SRCROOT)/xiaokafei/PrefixHeader.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>xiaokafei/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>&#23567;&#21654;&#21857;&#28857;&#39184;</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string>f67a787c-c3d3-41f0-aee8-efd67ef0078f</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7607EAC81A470F0300AB8E4D</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>78181C5567026BF1617CC7B7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer: ZICHEN WANG (CE27WTEZZH)</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>$(SRCROOT)/xiaokafei/PrefixHeader.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>xiaokafei/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>&#23567;&#21654;&#21857;&#28857;&#39184;</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string>f67a787c-c3d3-41f0-aee8-efd67ef0078f</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7607EAC91A470F0300AB8E4D</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7607EACA1A470F0300AB8E4D</string>
+				<string>7607EACB1A470F0300AB8E4D</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7607EACA1A470F0300AB8E4D</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>xiaokafeiTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/&#23567;&#21654;&#21857;&#28857;&#39184;.app/&#23567;&#21654;&#21857;&#28857;&#39184;</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7607EACB1A470F0300AB8E4D</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>xiaokafeiTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/&#23567;&#21654;&#21857;&#28857;&#39184;.app/&#23567;&#21654;&#21857;&#28857;&#39184;</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>7609CB6F1A7B5AB400B4513C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7609CB701A7B5AB400B4513C</string>
+				<string>7609CB711A7B5AB400B4513C</string>
+				<string>7609CB721A7B5AB400B4513C</string>
+				<string>7609CB731A7B5AB400B4513C</string>
+				<string>7609CB741A7B5AB400B4513C</string>
+				<string>7609CB751A7B5AB400B4513C</string>
+				<string>7609CB761A7B5AB400B4513C</string>
+				<string>7609CB771A7B5AB400B4513C</string>
+				<string>7609CB781A7B5AB400B4513C</string>
+				<string>7609CB791A7B5AB400B4513C</string>
+				<string>7609CB7A1A7B5AB400B4513C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>fmdb</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB701A7B5AB400B4513C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FMDatabase.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB711A7B5AB400B4513C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FMDatabase.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB721A7B5AB400B4513C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FMDatabaseAdditions.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB731A7B5AB400B4513C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FMDatabaseAdditions.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB741A7B5AB400B4513C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FMDatabasePool.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB751A7B5AB400B4513C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FMDatabasePool.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB761A7B5AB400B4513C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FMDatabaseQueue.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB771A7B5AB400B4513C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FMDatabaseQueue.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB781A7B5AB400B4513C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FMDB.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB791A7B5AB400B4513C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FMResultSet.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB7A1A7B5AB400B4513C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FMResultSet.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB7B1A7B5AB400B4513C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7609CB711A7B5AB400B4513C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7609CB7C1A7B5AB400B4513C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7609CB731A7B5AB400B4513C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7609CB7D1A7B5AB400B4513C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7609CB751A7B5AB400B4513C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7609CB7E1A7B5AB400B4513C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7609CB771A7B5AB400B4513C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7609CB7F1A7B5AB400B4513C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7609CB7A1A7B5AB400B4513C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7609CB811A7B5B9E00B4513C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>compiled.mach-o.dylib</string>
+			<key>name</key>
+			<string>libsqlite3.0.dylib</string>
+			<key>path</key>
+			<string>usr/lib/libsqlite3.0.dylib</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>7609CB821A7B5B9E00B4513C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7609CB811A7B5B9E00B4513C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7609CB831A7B5BB000B4513C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7609CB811A7B5B9E00B4513C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>frameworks &amp; libraries</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB841A7B612B00B4513C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MacroUtils.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB851A7B63C200B4513C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7609CB861A7B643B00B4513C</string>
+				<string>7609CB871A7B643B00B4513C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Service</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB861A7B643B00B4513C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FMDBService.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB871A7B643B00B4513C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FMDBService.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7609CB881A7B643B00B4513C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7609CB871A7B643B00B4513C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>761F473B1A54E5BD00B98C3F</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>761F473C1A54E5C200B98C3F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>768990411AB8523C0046491F</string>
+				<string>765CEA151AB817DA00CC3E80</string>
+				<string>76856AE81A74A96100DF030C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>View</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>761F473D1A54E5C800B98C3F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>768CFF1E1A5D21720092F2B8</string>
+				<string>768CFF1F1A5D21720092F2B8</string>
+				<string>768CFF211A5D21800092F2B8</string>
+				<string>768CFF221A5D21800092F2B8</string>
+				<string>76049FF41A5ECB5200F80D24</string>
+				<string>76049FF51A5ECB5200F80D24</string>
+				<string>765CEA121AB7F4D300CC3E80</string>
+				<string>765CEA131AB7F4D300CC3E80</string>
+				<string>7689903E1AB84A5B0046491F</string>
+				<string>7689903F1AB84A5B0046491F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Control</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>761FD8D71A480427009D1A40</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>xiaokafei.geojson</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>761FD8D81A480427009D1A40</key>
+		<dict>
+			<key>fileRef</key>
+			<string>761FD8D71A480427009D1A40</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>761FD8D91A481D8D009D1A40</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7607EAA41A470F0300AB8E4D</string>
+				<string>7607EAA51A470F0300AB8E4D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Delegate</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>765CEA121AB7F4D300CC3E80</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>BigImageViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>765CEA131AB7F4D300CC3E80</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>BigImageViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>765CEA141AB7F4D300CC3E80</key>
+		<dict>
+			<key>fileRef</key>
+			<string>765CEA131AB7F4D300CC3E80</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>765CEA151AB817DA00CC3E80</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>765CEA161AB817FA00CC3E80</string>
+				<string>765CEA171AB817FA00CC3E80</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>MyOrderButton</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>765CEA161AB817FA00CC3E80</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RCDraggableButton.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>765CEA171AB817FA00CC3E80</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RCDraggableButton.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>765CEA181AB817FA00CC3E80</key>
+		<dict>
+			<key>fileRef</key>
+			<string>765CEA171AB817FA00CC3E80</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7674F7253FCE7F8D97A50825</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76856AE81A74A96100DF030C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>76856AE91A74A97D00DF030C</string>
+				<string>76856AEA1A74A97D00DF030C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ListView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76856AE91A74A97D00DF030C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ListView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76856AEA1A74A97D00DF030C</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ListView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76856AEB1A74A97D00DF030C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76856AEA1A74A97D00DF030C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>76856AEF1A74AB6300DF030C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PrefixHeader.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FB51AB823C30046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>avatar@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FB61AB823C30046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FB51AB823C30046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>76898FB81AB848AA0046491F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>76898FB91AB848AA0046491F</string>
+				<string>76898FBA1AB848AA0046491F</string>
+				<string>76898FBB1AB848AA0046491F</string>
+				<string>76898FBC1AB848AA0046491F</string>
+				<string>76898FBD1AB848AA0046491F</string>
+				<string>76898FBE1AB848AA0046491F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>&#21654;&#21857;</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FB91AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1381.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FBA1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1384.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FBB1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1385.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FBC1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1386.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FBD1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2008.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FBE1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2088.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FBF1AB848AA0046491F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>76898FC01AB848AA0046491F</string>
+				<string>76898FC11AB848AA0046491F</string>
+				<string>76898FC21AB848AA0046491F</string>
+				<string>76898FC31AB848AA0046491F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>&#22902;&#26132;&#65292;&#27801;&#20912;</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FC01AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2013.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FC11AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2042.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FC21AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2060.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FC31AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2089.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FC41AB848AA0046491F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>76898FC51AB848AA0046491F</string>
+				<string>76898FC61AB848AA0046491F</string>
+				<string>76898FC71AB848AA0046491F</string>
+				<string>76898FC81AB848AA0046491F</string>
+				<string>76898FC91AB848AA0046491F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>&#22902;&#33590;</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FC51AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1514.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FC61AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1530.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FC71AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1555.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FC81AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1985.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FC91AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2010.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FCA1AB848AA0046491F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>76898FCB1AB848AA0046491F</string>
+				<string>76898FCC1AB848AA0046491F</string>
+				<string>76898FCD1AB848AA0046491F</string>
+				<string>76898FCE1AB848AA0046491F</string>
+				<string>76898FCF1AB848AA0046491F</string>
+				<string>76898FD01AB848AA0046491F</string>
+				<string>76898FD11AB848AA0046491F</string>
+				<string>76898FD21AB848AA0046491F</string>
+				<string>76898FD31AB848AA0046491F</string>
+				<string>76898FD41AB848AA0046491F</string>
+				<string>76898FD51AB848AA0046491F</string>
+				<string>76898FD61AB848AA0046491F</string>
+				<string>76898FD71AB848AA0046491F</string>
+				<string>76898FD81AB848AA0046491F</string>
+				<string>76898FD91AB848AA0046491F</string>
+				<string>76898FDA1AB848AA0046491F</string>
+				<string>76898FDB1AB848AA0046491F</string>
+				<string>76898FDC1AB848AA0046491F</string>
+				<string>76898FDD1AB848AA0046491F</string>
+				<string>76898FDE1AB848AA0046491F</string>
+				<string>76898FDF1AB848AA0046491F</string>
+				<string>76898FE01AB848AA0046491F</string>
+				<string>76898FE11AB848AA0046491F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>&#26524;&#27713;</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FCB1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1425.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FCC1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1468.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FCD1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1482.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FCE1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1487.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FCF1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1531.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FD01AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1987.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FD11AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1990.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FD21AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1993.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FD31AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1996.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FD41AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2001.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FD51AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2030.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FD61AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2037.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FD71AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2038.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FD81AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2039.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FD91AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2043.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FDA1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2044.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FDB1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2051.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FDC1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2057.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FDD1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2058.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FDE1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2059.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FDF1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2086.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FE01AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2087.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FE11AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2090.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FE21AB848AA0046491F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>76898FE31AB848AA0046491F</string>
+				<string>76898FE41AB848AA0046491F</string>
+				<string>76898FE51AB848AA0046491F</string>
+				<string>76898FE61AB848AA0046491F</string>
+				<string>76898FE71AB848AA0046491F</string>
+				<string>76898FE81AB848AA0046491F</string>
+				<string>76898FE91AB848AA0046491F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>&#31616;&#39184;&#23567;&#39135;</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FE31AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1420.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FE41AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1539.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FE51AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1546.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FE61AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1547.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FE71AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1580.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FE81AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1581.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FE91AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1587.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FEA1AB848AA0046491F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>76898FEB1AB848AA0046491F</string>
+				<string>76898FEC1AB848AA0046491F</string>
+				<string>76898FED1AB848AA0046491F</string>
+				<string>76898FEE1AB848AA0046491F</string>
+				<string>76898FEF1AB848AA0046491F</string>
+				<string>76898FF01AB848AA0046491F</string>
+				<string>76898FF11AB848AA0046491F</string>
+				<string>76898FF21AB848AA0046491F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>&#31957;&#28857;</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FEB1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1522.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FEC1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1529.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FED1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1554.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FEE1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1588.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FEF1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1642.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FF01AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1643.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FF11AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2055.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FF21AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2056.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FF31AB848AA0046491F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>76898FF41AB848AA0046491F</string>
+				<string>76898FF51AB848AA0046491F</string>
+				<string>76898FF61AB848AA0046491F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>&#33457;&#33590;</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FF41AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2009.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FF51AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2015.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FF61AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_2020.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FF71AB848AA0046491F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>76898FF81AB848AA0046491F</string>
+				<string>76898FF91AB848AA0046491F</string>
+				<string>76898FFA1AB848AA0046491F</string>
+				<string>76898FFB1AB848AA0046491F</string>
+				<string>76898FFC1AB848AA0046491F</string>
+				<string>76898FFD1AB848AA0046491F</string>
+				<string>76898FFE1AB848AA0046491F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>&#40481;&#23614;&#37202;</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FF81AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1419.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FF91AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1471.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FFA1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1489.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FFB1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1757.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FFC1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1774.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FFD1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1803.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FFE1AB848AA0046491F</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>IMG_1804.JPG</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76898FFF1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FB91AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990001AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FBA1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990011AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FBB1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990021AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FBC1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990031AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FBD1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990041AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FBE1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990051AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FC01AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990061AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FC11AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990071AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FC21AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990081AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FC31AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990091AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FC51AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689900A1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FC61AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689900B1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FC71AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689900C1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FC81AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689900D1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FC91AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689900E1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FCB1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689900F1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FCC1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990101AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FCD1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990111AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FCE1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990121AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FCF1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990131AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FD01AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990141AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FD11AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990151AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FD21AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990161AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FD31AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990171AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FD41AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990181AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FD51AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990191AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FD61AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689901A1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FD71AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689901B1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FD81AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689901C1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FD91AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689901D1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FDA1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689901E1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FDB1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689901F1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FDC1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990201AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FDD1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990211AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FDE1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990221AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FDF1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990231AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FE01AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990241AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FE11AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990251AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FE31AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990261AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FE41AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990271AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FE51AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990281AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FE61AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990291AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FE71AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689902A1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FE81AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689902B1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FE91AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689902C1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FEB1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689902D1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FEC1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689902E1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FED1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689902F1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FEE1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990301AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FEF1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990311AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FF01AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990321AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FF11AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990331AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FF21AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990341AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FF41AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990351AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FF51AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990361AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FF61AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990371AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FF81AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990381AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FF91AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990391AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FFA1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689903A1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FFB1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689903B1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FFC1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689903C1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FFD1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689903D1AB848AA0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76898FFE1AB848AA0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7689903E1AB84A5B0046491F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MyOrderViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7689903F1AB84A5B0046491F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MyOrderViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>768990401AB84A5B0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7689903F1AB84A5B0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990411AB8523C0046491F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>768990451AB852680046491F</string>
+				<string>768990461AB852680046491F</string>
+				<string>768990421AB8523C0046491F</string>
+				<string>768990431AB8523C0046491F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>CCMPlayNDropView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>768990421AB8523C0046491F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CCMPlayNDropView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>768990431AB8523C0046491F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CCMPlayNDropView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>768990441AB8523C0046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>768990431AB8523C0046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768990451AB852680046491F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CCMBorderView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>768990461AB852680046491F</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CCMBorderView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>768990471AB852680046491F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>768990461AB852680046491F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768CFF191A5D1C020092F2B8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file</string>
+			<key>path</key>
+			<string>&#36855;&#20320;&#31616;&#26575;&#38738;.ttf</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>768CFF1A1A5D1C020092F2B8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>768CFF191A5D1C020092F2B8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768CFF1E1A5D21720092F2B8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FirstPageViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>768CFF1F1A5D21720092F2B8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FirstPageViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>768CFF201A5D21720092F2B8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>768CFF1F1A5D21720092F2B8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>768CFF211A5D21800092F2B8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>LIstViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>768CFF221A5D21800092F2B8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>LIstViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>768CFF231A5D21800092F2B8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>768CFF221A5D21800092F2B8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>769749D21A5FAF5F00A76FCD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>launch_des.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>769749D31A5FAF5F00A76FCD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>launch_title.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>769749D41A5FAF5F00A76FCD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>769749D21A5FAF5F00A76FCD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>769749D51A5FAF5F00A76FCD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>769749D31A5FAF5F00A76FCD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>76C24AEC1A5A7C8B00FFF530</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>76898FB81AB848AA0046491F</string>
+				<string>76898FBF1AB848AA0046491F</string>
+				<string>76898FC41AB848AA0046491F</string>
+				<string>76898FCA1AB848AA0046491F</string>
+				<string>76898FE21AB848AA0046491F</string>
+				<string>76898FEA1AB848AA0046491F</string>
+				<string>76898FF31AB848AA0046491F</string>
+				<string>76898FF71AB848AA0046491F</string>
+				<string>769749D21A5FAF5F00A76FCD</string>
+				<string>769749D31A5FAF5F00A76FCD</string>
+				<string>76898FB51AB823C30046491F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>pictures</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>78181C5567026BF1617CC7B7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A889E32936E243EFCAF1C74F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>E75140C8E5E073833CB5B68C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7674F7253FCE7F8D97A50825</string>
+				<string>78181C5567026BF1617CC7B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EA5019F9736D5EFE20823951</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F4AFFB38A5F82C83D12F92A9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>EA5019F9736D5EFE20823951</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FAE3CC0BEB161DC034E70E62</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>7607EA951A470F0300AB8E4D</string>
+</dict>
+</plist>

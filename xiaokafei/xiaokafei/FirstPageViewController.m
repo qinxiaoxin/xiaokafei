@@ -54,7 +54,25 @@
     _avatar.tapBlock = ^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in customView ===  Tap!!! ===");
         //More todo here.
+        UIViewController *popin = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MyOrderViewController"];
+        popin.view.bounds = CGRectMake(0, 0, 320, 480);
+        [popin setPopinTransitionStyle:BKTPopinTransitionStyleSnap];
+        //[popin setPopinOptions:BKTPopinDisableAutoDismiss];
+        BKTBlurParameters *blurParameters = [[BKTBlurParameters alloc] init];
+        //blurParameters.alpha = 0.5;
+        blurParameters.tintColor = [UIColor colorWithWhite:0 alpha:0.5];
+        blurParameters.radius = 0.3;
+        [popin setBlurParameters:blurParameters];
+        [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
+        //popin.presentingController = self;
         
+        //Present popin on the desired controller
+        //Note that if you are using a UINavigationController, the navigation bar will be active if you present
+        // the popin on the visible controller instead of presenting it on the navigation controller
+
+        [self presentPopinController:popin animated:YES completion:^{
+            NSLog(@"Popin presented !");
+        }];
         
     };
     

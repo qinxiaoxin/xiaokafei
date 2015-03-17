@@ -10,6 +10,9 @@
 
 @interface MyOrderViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *blueBoard;
+@property (weak, nonatomic) IBOutlet UIView *whiteBoard;
+
 @end
 
 @implementation MyOrderViewController
@@ -17,12 +20,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //
+    self.view.backgroundColor = RGBA(232, 222, 204, 1);
+    //
+    _blueBoard.backgroundColor = RGBA(3, 135, 151, 1);
+    //
+    _whiteBoard.backgroundColor = RGBA(226, 226, 226, 1);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)CCMPlayNDropViewWillStartDismissAnimationWithDynamics:(CCMPlayNDropView *)view{
+    self.view.superview.userInteractionEnabled = NO;
+    self.view.userInteractionEnabled = NO;
+}
+
+-(void)CCMPlayNDropViewDidFinishDismissAnimationWithDynamics:(CCMPlayNDropView *)view{
+    self.view.superview.userInteractionEnabled = YES;
+    CGRect frame = self.view.frame;
+    frame.origin.y = -1000;
+    self.view.frame = frame;
+    [self.parentViewController dismissCurrentPopinControllerAnimated:YES];
+    
+}
+
 
 /*
 #pragma mark - Navigation
