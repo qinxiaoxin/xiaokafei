@@ -38,9 +38,7 @@
 {
     _avatar = [[RCDraggableButton alloc] initInView:self.view WithFrame:CGRectMake(SCREEN_WIDTH - MY_ORDER_BUTTON_DIAMETER, 0, MY_ORDER_BUTTON_DIAMETER, MY_ORDER_BUTTON_DIAMETER)];
     
-//    NSLog(@"%f",self.myOrderOffset.origin.y);
-    
-    if (self.myOrderOffset.origin.y > 0) {
+    if (self.myOrderOffset.origin.y > 0 || self.myOrderOffset.origin.x > 0) {
         _avatar.frame = self.myOrderOffset;
     }
     
@@ -56,6 +54,7 @@
     _avatar.tapBlock = ^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in customView ===  Tap!!! ===");
         //More todo here.
+        
         
     };
     
