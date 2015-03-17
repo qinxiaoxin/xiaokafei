@@ -42,3 +42,8 @@
 #define RECTANGLE_BORDER_WIDTH                  15.f
 
 #define SHADOW_RADIUS                           20.f
+
+#define SCREEN_WIDTH                            [[UIScreen mainScreen] applicationFrame].size.width
+#define SCREEN_HEIGHT                           [[UIScreen mainScreen] applicationFrame].size.height
+
+#define MY_ORDER_BUTTON_DIAMETER                100

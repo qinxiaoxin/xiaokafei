@@ -14,7 +14,6 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
@@ -64,9 +63,6 @@
         
     }else
         NSLog(@"error while deserializing the JSON data !");
-    
-    
-    
 }
 
 @end

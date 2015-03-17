@@ -8,7 +8,6 @@
 
 #import "FirstPageViewController.h"
 #import "LIstViewController.h"
-#import "AppDelegate.h"
 
 @interface FirstPageViewController ()
 
@@ -21,9 +20,61 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self myOrderButton];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)myOrderButton
+{
+    RCDraggableButton *avatar = [[RCDraggableButton alloc] initInView:self.view WithFrame:CGRectMake(SCREEN_WIDTH - MY_ORDER_BUTTON_DIAMETER, 0, MY_ORDER_BUTTON_DIAMETER, MY_ORDER_BUTTON_DIAMETER)];
+    self.myOrderOffset = avatar.frame;
+    [avatar setBackgroundImage:[UIImage imageNamed:@"avatar"] forState:UIControlStateNormal];
+    [avatar setAutoDocking:NO];
+    
+    avatar.longPressBlock = ^(RCDraggableButton *avatar) {
+        NSLog(@"\n\tAvatar in customView ===  LongPress!!! ===");
+        //More todo here.
+        
+    };
+    
+    avatar.tapBlock = ^(RCDraggableButton *avatar) {
+        NSLog(@"\n\tAvatar in customView ===  Tap!!! ===");
+        //More todo here.
+        
+    };
+    
+    avatar.draggingBlock = ^(RCDraggableButton *avatar) {
+        NSLog(@"\n\tAvatar in customView === Dragging!!! ===");
+        //More todo here.
+        
+    };
+    
+    avatar.dragDoneBlock = ^(RCDraggableButton *avatar) {
+        NSLog(@"\n\tAvatar in customView === DragDone!!! ===");
+        self.myOrderOffset = avatar.frame;
+        //More todo here.
+        
+    };
+    
+    avatar.autoDockingBlock = ^(RCDraggableButton *avatar) {
+        NSLog(@"\n\tAvatar in customView === AutoDocking!!! ===");
+        //More todo here.
+        
+    };
+    
+    avatar.autoDockingDoneBlock = ^(RCDraggableButton *avatar) {
+        NSLog(@"\n\tAvatar in customView === AutoDockingDone!!! ===");
+        //More todo here.
+        
+    };
 }
 
 
@@ -32,6 +83,7 @@
 - (void)prepareListViewController:(LIstViewController *)lvc toArray:(NSArray *)array
 {
     lvc.array = array;
+    lvc.myOrderOffset = self.myOrderOffset;
 }
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -73,6 +125,5 @@
         }
     }
 }
-
 
 @end

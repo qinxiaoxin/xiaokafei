@@ -45,22 +45,10 @@
             "image":"IMG_1522.JPG"
             },
             {
-            "name":"杏仁三文鱼酥",
-            "ename":"Almond Salmon Pastry",
-            "price":"¥18",
-            "image":"IMG_1522.JPG"
-            },
-            {
             "name":"南瓜蛋挞",
             "ename":"Pumpkin Pie",
             "price":"¥18",
             "image":"IMG_1554.JPG"
-            },
-            {
-            "name":"苹果蛋挞",
-            "ename":"Apple Pie",
-            "price":"¥18",
-            "image":"IMG_1532.JPG"
             },
             {
             "name":"马卡龙",
@@ -91,12 +79,6 @@
             "ename":"Butter Roll",
             "price":"¥12",
             "image":"IMG_1529.JPG"
-            },
-            {
-            "name":"草莓泡芙",
-            "ename":"Strawberry Puff",
-            "price":"¥12",
-            "image":"IMG_1523.JPG"
             },
             {
             "name":"抹茶黄桃",
@@ -178,12 +160,6 @@
             "ename":"",
             "price":"¥18",
             "image":"IMG_1587.JPG"
-            },
-            {
-            "name":"马卡龙",
-            "ename":"",
-            "price":"¥60",
-            "image":"IMG_1588.JPG"
             }],
     
     "milk_tea":[{
@@ -302,12 +278,6 @@
              "ename":"",
              "price":"¥18",
              "image":"IMG_1468.JPG"
-             },
-             {
-             "name":"海洋巧克力",
-             "ename":"",
-             "price":"¥24",
-             "image":"IMG_1503.JPG"
              },
              {
              "name":"妃子笑",

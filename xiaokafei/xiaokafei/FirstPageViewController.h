@@ -10,4 +10,6 @@
 
 @interface FirstPageViewController : UIViewController
 
+@property (nonatomic, assign) CGRect myOrderOffset;
+
 @end

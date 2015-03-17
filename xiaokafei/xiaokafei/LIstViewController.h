@@ -13,4 +13,6 @@
 @property (nonatomic, strong) NSArray *array;
 @property (nonatomic, assign) CGPoint offset;
 
+@property (nonatomic, assign) CGRect myOrderOffset;
+
 @end

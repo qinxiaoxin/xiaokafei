@@ -10,8 +10,10 @@
 
 @interface DetailViewController : UIViewController
 
-@property (nonatomic, copy) NSString *aImageStr;
 @property (nonatomic, copy) NSArray *aArray;
 @property (nonatomic, assign) CGPoint offset;
+@property (nonatomic, assign) NSInteger tag;
+
+@property (nonatomic, assign) CGRect myOrderOffset;
 
 @end
