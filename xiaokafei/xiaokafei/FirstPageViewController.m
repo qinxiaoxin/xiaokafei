@@ -51,10 +51,14 @@
         
     };
     
+    __weak typeof(self) weakSelf = self;
     _avatar.tapBlock = ^(RCDraggableButton *avatar) {
-        NSLog(@"\n\tAvatar in customView ===  Tap!!! ===");
+        NSLog(@"Avatar in customView ===  Tap!!! ===");
         //More todo here.
-        UIViewController *popin = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MyOrderViewController"];
+        
+        //popin
+//        UIViewController *popin = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MyOrderViewController"];
+        MyOrderViewController *popin = [[MyOrderViewController alloc] init];
         popin.view.bounds = CGRectMake(0, 0, 320, 480);
         [popin setPopinTransitionStyle:BKTPopinTransitionStyleSnap];
         //[popin setPopinOptions:BKTPopinDisableAutoDismiss];
@@ -69,8 +73,13 @@
         //Present popin on the desired controller
         //Note that if you are using a UINavigationController, the navigation bar will be active if you present
         // the popin on the visible controller instead of presenting it on the navigation controller
+        
+        //query db
+        FMDBService *dbService = [[FMDBService alloc] init];
+        NSMutableArray *mArray = [dbService queryData];
+        popin.mArray = mArray;
 
-        [self presentPopinController:popin animated:YES completion:^{
+        [weakSelf presentPopinController:popin animated:YES completion:^{
             NSLog(@"Popin presented !");
         }];
         

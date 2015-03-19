@@ -10,9 +10,7 @@
 #import "LIstViewController.h"
 #import "BigImageViewController.h"
 
-@interface DetailViewController (){
-    int a;
-}
+@interface DetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *appTipLable;
 
@@ -42,8 +40,6 @@
 - (void)initView
 {
     _appTipLable.alpha = 0.f;
-    
-    a = 0;
     
     _scrollView.contentSize = CGSizeMake(SCREEN_WIDTH * self.aArray.count, 0);
     _scrollView.scrollEnabled = YES;
@@ -98,10 +94,13 @@
         
     };
     
+    __weak typeof(self) weakSelf = self;
     _avatar.tapBlock = ^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in customView ===  Tap!!! ===");
         //More todo here.
-        UIViewController *popin = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MyOrderViewController"];
+        
+        //popin
+        MyOrderViewController *popin = [[MyOrderViewController alloc] init];
         popin.view.bounds = CGRectMake(0, 0, 320, 480);
         [popin setPopinTransitionStyle:BKTPopinTransitionStyleSnap];
         //[popin setPopinOptions:BKTPopinDisableAutoDismiss];
@@ -117,7 +116,12 @@
         //Note that if you are using a UINavigationController, the navigation bar will be active if you present
         // the popin on the visible controller instead of presenting it on the navigation controller
         
-        [self presentPopinController:popin animated:YES completion:^{
+        //query db
+        FMDBService *dbService = [[FMDBService alloc] init];
+        NSMutableArray *mArray = [dbService queryData];
+        popin.mArray = mArray;
+        
+        [weakSelf presentPopinController:popin animated:YES completion:^{
             NSLog(@"Popin presented !");
         }];
         
@@ -185,21 +189,19 @@
 
 - (IBAction)orderAction:(id)sender
 {
-    if (a == 10) {
-        UIAlertView *av = [[UIAlertView alloc] initWithTitle:nil message:@"Opppsssss......您是大胃王" delegate:self cancelButtonTitle:@"擦" otherButtonTitles:nil, nil];
-        [av show];
-        return;
-    }
-    
-    a++;
-    NSString *order = [NSString stringWithFormat:@"+%d",a];
-    _appTipLable.text = order;
-
-     _appTipLable.alpha = 1.f;
+    _appTipLable.alpha = 1.f;
+    _appTipLable.text = @"+1";
      [UIView animateWithDuration:0.5f animations:^{
          _appTipLable.alpha = 0.f;
      } completion:^(BOOL finished) {
-         
+         //找出当前scroll view 位置 并计算出order的对象内容
+         NSInteger tag = _scrollView.contentOffset.x / SCREEN_WIDTH;
+         //创建字典
+         NSDictionary *dic = [self.aArray objectAtIndex:tag];
+         debugLog(@"dic = %@",dic);
+         //插入到db
+         FMDBService *dbService = [[FMDBService alloc] init];
+         [dbService insertData:dic];
      }];
 }
 

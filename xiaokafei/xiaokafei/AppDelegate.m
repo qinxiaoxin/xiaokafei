@@ -32,6 +32,7 @@
 
 - (void)initData
 {
+    // fetch json
     NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"xiaokafei" ofType:@"geojson"]];
     id objectData = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:NULL];
     if ([objectData isKindOfClass:[NSDictionary class]]) {
@@ -63,6 +64,11 @@
         
     }else
         NSLog(@"error while deserializing the JSON data !");
+    
+    
+    //create db
+    FMDBService *dbService = [[FMDBService alloc] init];
+    [dbService createTable];
 }
 
 @end

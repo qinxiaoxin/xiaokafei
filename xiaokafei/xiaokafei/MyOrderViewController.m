@@ -10,9 +10,6 @@
 
 @interface MyOrderViewController ()
 
-@property (weak, nonatomic) IBOutlet UIView *blueBoard;
-@property (weak, nonatomic) IBOutlet UIView *whiteBoard;
-
 @end
 
 @implementation MyOrderViewController
@@ -22,10 +19,16 @@
     // Do any additional setup after loading the view.
     //
     self.view.backgroundColor = RGBA(232, 222, 204, 1);
-    //
-    _blueBoard.backgroundColor = RGBA(3, 135, 151, 1);
-    //
-    _whiteBoard.backgroundColor = RGBA(226, 226, 226, 1);
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    //reload table view
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,12 +36,15 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)CCMPlayNDropViewWillStartDismissAnimationWithDynamics:(CCMPlayNDropView *)view{
+
+#pragma mark - CCMPlayNDropViewDelegate
+
+- (void)CCMPlayNDropViewWillStartDismissAnimationWithDynamics:(CCMPlayNDropView *)view{
     self.view.superview.userInteractionEnabled = NO;
     self.view.userInteractionEnabled = NO;
 }
 
--(void)CCMPlayNDropViewDidFinishDismissAnimationWithDynamics:(CCMPlayNDropView *)view{
+- (void)CCMPlayNDropViewDidFinishDismissAnimationWithDynamics:(CCMPlayNDropView *)view{
     self.view.superview.userInteractionEnabled = YES;
     CGRect frame = self.view.frame;
     frame.origin.y = -1000;
@@ -46,6 +52,43 @@
     [self.parentViewController dismissCurrentPopinControllerAnimated:YES];
     
 }
+
+
+#pragma mark - table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // Return the number of sections.
+    debugMethod();
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // Return the number of rows in the section.
+    debugMethod();
+    return self.mArray.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    debugMethod();
+    
+    static NSString *CellIdentifier = @"ListCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    NSDictionary *dic = [self.mArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = [dic valueForKeyPath:@"name"];
+    cell.detailTextLabel.text = [dic valueForKeyPath:@"price"];
+    
+    return cell;
+}
+
+
+
+
+#pragma mark - table view delegate
+
+
+
 
 
 /*

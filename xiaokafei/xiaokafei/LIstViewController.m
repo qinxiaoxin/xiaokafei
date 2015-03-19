@@ -16,7 +16,6 @@
 @interface LIstViewController ()<ListViewButtonProtocol>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UILabel *tipLabel;
 
 @property (strong, nonatomic) RCDraggableButton *avatar;
 
@@ -52,17 +51,10 @@
     ListView *lv = [[ListView alloc] initWithFrame:CGRectZero passArray:self.array];
     lv.delegate = self;
     
-    if (self.array.count < 7) {
-        _tipLabel.hidden = YES;
-    }
-    
-//    _tipLabel.textColor = RGBA(232, 222, 204, 1);
-    
     _scrollView.contentSize = CGSizeMake(0, lv.frame.size.height);
     _scrollView.contentOffset = self.offset;
 
     [_scrollView addSubview:lv];
-    
     
     [self myOrderButton];
 }
@@ -80,10 +72,13 @@
         
     };
     
+    __weak typeof(self) weakSelf = self;
     _avatar.tapBlock = ^(RCDraggableButton *avatar) {
         NSLog(@"\n\tAvatar in customView ===  Tap!!! ===");
         //More todo here.
-        UIViewController *popin = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MyOrderViewController"];
+        
+        //popin
+        MyOrderViewController *popin = [[MyOrderViewController alloc] init];
         popin.view.bounds = CGRectMake(0, 0, 320, 480);
         [popin setPopinTransitionStyle:BKTPopinTransitionStyleSnap];
         //[popin setPopinOptions:BKTPopinDisableAutoDismiss];
@@ -99,7 +94,12 @@
         //Note that if you are using a UINavigationController, the navigation bar will be active if you present
         // the popin on the visible controller instead of presenting it on the navigation controller
         
-        [self presentPopinController:popin animated:YES completion:^{
+        //query db
+        FMDBService *dbService = [[FMDBService alloc] init];
+        NSMutableArray *mArray = [dbService queryData];
+        popin.mArray = mArray;
+        
+        [weakSelf presentPopinController:popin animated:YES completion:^{
             NSLog(@"Popin presented !");
         }];
         
