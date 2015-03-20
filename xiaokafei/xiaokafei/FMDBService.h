@@ -13,6 +13,7 @@
 - (void)createTable;
 - (void)insertData:(NSDictionary *)dic;
 - (NSMutableArray *)queryData;
-- (void)clearAll;
+- (void)deleteData:(NSString *)name;
+- (void)clearAllData;
 
 @end

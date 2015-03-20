@@ -35,7 +35,7 @@
             [listViewButton setTitle:_title forState:UIControlStateNormal];
             [listViewButton setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
             listViewButton.titleLabel.tintColor = [UIColor whiteColor];
-            listViewButton.titleLabel.font = [UIFont fontWithName:@"MINIj4gj" size:50.f];
+            listViewButton.titleLabel.font = [UIFont fontWithName:Font size:50.f];
             [listViewButton addTarget:self action:@selector(listViewButtonClick:) forControlEvents:UIControlEventTouchUpInside];
             
             [self addSubview:listViewButton];

@@ -9,10 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "CCMPlayNDropView.h"
 
-@interface MyOrderViewController : UIViewController<CCMPlayNDropViewDelegate,UITableViewDataSource,UITableViewDelegate>
-
-@property (nonatomic, strong) NSMutableArray *mArray;
-
-@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@interface MyOrderViewController : UIViewController<CCMPlayNDropViewDelegate>
 
 @end

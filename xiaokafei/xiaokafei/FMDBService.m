@@ -85,9 +85,37 @@
     return array;
 }
 
-- (void)clearAll
+- (void)deleteData:(NSString *)name
 {
-    
+    NSString * dbPath = [PATH_OF_DOCUMENT stringByAppendingPathComponent:@"user.sqlite"];
+    FMDatabase * db = [FMDatabase databaseWithPath:dbPath];
+    if ([db open]) {
+//        NSString * sql = @"delete from user where id not in (select min(id) from user group by name)";
+        NSString *sql = @"delete from user where name = ?";
+        BOOL res = [db executeUpdate:sql,name];
+        if (!res) {
+            debugLog(@"error to delete db data");
+        } else {
+            debugLog(@"succ to deleta db data");
+        }
+        [db close];
+    }
+}
+
+- (void)clearAllData
+{
+    NSString * dbPath = [PATH_OF_DOCUMENT stringByAppendingPathComponent:@"user.sqlite"];
+    FMDatabase * db = [FMDatabase databaseWithPath:dbPath];
+    if ([db open]) {
+        NSString * sql = @"delete from user";
+        BOOL res = [db executeUpdate:sql];
+        if (!res) {
+            debugLog(@"error to delete db data");
+        } else {
+            debugLog(@"succ to deleta db data");
+        }
+        [db close];
+    }
 }
 
 @end

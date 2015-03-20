@@ -8,6 +8,18 @@
                 "image":"IMG_1385.JPG"
                },
                {
+               "name":"摩卡",
+               "ename":"Mocha",
+               "price":"¥24",
+               "image":"IMG_2093.JPG"
+               },
+               {
+               "name":"香草奇诺",
+               "ename":"Cappuccino",
+               "price":"¥24",
+               "image":"IMG_1385.JPG"
+               },
+               {
                "name":"拿铁",
                "ename":"Latte",
                "price":"¥22",
@@ -28,8 +40,20 @@
                {
                "name":"盆栽咖啡",
                "ename":"Pot Coffee",
-               "price":"¥26",
+               "price":"¥24",
                "image":"IMG_1386.JPG"
+               },
+               {
+               "name":"紫薯拿铁",
+               "ename":"Purple Yam Latte",
+               "price":"¥22",
+               "image":"IMG_2010.JPG"
+               },
+               {
+               "name":"冰咖啡",
+               "ename":"Cappuccino",
+               "price":"¥24",
+               "image":"IMG_2131.JPG"
                },
                {
                "name":"美式咖啡",
@@ -39,18 +63,6 @@
                }],
     
     "cake":[{
-            "name":"奶油千层酥",
-            "ename":"Butter Pastry",
-            "price":"¥18",
-            "image":"IMG_1522.JPG"
-            },
-            {
-            "name":"南瓜蛋挞",
-            "ename":"Pumpkin Pie",
-            "price":"¥18",
-            "image":"IMG_1554.JPG"
-            },
-            {
             "name":"马卡龙",
             "ename":"Macarons",
             "price":"¥60",
@@ -75,7 +87,7 @@
             "image":"IMG_2056.JPG"
             },
             {
-            "name":"奶油卷",
+            "name":"奶油蛋卷",
             "ename":"Butter Roll",
             "price":"¥12",
             "image":"IMG_1529.JPG"
@@ -121,45 +133,21 @@
              {
              "name":"轰炸机",
              "ename":"Bomber",
-             "price":"¥26",
+             "price":"¥22",
              "image":"IMG_1471.JPG"
              }],
     
     "food":[{
-            "name":"黑胡椒牛肉饭",
-            "ename":"",
-            "price":"¥22",
-            "image":"IMG_1581.JPG"
-            },
-            {
-            "name":"意式牛腩饭",
-            "ename":"",
-            "price":"¥22",
-            "image":"IMG_1580.JPG"
-            },
-            {
-            "name":"鸡块",
-            "ename":"",
-            "price":"¥12",
-            "image":"IMG_1539.JPG"
-            },
-            {
-            "name":"芝士虾球",
-            "ename":"",
-            "price":"¥18",
-            "image":"IMG_1546.JPG"
-            },
-            {
             "name":"水果沙拉",
             "ename":"",
-            "price":"¥35",
-            "image":"IMG_1420.JPG"
+            "price":"¥30",
+            "image":"IMG_2104.JPG"
             },
             {
-            "name":"杏仁三文鱼酥",
+            "name":"爆米花",
             "ename":"",
-            "price":"¥18",
-            "image":"IMG_1587.JPG"
+            "price":"¥12",
+            "image":"IMG_2101.JPG"
             }],
     
     "milk_tea":[{
@@ -169,10 +157,22 @@
                 "image":"IMG_1985.JPG"
                 },
                 {
-                "name":"伯爵奶茶",
+                "name":"英式奶茶",
                 "ename":"",
                 "price":"¥20",
                 "image":"IMG_1555.JPG"
+                },
+                {
+                "name":"抹茶奶茶",
+                "ename":"",
+                "price":"¥20",
+                "image":"IMG_2128.JPG"
+                },
+                {
+                "name":"巧克力奶茶",
+                "ename":"",
+                "price":"¥20",
+                "image":"IMG_2120.JPG"
                 },
                 {
                 "name":"海洋巧克力",
@@ -181,10 +181,16 @@
                 "image":"IMG_1530.JPG"
                 },
                 {
-                "name":"紫薯拿铁",
+                "name":"木瓜果奶",
                 "ename":"",
-                "price":"¥22",
-                "image":"IMG_2010.JPG"
+                "price":"¥20",
+                "image":"IMG_2127.JPG"
+                },
+                {
+                "name":"香蕉果奶",
+                "ename":"",
+                "price":"¥20",
+                "image":"IMG_2126.JPG"
                 },
                 {
                 "name":"蓝色苏格兰",
@@ -215,8 +221,14 @@
     "milk_flake":[{
                   "name":"香蕉奶昔",
                   "ename":"",
-                  "price":"¥24",
+                  "price":"¥22",
                   "image":"IMG_2013.JPG"
+                  },
+                  {
+                  "name":"抹茶奶昔",
+                  "ename":"",
+                  "price":"¥24",
+                  "image":"IMG_2111.JPG"
                   },
                   {
                   "name":"芒果沙冰",
@@ -242,6 +254,18 @@
              "ename":"",
              "price":"¥20",
              "image":"IMG_2058.JPG"
+             },
+             {
+             "name":"柚香蔓越莓",
+             "ename":"",
+             "price":"¥20",
+             "image":"IMG_2097.JPG"
+             },
+             {
+             "name":"葡萄柚草莓汁",
+             "ename":"",
+             "price":"¥20",
+             "image":"IMG_2092.JPG"
              },
              {
              "name":"粉末",

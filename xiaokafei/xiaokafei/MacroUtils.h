@@ -53,3 +53,10 @@
 *   Color
 */
 #define RGBA(r,g,b,a)  [UIColor colorWithRed:(float)r/255.f green:(float)g/255.f blue:(float)b/255.f  alpha:a]
+
+
+/**
+*   Font
+*/
+
+#define Font                               @"MINIj4gj"
