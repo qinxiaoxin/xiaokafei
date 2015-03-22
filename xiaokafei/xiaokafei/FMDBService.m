@@ -89,10 +89,17 @@
 {
     NSString * dbPath = [PATH_OF_DOCUMENT stringByAppendingPathComponent:@"user.sqlite"];
     FMDatabase * db = [FMDatabase databaseWithPath:dbPath];
+    NSString *userStr;
     if ([db open]) {
-//        NSString * sql = @"delete from user where id not in (select min(id) from user group by name)";
-        NSString *sql = @"delete from user where name = ?";
-        BOOL res = [db executeUpdate:sql,name];
+        NSString * sql1 = @"select id from user where name = ?";
+        FMResultSet * rs = [db executeQuery:sql1,name];
+        while ([rs next]) {
+            int userId = [rs intForColumn:@"id"];
+            userStr = [NSString stringWithFormat:@"%d",userId];
+        }
+        
+        NSString * sql2 = @"delete from user where id = ?";
+        BOOL res = [db executeUpdate:sql2,userStr];
         if (!res) {
             debugLog(@"error to delete db data");
         } else {

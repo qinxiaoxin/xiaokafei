@@ -17,6 +17,8 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (nonatomic, strong) FMDBService *dbService;
+
 @end
 
 @implementation MyOrderViewController
@@ -29,8 +31,8 @@
     self.view.backgroundColor = RGBA(232, 222, 204, 1);
     
     //operate db
-    FMDBService *dbService = [[FMDBService alloc] init];
-    _dbArray = [dbService queryData];
+    _dbService = [[FMDBService alloc] init];
+    _dbArray = [_dbService queryData];
     
     if (_dbArray) {
         //reload table view
@@ -149,9 +151,9 @@
     }else{
         NSDictionary *dic = [self.dbArray objectAtIndex:prepareDeleteArrayIndex];
         NSString *name = [dic valueForKeyPath:@"name"];
-        FMDBService *dbService = [[FMDBService alloc] init];
-        [dbService deleteData:name];
-        self.dbArray = [dbService queryData];
+        _dbService = [[FMDBService alloc] init];
+        [_dbService deleteData:name];
+        self.dbArray = [_dbService queryData];
         [self.tableView reloadData];
     }
 }
@@ -162,9 +164,8 @@
 
 - (IBAction)clearOrder:(id)sender
 {
-    FMDBService *dbService = [[FMDBService alloc] init];
-    [dbService clearAllData];
-    _dbArray = [dbService queryData];
+    [_dbService clearAllData];
+    _dbArray = [_dbService queryData];
     [self.tableView reloadData];
 }
 
