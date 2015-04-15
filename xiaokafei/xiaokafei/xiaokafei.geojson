@@ -26,12 +26,6 @@
                "image":"IMG_2088.JPG"
                },
                {
-               "name":"玫瑰拿铁",
-               "ename":"Rose Latte",
-               "price":"¥24",
-               "image":"IMG_1381.JPG"
-               },
-               {
                "name":"焦糖玛琪",
                "ename":"Caramel Macchiato",
                "price":"¥24",
@@ -63,10 +57,10 @@
                }],
     
     "cake":[{
-            "name":"马卡龙",
-            "ename":"Macarons",
-            "price":"¥60",
-            "image":"IMG_1588.JPG"
+            "name":"抹茶蛋糕",
+            "ename":"Matcha Cake",
+            "price":"¥18",
+            "image":"IMG_2216.JPG"
             },
             {
             "name":"黑森林",
@@ -85,18 +79,6 @@
             "ename":"Cranberry Cheese",
             "price":"¥18",
             "image":"IMG_2056.JPG"
-            },
-            {
-            "name":"奶油蛋卷",
-            "ename":"Butter Roll",
-            "price":"¥12",
-            "image":"IMG_1529.JPG"
-            },
-            {
-            "name":"抹茶黄桃",
-            "ename":"Maccha Yellow Peach",
-            "price":"¥18",
-            "image":"IMG_1642.JPG"
             }],
     
     "drink":[
@@ -141,13 +123,43 @@
             "name":"水果沙拉",
             "ename":"",
             "price":"¥30",
-            "image":"IMG_2104.JPG"
+            "image":"IMG_2101.JPG"
+            },
+            {
+            "name":"薯条",
+            "ename":"",
+            "price":"¥12",
+            "image":"IMG_2166.JPG"
             },
             {
             "name":"爆米花",
             "ename":"",
             "price":"¥12",
-            "image":"IMG_2101.JPG"
+            "image":"IMG_2104.JPG"
+            },
+            {
+            "name":"意式香蒜烧汁烩牛肉",
+            "ename":"",
+            "price":"¥20",
+            "image":"IMG_2170.JPG"
+            },
+            {
+            "name":"德式香蒜烧汁烩鸡肉",
+            "ename":"",
+            "price":"¥18",
+            "image":"IMG_2171.JPG"
+            },
+            {
+            "name":"排骨饭",
+            "ename":"",
+            "price":"¥18",
+            "image":"IMG_2178.JPG"
+            },
+            {
+            "name":"凤尾虾饭",
+            "ename":"",
+            "price":"¥18",
+            "image":"IMG_2177.JPG"
             }],
     
     "milk_tea":[{
@@ -260,6 +272,36 @@
              "ename":"",
              "price":"¥20",
              "image":"IMG_2097.JPG"
+             },
+             {
+             "name":"樱桃蔓越莓",
+             "ename":"",
+             "price":"¥18",
+             "image":"IMG_2132.JPG"
+             },
+             {
+             "name":"芒果汁",
+             "ename":"",
+             "price":"¥20",
+             "image":"IMG_2138.JPG"
+             },
+             {
+             "name":"橙汁",
+             "ename":"",
+             "price":"¥20",
+             "image":"IMG_2139.JPG"
+             },
+             {
+             "name":"初恋",
+             "ename":"",
+             "price":"¥20",
+             "image":"IMG_2144.JPG"
+             },
+             {
+             "name":"柠檬玫瑰茄",
+             "ename":"",
+             "price":"¥20",
+             "image":"IMG_2145.JPG"
              },
              {
              "name":"葡萄柚草莓汁",
