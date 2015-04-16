@@ -24,6 +24,7 @@
             listViewButton.tag = i;
             NSDictionary *dic = [array objectAtIndex:i];
             NSString *name = [dic valueForKeyPath:@"name"];
+            debugLog(@"name = %@",name);
             NSString *ename = [dic valueForKeyPath:@"ename"];
             NSString *price = [dic valueForKeyPath:@"price"];
             if ([ename isEqualToString:@""]) {

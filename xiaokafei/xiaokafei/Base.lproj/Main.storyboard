@@ -4,15 +4,15 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="迷你简柏青.ttf">
-            <string>MINIj4gj</string>
-            <string>MINIj4gj</string>
-            <string>MINIj4gj</string>
-            <string>MINIj4gj</string>
-            <string>MINIj4gj</string>
-            <string>MINIj4gj</string>
-            <string>MINIj4gj</string>
-            <string>MINIj4gj</string>
+        <mutableArray key="xjlFont.ttf">
+            <string>FZJLJW--GB1-0</string>
+            <string>FZJLJW--GB1-0</string>
+            <string>FZJLJW--GB1-0</string>
+            <string>FZJLJW--GB1-0</string>
+            <string>FZJLJW--GB1-0</string>
+            <string>FZJLJW--GB1-0</string>
+            <string>FZJLJW--GB1-0</string>
+            <string>FZJLJW--GB1-0</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -30,7 +30,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3w-92-t9m">
                                 <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
-                                <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="FZJLJW--GB1-0" family="FZJingLeiS-R-GB" pointSize="50"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="10"/>
                                 <state key="normal" title="简餐小食">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -42,7 +42,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYd-5D-g0M">
                                 <rect key="frame" x="400" y="235" width="270" height="165"/>
-                                <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="FZJLJW--GB1-0" family="FZJingLeiS-R-GB" pointSize="40"/>
                                 <state key="normal" title="鸡尾酒">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -53,7 +53,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVx-Y8-4MP">
                                 <rect key="frame" x="670" y="608" width="354" height="160"/>
-                                <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="FZJLJW--GB1-0" family="FZJingLeiS-R-GB" pointSize="40"/>
                                 <state key="normal" title="奶昔、沙冰">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -64,7 +64,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E51-bg-EeE">
                                 <rect key="frame" x="670" y="400" width="354" height="208"/>
-                                <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="FZJLJW--GB1-0" family="FZJingLeiS-R-GB" pointSize="40"/>
                                 <state key="normal" title="花茶">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -75,7 +75,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgW-rS-8AS">
                                 <rect key="frame" x="670" y="0.0" width="354" height="400"/>
-                                <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="FZJLJW--GB1-0" family="FZJingLeiS-R-GB" pointSize="40"/>
                                 <state key="normal" title="果汁">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -86,7 +86,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhu-6f-WV1">
                                 <rect key="frame" x="400" y="0.0" width="270" height="240"/>
-                                <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="FZJLJW--GB1-0" family="FZJingLeiS-R-GB" pointSize="40"/>
                                 <state key="normal" title="奶茶">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -97,7 +97,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkO-Yb-dmr">
                                 <rect key="frame" x="0.0" y="400" width="670" height="368"/>
-                                <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="FZJLJW--GB1-0" family="FZJingLeiS-R-GB" pointSize="55"/>
                                 <state key="normal" title="咖啡">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -108,7 +108,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzZ-bA-GUR">
                                 <rect key="frame" x="0.0" y="192" width="400" height="200"/>
-                                <fontDescription key="fontDescription" name="MINIj4gj" family="迷你简柏青" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="FZJLJW--GB1-0" family="FZJingLeiS-R-GB" pointSize="50"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="10"/>
                                 <state key="normal" title="糕点">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -296,6 +296,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lmG-eD-ywH"/>
+        <segue reference="scD-ZP-4xv"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -44,6 +44,30 @@
                "image":"IMG_2010.JPG"
                },
                {
+               "name":"维也纳咖啡",
+               "ename":"Vienna Coffee",
+               "price":"¥22",
+               "image":"IMG_2214.JPG"
+               },
+               {
+               "name":"棒果拿铁",
+               "ename":"Nuts Latte",
+               "price":"¥24",
+               "image":"IMG_2226.JPG"
+               },
+               {
+               "name":"康宝蓝",
+               "ename":"Campble Blue",
+               "price":"¥18",
+               "image":"IMG_2227.JPG"
+               },
+               {
+               "name":"意式浓缩",
+               "ename":"Espresso",
+               "price":"¥15",
+               "image":"IMG_2228.JPG"
+               },
+               {
                "name":"冰咖啡",
                "ename":"Cappuccino",
                "price":"¥24",
@@ -73,6 +97,18 @@
             "ename":"Mango Mousse",
             "price":"¥18",
             "image":"IMG_2055.JPG"
+            },
+            {
+            "name":"提拉米苏",
+            "ename":"Tiramisu",
+            "price":"¥18",
+            "image":"IMG_2220.JPG"
+            },
+            {
+            "name":"重芝士",
+            "ename":"Heavy Cheese",
+            "price":"¥18",
+            "image":"IMG_2222.JPG"
             },
             {
             "name":"蔓越莓乳酪",
@@ -255,6 +291,30 @@
                   "image":"IMG_2060.JPG"
                   },
                   {
+                  "name":"杨枝甘露",
+                  "ename":"",
+                  "price":"¥24",
+                  "image":"IMG_2206.JPG"
+                  },
+                  {
+                  "name":"提拉米苏奶昔",
+                  "ename":"",
+                  "price":"¥22",
+                  "image":"IMG_2211.JPG"
+                  },
+                  {
+                  "name":"草莓奶昔",
+                  "ename":"",
+                  "price":"¥22",
+                  "image":"IMG_2212.JPG"
+                  },
+                  {
+                  "name":"泰国度假风",
+                  "ename":"",
+                  "price":"¥22",
+                  "image":"IMG_2217.JPG"
+                  },
+                  {
                   "name":"朱古巧克力",
                   "ename":"",
                   "price":"¥22",
@@ -434,6 +494,36 @@
              "ename":"",
              "price":"¥20",
              "image":"IMG_2044.JPG"
+             },
+             {
+             "name":"蓝莓果漾",
+             "ename":"",
+             "price":"¥18",
+             "image":"IMG_2196.JPG"
+             },
+             {
+             "name":"芒果果漾",
+             "ename":"",
+             "price":"¥18",
+             "image":"IMG_2207.JPG"
+             },
+             {
+             "name":"狂野莫西多",
+             "ename":"",
+             "price":"¥20",
+             "image":"IMG_2208.JPG"
+             },
+             {
+             "name":"葡萄柚果漾",
+             "ename":"",
+             "price":"¥18",
+             "image":"IMG_2215.JPG"
+             },
+             {
+             "name":"香蕉冰饮",
+             "ename":"",
+             "price":"¥20",
+             "image":"IMG_2218.JPG"
              },
              {
              "name":"红日",
