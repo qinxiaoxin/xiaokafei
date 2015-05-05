@@ -115,6 +115,12 @@
             "ename":"Cranberry Cheese",
             "price":"¥18",
             "image":"IMG_2056.JPG"
+            },
+            {
+            "name":"布朗尼",
+            "ename":"Brownie",
+            "price":"¥8",
+            "image":"IMG_2244.JPG"
             }],
     
     "drink":[
@@ -174,6 +180,12 @@
             "image":"IMG_2104.JPG"
             },
             {
+            "name":"鸡米花",
+            "ename":"",
+            "price":"¥15",
+            "image":"IMG_2243.JPG"
+            },
+            {
             "name":"意式香蒜烧汁烩牛肉",
             "ename":"",
             "price":"¥20",
@@ -190,6 +202,12 @@
             "ename":"",
             "price":"¥18",
             "image":"IMG_2178.JPG"
+            },
+            {
+            "name":"台湾卤肉饭",
+            "ename":"",
+            "price":"¥18",
+            "image":"IMG_2282.JPG"
             },
             {
             "name":"凤尾虾饭",
@@ -260,10 +278,40 @@
                   "image":"IMG_2015.JPG"
                   },
                   {
+                  "name":"胎菊花草茶",
+                  "ename":"",
+                  "price":"¥35",
+                  "image":"IMG_2253.JPG"
+                  },
+                  {
+                  "name":"菊花茶",
+                  "ename":"",
+                  "price":"¥35",
+                  "image":"IMG_2252.JPG"
+                  },
+                  {
                   "name":"水蜜桃花果茶",
                   "ename":"",
                   "price":"¥35",
                   "image":"IMG_2020.JPG"
+                  },
+                  {
+                  "name":"草莓花果茶",
+                  "ename":"",
+                  "price":"¥35",
+                  "image":"IMG_2251.JPG"
+                  },
+                  {
+                  "name":"柠檬花果茶",
+                  "ename":"",
+                  "price":"¥35",
+                  "image":"IMG_2250.JPG"
+                  },
+                  {
+                  "name":"花香花果茶",
+                  "ename":"",
+                  "price":"¥35",
+                  "image":"IMG_2249.JPG"
                   }],
     
     "milk_flake":[{
@@ -281,7 +329,7 @@
                   {
                   "name":"芒果沙冰",
                   "ename":"",
-                  "price":"¥24",
+                  "price":"¥22",
                   "image":"IMG_2042.JPG"
                   },
                   {
@@ -307,6 +355,24 @@
                   "ename":"",
                   "price":"¥22",
                   "image":"IMG_2212.JPG"
+                  },
+                  {
+                  "name":"香蕉摩卡星冰乐",
+                  "ename":"",
+                  "price":"¥22",
+                  "image":"IMG_2232.JPG"
+                  },
+                  {
+                  "name":"薄荷摩卡星冰乐",
+                  "ename":"",
+                  "price":"¥22",
+                  "image":"IMG_2233.JPG"
+                  },
+                  {
+                  "name":"坚果摩卡沙冰",
+                  "ename":"",
+                  "price":"¥22",
+                  "image":"IMG_2236.JPG"
                   },
                   {
                   "name":"泰国度假风",
@@ -350,6 +416,12 @@
              "ename":"",
              "price":"¥20",
              "image":"IMG_2139.JPG"
+             },
+             {
+             "name":"菠萝汁",
+             "ename":"",
+             "price":"¥20",
+             "image":"IMG_2245.JPG"
              },
              {
              "name":"初恋",
