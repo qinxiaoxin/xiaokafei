@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 //qinxin
+//merge
 @interface CollectionView : UIView
 
 @property (nonatomic, strong) UIButton *imageButton;
