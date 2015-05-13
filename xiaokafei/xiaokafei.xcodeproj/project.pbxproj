@@ -54,6 +54,8 @@
 		765CEA141AB7F4D300CC3E80 /* BigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 765CEA131AB7F4D300CC3E80 /* BigImageViewController.m */; };
 		765CEA181AB817FA00CC3E80 /* RCDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 765CEA171AB817FA00CC3E80 /* RCDraggableButton.m */; };
 		765FC8381AF8798D0016F1BE /* IMG_2282.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 765FC8371AF8798D0016F1BE /* IMG_2282.JPG */; };
+		765FC83B1AF8E0C60016F1BE /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 765FC83A1AF8E0C60016F1BE /* CollectionViewController.m */; };
+		765FC83F1AF8E1EF0016F1BE /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 765FC83E1AF8E1EF0016F1BE /* CollectionView.m */; };
 		76856AEB1A74A97D00DF030C /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76856AEA1A74A97D00DF030C /* ListView.m */; };
 		76898FB61AB823C30046491F /* avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76898FB51AB823C30046491F /* avatar@2x.png */; };
 		768990001AB848AA0046491F /* IMG_1384.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FBA1AB848AA0046491F /* IMG_1384.JPG */; };
@@ -210,6 +212,10 @@
 		765CEA161AB817FA00CC3E80 /* RCDraggableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDraggableButton.h; sourceTree = "<group>"; };
 		765CEA171AB817FA00CC3E80 /* RCDraggableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDraggableButton.m; sourceTree = "<group>"; };
 		765FC8371AF8798D0016F1BE /* IMG_2282.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2282.JPG; sourceTree = "<group>"; };
+		765FC8391AF8E0C60016F1BE /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		765FC83A1AF8E0C60016F1BE /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		765FC83D1AF8E1EF0016F1BE /* CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionView.h; sourceTree = "<group>"; };
+		765FC83E1AF8E1EF0016F1BE /* CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
 		7674F7253FCE7F8D97A50825 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		76856AE91A74A97D00DF030C /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
 		76856AEA1A74A97D00DF030C /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
@@ -437,6 +443,7 @@
 		761F473C1A54E5C200B98C3F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				765FC83C1AF8E1350016F1BE /* CollectionView */,
 				76C80CD51ABBCAD90038B975 /* TotalView */,
 				768990411AB8523C0046491F /* CCMPlayNDropView */,
 				765CEA151AB817DA00CC3E80 /* MyOrderButton */,
@@ -458,6 +465,8 @@
 				765CEA131AB7F4D300CC3E80 /* BigImageViewController.m */,
 				7689903E1AB84A5B0046491F /* MyOrderViewController.h */,
 				7689903F1AB84A5B0046491F /* MyOrderViewController.m */,
+				765FC8391AF8E0C60016F1BE /* CollectionViewController.h */,
+				765FC83A1AF8E0C60016F1BE /* CollectionViewController.m */,
 			);
 			name = Control;
 			sourceTree = "<group>";
@@ -478,6 +487,15 @@
 				765CEA171AB817FA00CC3E80 /* RCDraggableButton.m */,
 			);
 			name = MyOrderButton;
+			sourceTree = "<group>";
+		};
+		765FC83C1AF8E1350016F1BE /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				765FC83D1AF8E1EF0016F1BE /* CollectionView.h */,
+				765FC83E1AF8E1EF0016F1BE /* CollectionView.m */,
+			);
+			name = CollectionView;
 			sourceTree = "<group>";
 		};
 		76856AE81A74A96100DF030C /* ListView */ = {
@@ -940,6 +958,7 @@
 			files = (
 				76049FF61A5ECB5200F80D24 /* DetailViewController.m in Sources */,
 				7607EAA61A470F0300AB8E4D /* AppDelegate.m in Sources */,
+				765FC83F1AF8E1EF0016F1BE /* CollectionView.m in Sources */,
 				7609CB881A7B643B00B4513C /* FMDBService.m in Sources */,
 				7607EAA31A470F0300AB8E4D /* main.m in Sources */,
 				768990471AB852680046491F /* CCMBorderView.m in Sources */,
@@ -953,6 +972,7 @@
 				7609CB7D1A7B5AB400B4513C /* FMDatabasePool.m in Sources */,
 				7609CB7E1A7B5AB400B4513C /* FMDatabaseQueue.m in Sources */,
 				768990401AB84A5B0046491F /* MyOrderViewController.m in Sources */,
+				765FC83B1AF8E0C60016F1BE /* CollectionViewController.m in Sources */,
 				76C80CDB1ABBCCEB0038B975 /* TotalView.m in Sources */,
 				768CFF201A5D21720092F2B8 /* FirstPageViewController.m in Sources */,
 				7609CB7B1A7B5AB400B4513C /* FMDatabase.m in Sources */,

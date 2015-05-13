@@ -60,3 +60,10 @@
 */
 
 #define Font                               @"FZJLJW--GB1-0"
+
+/**
+*   Collection View
+*/
+
+#define CV_WIDTH                            200
+#define CV_HEIGHT                           300
