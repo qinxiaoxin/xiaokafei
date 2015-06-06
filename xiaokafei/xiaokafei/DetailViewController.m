@@ -48,6 +48,23 @@
     
     for (int i = 0; i < self.aArray.count; i++) {
         NSDictionary *dic = [self.aArray objectAtIndex:i];
+        
+        NSString *title = [dic valueForKeyPath:@"name"];
+        UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH * i + SCREEN_WIDTH / 2 - NAME_LABEL_WIDTH, NAME_PRICE_LABEL_MARGIN_TOP, NAME_LABEL_WIDTH, NAME_LABEL_HEIGHT)];
+        nameLabel.text = title;
+        nameLabel.textColor = [UIColor whiteColor];
+        nameLabel.font = [UIFont fontWithName:Font size:40.f];
+        nameLabel.textAlignment = NSTextAlignmentLeft;
+        [self.scrollView addSubview:nameLabel];
+        
+        NSString *price = [dic valueForKeyPath:@"price"];
+        UILabel *priceLabel = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH * i + SCREEN_WIDTH / 2 + PRICE_LABEL_WIDTH, NAME_PRICE_LABEL_MARGIN_TOP, PRICE_LABEL_WIDTH, PRICE_LABEL_HEIGHT)];
+        priceLabel.text = price;
+        priceLabel.textColor = [UIColor whiteColor];
+        priceLabel.font = [UIFont fontWithName:Font size:40.f];
+        priceLabel.textAlignment = NSTextAlignmentLeft;
+        [self.scrollView addSubview:priceLabel];
+        
         NSString *imageStr = [dic valueForKeyPath:@"image"];
         if (![imageStr isEqualToString:@""]){
             UIImage *image = [UIImage imageNamed:imageStr];
