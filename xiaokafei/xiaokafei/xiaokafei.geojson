@@ -543,18 +543,6 @@
                   }],
     
     "juice":[{
-             "name":"柠檬可乐",
-             "ename":"",
-             "price":"¥17",
-             "image":"default"
-             },
-             {
-             "name":"柠檬红茶",
-             "ename":"",
-             "price":"¥17",
-             "image":"default"
-             },
-             {
              "name":"草莓番石榴",
              "ename":"",
              "price":"¥18",
@@ -758,7 +746,6 @@
              "price":"¥19",
              "image":"IMG_2208.JPG"
              },
-
              {
              "name":"香蕉冰饮",
              "ename":"",
@@ -770,5 +757,17 @@
              "ename":"",
              "price":"¥19",
              "image":"IMG_2057.JPG"
+             },
+             {
+             "name":"柠檬可乐",
+             "ename":"",
+             "price":"¥17",
+             "image":"default"
+             },
+             {
+             "name":"柠檬红茶",
+             "ename":"",
+             "price":"¥17",
+             "image":"default"
              }]
 }

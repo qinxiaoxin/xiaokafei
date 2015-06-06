@@ -375,7 +375,7 @@
 				7609CB851A7B63C200B4513C /* Service */,
 				761F473B1A54E5BD00B98C3F /* Model */,
 				761F473C1A54E5C200B98C3F /* View */,
-				761F473D1A54E5C800B98C3F /* Control */,
+				761F473D1A54E5C800B98C3F /* Controller */,
 			);
 			path = xiaokafei;
 			sourceTree = "<group>";
@@ -470,7 +470,7 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		761F473D1A54E5C800B98C3F /* Control */ = {
+		761F473D1A54E5C800B98C3F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				768CFF1E1A5D21720092F2B8 /* FirstPageViewController.h */,
@@ -486,7 +486,7 @@
 				765FC8391AF8E0C60016F1BE /* CollectionViewController.h */,
 				765FC83A1AF8E0C60016F1BE /* CollectionViewController.m */,
 			);
-			name = Control;
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		761FD8D91A481D8D009D1A40 /* Delegate */ = {

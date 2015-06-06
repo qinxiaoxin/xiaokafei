@@ -48,7 +48,7 @@
 
 #define MY_ORDER_BUTTON_DIAMETER                100
 
-#define NAME_PRICE_LABEL_MARGIN_TOP             44
+#define NAME_PRICE_LABEL_MARGIN_TOP             64
 
 
 /**

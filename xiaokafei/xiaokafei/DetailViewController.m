@@ -54,15 +54,15 @@
         nameLabel.text = title;
         nameLabel.textColor = [UIColor whiteColor];
         nameLabel.font = [UIFont fontWithName:Font size:40.f];
-        nameLabel.textAlignment = NSTextAlignmentLeft;
+        nameLabel.textAlignment = NSTextAlignmentCenter;
         [self.scrollView addSubview:nameLabel];
         
         NSString *price = [dic valueForKeyPath:@"price"];
-        UILabel *priceLabel = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH * i + SCREEN_WIDTH / 2 + PRICE_LABEL_WIDTH, NAME_PRICE_LABEL_MARGIN_TOP, PRICE_LABEL_WIDTH, PRICE_LABEL_HEIGHT)];
+        UILabel *priceLabel = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH * i + SCREEN_WIDTH / 2, NAME_PRICE_LABEL_MARGIN_TOP, PRICE_LABEL_WIDTH, PRICE_LABEL_HEIGHT)];
         priceLabel.text = price;
         priceLabel.textColor = [UIColor whiteColor];
         priceLabel.font = [UIFont fontWithName:Font size:40.f];
-        priceLabel.textAlignment = NSTextAlignmentLeft;
+        priceLabel.textAlignment = NSTextAlignmentCenter;
         [self.scrollView addSubview:priceLabel];
         
         NSString *imageStr = [dic valueForKeyPath:@"image"];
