@@ -71,14 +71,14 @@
 #define CV_HEIGHT                           300
 
 /**
-*   NAME UILabel
+*   name UILabel
 */
 
 #define NAME_LABEL_WIDTH                    200
 #define NAME_LABEL_HEIGHT                   50
 
 /**
-*   PRICE UILabel
+*   price UILabel
 */
 
 #define PRICE_LABEL_WIDTH                   200
