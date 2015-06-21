@@ -1,0 +1,7 @@
+platform :ios, "6.0"
+
+pod "MaryPopin"
+
+target :xiaokafeiTests, :exclusive => true do
+  # pod 'Kiwi'
+end

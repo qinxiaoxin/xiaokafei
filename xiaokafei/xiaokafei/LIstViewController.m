@@ -140,9 +140,8 @@
     dvc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     
     [self presentViewController:dvc animated:YES completion:^{
-        
+            
     }];
-    
 }
 
 #pragma mark - Navigation

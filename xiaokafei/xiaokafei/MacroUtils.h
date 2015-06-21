@@ -48,6 +48,8 @@
 
 #define MY_ORDER_BUTTON_DIAMETER                100
 
+#define NAME_PRICE_LABEL_MARGIN_TOP             64
+
 
 /**
 *   Color
@@ -67,3 +69,17 @@
 
 #define CV_WIDTH                            200
 #define CV_HEIGHT                           300
+
+/**
+*   name UILabel
+*/
+
+#define NAME_LABEL_WIDTH                    200
+#define NAME_LABEL_HEIGHT                   50
+
+/**
+*   price UILabel
+*/
+
+#define PRICE_LABEL_WIDTH                   200
+#define PRICE_LABEL_HEIGHT                  50
