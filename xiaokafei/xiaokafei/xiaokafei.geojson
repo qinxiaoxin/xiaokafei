@@ -353,10 +353,16 @@
             "image":"IMG_2177.JPG"
             },
             {
-            "name":"意式香蒜烧汁烩牛肉",
+            "name":"意式牛腩饭",
+            "ename":"",
+            "price":"¥22",
+            "image":""
+            },
+            {
+            "name":"咖喱牛肉饭",
             "ename":"",
             "price":"¥20",
-            "image":"IMG_2170.JPG"
+            "image":""
             },
             {
             "name":"水果沙拉",
@@ -470,6 +476,12 @@
                   }],
     
     "milk_flake":[{
+                  "name":"木瓜奶昔",
+                  "ename":"",
+                  "price":"¥22",
+                  "image":"IMG_2527.JPG"
+                  },
+                  {
                   "name":"香蕉奶昔",
                   "ename":"",
                   "price":"¥22",
@@ -543,6 +555,18 @@
                   }],
     
     "juice":[{
+             "name":"西瓜汁",
+             "ename":"",
+             "price":"¥19",
+             "image":"IMG_2494.JPG"
+             },
+             {
+             "name":"奇异果汁",
+             "ename":"",
+             "price":"¥19",
+             "image":"IMG_2524.JPG"
+             },
+             {
              "name":"草莓番石榴",
              "ename":"",
              "price":"¥18",

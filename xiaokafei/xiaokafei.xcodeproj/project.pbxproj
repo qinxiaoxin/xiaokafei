@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		091F1B708CFE47AB31CBB1C5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5019F9736D5EFE20823951 /* libPods.a */; };
 		76049FF61A5ECB5200F80D24 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76049FF51A5ECB5200F80D24 /* DetailViewController.m */; };
+		7606D2391B2BECC5009FA24B /* IMG_2494.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7606D2371B2BECC5009FA24B /* IMG_2494.JPG */; };
+		7606D23A1B2BECC5009FA24B /* IMG_2524.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7606D2381B2BECC5009FA24B /* IMG_2524.JPG */; };
+		7606D23C1B2C0549009FA24B /* IMG_2527.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7606D23B1B2C0549009FA24B /* IMG_2527.JPG */; };
 		7606F08D1ABA6AB000BA2A2A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7606F08C1ABA6AB000BA2A2A /* libsqlite3.dylib */; };
 		7607EAA31A470F0300AB8E4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7607EAA21A470F0300AB8E4D /* main.m */; };
 		7607EAA61A470F0300AB8E4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7607EAA51A470F0300AB8E4D /* AppDelegate.m */; };
@@ -160,6 +163,9 @@
 /* Begin PBXFileReference section */
 		76049FF41A5ECB5200F80D24 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		76049FF51A5ECB5200F80D24 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		7606D2371B2BECC5009FA24B /* IMG_2494.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2494.JPG; sourceTree = "<group>"; };
+		7606D2381B2BECC5009FA24B /* IMG_2524.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2524.JPG; sourceTree = "<group>"; };
+		7606D23B1B2C0549009FA24B /* IMG_2527.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2527.JPG; sourceTree = "<group>"; };
 		7606F08C1ABA6AB000BA2A2A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		7607EA9D1A470F0300AB8E4D /* 小咖啡点餐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "小咖啡点餐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7607EAA11A470F0300AB8E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -559,6 +565,7 @@
 				762026B61ADF7BDF00C3E62F /* IMG_2232.JPG */,
 				762026B71ADF7BDF00C3E62F /* IMG_2233.JPG */,
 				762026B81ADF7BDF00C3E62F /* IMG_2236.JPG */,
+				7606D23B1B2C0549009FA24B /* IMG_2527.JPG */,
 			);
 			path = "奶昔，沙冰";
 			sourceTree = "<group>";
@@ -617,6 +624,8 @@
 				762026AA1ADEB36600C3E62F /* IMG_2215.JPG */,
 				762026AB1ADEB36600C3E62F /* IMG_2218.JPG */,
 				76A995341AE53E1D0051F382 /* IMG_2245.JPG */,
+				7606D2371B2BECC5009FA24B /* IMG_2494.JPG */,
+				7606D2381B2BECC5009FA24B /* IMG_2524.JPG */,
 			);
 			path = "果汁";
 			sourceTree = "<group>";
@@ -900,6 +909,7 @@
 				76A49F461AEA192D00486199 /* IMG_2253.JPG in Resources */,
 				76A49F421AEA192D00486199 /* IMG_2249.JPG in Resources */,
 				7689900D1AB848AA0046491F /* IMG_2010.JPG in Resources */,
+				7606D23C1B2C0549009FA24B /* IMG_2527.JPG in Resources */,
 				76A49F441AEA192D00486199 /* IMG_2251.JPG in Resources */,
 				7607EAB41A470F0300AB8E4D /* Images.xcassets in Resources */,
 				765FC8381AF8798D0016F1BE /* IMG_2282.JPG in Resources */,
@@ -925,6 +935,7 @@
 				762026A01ADEA78700C3E62F /* IMG_2211.JPG in Resources */,
 				76C80CEC1ABBF6120038B975 /* IMG_2092.JPG in Resources */,
 				768F9E5B1AC25F72006D0A58 /* IMG_2171.JPG in Resources */,
+				7606D2391B2BECC5009FA24B /* IMG_2494.JPG in Resources */,
 				7689901C1AB848AA0046491F /* IMG_2043.JPG in Resources */,
 				761BC2BF1ABEC33400260150 /* IMG_2145.JPG in Resources */,
 				768990031AB848AA0046491F /* IMG_2008.JPG in Resources */,
@@ -936,6 +947,7 @@
 				768990121AB848AA0046491F /* IMG_1531.JPG in Resources */,
 				76A49F451AEA192D00486199 /* IMG_2252.JPG in Resources */,
 				76C80CF11ABBFA470038B975 /* IMG_2104.JPG in Resources */,
+				7606D23A1B2BECC5009FA24B /* IMG_2524.JPG in Resources */,
 				768990061AB848AA0046491F /* IMG_2042.JPG in Resources */,
 				7622BCE21B2303E0008166DB /* IMG_2477.JPG in Resources */,
 				768990331AB848AA0046491F /* IMG_2056.JPG in Resources */,
