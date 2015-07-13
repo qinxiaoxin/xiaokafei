@@ -143,11 +143,11 @@
     }
 }
 
--(double)borderWidth{
+-(CGFloat)borderWidth{
     return _borderWidth;
 }
 
--(void)setBorderWidth:(double)borderWidth{
+-(void)setBorderWidth:(CGFloat)borderWidth{
     _borderWidth = borderWidth;
     [self updateView];
 }
@@ -165,11 +165,11 @@
 //    [self updateView];
 //}
 
--(double)cornerRadius{
+-(CGFloat)cornerRadius{
     return _cornerRadius;
 }
 
--(void)setCornerRadius:(double)cornerRadius{
+-(void)setCornerRadius:(CGFloat)cornerRadius{
     _cornerRadius = cornerRadius;
     [self updateView];
 }
