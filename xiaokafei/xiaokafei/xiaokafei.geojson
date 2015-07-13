@@ -356,13 +356,13 @@
             "name":"意式牛腩饭",
             "ename":"",
             "price":"¥22",
-            "image":""
+            "image":"default"
             },
             {
             "name":"咖喱牛肉饭",
             "ename":"",
             "price":"¥20",
-            "image":""
+            "image":"default"
             },
             {
             "name":"水果沙拉",

@@ -59,6 +59,27 @@
 		7622BCE51B2303E0008166DB /* IMG_2482.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7622BCE01B2303E0008166DB /* IMG_2482.JPG */; };
 		762D1B391B535C26000C47F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7607EAB01A470F0300AB8E4D /* Main.storyboard */; };
 		762D1B3A1B536075000C47F7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7607EAB51A470F0300AB8E4D /* LaunchScreen.xib */; };
+		762D1B3F1B5360FE000C47F7 /* CAPSPageMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 762D1B3E1B5360FE000C47F7 /* CAPSPageMenu.m */; };
+		762D1B411B53695B000C47F7 /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762D1B401B53695B000C47F7 /* Collection.storyboard */; };
+		762D1B471B5369FA000C47F7 /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762D1B461B5369FA000C47F7 /* IndexViewController.m */; };
+		762D1B4C1B53724E000C47F7 /* ModelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 762D1B4A1B53724E000C47F7 /* ModelCollectionViewCell.m */; };
+		762D1B4D1B53724E000C47F7 /* ModelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 762D1B4B1B53724E000C47F7 /* ModelCollectionViewCell.xib */; };
+		762D1B5E1B53A09F000C47F7 /* CoffeeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762D1B5C1B53A09F000C47F7 /* CoffeeCollectionViewController.m */; };
+		762D1B5F1B53A09F000C47F7 /* CoffeeCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 762D1B5D1B53A09F000C47F7 /* CoffeeCollectionViewController.xib */; };
+		762D1B631B53A1CD000C47F7 /* JuiceCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762D1B611B53A1CD000C47F7 /* JuiceCollectionViewController.m */; };
+		762D1B641B53A1CD000C47F7 /* JuiceCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 762D1B621B53A1CD000C47F7 /* JuiceCollectionViewController.xib */; };
+		762D1B691B53A643000C47F7 /* MilkIceCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762D1B671B53A643000C47F7 /* MilkIceCollectionViewController.m */; };
+		762D1B6A1B53A643000C47F7 /* MilkIceCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 762D1B681B53A643000C47F7 /* MilkIceCollectionViewController.xib */; };
+		762D1B6E1B53A874000C47F7 /* FoodCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762D1B6C1B53A874000C47F7 /* FoodCollectionViewController.m */; };
+		762D1B6F1B53A874000C47F7 /* FoodCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 762D1B6D1B53A874000C47F7 /* FoodCollectionViewController.xib */; };
+		762D1B731B53A9D2000C47F7 /* CakeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762D1B711B53A9D2000C47F7 /* CakeCollectionViewController.m */; };
+		762D1B741B53A9D2000C47F7 /* CakeCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 762D1B721B53A9D2000C47F7 /* CakeCollectionViewController.xib */; };
+		762D1B781B53C315000C47F7 /* DrinkCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762D1B761B53C315000C47F7 /* DrinkCollectionViewController.m */; };
+		762D1B791B53C315000C47F7 /* DrinkCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 762D1B771B53C315000C47F7 /* DrinkCollectionViewController.xib */; };
+		762D1B7D1B53C6BF000C47F7 /* FlowerTeaCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762D1B7B1B53C6BF000C47F7 /* FlowerTeaCollectionViewController.m */; };
+		762D1B7E1B53C6BF000C47F7 /* FlowerTeaCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 762D1B7C1B53C6BF000C47F7 /* FlowerTeaCollectionViewController.xib */; };
+		762D1B821B53C756000C47F7 /* MilkTeaCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762D1B801B53C756000C47F7 /* MilkTeaCollectionViewController.m */; };
+		762D1B831B53C756000C47F7 /* MilkTeaCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 762D1B811B53C756000C47F7 /* MilkTeaCollectionViewController.xib */; };
 		765CEA141AB7F4D300CC3E80 /* BigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 765CEA131AB7F4D300CC3E80 /* BigImageViewController.m */; };
 		765CEA181AB817FA00CC3E80 /* RCDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 765CEA171AB817FA00CC3E80 /* RCDraggableButton.m */; };
 		765FC8381AF8798D0016F1BE /* IMG_2282.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 765FC8371AF8798D0016F1BE /* IMG_2282.JPG */; };
@@ -225,6 +246,38 @@
 		7622BCDE1B2303E0008166DB /* IMG_2478.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2478.JPG; sourceTree = "<group>"; };
 		7622BCDF1B2303E0008166DB /* IMG_2481.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2481.JPG; sourceTree = "<group>"; };
 		7622BCE01B2303E0008166DB /* IMG_2482.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2482.JPG; sourceTree = "<group>"; };
+		762D1B3D1B5360FE000C47F7 /* CAPSPageMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPSPageMenu.h; sourceTree = "<group>"; };
+		762D1B3E1B5360FE000C47F7 /* CAPSPageMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAPSPageMenu.m; sourceTree = "<group>"; };
+		762D1B401B53695B000C47F7 /* Collection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
+		762D1B451B5369FA000C47F7 /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		762D1B461B5369FA000C47F7 /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		762D1B491B53724E000C47F7 /* ModelCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelCollectionViewCell.h; sourceTree = "<group>"; };
+		762D1B4A1B53724E000C47F7 /* ModelCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelCollectionViewCell.m; sourceTree = "<group>"; };
+		762D1B4B1B53724E000C47F7 /* ModelCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModelCollectionViewCell.xib; sourceTree = "<group>"; };
+		762D1B5B1B53A09F000C47F7 /* CoffeeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoffeeCollectionViewController.h; sourceTree = "<group>"; };
+		762D1B5C1B53A09F000C47F7 /* CoffeeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoffeeCollectionViewController.m; sourceTree = "<group>"; };
+		762D1B5D1B53A09F000C47F7 /* CoffeeCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoffeeCollectionViewController.xib; sourceTree = "<group>"; };
+		762D1B601B53A1CD000C47F7 /* JuiceCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuiceCollectionViewController.h; sourceTree = "<group>"; };
+		762D1B611B53A1CD000C47F7 /* JuiceCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuiceCollectionViewController.m; sourceTree = "<group>"; };
+		762D1B621B53A1CD000C47F7 /* JuiceCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JuiceCollectionViewController.xib; sourceTree = "<group>"; };
+		762D1B661B53A643000C47F7 /* MilkIceCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MilkIceCollectionViewController.h; sourceTree = "<group>"; };
+		762D1B671B53A643000C47F7 /* MilkIceCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MilkIceCollectionViewController.m; sourceTree = "<group>"; };
+		762D1B681B53A643000C47F7 /* MilkIceCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MilkIceCollectionViewController.xib; sourceTree = "<group>"; };
+		762D1B6B1B53A874000C47F7 /* FoodCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodCollectionViewController.h; sourceTree = "<group>"; };
+		762D1B6C1B53A874000C47F7 /* FoodCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodCollectionViewController.m; sourceTree = "<group>"; };
+		762D1B6D1B53A874000C47F7 /* FoodCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodCollectionViewController.xib; sourceTree = "<group>"; };
+		762D1B701B53A9D2000C47F7 /* CakeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CakeCollectionViewController.h; sourceTree = "<group>"; };
+		762D1B711B53A9D2000C47F7 /* CakeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CakeCollectionViewController.m; sourceTree = "<group>"; };
+		762D1B721B53A9D2000C47F7 /* CakeCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CakeCollectionViewController.xib; sourceTree = "<group>"; };
+		762D1B751B53C315000C47F7 /* DrinkCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrinkCollectionViewController.h; sourceTree = "<group>"; };
+		762D1B761B53C315000C47F7 /* DrinkCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrinkCollectionViewController.m; sourceTree = "<group>"; };
+		762D1B771B53C315000C47F7 /* DrinkCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrinkCollectionViewController.xib; sourceTree = "<group>"; };
+		762D1B7A1B53C6BF000C47F7 /* FlowerTeaCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowerTeaCollectionViewController.h; sourceTree = "<group>"; };
+		762D1B7B1B53C6BF000C47F7 /* FlowerTeaCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowerTeaCollectionViewController.m; sourceTree = "<group>"; };
+		762D1B7C1B53C6BF000C47F7 /* FlowerTeaCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlowerTeaCollectionViewController.xib; sourceTree = "<group>"; };
+		762D1B7F1B53C756000C47F7 /* MilkTeaCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MilkTeaCollectionViewController.h; sourceTree = "<group>"; };
+		762D1B801B53C756000C47F7 /* MilkTeaCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MilkTeaCollectionViewController.m; sourceTree = "<group>"; };
+		762D1B811B53C756000C47F7 /* MilkTeaCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MilkTeaCollectionViewController.xib; sourceTree = "<group>"; };
 		765CEA121AB7F4D300CC3E80 /* BigImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigImageViewController.h; sourceTree = "<group>"; };
 		765CEA131AB7F4D300CC3E80 /* BigImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigImageViewController.m; sourceTree = "<group>"; };
 		765CEA161AB817FA00CC3E80 /* RCDraggableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDraggableButton.h; sourceTree = "<group>"; };
@@ -391,7 +444,6 @@
 				762026B21ADF638A00C3E62F /* xjlFont.ttf */,
 				761FD8D71A480427009D1A40 /* xiaokafei.geojson */,
 				7607EAB51A470F0300AB8E4D /* LaunchScreen.xib */,
-				7607EAB01A470F0300AB8E4D /* Main.storyboard */,
 				7609CB831A7B5BB000B4513C /* frameworks & libraries */,
 				7609CB6F1A7B5AB400B4513C /* fmdb */,
 				76C24AEC1A5A7C8B00FFF530 /* pictures */,
@@ -461,6 +513,8 @@
 		761F473C1A54E5C200B98C3F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				762D1B481B5371F2000C47F7 /* CollectionViewCell */,
+				762D1B3C1B5360EE000C47F7 /* MenuPage */,
 				76C80CD51ABBCAD90038B975 /* TotalView */,
 				768990411AB8523C0046491F /* CCMPlayNDropView */,
 				765CEA151AB817DA00CC3E80 /* MyOrderButton */,
@@ -472,16 +526,9 @@
 		761F473D1A54E5C800B98C3F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				768CFF1E1A5D21720092F2B8 /* FirstPageViewController.h */,
-				768CFF1F1A5D21720092F2B8 /* FirstPageViewController.m */,
-				768CFF211A5D21800092F2B8 /* LIstViewController.h */,
-				768CFF221A5D21800092F2B8 /* LIstViewController.m */,
-				76049FF41A5ECB5200F80D24 /* DetailViewController.h */,
-				76049FF51A5ECB5200F80D24 /* DetailViewController.m */,
-				765CEA121AB7F4D300CC3E80 /* BigImageViewController.h */,
-				765CEA131AB7F4D300CC3E80 /* BigImageViewController.m */,
-				7689903E1AB84A5B0046491F /* MyOrderViewController.h */,
-				7689903F1AB84A5B0046491F /* MyOrderViewController.m */,
+				762D1B441B5369CC000C47F7 /* Common */,
+				762D1B431B5369C4000C47F7 /* Collection */,
+				762D1B421B536996000C47F7 /* Main */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -493,6 +540,92 @@
 				7607EAA51A470F0300AB8E4D /* AppDelegate.m */,
 			);
 			name = Delegate;
+			sourceTree = "<group>";
+		};
+		762D1B3C1B5360EE000C47F7 /* MenuPage */ = {
+			isa = PBXGroup;
+			children = (
+				762D1B3D1B5360FE000C47F7 /* CAPSPageMenu.h */,
+				762D1B3E1B5360FE000C47F7 /* CAPSPageMenu.m */,
+			);
+			name = MenuPage;
+			sourceTree = "<group>";
+		};
+		762D1B421B536996000C47F7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7607EAB01A470F0300AB8E4D /* Main.storyboard */,
+				768CFF1E1A5D21720092F2B8 /* FirstPageViewController.h */,
+				768CFF1F1A5D21720092F2B8 /* FirstPageViewController.m */,
+				768CFF211A5D21800092F2B8 /* LIstViewController.h */,
+				768CFF221A5D21800092F2B8 /* LIstViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		762D1B431B5369C4000C47F7 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				762D1B401B53695B000C47F7 /* Collection.storyboard */,
+				762D1B451B5369FA000C47F7 /* IndexViewController.h */,
+				762D1B461B5369FA000C47F7 /* IndexViewController.m */,
+				762D1B651B53A1DB000C47F7 /* Menu Item */,
+			);
+			name = Collection;
+			sourceTree = "<group>";
+		};
+		762D1B441B5369CC000C47F7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				76049FF41A5ECB5200F80D24 /* DetailViewController.h */,
+				76049FF51A5ECB5200F80D24 /* DetailViewController.m */,
+				765CEA121AB7F4D300CC3E80 /* BigImageViewController.h */,
+				765CEA131AB7F4D300CC3E80 /* BigImageViewController.m */,
+				7689903E1AB84A5B0046491F /* MyOrderViewController.h */,
+				7689903F1AB84A5B0046491F /* MyOrderViewController.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		762D1B481B5371F2000C47F7 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				762D1B491B53724E000C47F7 /* ModelCollectionViewCell.h */,
+				762D1B4A1B53724E000C47F7 /* ModelCollectionViewCell.m */,
+				762D1B4B1B53724E000C47F7 /* ModelCollectionViewCell.xib */,
+			);
+			name = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		762D1B651B53A1DB000C47F7 /* Menu Item */ = {
+			isa = PBXGroup;
+			children = (
+				762D1B5B1B53A09F000C47F7 /* CoffeeCollectionViewController.h */,
+				762D1B5C1B53A09F000C47F7 /* CoffeeCollectionViewController.m */,
+				762D1B5D1B53A09F000C47F7 /* CoffeeCollectionViewController.xib */,
+				762D1B601B53A1CD000C47F7 /* JuiceCollectionViewController.h */,
+				762D1B611B53A1CD000C47F7 /* JuiceCollectionViewController.m */,
+				762D1B621B53A1CD000C47F7 /* JuiceCollectionViewController.xib */,
+				762D1B661B53A643000C47F7 /* MilkIceCollectionViewController.h */,
+				762D1B671B53A643000C47F7 /* MilkIceCollectionViewController.m */,
+				762D1B681B53A643000C47F7 /* MilkIceCollectionViewController.xib */,
+				762D1B6B1B53A874000C47F7 /* FoodCollectionViewController.h */,
+				762D1B6C1B53A874000C47F7 /* FoodCollectionViewController.m */,
+				762D1B6D1B53A874000C47F7 /* FoodCollectionViewController.xib */,
+				762D1B701B53A9D2000C47F7 /* CakeCollectionViewController.h */,
+				762D1B711B53A9D2000C47F7 /* CakeCollectionViewController.m */,
+				762D1B721B53A9D2000C47F7 /* CakeCollectionViewController.xib */,
+				762D1B751B53C315000C47F7 /* DrinkCollectionViewController.h */,
+				762D1B761B53C315000C47F7 /* DrinkCollectionViewController.m */,
+				762D1B771B53C315000C47F7 /* DrinkCollectionViewController.xib */,
+				762D1B7A1B53C6BF000C47F7 /* FlowerTeaCollectionViewController.h */,
+				762D1B7B1B53C6BF000C47F7 /* FlowerTeaCollectionViewController.m */,
+				762D1B7C1B53C6BF000C47F7 /* FlowerTeaCollectionViewController.xib */,
+				762D1B7F1B53C756000C47F7 /* MilkTeaCollectionViewController.h */,
+				762D1B801B53C756000C47F7 /* MilkTeaCollectionViewController.m */,
+				762D1B811B53C756000C47F7 /* MilkTeaCollectionViewController.xib */,
+			);
+			name = "Menu Item";
 			sourceTree = "<group>";
 		};
 		765CEA151AB817DA00CC3E80 /* MyOrderButton */ = {
@@ -830,6 +963,7 @@
 				7689900E1AB848AA0046491F /* IMG_1425.JPG in Resources */,
 				76A49F431AEA192D00486199 /* IMG_2250.JPG in Resources */,
 				76998DB71B118D680072BDCD /* IMG_2387.JPG in Resources */,
+				762D1B6F1B53A874000C47F7 /* FoodCollectionViewController.xib in Resources */,
 				768F9E5A1AC25F72006D0A58 /* IMG_2170.JPG in Resources */,
 				768990171AB848AA0046491F /* IMG_2001.JPG in Resources */,
 				761BC2BE1ABEC33400260150 /* IMG_2144.JPG in Resources */,
@@ -846,8 +980,11 @@
 				7622BCE31B2303E0008166DB /* IMG_2478.JPG in Resources */,
 				768990391AB848AA0046491F /* IMG_1489.JPG in Resources */,
 				768990211AB848AA0046491F /* IMG_2059.JPG in Resources */,
+				762D1B791B53C315000C47F7 /* DrinkCollectionViewController.xib in Resources */,
+				762D1B4D1B53724E000C47F7 /* ModelCollectionViewCell.xib in Resources */,
 				761FD8D81A480427009D1A40 /* xiaokafei.geojson in Resources */,
 				7689900A1AB848AA0046491F /* IMG_1530.JPG in Resources */,
+				762D1B641B53A1CD000C47F7 /* JuiceCollectionViewController.xib in Resources */,
 				762026AF1ADEB36600C3E62F /* IMG_2215.JPG in Resources */,
 				76C80CE91ABBF5FD0038B975 /* IMG_2128.JPG in Resources */,
 				768990381AB848AA0046491F /* IMG_1471.JPG in Resources */,
@@ -863,10 +1000,12 @@
 				768990361AB848AA0046491F /* IMG_2020.JPG in Resources */,
 				768990091AB848AA0046491F /* IMG_1514.JPG in Resources */,
 				768990341AB848AA0046491F /* IMG_2009.JPG in Resources */,
+				762D1B411B53695B000C47F7 /* Collection.storyboard in Resources */,
 				768990311AB848AA0046491F /* IMG_1643.JPG in Resources */,
 				7689903D1AB848AA0046491F /* IMG_1804.JPG in Resources */,
 				762026B31ADF638A00C3E62F /* xjlFont.ttf in Resources */,
 				7689900F1AB848AA0046491F /* IMG_1468.JPG in Resources */,
+				762D1B831B53C756000C47F7 /* MilkTeaCollectionViewController.xib in Resources */,
 				762026AC1ADEB36600C3E62F /* IMG_2196.JPG in Resources */,
 				762026B51ADF660400C3E62F /* launchScreen@2x.png in Resources */,
 				7620269F1ADEA78700C3E62F /* IMG_2206.JPG in Resources */,
@@ -886,6 +1025,7 @@
 				768990141AB848AA0046491F /* IMG_1990.JPG in Resources */,
 				761BC2BD1ABEC33400260150 /* IMG_2139.JPG in Resources */,
 				7620269A1ADEA75A00C3E62F /* IMG_2228.JPG in Resources */,
+				762D1B7E1B53C6BF000C47F7 /* FlowerTeaCollectionViewController.xib in Resources */,
 				762026AD1ADEB36600C3E62F /* IMG_2207.JPG in Resources */,
 				7622BCE41B2303E0008166DB /* IMG_2481.JPG in Resources */,
 				76A49F461AEA192D00486199 /* IMG_2253.JPG in Resources */,
@@ -897,6 +1037,7 @@
 				765FC8381AF8798D0016F1BE /* IMG_2282.JPG in Resources */,
 				76C80CE11ABBF5EA0038B975 /* IMG_2111.JPG in Resources */,
 				76C80CED1ABBF6120038B975 /* IMG_2097.JPG in Resources */,
+				762D1B6A1B53A643000C47F7 /* MilkIceCollectionViewController.xib in Resources */,
 				762026A21ADEA78700C3E62F /* IMG_2217.JPG in Resources */,
 				762026BA1ADF7BDF00C3E62F /* IMG_2233.JPG in Resources */,
 				76A995391AE53E3B0051F382 /* IMG_2244.JPG in Resources */,
@@ -930,7 +1071,9 @@
 				76A49F451AEA192D00486199 /* IMG_2252.JPG in Resources */,
 				76C80CF11ABBFA470038B975 /* IMG_2104.JPG in Resources */,
 				7606D23A1B2BECC5009FA24B /* IMG_2524.JPG in Resources */,
+				762D1B5F1B53A09F000C47F7 /* CoffeeCollectionViewController.xib in Resources */,
 				768990061AB848AA0046491F /* IMG_2042.JPG in Resources */,
+				762D1B741B53A9D2000C47F7 /* CakeCollectionViewController.xib in Resources */,
 				7622BCE21B2303E0008166DB /* IMG_2477.JPG in Resources */,
 				768990331AB848AA0046491F /* IMG_2056.JPG in Resources */,
 				768990151AB848AA0046491F /* IMG_1993.JPG in Resources */,
@@ -988,22 +1131,33 @@
 			files = (
 				76049FF61A5ECB5200F80D24 /* DetailViewController.m in Sources */,
 				7607EAA61A470F0300AB8E4D /* AppDelegate.m in Sources */,
+				762D1B3F1B5360FE000C47F7 /* CAPSPageMenu.m in Sources */,
 				7609CB881A7B643B00B4513C /* FMDBService.m in Sources */,
+				762D1B5E1B53A09F000C47F7 /* CoffeeCollectionViewController.m in Sources */,
 				7607EAA31A470F0300AB8E4D /* main.m in Sources */,
+				762D1B781B53C315000C47F7 /* DrinkCollectionViewController.m in Sources */,
 				768990471AB852680046491F /* CCMBorderView.m in Sources */,
+				762D1B6E1B53A874000C47F7 /* FoodCollectionViewController.m in Sources */,
 				768990441AB8523C0046491F /* CCMPlayNDropView.m in Sources */,
 				768CFF231A5D21800092F2B8 /* LIstViewController.m in Sources */,
 				7609CB7C1A7B5AB400B4513C /* FMDatabaseAdditions.m in Sources */,
 				765CEA181AB817FA00CC3E80 /* RCDraggableButton.m in Sources */,
 				7609CB7F1A7B5AB400B4513C /* FMResultSet.m in Sources */,
+				762D1B7D1B53C6BF000C47F7 /* FlowerTeaCollectionViewController.m in Sources */,
 				765CEA141AB7F4D300CC3E80 /* BigImageViewController.m in Sources */,
 				76856AEB1A74A97D00DF030C /* ListView.m in Sources */,
 				7609CB7D1A7B5AB400B4513C /* FMDatabasePool.m in Sources */,
+				762D1B691B53A643000C47F7 /* MilkIceCollectionViewController.m in Sources */,
+				762D1B821B53C756000C47F7 /* MilkTeaCollectionViewController.m in Sources */,
 				7609CB7E1A7B5AB400B4513C /* FMDatabaseQueue.m in Sources */,
 				768990401AB84A5B0046491F /* MyOrderViewController.m in Sources */,
 				76C80CDB1ABBCCEB0038B975 /* TotalView.m in Sources */,
+				762D1B731B53A9D2000C47F7 /* CakeCollectionViewController.m in Sources */,
+				762D1B631B53A1CD000C47F7 /* JuiceCollectionViewController.m in Sources */,
+				762D1B4C1B53724E000C47F7 /* ModelCollectionViewCell.m in Sources */,
 				768CFF201A5D21720092F2B8 /* FirstPageViewController.m in Sources */,
 				7609CB7B1A7B5AB400B4513C /* FMDatabase.m in Sources */,
+				762D1B471B5369FA000C47F7 /* IndexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
