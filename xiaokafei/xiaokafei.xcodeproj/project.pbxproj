@@ -58,6 +58,7 @@
 		7622BCE41B2303E0008166DB /* IMG_2481.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7622BCDF1B2303E0008166DB /* IMG_2481.JPG */; };
 		7622BCE51B2303E0008166DB /* IMG_2482.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7622BCE01B2303E0008166DB /* IMG_2482.JPG */; };
 		762D1B391B535C26000C47F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7607EAB01A470F0300AB8E4D /* Main.storyboard */; };
+		762D1B3A1B536075000C47F7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7607EAB51A470F0300AB8E4D /* LaunchScreen.xib */; };
 		765CEA141AB7F4D300CC3E80 /* BigImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 765CEA131AB7F4D300CC3E80 /* BigImageViewController.m */; };
 		765CEA181AB817FA00CC3E80 /* RCDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 765CEA171AB817FA00CC3E80 /* RCDraggableButton.m */; };
 		765FC8381AF8798D0016F1BE /* IMG_2282.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 765FC8371AF8798D0016F1BE /* IMG_2282.JPG */; };
@@ -817,6 +818,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				762D1B3A1B536075000C47F7 /* LaunchScreen.xib in Resources */,
 				762D1B391B535C26000C47F7 /* Main.storyboard in Resources */,
 				768990111AB848AA0046491F /* IMG_1487.JPG in Resources */,
 				762026981ADEA75A00C3E62F /* IMG_2226.JPG in Resources */,
