@@ -32,22 +32,9 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
     _array = (NSArray *)((AppDelegate *)[[UIApplication sharedApplication] delegate]).coffeeArray;
     
     self.collectionView.backgroundColor = RGBA(30, 30, 30, 1);
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -69,10 +56,14 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
     NSDictionary *dic = [_array objectAtIndex:indexPath.row];
     
     NSString *img = [dic valueForKeyPath:@"image"];
-    SDWebImageManager *manager = [SDWebImageManager sharedManager];
-    [manager diskImageExistsForURL:[NSURL URLWithString:img] completion:^(BOOL isInCache) {
-        cell.imageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForAuxiliaryExecutable:img]];
-    }];
+    if ([img isEqualToString:@"default"]) {
+        cell.imageView.image = [UIImage imageNamed:@"default"];
+    }else{
+        SDWebImageManager *manager = [SDWebImageManager sharedManager];
+        [manager diskImageExistsForURL:[NSURL URLWithString:img] completion:^(BOOL isInCache) {
+            cell.imageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForAuxiliaryExecutable:img]];
+        }];
+    }
     
     NSString *name = [dic valueForKeyPath:@"name"];
     cell.nameLabel.text = name;
@@ -86,33 +77,11 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
 
 #pragma mark <UICollectionViewDelegate>
 
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    ModelCollectionViewCell *cell = (ModelCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    [_delegate goToImageDeatail:cell.imageView.image];
 }
 
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end

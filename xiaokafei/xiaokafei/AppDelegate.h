@@ -31,3 +31,13 @@
 
 @end
 
+
+
+
+@protocol IndexGoToImageDetailProtocol <NSObject>
+
+@required
+- (void)goToImageDeatail:(UIImage *)image;
+
+@end
+

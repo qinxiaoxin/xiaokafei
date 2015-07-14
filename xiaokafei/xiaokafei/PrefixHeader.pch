@@ -19,5 +19,9 @@
 #import <MaryPopin/UIViewController+MaryPopin.h>
 #import "FMDBService.h"
 #import "UIImageView+WebCache.h"
+#import "RZTransitionsInteractionControllers.h"
+#import "RZTransitionsAnimationControllers.h"
+#import "RZTransitionInteractionControllerProtocol.h"
+#import "RZTransitionsManager.h"
 
 #endif
