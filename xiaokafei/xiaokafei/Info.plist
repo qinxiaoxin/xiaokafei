@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
-	<string>$(EXECUTABLE_NAME)</string>
+	<string>小咖啡点餐</string>
 	<key>CFBundleIdentifier</key>
 	<string>me.qinxin.coffee</string>
 	<key>CFBundleInfoDictionaryVersion</key>

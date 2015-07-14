@@ -18,5 +18,6 @@
 #import "MyOrderViewController.h"
 #import <MaryPopin/UIViewController+MaryPopin.h>
 #import "FMDBService.h"
+#import "UIImageView+WebCache.h"
 
 #endif

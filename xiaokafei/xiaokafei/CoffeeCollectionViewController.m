@@ -69,9 +69,10 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
     NSDictionary *dic = [_array objectAtIndex:indexPath.row];
     
     NSString *img = [dic valueForKeyPath:@"image"];
-    if (img) {
-        cell.imageView.image = [UIImage imageNamed:img];
-    }
+    SDWebImageManager *manager = [SDWebImageManager sharedManager];
+    [manager diskImageExistsForURL:[NSURL URLWithString:img] completion:^(BOOL isInCache) {
+        cell.imageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForAuxiliaryExecutable:img]];
+    }];
     
     NSString *name = [dic valueForKeyPath:@"name"];
     cell.nameLabel.text = name;
