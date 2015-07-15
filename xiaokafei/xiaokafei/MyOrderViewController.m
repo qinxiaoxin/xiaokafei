@@ -42,28 +42,6 @@
     }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
-#pragma mark - CCMPlayNDropViewDelegate
-
-- (void)CCMPlayNDropViewWillStartDismissAnimationWithDynamics:(CCMPlayNDropView *)view{
-    self.view.superview.userInteractionEnabled = NO;
-    self.view.userInteractionEnabled = NO;
-}
-
-- (void)CCMPlayNDropViewDidFinishDismissAnimationWithDynamics:(CCMPlayNDropView *)view{
-    self.view.superview.userInteractionEnabled = YES;
-    CGRect frame = self.view.frame;
-    frame.origin.y = -1000;
-    self.view.frame = frame;
-    [self.parentViewController dismissCurrentPopinControllerAnimated:YES];
-    
-}
-
 
 #pragma mark - table view data source
 
@@ -169,15 +147,5 @@
     [self.tableView reloadData];
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

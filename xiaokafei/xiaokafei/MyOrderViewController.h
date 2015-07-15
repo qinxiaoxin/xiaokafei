@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CCMPlayNDropView.h"
 
-@interface MyOrderViewController : UIViewController<CCMPlayNDropViewDelegate>
+@interface MyOrderViewController : UIViewController
 
 @end
