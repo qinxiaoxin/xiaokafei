@@ -545,6 +545,8 @@
 			isa = PBXGroup;
 			children = (
 				7607EAA01A470F0300AB8E4D /* Supporting Files */,
+				7680B6361B5625FF00894F7A /* Tools */,
+				7680B58F1B54B77F00894F7A /* ThirdParty */,
 				761FD8D91A481D8D009D1A40 /* Delegate */,
 				7609CB851A7B63C200B4513C /* Service */,
 				761F473B1A54E5BD00B98C3F /* Model */,
@@ -557,7 +559,6 @@
 		7607EAA01A470F0300AB8E4D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7680B58F1B54B77F00894F7A /* ThirdParty */,
 				7609CB841A7B612B00B4513C /* MacroUtils.h */,
 				7607EAB31A470F0300AB8E4D /* Images.xcassets */,
 				7607EAA11A470F0300AB8E4D /* Info.plist */,
@@ -567,7 +568,6 @@
 				761FD8D71A480427009D1A40 /* xiaokafei.geojson */,
 				7607EAB51A470F0300AB8E4D /* LaunchScreen.xib */,
 				7609CB831A7B5BB000B4513C /* frameworks & libraries */,
-				7609CB6F1A7B5AB400B4513C /* fmdb */,
 				76C24AEC1A5A7C8B00FFF530 /* pictures */,
 			);
 			name = "Supporting Files";
@@ -925,6 +925,14 @@
 				7680B60F1B54D9D900894F7A /* UIImage+RZTransitionsSnapshotHelpers.m */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7680B6361B5625FF00894F7A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				7609CB6F1A7B5AB400B4513C /* fmdb */,
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 		76856AE81A74A96100DF030C /* ListView */ = {
