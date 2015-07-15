@@ -10,4 +10,6 @@
 
 @interface CakeCollectionViewController : UICollectionViewController
 
+@property (nonatomic, weak) id<IndexGoToImageDetailProtocol> delegate;
+
 @end

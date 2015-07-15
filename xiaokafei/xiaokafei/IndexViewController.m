@@ -26,8 +26,19 @@
 
 @implementation IndexViewController
 
+
+#pragma mark - View controller life cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self initNav];
+    
+}
+
+#pragma mark - Private Methods
+
+- (void)initNav {
     
     self.title = @"小咖啡";
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:30.0/255.0 green:30.0/255.0 blue:30.0/255.0 alpha:1.0];
@@ -43,52 +54,71 @@
     [rightImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapGoToRight)]];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView: rightImageView];
     
+    [self equipmentOfViewController];
+}
+
+- (void)equipmentOfViewController {
     
     CoffeeCollectionViewController *coffee = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"Coffee"];
     coffee.delegate = self;
     coffee.title = @"咖啡";
     
     JuiceCollectionViewController *juice = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"Juice"];
+    juice.delegate = self;
     juice.title = @"果汁";
     
     MilkIceCollectionViewController *milk_ice = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"MilkIce"];
+    milk_ice.delegate = self;
     milk_ice.title = @"奶昔、沙冰";
     
     FoodCollectionViewController *food = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"Food"];
+    food.delegate = self;
     food.title = @"简餐小食";
     
     CakeCollectionViewController *cake = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"Cake"];
+    cake.delegate = self;
     cake.title = @"糕点";
     
     DrinkCollectionViewController *drink = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"Drink"];
+    drink.delegate = self;
     drink.title = @"鸡尾酒";
     
     FlowerTeaCollectionViewController *flower_tea = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"FlowerTea"];
+    flower_tea.delegate = self;
     flower_tea.title = @"花茶";
     
     MilkTeaCollectionViewController *milk_tea = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"MilkTea"];
+    milk_tea.delegate = self;
     milk_tea.title = @"奶茶";
     
     NSArray *controllerArray = @[coffee,juice,milk_ice,food,cake,drink,flower_tea,milk_tea];
     
     NSDictionary *parameters = @{
-                                CAPSPageMenuOptionScrollMenuBackgroundColor: [UIColor colorWithRed:30.0/255.0 green:30.0/255.0 blue:30.0/255.0 alpha:1.0],
-                                CAPSPageMenuOptionViewBackgroundColor: [UIColor colorWithRed:20.0/255.0 green:20.0/255.0 blue:20.0/255.0 alpha:1.0],
-                                CAPSPageMenuOptionSelectionIndicatorColor: [UIColor orangeColor],
-                                CAPSPageMenuOptionBottomMenuHairlineColor: [UIColor colorWithRed:70.0/255.0 green:70.0/255.0 blue:70.0/255.0 alpha:1.0],
-                                CAPSPageMenuOptionMenuItemFont: [UIFont fontWithName:Font size:18.f],
-                                CAPSPageMenuOptionMenuHeight: @(40.0),
-                                CAPSPageMenuOptionMenuItemWidth: @(90.0),
-                                CAPSPageMenuOptionCenterMenuItems: @(YES)
+                                 CAPSPageMenuOptionScrollMenuBackgroundColor: [UIColor colorWithRed:30.0/255.0 green:30.0/255.0 blue:30.0/255.0 alpha:1.0],
+                                 CAPSPageMenuOptionViewBackgroundColor: [UIColor colorWithRed:20.0/255.0 green:20.0/255.0 blue:20.0/255.0 alpha:1.0],
+                                 CAPSPageMenuOptionSelectionIndicatorColor: [UIColor orangeColor],
+                                 CAPSPageMenuOptionBottomMenuHairlineColor: [UIColor colorWithRed:70.0/255.0 green:70.0/255.0 blue:70.0/255.0 alpha:1.0],
+                                 CAPSPageMenuOptionMenuItemFont: [UIFont fontWithName:Font size:18.f],
+                                 CAPSPageMenuOptionMenuHeight: @(40.0),
+                                 CAPSPageMenuOptionMenuItemWidth: @(90.0),
+                                 CAPSPageMenuOptionCenterMenuItems: @(YES)
                                  };
     
     _pageMenu = [[CAPSPageMenu alloc] initWithViewControllers:controllerArray frame:CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height) options:parameters];
     [self.view addSubview:_pageMenu.view];
     
+    [self setPresentingAnimation];
+}
+
+- (void)setPresentingAnimation {
+    
     [[RZTransitionsManager shared] setAnimationController:[[RZCirclePushAnimationController alloc] init]
                                        fromViewController:[self class]
                                                 forAction:RZTransitionAction_PresentDismiss];
 }
+
+
+#pragma mark - Action
 
 - (void)didTapGoToRight {
     debugLog(@"弹出菜单");
@@ -111,14 +141,16 @@
 
 #pragma mark - IndexGoToImageDetail
 
-- (void)goToImageDeatail:(UIImage *)image
+- (void)goToImageDeatail:(UIImage *)image name:(NSString *)name price:(NSString *)price
 {
-    [self presentViewController:[self detailImageViewController:image] animated:true completion:nil];
+    [self presentViewController:[self detailImageViewController:image name:name price:price] animated:true completion:nil];
 }
 
-- (UIViewController *)detailImageViewController:(UIImage *)image {
+- (UIViewController *)detailImageViewController:(UIImage *)image name:(NSString *)name price:(NSString *)price {
     ImageDetailViewController *idvc = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"ImageDetail"];
     idvc.image = image;
+    idvc.name = name;
+    idvc.price = price;
     [idvc setTransitioningDelegate:[RZTransitionsManager shared]];
     // Create a dismiss interaction controller that will be attached to the presented
     // view controller to allow for a custom dismissal

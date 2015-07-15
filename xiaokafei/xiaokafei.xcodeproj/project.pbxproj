@@ -111,6 +111,8 @@
 		7680B6201B54D9D900894F7A /* UIImage+RZTransitionsFastImageBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680B60D1B54D9D900894F7A /* UIImage+RZTransitionsFastImageBlur.m */; };
 		7680B6211B54D9D900894F7A /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680B60F1B54D9D900894F7A /* UIImage+RZTransitionsSnapshotHelpers.m */; };
 		7680B6251B54F05A00894F7A /* ImageDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680B6231B54F05A00894F7A /* ImageDetailViewController.m */; };
+		7680B62F1B560A9600894F7A /* DeformationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680B62B1B560A9600894F7A /* DeformationButton.m */; };
+		7680B6301B560A9600894F7A /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680B62E1B560A9600894F7A /* MMMaterialDesignSpinner.m */; };
 		76856AEB1A74A97D00DF030C /* ListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76856AEA1A74A97D00DF030C /* ListView.m */; };
 		76898FB61AB823C30046491F /* avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 76898FB51AB823C30046491F /* avatar@2x.png */; };
 		768990001AB848AA0046491F /* IMG_1384.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FBA1AB848AA0046491F /* IMG_1384.JPG */; };
@@ -411,6 +413,10 @@
 		7680B60F1B54D9D900894F7A /* UIImage+RZTransitionsSnapshotHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RZTransitionsSnapshotHelpers.m"; sourceTree = "<group>"; };
 		7680B6221B54F05A00894F7A /* ImageDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDetailViewController.h; sourceTree = "<group>"; };
 		7680B6231B54F05A00894F7A /* ImageDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDetailViewController.m; sourceTree = "<group>"; };
+		7680B62A1B560A9600894F7A /* DeformationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeformationButton.h; sourceTree = "<group>"; };
+		7680B62B1B560A9600894F7A /* DeformationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeformationButton.m; sourceTree = "<group>"; };
+		7680B62D1B560A9600894F7A /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		7680B62E1B560A9600894F7A /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
 		76856AE91A74A97D00DF030C /* ListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListView.h; sourceTree = "<group>"; };
 		76856AEA1A74A97D00DF030C /* ListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListView.m; sourceTree = "<group>"; };
 		76856AEF1A74AB6300DF030C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -641,6 +647,7 @@
 		761F473C1A54E5C200B98C3F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7680B6291B560A9600894F7A /* DeformationButton */,
 				762D1B481B5371F2000C47F7 /* CollectionViewCell */,
 				762D1B3C1B5360EE000C47F7 /* MenuPage */,
 				76C80CD51ABBCAD90038B975 /* TotalView */,
@@ -932,6 +939,25 @@
 				7680B60F1B54D9D900894F7A /* UIImage+RZTransitionsSnapshotHelpers.m */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7680B6291B560A9600894F7A /* DeformationButton */ = {
+			isa = PBXGroup;
+			children = (
+				7680B62A1B560A9600894F7A /* DeformationButton.h */,
+				7680B62B1B560A9600894F7A /* DeformationButton.m */,
+				7680B62C1B560A9600894F7A /* MMMaterialDesignSpinner-master */,
+			);
+			path = DeformationButton;
+			sourceTree = "<group>";
+		};
+		7680B62C1B560A9600894F7A /* MMMaterialDesignSpinner-master */ = {
+			isa = PBXGroup;
+			children = (
+				7680B62D1B560A9600894F7A /* MMMaterialDesignSpinner.h */,
+				7680B62E1B560A9600894F7A /* MMMaterialDesignSpinner.m */,
+			);
+			path = "MMMaterialDesignSpinner-master";
 			sourceTree = "<group>";
 		};
 		76856AE81A74A96100DF030C /* ListView */ = {
@@ -1496,6 +1522,7 @@
 				7680B61D1B54D9D900894F7A /* RZZoomAlphaAnimationController.m in Sources */,
 				7680B6201B54D9D900894F7A /* UIImage+RZTransitionsFastImageBlur.m in Sources */,
 				7680B6191B54D9D900894F7A /* RZCirclePushAnimationController.m in Sources */,
+				7680B6301B560A9600894F7A /* MMMaterialDesignSpinner.m in Sources */,
 				7680B5C41B54B77F00894F7A /* UIImage+MultiFormat.m in Sources */,
 				762D1B821B53C756000C47F7 /* MilkTeaCollectionViewController.m in Sources */,
 				7609CB7E1A7B5AB400B4513C /* FMDatabaseQueue.m in Sources */,
@@ -1505,6 +1532,7 @@
 				7680B5BC1B54B77F00894F7A /* SDWebImageCompat.m in Sources */,
 				7680B61B1B54D9D900894F7A /* RZSegmentControlMoveFadeAnimationController.m in Sources */,
 				76C80CDB1ABBCCEB0038B975 /* TotalView.m in Sources */,
+				7680B62F1B560A9600894F7A /* DeformationButton.m in Sources */,
 				7680B5BD1B54B77F00894F7A /* SDWebImageDecoder.m in Sources */,
 				7680B5BB1B54B77F00894F7A /* SDImageCache.m in Sources */,
 				7680B6101B54D9D900894F7A /* RZTransitionsNavigationController.m in Sources */,

@@ -3,6 +3,13 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="xjlFont.ttf">
+            <string>FZJLJW--GB1-0</string>
+            <string>FZJLJW--GB1-0</string>
+            <string>FZJLJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Index View Controller-->
         <scene sceneID="Mkm-Ac-Cdy">
@@ -97,6 +104,32 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="emZ-rO-y1a">
                                 <rect key="frame" x="212" y="50" width="600" height="450"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kh-d3-oYy">
+                                <rect key="frame" x="349" y="508" width="326" height="50"/>
+                                <fontDescription key="fontDescription" name="FZJLJW--GB1-0" family="FZJingLeiS-R-GB" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="价格" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5p-R6-bvp">
+                                <rect key="frame" x="349" y="566" width="326" height="50"/>
+                                <fontDescription key="fontDescription" name="FZJLJW--GB1-0" family="FZJingLeiS-R-GB" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7UA-v8-9sg">
+                                <rect key="frame" x="724" y="668" width="300" height="100"/>
+                                <fontDescription key="fontDescription" name="FZJLJW--GB1-0" family="FZJingLeiS-R-GB" pointSize="25"/>
+                                <state key="normal" title="加入餐单">
+                                    <color key="titleColor" red="0.96078431372549022" green="0.65098039215686276" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="orderAction:" destination="D94-13-aII" eventType="touchUpInside" id="cSR-D1-DXK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rightBarButtonItem" translatesAutoresizingMaskIntoConstraints="NO" id="Zqm-5a-qbS">
+                                <rect key="frame" x="844" y="600" width="60" height="60"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -105,6 +138,9 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="imageView" destination="emZ-rO-y1a" id="yId-fZ-Ne6"/>
+                        <outlet property="nameLabel" destination="9kh-d3-oYy" id="TnX-D5-YMr"/>
+                        <outlet property="priceLabel" destination="K5p-R6-bvp" id="SyJ-IC-VcM"/>
+                        <outlet property="tipImageView" destination="Zqm-5a-qbS" id="3l9-Yn-rgl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IGF-Nf-ba3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -366,5 +402,6 @@
     </scenes>
     <resources>
         <image name="default" width="300" height="300"/>
+        <image name="rightBarButtonItem" width="60" height="56"/>
     </resources>
 </document>

@@ -37,7 +37,7 @@
 @protocol IndexGoToImageDetailProtocol <NSObject>
 
 @required
-- (void)goToImageDeatail:(UIImage *)image;
+- (void)goToImageDeatail:(UIImage *)image name:(NSString *)name price:(NSString *)price;
 
 @end
 

@@ -105,7 +105,7 @@
     NSDictionary *dic = [self.dbArray objectAtIndex:prepareDeleteArrayIndex];
     NSString *name = [dic valueForKeyPath:@"name"];
     NSString *avString = [NSString stringWithFormat:@"删除 %@ ？",name];
-    UIAlertView *av = [[UIAlertView alloc] initWithTitle:nil message:avString delegate:self cancelButtonTitle:@"no" otherButtonTitles:@"yes", nil];
+    UIAlertView *av = [[UIAlertView alloc] initWithTitle:nil message:avString delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"是", nil];
     [av show];
     
 }

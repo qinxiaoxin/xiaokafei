@@ -74,13 +74,12 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
     return cell;
 }
 
-
 #pragma mark <UICollectionViewDelegate>
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     ModelCollectionViewCell *cell = (ModelCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    [_delegate goToImageDeatail:cell.imageView.image];
+    [_delegate goToImageDeatail:cell.imageView.image name:cell.nameLabel.text price:cell.priceLabel.text];
 }
 
 

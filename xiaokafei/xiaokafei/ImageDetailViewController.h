@@ -10,6 +10,8 @@
 
 @interface ImageDetailViewController : UIViewController
 
-@property (weak, nonatomic) UIImage *image;
+@property (strong, nonatomic) UIImage *image;
+@property (copy, nonatomic) NSString *name;
+@property (copy, nonatomic) NSString *price;
 
 @end
