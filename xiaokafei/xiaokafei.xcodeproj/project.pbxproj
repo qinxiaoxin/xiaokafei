@@ -1632,13 +1632,13 @@
 			baseConfigurationReference = 7674F7253FCE7F8D97A50825 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: ZICHEN WANG (CE27WTEZZH)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/xiaokafei/PrefixHeader.pch";
 				INFOPLIST_FILE = xiaokafei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "小咖啡点餐";
-				PROVISIONING_PROFILE = "f232d015-641d-4125-947c-3f9e9b352bc2";
+				PROVISIONING_PROFILE = "2b0a6809-36fb-4bcd-b3e6-6ae0a2ae04e2";
 			};
 			name = Debug;
 		};
@@ -1647,13 +1647,13 @@
 			baseConfigurationReference = 78181C5567026BF1617CC7B7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: ZICHEN WANG (CE27WTEZZH)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/xiaokafei/PrefixHeader.pch";
 				INFOPLIST_FILE = xiaokafei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "小咖啡点餐";
-				PROVISIONING_PROFILE = "f232d015-641d-4125-947c-3f9e9b352bc2";
+				PROVISIONING_PROFILE = "2b0a6809-36fb-4bcd-b3e6-6ae0a2ae04e2";
 			};
 			name = Release;
 		};
