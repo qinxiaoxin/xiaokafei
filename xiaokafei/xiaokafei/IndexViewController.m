@@ -38,6 +38,15 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [UIView animateWithDuration:1.0 delay:0.3 usingSpringWithDamping:0.4 initialSpringVelocity:0 options:UIViewAnimationOptionAllowAnimatedContent animations:^{
+        self.rightImageView.transform = CGAffineTransformMakeScale(1, 1);
+    } completion:nil];
+}
+
 #pragma mark - Private Methods
 
 - (void)initNav {
@@ -62,15 +71,6 @@
     [self equipmentOfViewController];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    [UIView animateWithDuration:1.0 delay:0.3 usingSpringWithDamping:0.4 initialSpringVelocity:0 options:UIViewAnimationOptionAllowAnimatedContent animations:^{
-        self.rightImageView.transform = CGAffineTransformMakeScale(1, 1);
-    } completion:nil];
-}
-
 - (void)equipmentOfViewController {
     
     CoffeeCollectionViewController *coffee = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"Coffee"];
@@ -85,13 +85,13 @@
     milk_ice.delegate = self;
     milk_ice.title = @"奶昔、沙冰";
     
-    FoodCollectionViewController *food = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"Food"];
-    food.delegate = self;
-    food.title = @"简餐小食";
-    
     CakeCollectionViewController *cake = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"Cake"];
     cake.delegate = self;
     cake.title = @"糕点";
+    
+    FoodCollectionViewController *food = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"Food"];
+    food.delegate = self;
+    food.title = @"简餐小食";
     
     DrinkCollectionViewController *drink = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"Drink"];
     drink.delegate = self;
@@ -105,7 +105,7 @@
     milk_tea.delegate = self;
     milk_tea.title = @"奶茶";
     
-    NSArray *controllerArray = @[coffee,juice,milk_ice,food,cake,drink,flower_tea,milk_tea];
+    NSArray *controllerArray = @[coffee,juice,milk_ice,cake,food,drink,flower_tea,milk_tea];
     
     NSDictionary *parameters = @{
                                  CAPSPageMenuOptionScrollMenuBackgroundColor: [UIColor colorWithRed:30.0/255.0 green:30.0/255.0 blue:30.0/255.0 alpha:1.0],

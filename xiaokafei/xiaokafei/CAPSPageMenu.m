@@ -176,7 +176,7 @@ NSString * const CAPSPageMenuOptionHideTopMenuBar                       = @"hide
     _mutableMenuItemWidths  = [NSMutableArray array];
     
     _menuHeight                           = 34.0;
-    _menuMargin                           = 15.0;
+    _menuMargin                           = 0.0;
     _menuItemWidth                        = 111.0;
     _selectionIndicatorHeight             = 3.0;
     _totalMenuItemWidthIfDifferentWidths  = 0.0;
