@@ -22,6 +22,8 @@
 
 @property (nonatomic, strong) CAPSPageMenu *pageMenu;
 
+@property (nonatomic, strong) UIImageView *rightImageView;
+
 @end
 
 @implementation IndexViewController
@@ -48,13 +50,25 @@
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor orangeColor],NSFontAttributeName: [UIFont fontWithName:Font size:30.f]};
     
-    UIImageView *rightImageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 30, 30)];
-    rightImageView.image = [UIImage imageNamed:@"rightBarButtonItem"];
-    rightImageView.userInteractionEnabled = TRUE;
-    [rightImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapGoToRight)]];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView: rightImageView];
+    if (!_rightImageView) {
+        _rightImageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 30, 30)];
+        _rightImageView.image = [UIImage imageNamed:@"rightBarButtonItem"];
+        _rightImageView.userInteractionEnabled = TRUE;
+        [_rightImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapGoToRight)]];
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView: _rightImageView];
+        _rightImageView.transform = CGAffineTransformMakeScale(0, 0);
+    }
     
     [self equipmentOfViewController];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [UIView animateWithDuration:1.0 delay:0.3 usingSpringWithDamping:0.4 initialSpringVelocity:0 options:UIViewAnimationOptionAllowAnimatedContent animations:^{
+        self.rightImageView.transform = CGAffineTransformMakeScale(1, 1);
+    } completion:nil];
 }
 
 - (void)equipmentOfViewController {
@@ -122,6 +136,12 @@
 
 - (void)didTapGoToRight {
     debugLog(@"弹出菜单");
+    
+    _rightImageView.transform = CGAffineTransformMakeScale(0, 0);
+    [UIView animateWithDuration:0.6 delay:0.0 usingSpringWithDamping:0.4 initialSpringVelocity:0 options:UIViewAnimationOptionAllowAnimatedContent animations:^{
+        self.rightImageView.transform = CGAffineTransformMakeScale(1, 1);
+    } completion:nil];
+    
     UIViewController *popin = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MyOrderViewController"];
     popin.view.bounds = CGRectMake(0, 0, 320, 480);
     [popin setPopinTransitionStyle:BKTPopinTransitionStyleSnap];
