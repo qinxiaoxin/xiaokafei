@@ -13,11 +13,6 @@
 - (void)awakeFromNib {
     // Initialization code
     [super awakeFromNib];
-    
-//    _imageView.layer.shadowColor = [UIColor blackColor].CGColor;
-//    _imageView.layer.shadowOffset = CGSizeMake(0, 0);
-//    _imageView.layer.shadowOpacity = 0.8f;
-//    _imageView.layer.shadowRadius = SHADOW_RADIUS;
 }
 
 @end

@@ -23,5 +23,6 @@
 #import "RZTransitionsAnimationControllers.h"
 #import "RZTransitionInteractionControllerProtocol.h"
 #import "RZTransitionsManager.h"
+#import "ImageCached.h"
 
 #endif

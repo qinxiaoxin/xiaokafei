@@ -193,6 +193,7 @@
 		76C80CED1ABBF6120038B975 /* IMG_2097.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76C80CEB1ABBF6120038B975 /* IMG_2097.JPG */; };
 		76C80CF01ABBFA470038B975 /* IMG_2101.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76C80CEE1ABBFA470038B975 /* IMG_2101.JPG */; };
 		76C80CF11ABBFA470038B975 /* IMG_2104.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76C80CEF1ABBFA470038B975 /* IMG_2104.JPG */; };
+		76FD27011B6B5396007A506A /* ImageCached.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FD27001B6B5396007A506A /* ImageCached.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -497,6 +498,8 @@
 		76C80CEB1ABBF6120038B975 /* IMG_2097.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2097.JPG; sourceTree = "<group>"; };
 		76C80CEE1ABBFA470038B975 /* IMG_2101.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2101.JPG; sourceTree = "<group>"; };
 		76C80CEF1ABBFA470038B975 /* IMG_2104.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2104.JPG; sourceTree = "<group>"; };
+		76FD26FF1B6B5396007A506A /* ImageCached.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCached.h; sourceTree = "<group>"; };
+		76FD27001B6B5396007A506A /* ImageCached.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCached.m; sourceTree = "<group>"; };
 		78181C5567026BF1617CC7B7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EA5019F9736D5EFE20823951 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -930,6 +933,7 @@
 		7680B6361B5625FF00894F7A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				76FD26F91B6B533A007A506A /* Cached */,
 				7609CB6F1A7B5AB400B4513C /* fmdb */,
 			);
 			name = Tools;
@@ -1135,6 +1139,15 @@
 				76C80CDA1ABBCCEB0038B975 /* TotalView.m */,
 			);
 			name = TotalView;
+			sourceTree = "<group>";
+		};
+		76FD26F91B6B533A007A506A /* Cached */ = {
+			isa = PBXGroup;
+			children = (
+				76FD26FF1B6B5396007A506A /* ImageCached.h */,
+				76FD27001B6B5396007A506A /* ImageCached.m */,
+			);
+			name = Cached;
 			sourceTree = "<group>";
 		};
 		E75140C8E5E073833CB5B68C /* Pods */ = {
@@ -1506,6 +1519,7 @@
 				7680B5BA1B54B77F00894F7A /* NSData+ImageContentType.m in Sources */,
 				7680B5C61B54B77F00894F7A /* UIImageView+HighlightedWebCache.m in Sources */,
 				7680B6111B54D9D900894F7A /* RZUniqueTransition.m in Sources */,
+				76FD27011B6B5396007A506A /* ImageCached.m in Sources */,
 				7609CB7B1A7B5AB400B4513C /* FMDatabase.m in Sources */,
 				762D1B471B5369FA000C47F7 /* IndexViewController.m in Sources */,
 			);
@@ -1632,13 +1646,13 @@
 			baseConfigurationReference = 7674F7253FCE7F8D97A50825 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ZICHEN WANG (CE27WTEZZH)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/xiaokafei/PrefixHeader.pch";
 				INFOPLIST_FILE = xiaokafei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "小咖啡点餐";
-				PROVISIONING_PROFILE = "2b0a6809-36fb-4bcd-b3e6-6ae0a2ae04e2";
+				PROVISIONING_PROFILE = "f232d015-641d-4125-947c-3f9e9b352bc2";
 			};
 			name = Debug;
 		};
@@ -1647,13 +1661,13 @@
 			baseConfigurationReference = 78181C5567026BF1617CC7B7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ZICHEN WANG (CE27WTEZZH)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/xiaokafei/PrefixHeader.pch";
 				INFOPLIST_FILE = xiaokafei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "小咖啡点餐";
-				PROVISIONING_PROFILE = "2b0a6809-36fb-4bcd-b3e6-6ae0a2ae04e2";
+				PROVISIONING_PROFILE = "f232d015-641d-4125-947c-3f9e9b352bc2";
 			};
 			name = Release;
 		};

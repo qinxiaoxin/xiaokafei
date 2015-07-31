@@ -52,13 +52,17 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
     // Configure the cell
     NSDictionary *dic = [_array objectAtIndex:indexPath.row];
     
-    NSString *img = [dic valueForKeyPath:@"image"];
-    if ([img isEqualToString:@"default"]) {
-        cell.imageView.image = [UIImage imageNamed:@"default"];
+    ImageCached *cached = [[ImageCached alloc] init];
+    cached.str = [dic valueForKeyPath:@"image"];
+    UIImage *image = [cached cachedResult];
+    
+    if (image) {
+        cell.imageView.image = image;
     }else{
-        SDWebImageManager *manager = [SDWebImageManager sharedManager];
-        [manager diskImageExistsForURL:[NSURL URLWithString:img] completion:^(BOOL isInCache) {
-            cell.imageView.image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForAuxiliaryExecutable:img]];
+        [cached startWithCompletion:^(UIImage *image, NSError *error) {
+            if (image) {
+                cell.imageView.image = image;
+            }
         }];
     }
     
