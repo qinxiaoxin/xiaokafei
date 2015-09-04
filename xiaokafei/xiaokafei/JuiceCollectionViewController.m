@@ -62,7 +62,10 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
         [cached startWithCompletion:^(UIImage *image, NSError *error) {
             if (image) {
                 cell.imageView.image = image;
+            }else{
+                cell.imageView.image = image;
             }
+
         }];
     }
     

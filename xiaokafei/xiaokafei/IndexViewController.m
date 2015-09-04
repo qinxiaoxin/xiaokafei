@@ -83,7 +83,7 @@
     
     MilkIceCollectionViewController *milk_ice = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"MilkIce"];
     milk_ice.delegate = self;
-    milk_ice.title = @"奶昔、沙冰";
+    milk_ice.title = @"奶昔沙冰";
     
     CakeCollectionViewController *cake = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"Cake"];
     cake.delegate = self;
@@ -112,9 +112,9 @@
                                  CAPSPageMenuOptionViewBackgroundColor: [UIColor colorWithRed:20.0/255.0 green:20.0/255.0 blue:20.0/255.0 alpha:1.0],
                                  CAPSPageMenuOptionSelectionIndicatorColor: [UIColor orangeColor],
                                  CAPSPageMenuOptionBottomMenuHairlineColor: [UIColor colorWithRed:70.0/255.0 green:70.0/255.0 blue:70.0/255.0 alpha:1.0],
-                                 CAPSPageMenuOptionMenuItemFont: [UIFont fontWithName:Font size:18.f],
-                                 CAPSPageMenuOptionMenuHeight: @(40.0),
-                                 CAPSPageMenuOptionMenuItemWidth: @(90.0),
+                                 CAPSPageMenuOptionMenuItemFont: [UIFont fontWithName:Font size:28.f],
+                                 CAPSPageMenuOptionMenuHeight: @(50.0),
+                                 CAPSPageMenuOptionMenuItemWidth: @(120.0),
                                  CAPSPageMenuOptionCenterMenuItems: @(YES)
                                  };
     

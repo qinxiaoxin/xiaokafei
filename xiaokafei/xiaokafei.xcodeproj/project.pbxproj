@@ -178,6 +178,19 @@
 		76A49F441AEA192D00486199 /* IMG_2251.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A49F3F1AEA192D00486199 /* IMG_2251.JPG */; };
 		76A49F451AEA192D00486199 /* IMG_2252.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A49F401AEA192D00486199 /* IMG_2252.JPG */; };
 		76A49F461AEA192D00486199 /* IMG_2253.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A49F411AEA192D00486199 /* IMG_2253.JPG */; };
+		76A4BDB91B99D784002A2FF7 /* IMG_2672.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A4BDB81B99D784002A2FF7 /* IMG_2672.JPG */; };
+		76A4BDC01B99D88A002A2FF7 /* IMG_2663.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A4BDBF1B99D88A002A2FF7 /* IMG_2663.JPG */; };
+		76A4BDC21B99D8C6002A2FF7 /* IMG_2664.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A4BDC11B99D8C6002A2FF7 /* IMG_2664.JPG */; };
+		76A4BDC41B99D8F1002A2FF7 /* IMG_2665.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A4BDC31B99D8F1002A2FF7 /* IMG_2665.JPG */; };
+		76A4BDC61B99D91D002A2FF7 /* IMG_2666.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A4BDC51B99D91D002A2FF7 /* IMG_2666.JPG */; };
+		76A4BDC81B99D968002A2FF7 /* IMG_2659.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A4BDC71B99D968002A2FF7 /* IMG_2659.JPG */; };
+		76A4BDCA1B99DA08002A2FF7 /* IMG_2660.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A4BDC91B99DA08002A2FF7 /* IMG_2660.JPG */; };
+		76A4BDCD1B99DB2D002A2FF7 /* IMG_2717.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A4BDCB1B99DB2D002A2FF7 /* IMG_2717.JPG */; };
+		76A4BDCE1B99DB2D002A2FF7 /* IMG_2718.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A4BDCC1B99DB2D002A2FF7 /* IMG_2718.JPG */; };
+		76A4BDD01B99DCC6002A2FF7 /* IMG_2655.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A4BDCF1B99DCC6002A2FF7 /* IMG_2655.JPG */; };
+		76A4BDD21B99DD2B002A2FF7 /* IMG_2693.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A4BDD11B99DD2B002A2FF7 /* IMG_2693.JPG */; };
+		76A4BDD41B99DE95002A2FF7 /* IMG_2661.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A4BDD31B99DE95002A2FF7 /* IMG_2661.JPG */; };
+		76A4BDD61B99DF40002A2FF7 /* IMG_2662.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A4BDD51B99DF40002A2FF7 /* IMG_2662.JPG */; };
 		76A995351AE53E1D0051F382 /* IMG_2245.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A995341AE53E1D0051F382 /* IMG_2245.JPG */; };
 		76A995371AE53E2B0051F382 /* IMG_2243.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A995361AE53E2B0051F382 /* IMG_2243.JPG */; };
 		76A995391AE53E3B0051F382 /* IMG_2244.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A995381AE53E3B0051F382 /* IMG_2244.JPG */; };
@@ -482,6 +495,19 @@
 		76A49F3F1AEA192D00486199 /* IMG_2251.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2251.JPG; sourceTree = "<group>"; };
 		76A49F401AEA192D00486199 /* IMG_2252.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2252.JPG; sourceTree = "<group>"; };
 		76A49F411AEA192D00486199 /* IMG_2253.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2253.JPG; sourceTree = "<group>"; };
+		76A4BDB81B99D784002A2FF7 /* IMG_2672.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2672.JPG; sourceTree = "<group>"; };
+		76A4BDBF1B99D88A002A2FF7 /* IMG_2663.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2663.JPG; sourceTree = "<group>"; };
+		76A4BDC11B99D8C6002A2FF7 /* IMG_2664.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2664.JPG; sourceTree = "<group>"; };
+		76A4BDC31B99D8F1002A2FF7 /* IMG_2665.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2665.JPG; sourceTree = "<group>"; };
+		76A4BDC51B99D91D002A2FF7 /* IMG_2666.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2666.JPG; sourceTree = "<group>"; };
+		76A4BDC71B99D968002A2FF7 /* IMG_2659.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2659.JPG; sourceTree = "<group>"; };
+		76A4BDC91B99DA08002A2FF7 /* IMG_2660.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2660.JPG; sourceTree = "<group>"; };
+		76A4BDCB1B99DB2D002A2FF7 /* IMG_2717.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2717.JPG; sourceTree = "<group>"; };
+		76A4BDCC1B99DB2D002A2FF7 /* IMG_2718.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2718.JPG; sourceTree = "<group>"; };
+		76A4BDCF1B99DCC6002A2FF7 /* IMG_2655.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_2655.JPG; path = "../简餐小食/IMG_2655.JPG"; sourceTree = "<group>"; };
+		76A4BDD11B99DD2B002A2FF7 /* IMG_2693.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2693.JPG; sourceTree = "<group>"; };
+		76A4BDD31B99DE95002A2FF7 /* IMG_2661.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2661.JPG; sourceTree = "<group>"; };
+		76A4BDD51B99DF40002A2FF7 /* IMG_2662.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2662.JPG; sourceTree = "<group>"; };
 		76A995341AE53E1D0051F382 /* IMG_2245.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2245.JPG; sourceTree = "<group>"; };
 		76A995361AE53E2B0051F382 /* IMG_2243.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2243.JPG; sourceTree = "<group>"; };
 		76A995381AE53E3B0051F382 /* IMG_2244.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2244.JPG; sourceTree = "<group>"; };
@@ -963,6 +989,7 @@
 				762026941ADEA75A00C3E62F /* IMG_2226.JPG */,
 				762026951ADEA75A00C3E62F /* IMG_2227.JPG */,
 				762026961ADEA75A00C3E62F /* IMG_2228.JPG */,
+				76A4BDB81B99D784002A2FF7 /* IMG_2672.JPG */,
 			);
 			path = "咖啡";
 			sourceTree = "<group>";
@@ -983,6 +1010,7 @@
 				762026B71ADF7BDF00C3E62F /* IMG_2233.JPG */,
 				762026B81ADF7BDF00C3E62F /* IMG_2236.JPG */,
 				7606D23B1B2C0549009FA24B /* IMG_2527.JPG */,
+				76A4BDCF1B99DCC6002A2FF7 /* IMG_2655.JPG */,
 			);
 			path = "奶昔，沙冰";
 			sourceTree = "<group>";
@@ -1064,6 +1092,15 @@
 				7622BCDE1B2303E0008166DB /* IMG_2478.JPG */,
 				7622BCDF1B2303E0008166DB /* IMG_2481.JPG */,
 				7622BCE01B2303E0008166DB /* IMG_2482.JPG */,
+				76A4BDC71B99D968002A2FF7 /* IMG_2659.JPG */,
+				76A4BDC91B99DA08002A2FF7 /* IMG_2660.JPG */,
+				76A4BDD31B99DE95002A2FF7 /* IMG_2661.JPG */,
+				76A4BDD51B99DF40002A2FF7 /* IMG_2662.JPG */,
+				76A4BDBF1B99D88A002A2FF7 /* IMG_2663.JPG */,
+				76A4BDC11B99D8C6002A2FF7 /* IMG_2664.JPG */,
+				76A4BDC31B99D8F1002A2FF7 /* IMG_2665.JPG */,
+				76A4BDC51B99D91D002A2FF7 /* IMG_2666.JPG */,
+				76A4BDD11B99DD2B002A2FF7 /* IMG_2693.JPG */,
 			);
 			path = "简餐小食";
 			sourceTree = "<group>";
@@ -1078,6 +1115,8 @@
 				762026A31ADEA7CB00C3E62F /* IMG_2220.JPG */,
 				762026A41ADEA7CB00C3E62F /* IMG_2222.JPG */,
 				76A995381AE53E3B0051F382 /* IMG_2244.JPG */,
+				76A4BDCB1B99DB2D002A2FF7 /* IMG_2717.JPG */,
+				76A4BDCC1B99DB2D002A2FF7 /* IMG_2718.JPG */,
 			);
 			path = "糕点";
 			sourceTree = "<group>";
@@ -1305,6 +1344,7 @@
 				768990171AB848AA0046491F /* IMG_2001.JPG in Resources */,
 				761BC2BE1ABEC33400260150 /* IMG_2144.JPG in Resources */,
 				768990081AB848AA0046491F /* IMG_2089.JPG in Resources */,
+				76A4BDC21B99D8C6002A2FF7 /* IMG_2664.JPG in Resources */,
 				768990221AB848AA0046491F /* IMG_2086.JPG in Resources */,
 				761BC2BB1ABEC33400260150 /* IMG_2132.JPG in Resources */,
 				7689901E1AB848AA0046491F /* IMG_2051.JPG in Resources */,
@@ -1313,15 +1353,20 @@
 				76998DB91B118D680072BDCD /* IMG_2389.JPG in Resources */,
 				768990181AB848AA0046491F /* IMG_2030.JPG in Resources */,
 				768990001AB848AA0046491F /* IMG_1384.JPG in Resources */,
+				76A4BDCD1B99DB2D002A2FF7 /* IMG_2717.JPG in Resources */,
 				76998DB51B118D680072BDCD /* IMG_2364.JPG in Resources */,
 				7622BCE31B2303E0008166DB /* IMG_2478.JPG in Resources */,
+				76A4BDD61B99DF40002A2FF7 /* IMG_2662.JPG in Resources */,
 				768990391AB848AA0046491F /* IMG_1489.JPG in Resources */,
+				76A4BDC61B99D91D002A2FF7 /* IMG_2666.JPG in Resources */,
 				768990211AB848AA0046491F /* IMG_2059.JPG in Resources */,
+				76A4BDC01B99D88A002A2FF7 /* IMG_2663.JPG in Resources */,
 				762D1B4D1B53724E000C47F7 /* ModelCollectionViewCell.xib in Resources */,
 				761FD8D81A480427009D1A40 /* xiaokafei.geojson in Resources */,
 				7689900A1AB848AA0046491F /* IMG_1530.JPG in Resources */,
 				762026AF1ADEB36600C3E62F /* IMG_2215.JPG in Resources */,
 				76C80CE91ABBF5FD0038B975 /* IMG_2128.JPG in Resources */,
+				76A4BDCA1B99DA08002A2FF7 /* IMG_2660.JPG in Resources */,
 				768990381AB848AA0046491F /* IMG_1471.JPG in Resources */,
 				762026991ADEA75A00C3E62F /* IMG_2227.JPG in Resources */,
 				76998DB81B118D680072BDCD /* IMG_2388.JPG in Resources */,
@@ -1332,6 +1377,7 @@
 				76C80CE81ABBF5FD0038B975 /* IMG_2127.JPG in Resources */,
 				768990131AB848AA0046491F /* IMG_1987.JPG in Resources */,
 				762026911ADEA1CD00C3E62F /* IMG_2177.JPG in Resources */,
+				76A4BDD41B99DE95002A2FF7 /* IMG_2661.JPG in Resources */,
 				768990361AB848AA0046491F /* IMG_2020.JPG in Resources */,
 				768990091AB848AA0046491F /* IMG_1514.JPG in Resources */,
 				768990341AB848AA0046491F /* IMG_2009.JPG in Resources */,
@@ -1340,6 +1386,7 @@
 				7689903D1AB848AA0046491F /* IMG_1804.JPG in Resources */,
 				762026B31ADF638A00C3E62F /* xjlFont.ttf in Resources */,
 				7689900F1AB848AA0046491F /* IMG_1468.JPG in Resources */,
+				76A4BDCE1B99DB2D002A2FF7 /* IMG_2718.JPG in Resources */,
 				762026AC1ADEB36600C3E62F /* IMG_2196.JPG in Resources */,
 				762026B51ADF660400C3E62F /* launchScreen@2x.png in Resources */,
 				7620269F1ADEA78700C3E62F /* IMG_2206.JPG in Resources */,
@@ -1357,11 +1404,15 @@
 				76C80CE61ABBF5FD0038B975 /* IMG_2120.JPG in Resources */,
 				7689903A1AB848AA0046491F /* IMG_1757.JPG in Resources */,
 				768990141AB848AA0046491F /* IMG_1990.JPG in Resources */,
+				76A4BDD01B99DCC6002A2FF7 /* IMG_2655.JPG in Resources */,
 				761BC2BD1ABEC33400260150 /* IMG_2139.JPG in Resources */,
 				7620269A1ADEA75A00C3E62F /* IMG_2228.JPG in Resources */,
 				762026AD1ADEB36600C3E62F /* IMG_2207.JPG in Resources */,
+				76A4BDB91B99D784002A2FF7 /* IMG_2672.JPG in Resources */,
 				7622BCE41B2303E0008166DB /* IMG_2481.JPG in Resources */,
 				76A49F461AEA192D00486199 /* IMG_2253.JPG in Resources */,
+				76A4BDC41B99D8F1002A2FF7 /* IMG_2665.JPG in Resources */,
+				76A4BDD21B99DD2B002A2FF7 /* IMG_2693.JPG in Resources */,
 				76A49F421AEA192D00486199 /* IMG_2249.JPG in Resources */,
 				7689900D1AB848AA0046491F /* IMG_2010.JPG in Resources */,
 				7606D23C1B2C0549009FA24B /* IMG_2527.JPG in Resources */,
@@ -1381,6 +1432,7 @@
 				768990351AB848AA0046491F /* IMG_2015.JPG in Resources */,
 				76A995371AE53E2B0051F382 /* IMG_2243.JPG in Resources */,
 				768990191AB848AA0046491F /* IMG_2037.JPG in Resources */,
+				76A4BDC81B99D968002A2FF7 /* IMG_2659.JPG in Resources */,
 				768990321AB848AA0046491F /* IMG_2055.JPG in Resources */,
 				762026BB1ADF7BDF00C3E62F /* IMG_2236.JPG in Resources */,
 				768990201AB848AA0046491F /* IMG_2058.JPG in Resources */,
@@ -1647,10 +1699,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: ZICHEN WANG (CE27WTEZZH)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/xiaokafei",
+					/Users/shinxin/Desktop,
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/xiaokafei/PrefixHeader.pch";
 				INFOPLIST_FILE = xiaokafei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"Pods-MaryPopin\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_NAME = "小咖啡点餐";
 				PROVISIONING_PROFILE = "f232d015-641d-4125-947c-3f9e9b352bc2";
 			};
@@ -1662,10 +1726,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: ZICHEN WANG (CE27WTEZZH)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/xiaokafei",
+					/Users/shinxin/Desktop,
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/xiaokafei/PrefixHeader.pch";
 				INFOPLIST_FILE = xiaokafei/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"Pods-MaryPopin\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_NAME = "小咖啡点餐";
 				PROVISIONING_PROFILE = "f232d015-641d-4125-947c-3f9e9b352bc2";
 			};

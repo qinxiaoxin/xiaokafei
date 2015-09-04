@@ -64,7 +64,9 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
         cell.imageView.image = image;
     }else{
         [cached startWithCompletion:^(UIImage *image, NSError *error) {
-            if (image) {
+            if (image && [[collectionView indexPathsForVisibleItems] containsObject:indexPath]) {
+                [collectionView reloadItemsAtIndexPaths:@[indexPath]];
+            }else{
                 cell.imageView.image = image;
             }
         }];
@@ -80,7 +82,6 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
 }
 
 
-
 #pragma mark <UICollectionViewDelegate>
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
@@ -88,6 +89,7 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
     ModelCollectionViewCell *cell = (ModelCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     [_delegate goToImageDeatail:cell.imageView.image name:cell.nameLabel.text price:cell.priceLabel.text];
 }
+
 
 
 @end

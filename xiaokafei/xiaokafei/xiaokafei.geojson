@@ -14,12 +14,6 @@
                "image":"IMG_2093.JPG"
                },
                {
-               "name":"香草奇诺",
-               "ename":"Cappuccino",
-               "price":"¥24",
-               "image":"default"
-               },
-               {
                "name":"拿铁",
                "ename":"Latte",
                "price":"¥22",
@@ -78,9 +72,27 @@
                "ename":"American Coffee",
                "price":"¥20",
                "image":"IMG_2008.JPG"
+               },
+               {
+               "name":"玫瑰咖啡",
+               "ename":"Rose Coffee",
+               "price":"¥24",
+               "image":"IMG_2672.JPG"
                }],
     
     "cake":[{
+            "name":"水果蛋糕",
+            "ename":"Fruit Cake",
+            "price":"¥16",
+            "image":"IMG_2718.JPG"
+            },
+            {
+            "name":"摩卡核桃",
+            "ename":"Mocca Walnut",
+            "price":"¥18",
+            "image":"IMG_2717.JPG"
+            },
+            {
             "name":"抹茶蛋糕",
             "ename":"Matcha Cake",
             "price":"¥18",
@@ -130,12 +142,6 @@
              "image":"IMG_1471.JPG"
              },
              {
-             "name":"朗姆可乐",
-             "ename":"Rum Cola",
-             "price":"¥20",
-             "image":"default"
-             },
-             {
              "name":"玛格丽特",
              "ename":"Margaret",
              "price":"¥23",
@@ -148,94 +154,10 @@
              "image":"IMG_2364.JPG"
              },
              {
-             "name":"螺丝刀",
-             "ename":"Screwdriver",
-             "price":"¥22",
-             "image":"default"
-             },
-             {
-             "name":"金汤力",
-             "ename":"Gin Tonic",
-             "price":"¥22",
-             "image":"default"
-             },
-             {
              "name":"红粉佳人",
              "ename":"Pink Lady",
              "price":"¥23",
              "image":"IMG_2387.JPG"
-             },
-             {
-             "name":"蓝色夏威夷",
-             "ename":"Blue Hawaii",
-             "price":"¥25",
-             "image":"default"
-             },
-             {
-             "name":"蝶舞",
-             "ename":"Butterfly Dance",
-             "price":"¥21",
-             "image":"default"
-             },
-             {
-             "name":"女孩",
-             "ename":"Girls",
-             "price":"¥22",
-             "image":"default"
-             },
-             {
-             "name":"神风",
-             "ename":"God Wind",
-             "price":"¥22",
-             "image":"default"
-             },
-             {
-             "name":"黑俄罗斯",
-             "ename":"Black Russia",
-             "price":"¥22",
-             "image":"default"
-             },
-             {
-             "name":"白俄罗斯",
-             "ename":"White Russia",
-             "price":"¥22",
-             "image":"default"
-             },
-             {
-             "name":"天使之吻",
-             "ename":"Angle's Kiss",
-             "price":"¥23",
-             "image":"default"
-             },
-             {
-             "name":"百利甜牛奶",
-             "ename":"Baileys Milk",
-             "price":"¥22",
-             "image":"default"
-             },
-             {
-             "name":"威士忌",
-             "ename":"Whisky",
-             "price":"¥21",
-             "image":"default"
-             },
-             {
-             "name":"海风",
-             "ename":"Ocean Wind",
-             "price":"¥21",
-             "image":"default"
-             },
-             {
-             "name":"海角乐园",
-             "ename":"Cape Paradise",
-             "price":"¥21",
-             "image":"default"
-             },
-             {
-             "name":"黑玫瑰",
-             "ename":"Black Rose",
-             "price":"¥25",
-             "image":"default"
              },
              {
              "name":"小公主",
@@ -248,12 +170,6 @@
              "ename":"Green Grasshopper",
              "price":"¥23",
              "image":"IMG_2388.JPG"
-             },
-             {
-             "name":"莫吉托",
-             "ename":"Mojito",
-             "price":"¥25",
-             "image":"default"
              },
              {
              "name":"龙舌兰日出",
@@ -272,15 +188,45 @@
              "ename":"Martini",
              "price":"¥22",
              "image":"IMG_1757.JPG"
-             },
-             {
-             "name":"长岛冰茶",
-             "ename":"",
-             "price":"¥30",
-             "image":"default"
              }],
     
     "food":[{
+            "name":"开心果",
+            "ename":"",
+            "price":"¥18",
+            "image":"IMG_2663.JPG"
+            },
+            {
+            "name":"腰果",
+            "ename":"",
+            "price":"¥18",
+            "image":"IMG_2664.JPG"
+            },
+            {
+            "name":"木仁",
+            "ename":"",
+            "price":"¥18",
+            "image":"IMG_2665.JPG"
+            },
+            {
+            "name":"花生",
+            "ename":"",
+            "price":"¥15",
+            "image":"IMG_2666.JPG"
+            },
+            {
+            "name":"金枪鱼三明治",
+            "ename":"",
+            "price":"¥18",
+            "image":"IMG_2659.JPG"
+            },
+            {
+            "name":"水果糕点拼盘",
+            "ename":"",
+            "price":"¥59",
+            "image":"IMG_2693.JPG"
+            },
+            {
             "name":"猪头奶黄包",
             "ename":"",
             "price":"¥9",
@@ -329,6 +275,24 @@
             "image":"IMG_2472.JPG"
             },
             {
+            "name":"番茄鸡肉焗饭",
+            "ename":"",
+            "price":"¥20",
+            "image":"IMG_2660.JPG"
+            },
+            {
+            "name":"咖喱牛肉焗饭",
+            "ename":"",
+            "price":"¥22",
+            "image":"IMG_2661.JPG"
+            },
+            {
+            "name":"海鲜焗饭",
+            "ename":"",
+            "price":"¥22",
+            "image":"IMG_2662.JPG"
+            },
+            {
             "name":"德式香蒜烧汁烩鸡肉",
             "ename":"",
             "price":"¥18",
@@ -351,18 +315,6 @@
             "ename":"",
             "price":"¥18",
             "image":"IMG_2177.JPG"
-            },
-            {
-            "name":"意式牛腩饭",
-            "ename":"",
-            "price":"¥22",
-            "image":"default"
-            },
-            {
-            "name":"咖喱牛肉饭",
-            "ename":"",
-            "price":"¥20",
-            "image":"default"
             },
             {
             "name":"水果沙拉",
@@ -418,12 +370,6 @@
                 "ename":"",
                 "price":"¥24",
                 "image":"IMG_1514.JPG"
-                },
-                {
-                "name":"港式奶茶",
-                "ename":"",
-                "price":"¥20",
-                "image":"default"
                 }],
     
     "flower_tea":[{
@@ -476,6 +422,12 @@
                   }],
     
     "milk_flake":[{
+                  "name":"冰激凌",
+                  "ename":"Ice Cream",
+                  "price":"¥20",
+                  "image":"IMG_2655.JPG"
+                  },
+                  {
                   "name":"木瓜奶昔",
                   "ename":"",
                   "price":"¥22",
@@ -573,12 +525,6 @@
              "image":"IMG_1468.JPG"
              },
              {
-             "name":"葡萄柚果漾",
-             "ename":"",
-             "price":"¥18",
-             "image":"IMG_2215.JPG"
-             },
-             {
              "name":"樱桃蔓越莓",
              "ename":"",
              "price":"¥18",
@@ -609,28 +555,10 @@
              "image":"IMG_2139.JPG"
              },
              {
-             "name":"菠萝汁",
-             "ename":"",
-             "price":"¥19",
-             "image":"IMG_2245.JPG"
-             },
-             {
              "name":"初恋",
              "ename":"",
              "price":"¥19",
              "image":"IMG_2144.JPG"
-             },
-             {
-             "name":"柠檬玫瑰茄",
-             "ename":"",
-             "price":"¥19",
-             "image":"IMG_2145.JPG"
-             },
-             {
-             "name":"葡萄柚草莓汁",
-             "ename":"",
-             "price":"¥19",
-             "image":"IMG_2092.JPG"
              },
              {
              "name":"粉末",
@@ -687,24 +615,6 @@
              "image":"IMG_1987.JPG"
              },
              {
-             "name":"落雪香芒",
-             "ename":"",
-             "price":"¥19",
-             "image":"IMG_1990.JPG"
-             },
-             {
-             "name":"金黄洛神",
-             "ename":"",
-             "price":"¥19",
-             "image":"IMG_1993.JPG"
-             },
-             {
-             "name":"韩香柚砂",
-             "ename":"",
-             "price":"¥19",
-             "image":"IMG_1996.JPG"
-             },
-             {
              "name":"芒果微凉",
              "ename":"",
              "price":"¥20",
@@ -759,12 +669,6 @@
              "image":"IMG_2196.JPG"
              },
              {
-             "name":"芒果果漾",
-             "ename":"",
-             "price":"¥18",
-             "image":"IMG_2207.JPG"
-             },
-             {
              "name":"狂野莫西多",
              "ename":"",
              "price":"¥19",
@@ -775,23 +679,5 @@
              "ename":"",
              "price":"¥19",
              "image":"IMG_2218.JPG"
-             },
-             {
-             "name":"红日",
-             "ename":"",
-             "price":"¥19",
-             "image":"IMG_2057.JPG"
-             },
-             {
-             "name":"柠檬可乐",
-             "ename":"",
-             "price":"¥17",
-             "image":"default"
-             },
-             {
-             "name":"柠檬红茶",
-             "ename":"",
-             "price":"¥17",
-             "image":"default"
              }]
 }
