@@ -725,7 +725,7 @@
 				762D1B461B5369FA000C47F7 /* IndexViewController.m */,
 				7680B6221B54F05A00894F7A /* ImageDetailViewController.h */,
 				7680B6231B54F05A00894F7A /* ImageDetailViewController.m */,
-				762D1B651B53A1DB000C47F7 /* Menu Item */,
+				762D1B651B53A1DB000C47F7 /* SubControllers */,
 			);
 			name = Collection;
 			sourceTree = "<group>";
@@ -749,7 +749,7 @@
 			name = CollectionViewCell;
 			sourceTree = "<group>";
 		};
-		762D1B651B53A1DB000C47F7 /* Menu Item */ = {
+		762D1B651B53A1DB000C47F7 /* SubControllers */ = {
 			isa = PBXGroup;
 			children = (
 				762D1B5B1B53A09F000C47F7 /* CoffeeCollectionViewController.h */,
@@ -769,7 +769,7 @@
 				762D1B7F1B53C756000C47F7 /* MilkTeaCollectionViewController.h */,
 				762D1B801B53C756000C47F7 /* MilkTeaCollectionViewController.m */,
 			);
-			name = "Menu Item";
+			name = SubControllers;
 			sourceTree = "<group>";
 		};
 		765CEA151AB817DA00CC3E80 /* FlowOrderButton */ = {
@@ -1716,7 +1716,7 @@
 					"\"UIKit\"",
 				);
 				PRODUCT_NAME = "小咖啡点餐";
-				PROVISIONING_PROFILE = "f232d015-641d-4125-947c-3f9e9b352bc2";
+				PROVISIONING_PROFILE = "f156840b-86e7-4b08-9b1a-f88135f8bebc";
 			};
 			name = Debug;
 		};
@@ -1743,7 +1743,7 @@
 					"\"UIKit\"",
 				);
 				PRODUCT_NAME = "小咖啡点餐";
-				PROVISIONING_PROFILE = "f232d015-641d-4125-947c-3f9e9b352bc2";
+				PROVISIONING_PROFILE = "f156840b-86e7-4b08-9b1a-f88135f8bebc";
 			};
 			name = Release;
 		};

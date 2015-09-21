@@ -167,19 +167,19 @@
 }
 
 - (UIViewController *)detailImageViewController:(UIImage *)image name:(NSString *)name price:(NSString *)price {
-    ImageDetailViewController *idvc = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"ImageDetail"];
+    ImageDetailViewController *idvc = [[UIStoryboard storyboardWithName:@"Collection" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"ImageDetail"];
     idvc.image = image;
     idvc.name = name;
     idvc.price = price;
     [idvc setTransitioningDelegate:[RZTransitionsManager shared]];
     // Create a dismiss interaction controller that will be attached to the presented
     // view controller to allow for a custom dismissal
-    RZVerticalSwipeInteractionController *dismissInteractionController = [[RZVerticalSwipeInteractionController alloc] init];
-    [dismissInteractionController attachViewController:idvc withAction:RZTransitionAction_Dismiss];
-    [[RZTransitionsManager shared] setInteractionController:dismissInteractionController
-                                         fromViewController:[self class]
-                                           toViewController:nil
-                                                  forAction:RZTransitionAction_Dismiss];
+//    RZVerticalSwipeInteractionController *dismissInteractionController = [[RZVerticalSwipeInteractionController alloc] init];
+//    [dismissInteractionController attachViewController:idvc withAction:RZTransitionAction_Dismiss];
+//    [[RZTransitionsManager shared] setInteractionController:dismissInteractionController
+//                                         fromViewController:[self class]
+//                                           toViewController:nil
+//                                                  forAction:RZTransitionAction_Dismiss];
     return idvc;
 }
 
