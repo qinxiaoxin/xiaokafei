@@ -254,7 +254,7 @@
 		7606D2381B2BECC5009FA24B /* IMG_2524.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2524.JPG; sourceTree = "<group>"; };
 		7606D23B1B2C0549009FA24B /* IMG_2527.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2527.JPG; sourceTree = "<group>"; };
 		7606F08C1ABA6AB000BA2A2A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		7607EA9D1A470F0300AB8E4D /* 小咖啡点餐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "小咖啡点餐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7607EA9D1A470F0300AB8E4D /* 点餐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "点餐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7607EAA11A470F0300AB8E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7607EAA21A470F0300AB8E4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7607EAA41A470F0300AB8E4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -564,7 +564,7 @@
 		7607EA9E1A470F0300AB8E4D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7607EA9D1A470F0300AB8E4D /* 小咖啡点餐.app */,
+				7607EA9D1A470F0300AB8E4D /* 点餐.app */,
 				7607EABC1A470F0300AB8E4D /* xiaokafeiTests.xctest */,
 			);
 			name = Products;
@@ -1226,7 +1226,7 @@
 			);
 			name = xiaokafei;
 			productName = xiaokafei;
-			productReference = 7607EA9D1A470F0300AB8E4D /* 小咖啡点餐.app */;
+			productReference = 7607EA9D1A470F0300AB8E4D /* 点餐.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7607EABB1A470F0300AB8E4D /* xiaokafeiTests */ = {
@@ -1253,7 +1253,7 @@
 		7607EA951A470F0300AB8E4D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Xin Qin";
 				TargetAttributes = {
 					7607EA9C1A470F0300AB8E4D = {
@@ -1635,6 +1635,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1702,7 +1703,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/xiaokafei",
-					/Users/shinxin/Desktop,
 					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/xiaokafei/PrefixHeader.pch";
@@ -1715,7 +1715,8 @@
 					"-framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_NAME = "小咖啡点餐";
+				PRODUCT_BUNDLE_IDENTIFIER = me.qinxin.coffee;
+				PRODUCT_NAME = "点餐";
 				PROVISIONING_PROFILE = "f156840b-86e7-4b08-9b1a-f88135f8bebc";
 			};
 			name = Debug;
@@ -1729,7 +1730,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/xiaokafei",
-					/Users/shinxin/Desktop,
 					"$(PROJECT_DIR)",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/xiaokafei/PrefixHeader.pch";
@@ -1742,7 +1742,8 @@
 					"-framework",
 					"\"UIKit\"",
 				);
-				PRODUCT_NAME = "小咖啡点餐";
+				PRODUCT_BUNDLE_IDENTIFIER = me.qinxin.coffee;
+				PRODUCT_NAME = "点餐";
 				PROVISIONING_PROFILE = "f156840b-86e7-4b08-9b1a-f88135f8bebc";
 			};
 			name = Release;
@@ -1751,18 +1752,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = xiaokafeiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.qinxin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/小咖啡点餐.app/小咖啡点餐";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/点餐.app/点餐";
 			};
 			name = Debug;
 		};
@@ -1770,14 +1769,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = xiaokafeiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.qinxin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/小咖啡点餐.app/小咖啡点餐";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/点餐.app/点餐";
 			};
 			name = Release;
 		};
