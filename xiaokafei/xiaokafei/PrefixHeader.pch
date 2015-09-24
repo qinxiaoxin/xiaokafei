@@ -24,5 +24,6 @@
 #import "RZTransitionInteractionControllerProtocol.h"
 #import "RZTransitionsManager.h"
 #import "ImageCached.h"
+#import "TAlertView.h"
 
 #endif

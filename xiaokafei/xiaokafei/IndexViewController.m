@@ -24,6 +24,8 @@
 
 @property (nonatomic, strong) UIImageView *rightImageView;
 
+@property (weak, nonatomic) IBOutlet UIButton *MyOrderButton;
+
 @end
 
 @implementation IndexViewController
@@ -33,9 +35,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self initNav];
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -118,7 +118,7 @@
                                  CAPSPageMenuOptionCenterMenuItems: @(YES)
                                  };
     
-    _pageMenu = [[CAPSPageMenu alloc] initWithViewControllers:controllerArray frame:CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height) options:parameters];
+    _pageMenu = [[CAPSPageMenu alloc] initWithViewControllers:controllerArray frame:CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height - self.MyOrderButton.frame.size.height) options:parameters];
     [self.view addSubview:_pageMenu.view];
     
     [self setPresentingAnimation];
@@ -182,6 +182,14 @@
 //                                                  forAction:RZTransitionAction_Dismiss];
     return idvc;
 }
+
+
+#pragma MARK: - Action
+
+- (IBAction)myOrderButtonAction:(UIButton *)sender {
+    [self didTapGoToRight];
+}
+
 
 
 @end

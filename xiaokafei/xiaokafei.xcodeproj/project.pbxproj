@@ -194,6 +194,7 @@
 		76A995351AE53E1D0051F382 /* IMG_2245.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A995341AE53E1D0051F382 /* IMG_2245.JPG */; };
 		76A995371AE53E2B0051F382 /* IMG_2243.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A995361AE53E2B0051F382 /* IMG_2243.JPG */; };
 		76A995391AE53E3B0051F382 /* IMG_2244.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76A995381AE53E3B0051F382 /* IMG_2244.JPG */; };
+		76AF8B7C1BB390A900727C5F /* TAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76AF8B7B1BB390A900727C5F /* TAlertView.m */; settings = {ASSET_TAGS = (); }; };
 		76C80CDB1ABBCCEB0038B975 /* TotalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C80CDA1ABBCCEB0038B975 /* TotalView.m */; };
 		76C80CDE1ABBF5D60038B975 /* IMG_2093.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76C80CDC1ABBF5D60038B975 /* IMG_2093.JPG */; };
 		76C80CDF1ABBF5D60038B975 /* IMG_2131.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76C80CDD1ABBF5D60038B975 /* IMG_2131.JPG */; };
@@ -511,6 +512,8 @@
 		76A995341AE53E1D0051F382 /* IMG_2245.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2245.JPG; sourceTree = "<group>"; };
 		76A995361AE53E2B0051F382 /* IMG_2243.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2243.JPG; sourceTree = "<group>"; };
 		76A995381AE53E3B0051F382 /* IMG_2244.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2244.JPG; sourceTree = "<group>"; };
+		76AF8B7A1BB390A900727C5F /* TAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAlertView.h; sourceTree = "<group>"; };
+		76AF8B7B1BB390A900727C5F /* TAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAlertView.m; sourceTree = "<group>"; };
 		76C80CD91ABBCCEB0038B975 /* TotalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TotalView.h; sourceTree = "<group>"; };
 		76C80CDA1ABBCCEB0038B975 /* TotalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TotalView.m; sourceTree = "<group>"; };
 		76C80CDC1ABBF5D60038B975 /* IMG_2093.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2093.JPG; sourceTree = "<group>"; };
@@ -664,6 +667,7 @@
 		761F473C1A54E5C200B98C3F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				76AF8B791BB3909400727C5F /* TAlertView */,
 				762D1B481B5371F2000C47F7 /* CollectionViewCell */,
 				762D1B3C1B5360EE000C47F7 /* MenuPage */,
 				76C80CD51ABBCAD90038B975 /* TotalView */,
@@ -1154,6 +1158,15 @@
 			path = "鸡尾酒";
 			sourceTree = "<group>";
 		};
+		76AF8B791BB3909400727C5F /* TAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				76AF8B7A1BB390A900727C5F /* TAlertView.h */,
+				76AF8B7B1BB390A900727C5F /* TAlertView.m */,
+			);
+			name = TAlertView;
+			sourceTree = "<group>";
+		};
 		76C24AEC1A5A7C8B00FFF530 /* pictures */ = {
 			isa = PBXGroup;
 			children = (
@@ -1525,6 +1538,7 @@
 				7607EAA31A470F0300AB8E4D /* main.m in Sources */,
 				7680B61A1B54D9D900894F7A /* RZRectZoomAnimationController.m in Sources */,
 				7680B5BF1B54B77F00894F7A /* SDWebImageDownloaderOperation.m in Sources */,
+				76AF8B7C1BB390A900727C5F /* TAlertView.m in Sources */,
 				762D1B781B53C315000C47F7 /* DrinkCollectionViewController.m in Sources */,
 				762D1B6E1B53A874000C47F7 /* FoodCollectionViewController.m in Sources */,
 				768CFF231A5D21800092F2B8 /* LIstViewController.m in Sources */,

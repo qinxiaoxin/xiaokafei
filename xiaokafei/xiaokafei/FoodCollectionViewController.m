@@ -85,7 +85,28 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     ModelCollectionViewCell *cell = (ModelCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    [_delegate goToImageDeatail:cell.imageView.image name:cell.nameLabel.text price:cell.priceLabel.text];
+//    [_delegate goToImageDeatail:cell.imageView.image name:cell.nameLabel.text price:cell.priceLabel.text];
+    TAlertView *alert = [[TAlertView alloc] initWithTitle:nil
+                                                  message:[NSString stringWithFormat:@"%@，%@，加入餐单？",cell.nameLabel.text,cell.priceLabel.text]
+                                                  buttons:@[@"No", @"Yes"]
+                                              andCallBack:^(TAlertView *alertView, NSInteger buttonIndex) {
+                                                  NSLog(@"%lu",buttonIndex);
+                                                  [self operationFmdb:buttonIndex name: cell.nameLabel.text price: cell.priceLabel.text];
+                                              }];
+    alert.buttonsAlign = TAlertViewButtonsAlignHorizontal;
+    [alert showAsMessage];
+}
+
+- (void)operationFmdb:(NSInteger)buttonIndex name: (NSString*)name price: (NSString*)price
+{
+    if (buttonIndex == 1) {
+        //创建字典
+        NSDictionary *dic = @{@"name":name,@"price":price};
+        debugLog(@"dic = %@",dic);
+        //插入到db
+        FMDBService *dbService = [[FMDBService alloc] init];
+        [dbService insertData:dic];
+    }
 }
 
 @end
