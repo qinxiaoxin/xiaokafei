@@ -47,9 +47,9 @@ typedef NS_ENUM(NSUInteger, TAlertViewDisplayStyle) {
     appearance.alertBackgroundColor = RGBA(31, 33, 36, 1);
     appearance.titleFont            = [UIFont fontWithName:Font size:30];
     appearance.messageColor         = [UIColor orangeColor];
-    appearance.messageFont          = [UIFont fontWithName:Font size:24];
+    appearance.messageFont          = [UIFont fontWithName:Font size:30];
     appearance.buttonsTextColor     = [UIColor orangeColor];
-    appearance.buttonsFont          = [UIFont fontWithName:Font size:24];
+    appearance.buttonsFont          = [UIFont fontWithName:Font size:44];
     appearance.separatorsLinesColor = [UIColor orangeColor];
     appearance.tapToCloseFont       = [UIFont fontWithName:Font size:20];
     appearance.tapToCloseColor      = [UIColor orangeColor];
@@ -83,6 +83,8 @@ typedef NS_ENUM(NSUInteger, TAlertViewDisplayStyle) {
         _buttonsAlign           = TAlertViewButtonsAlignVertical;
         _buttonsViews           = [[NSMutableArray alloc] init];
         _separatorsLines        = [[NSMutableArray alloc] init];
+        self.userInteractionEnabled = true;
+        [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(aletViewTapGesture:)]];
     }
     return self;
 }
@@ -424,7 +426,7 @@ typedef NS_ENUM(NSUInteger, TAlertViewDisplayStyle) {
         for (NSString *buttonTitle in _buttonsTexts) {
             
             CGFloat width = aletViewFrame.size.width;
-            CGFloat height = 20;
+            CGFloat height = 40;
             
             UIView *separatorsLine = [[UIView alloc] initWithFrame:CGRectMake(xPos, yPos, width, 1)];
             separatorsLine.backgroundColor = _separatorsLinesColor;
@@ -552,6 +554,10 @@ typedef NS_ENUM(NSUInteger, TAlertViewDisplayStyle) {
     }
 }
 
+- (void)aletViewTapGesture:(UITapGestureRecognizer*)gestureRecognizer {
+    [self hide];
+}
+
 -(void)buttonTapped:(UITapGestureRecognizer*)tapGestureRecognizer
 {
     UIView *buttonView = tapGestureRecognizer.view;
@@ -583,12 +589,12 @@ typedef NS_ENUM(NSUInteger, TAlertViewDisplayStyle) {
     label.numberOfLines = 0;
     CGRect labelRect = label.frame;
     labelRect.size.height = 0;
-    CGRect newRect = [text
-                      boundingRectWithSize:labelRect.size
-                      options:NSStringDrawingUsesLineFragmentOrigin
-                      attributes:@{NSFontAttributeName:label.font}
-                      context:nil];
-    labelRect.size.height = newRect.size.height;
+//    CGRect newRect = [text
+//                      boundingRectWithSize:labelRect.size
+//                      options:NSStringDrawingUsesLineFragmentOrigin
+//                      attributes:@{NSFontAttributeName:label.font}
+//                      context:nil];
+    labelRect.size.height = 40;
     label.frame = labelRect;
     label.text = text;
 }

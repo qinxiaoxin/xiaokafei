@@ -86,8 +86,8 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
 //    [_delegate goToImageDeatail:cell.imageView.image name:cell.nameLabel.text price:cell.priceLabel.text];
     
     TAlertView *alert = [[TAlertView alloc] initWithTitle:nil
-                                                  message:[NSString stringWithFormat:@"%@，%@，加入餐单？",cell.nameLabel.text,cell.priceLabel.text]
-                                                  buttons:@[@"No", @"Yes"]
+                                                  message:[NSString stringWithFormat:@"%@，%@，加入哪一桌的餐单？",cell.nameLabel.text,cell.priceLabel.text]
+                                                  buttons:@[@"1桌", @"2桌", @"3桌", @"4桌", @"5桌", @"6桌"]
                                               andCallBack:^(TAlertView *alertView, NSInteger buttonIndex) {
                                                   NSLog(@"%lu",buttonIndex);
                                                   [self operationFmdb:buttonIndex name: cell.nameLabel.text price: cell.priceLabel.text];
@@ -98,14 +98,13 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
 
 - (void)operationFmdb:(NSInteger)buttonIndex name: (NSString*)name price: (NSString*)price
 {
-    if (buttonIndex == 1) {
-        //创建字典
-        NSDictionary *dic = @{@"name":name,@"price":price};
-        debugLog(@"dic = %@",dic);
-        //插入到db
-//        FMDBService *dbService = [[FMDBService alloc] init];
-//        [dbService insertData:dic];
-    }
+    //创建字典
+    NSDictionary *dic = @{@"name":name,@"price":price};
+    debugLog(@"dic = %@",dic);
+    
+    //插入到db
+    FMDBService *dbService = [[FMDBService alloc] init];
+    [dbService insertData:dic tableTag:buttonIndex];
 }
 
 @end

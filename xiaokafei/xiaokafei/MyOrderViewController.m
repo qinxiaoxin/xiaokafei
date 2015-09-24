@@ -51,9 +51,7 @@
     }
     
     //decorate button to array
-    if (_buttonArray) {
-        _buttonArray = @[_table1Button,_table2Button,_table3Button,_table4Button,_table5Button,_table6Button];
-    }
+    _buttonArray = @[_table1Button,_table2Button,_table3Button,_table4Button,_table5Button,_table6Button];
 }
 
 
@@ -92,12 +90,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    debugMethod();
     prepareDeleteArrayIndex = indexPath.row;
     NSDictionary *dic = [self.dbArray objectAtIndex:prepareDeleteArrayIndex];
     NSString *name = [dic valueForKeyPath:@"name"];
     NSString *avString = [NSString stringWithFormat:@"delete the %@ ？",name];
-    UIAlertView *av = [[UIAlertView alloc] initWithTitle:nil message:avString delegate:self cancelButtonTitle:@"no" otherButtonTitles:@"yes", nil];
+    UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Tip" message:avString delegate:self cancelButtonTitle:@"no" otherButtonTitles:@"yes", nil];
     [av show];
     
 }
@@ -116,7 +113,6 @@
             NSInteger priceInt = [priceStr intValue];
             priceTotal += priceInt;
         }
-        
         
         NSString *priceTotalStr = [NSString stringWithFormat:@"%ld",(long)priceTotal];
         NSString *totalPriceLabelText = [@"¥" stringByAppendingString:priceTotalStr];
@@ -141,12 +137,15 @@
     if (buttonIndex == 0) {
         return;
     }else{
-//        NSDictionary *dic = [self.dbArray objectAtIndex:prepareDeleteArrayIndex];
-//        NSString *name = [dic valueForKeyPath:@"name"];
-//        _dbService = [[FMDBService alloc] init];
-//        [_dbService deleteData:name];
-//        self.dbArray = [_dbService queryData];
-//        [self.tableView reloadData];
+        for (UIButton *button in _buttonArray) {
+            if (button.selected == true) {
+                NSDictionary *dic = [self.dbArray objectAtIndex:prepareDeleteArrayIndex];
+                NSString *name = [dic valueForKeyPath:@"name"];
+                [_dbService deleteData:name tableTag:button.tag];
+                self.dbArray = [_dbService queryData:button.tag];
+                [self.tableView reloadData];
+            }
+        }
     }
 }
 
@@ -156,9 +155,13 @@
 
 - (IBAction)clearOrder:(id)sender
 {
-//    [_dbService clearAllData];
-//    _dbArray = [_dbService queryData];
-//    [self.tableView reloadData];
+    for(UIButton *button in _buttonArray) {
+        if (button.selected == true) {
+            [_dbService clearAllData:button.tag];
+            _dbArray = [_dbService queryData:button.tag];
+            [self.tableView reloadData];
+        }
+    }
 }
 
 - (IBAction)table1Action:(id)sender {
@@ -168,6 +171,8 @@
     _table4Button.selected = false;
     _table5Button.selected = false;
     _table6Button.selected = false;
+    _dbArray = [_dbService queryData:0];
+    [self.tableView reloadData];
     
 }
 - (IBAction)table2Action:(id)sender {
@@ -177,6 +182,8 @@
     _table4Button.selected = false;
     _table5Button.selected = false;
     _table6Button.selected = false;
+    _dbArray = [_dbService queryData:1];
+    [self.tableView reloadData];
 }
 - (IBAction)table3Action:(id)sender {
     _table1Button.selected = false;
@@ -185,6 +192,8 @@
     _table4Button.selected = false;
     _table5Button.selected = false;
     _table6Button.selected = false;
+    _dbArray = [_dbService queryData:2];
+    [self.tableView reloadData];
 }
 - (IBAction)table4Action:(id)sender {
     _table1Button.selected = false;
@@ -193,6 +202,8 @@
     _table4Button.selected = true;
     _table5Button.selected = false;
     _table6Button.selected = false;
+    _dbArray = [_dbService queryData:3];
+    [self.tableView reloadData];
 }
 - (IBAction)table5Action:(id)sender {
     _table1Button.selected = false;
@@ -201,6 +212,8 @@
     _table4Button.selected = false;
     _table5Button.selected = true;
     _table6Button.selected = false;
+    _dbArray = [_dbService queryData:4];
+    [self.tableView reloadData];
 }
 - (IBAction)table6Action:(id)sender {
     _table1Button.selected = false;
@@ -209,6 +222,8 @@
     _table4Button.selected = false;
     _table5Button.selected = false;
     _table6Button.selected = true;
+    _dbArray = [_dbService queryData:5];
+    [self.tableView reloadData];
 }
 
 
