@@ -104,8 +104,8 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
         NSDictionary *dic = @{@"name":name,@"price":price};
         debugLog(@"dic = %@",dic);
         //插入到db
-        FMDBService *dbService = [[FMDBService alloc] init];
-        [dbService insertData:dic];
+//        FMDBService *dbService = [[FMDBService alloc] init];
+//        [dbService insertData:dic];
     }
 }
 

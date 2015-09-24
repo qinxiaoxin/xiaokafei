@@ -74,8 +74,8 @@
         NSDictionary *dic = @{@"name":_name,@"price":_price};
         debugLog(@"dic = %@",dic);
         //插入到db
-        FMDBService *dbService = [[FMDBService alloc] init];
-        [dbService insertData:dic];
+//        FMDBService *dbService = [[FMDBService alloc] init];
+//        [dbService insertData:dic];
     }];
 }
 

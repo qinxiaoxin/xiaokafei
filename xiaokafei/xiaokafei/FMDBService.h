@@ -11,9 +11,9 @@
 @interface FMDBService : NSObject
 
 - (void)createTable;
-- (void)insertData:(NSDictionary *)dic;
-- (NSMutableArray *)queryData;
-- (void)deleteData:(NSString *)name;
-- (void)clearAllData;
+- (void)insertData:(NSDictionary *)dic tableTag: (int)tag;
+- (NSMutableArray *)queryData:(int)tag;
+- (void)deleteData:(NSString *)name tableTag: (int)tag;
+- (void)clearAllData:(int)tag;
 
 @end

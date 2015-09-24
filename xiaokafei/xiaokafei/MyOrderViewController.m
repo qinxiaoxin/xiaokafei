@@ -13,11 +13,17 @@
     NSInteger prepareDeleteArrayIndex;
 }
 
-@property (nonatomic, strong) NSMutableArray *dbArray;
-
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIButton *table1Button;
+@property (weak, nonatomic) IBOutlet UIButton *table2Button;
+@property (weak, nonatomic) IBOutlet UIButton *table3Button;
+@property (weak, nonatomic) IBOutlet UIButton *table4Button;
+@property (weak, nonatomic) IBOutlet UIButton *table5Button;
+@property (weak, nonatomic) IBOutlet UIButton *table6Button;
 
-@property (nonatomic, strong) FMDBService *dbService;
+@property (strong, nonatomic) NSArray *buttonArray;
+@property (strong, nonatomic) NSMutableArray *dbArray;
+@property (strong, nonatomic) FMDBService *dbService;
 
 @end
 
@@ -27,18 +33,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    //
+    //bg color
     self.view.backgroundColor = RGBA(232, 222, 204, 1);
+    
+    //default button selected
+    _table1Button.selected = true;
     
     //operate db
     _dbService = [[FMDBService alloc] init];
-    _dbArray = [_dbService queryData];
+    _dbArray = [_dbService queryData:0];
     
     if (_dbArray) {
         //reload table view
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
         [self.tableView reloadData];
+    }
+    
+    //decorate button to array
+    if (_buttonArray) {
+        _buttonArray = @[_table1Button,_table2Button,_table3Button,_table4Button,_table5Button,_table6Button];
     }
 }
 
@@ -82,8 +96,8 @@
     prepareDeleteArrayIndex = indexPath.row;
     NSDictionary *dic = [self.dbArray objectAtIndex:prepareDeleteArrayIndex];
     NSString *name = [dic valueForKeyPath:@"name"];
-    NSString *avString = [NSString stringWithFormat:@"删除 %@ ？",name];
-    UIAlertView *av = [[UIAlertView alloc] initWithTitle:nil message:avString delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"是", nil];
+    NSString *avString = [NSString stringWithFormat:@"delete the %@ ？",name];
+    UIAlertView *av = [[UIAlertView alloc] initWithTitle:nil message:avString delegate:self cancelButtonTitle:@"no" otherButtonTitles:@"yes", nil];
     [av show];
     
 }
@@ -127,12 +141,12 @@
     if (buttonIndex == 0) {
         return;
     }else{
-        NSDictionary *dic = [self.dbArray objectAtIndex:prepareDeleteArrayIndex];
-        NSString *name = [dic valueForKeyPath:@"name"];
-        _dbService = [[FMDBService alloc] init];
-        [_dbService deleteData:name];
-        self.dbArray = [_dbService queryData];
-        [self.tableView reloadData];
+//        NSDictionary *dic = [self.dbArray objectAtIndex:prepareDeleteArrayIndex];
+//        NSString *name = [dic valueForKeyPath:@"name"];
+//        _dbService = [[FMDBService alloc] init];
+//        [_dbService deleteData:name];
+//        self.dbArray = [_dbService queryData];
+//        [self.tableView reloadData];
     }
 }
 
@@ -142,9 +156,59 @@
 
 - (IBAction)clearOrder:(id)sender
 {
-    [_dbService clearAllData];
-    _dbArray = [_dbService queryData];
-    [self.tableView reloadData];
+//    [_dbService clearAllData];
+//    _dbArray = [_dbService queryData];
+//    [self.tableView reloadData];
+}
+
+- (IBAction)table1Action:(id)sender {
+    _table1Button.selected = true;
+    _table2Button.selected = false;
+    _table3Button.selected = false;
+    _table4Button.selected = false;
+    _table5Button.selected = false;
+    _table6Button.selected = false;
+    
+}
+- (IBAction)table2Action:(id)sender {
+    _table1Button.selected = false;
+    _table2Button.selected = true;
+    _table3Button.selected = false;
+    _table4Button.selected = false;
+    _table5Button.selected = false;
+    _table6Button.selected = false;
+}
+- (IBAction)table3Action:(id)sender {
+    _table1Button.selected = false;
+    _table2Button.selected = false;
+    _table3Button.selected = true;
+    _table4Button.selected = false;
+    _table5Button.selected = false;
+    _table6Button.selected = false;
+}
+- (IBAction)table4Action:(id)sender {
+    _table1Button.selected = false;
+    _table2Button.selected = false;
+    _table3Button.selected = false;
+    _table4Button.selected = true;
+    _table5Button.selected = false;
+    _table6Button.selected = false;
+}
+- (IBAction)table5Action:(id)sender {
+    _table1Button.selected = false;
+    _table2Button.selected = false;
+    _table3Button.selected = false;
+    _table4Button.selected = false;
+    _table5Button.selected = true;
+    _table6Button.selected = false;
+}
+- (IBAction)table6Action:(id)sender {
+    _table1Button.selected = false;
+    _table2Button.selected = false;
+    _table3Button.selected = false;
+    _table4Button.selected = false;
+    _table5Button.selected = false;
+    _table6Button.selected = true;
 }
 
 

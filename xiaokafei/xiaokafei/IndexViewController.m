@@ -142,8 +142,8 @@
         self.rightImageView.transform = CGAffineTransformMakeScale(1, 1);
     } completion:nil];
     
-    UIViewController *popin = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"MyOrderViewController"];
-    popin.view.bounds = CGRectMake(0, 0, 320, 480);
+    UIViewController *popin = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"MyOrderViewController"];
+    popin.view.bounds = CGRectMake(0, 0, 400, 600);
     [popin setPopinTransitionStyle:BKTPopinTransitionStyleSnap];
     //[popin setPopinOptions:BKTPopinDisableAutoDismiss];
     BKTBlurParameters *blurParameters = [[BKTBlurParameters alloc] init];
