@@ -116,7 +116,7 @@
         
         NSString *priceTotalStr = [NSString stringWithFormat:@"%ld",(long)priceTotal];
         NSString *totalPriceLabelText = [@"¥" stringByAppendingString:priceTotalStr];
-        debugLog(@"%@",totalPriceLabelText);
+//        debugLog(@"%@",totalPriceLabelText);
         tv.totalPriceLabel.text = totalPriceLabelText;
         [tv setNeedsDisplay];
         

@@ -571,7 +571,6 @@
 				762026B21ADF638A00C3E62F /* xjlFont.ttf */,
 				761FD8D71A480427009D1A40 /* xiaokafei.geojson */,
 				7607EAB51A470F0300AB8E4D /* LaunchScreen.xib */,
-				7609CB831A7B5BB000B4513C /* Frameworks & Libraries */,
 				76C24AEC1A5A7C8B00FFF530 /* Pictures */,
 			);
 			name = "Supporting Files";
@@ -611,14 +610,6 @@
 			);
 			name = FMDB;
 			path = fmdb;
-			sourceTree = "<group>";
-		};
-		7609CB831A7B5BB000B4513C /* Frameworks & Libraries */ = {
-			isa = PBXGroup;
-			children = (
-				7609CB811A7B5B9E00B4513C /* libsqlite3.0.dylib */,
-			);
-			name = "Frameworks & Libraries";
 			sourceTree = "<group>";
 		};
 		7609CB851A7B63C200B4513C /* Service */ = {
@@ -671,36 +662,6 @@
 		762D1B431B5369C4000C47F7 /* Collection */ = {
 			isa = PBXGroup;
 			children = (
-				762D1B401B53695B000C47F7 /* Collection.storyboard */,
-				762D1B451B5369FA000C47F7 /* IndexViewController.h */,
-				762D1B461B5369FA000C47F7 /* IndexViewController.m */,
-				762D1B651B53A1DB000C47F7 /* SubControllers */,
-			);
-			name = Collection;
-			sourceTree = "<group>";
-		};
-		762D1B441B5369CC000C47F7 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				7689903E1AB84A5B0046491F /* MyOrderViewController.h */,
-				7689903F1AB84A5B0046491F /* MyOrderViewController.m */,
-			);
-			name = Common;
-			sourceTree = "<group>";
-		};
-		762D1B481B5371F2000C47F7 /* CollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				762D1B491B53724E000C47F7 /* ModelCollectionViewCell.h */,
-				762D1B4A1B53724E000C47F7 /* ModelCollectionViewCell.m */,
-				762D1B4B1B53724E000C47F7 /* ModelCollectionViewCell.xib */,
-			);
-			name = CollectionViewCell;
-			sourceTree = "<group>";
-		};
-		762D1B651B53A1DB000C47F7 /* SubControllers */ = {
-			isa = PBXGroup;
-			children = (
 				762D1B5B1B53A09F000C47F7 /* CoffeeCollectionViewController.h */,
 				762D1B5C1B53A09F000C47F7 /* CoffeeCollectionViewController.m */,
 				762D1B601B53A1CD000C47F7 /* JuiceCollectionViewController.h */,
@@ -718,7 +679,29 @@
 				762D1B7F1B53C756000C47F7 /* MilkTeaCollectionViewController.h */,
 				762D1B801B53C756000C47F7 /* MilkTeaCollectionViewController.m */,
 			);
-			name = SubControllers;
+			name = Collection;
+			sourceTree = "<group>";
+		};
+		762D1B441B5369CC000C47F7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				762D1B401B53695B000C47F7 /* Collection.storyboard */,
+				762D1B451B5369FA000C47F7 /* IndexViewController.h */,
+				762D1B461B5369FA000C47F7 /* IndexViewController.m */,
+				7689903E1AB84A5B0046491F /* MyOrderViewController.h */,
+				7689903F1AB84A5B0046491F /* MyOrderViewController.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		762D1B481B5371F2000C47F7 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				762D1B491B53724E000C47F7 /* ModelCollectionViewCell.h */,
+				762D1B4A1B53724E000C47F7 /* ModelCollectionViewCell.m */,
+				762D1B4B1B53724E000C47F7 /* ModelCollectionViewCell.xib */,
+			);
+			name = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		7680B58F1B54B77F00894F7A /* ThirdParty */ = {
@@ -1139,6 +1122,7 @@
 		F4AFFB38A5F82C83D12F92A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7609CB811A7B5B9E00B4513C /* libsqlite3.0.dylib */,
 				7606F08C1ABA6AB000BA2A2A /* libsqlite3.dylib */,
 				EA5019F9736D5EFE20823951 /* libPods.a */,
 			);

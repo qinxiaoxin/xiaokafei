@@ -210,7 +210,7 @@ typedef NS_ENUM(NSUInteger, TAlertViewDisplayStyle) {
     if (buttonsAlign == TAlertViewButtonsAlignHorizontal && _buttonsTexts &&
         [_buttonsTexts count] > TAlertViewHorizontalButtonCountMax) {
 #ifdef DEBUG
-        NSLog(@"TAlertViewButtonsAlignHorizontal cant be used with more than %i", (int)TAlertViewHorizontalButtonCountMax);
+//        NSLog(@"TAlertViewButtonsAlignHorizontal cant be used with more than %i", (int)TAlertViewHorizontalButtonCountMax);
 #endif
         _buttonsAlign = TAlertViewButtonsAlignVertical;
     } else {
@@ -600,6 +600,14 @@ typedef NS_ENUM(NSUInteger, TAlertViewDisplayStyle) {
 }
 
 @end
+
+//@implementation CATransformLayer (MyExtension)
+//-(void)setOpaque:(BOOL)opaque
+//{
+//    return;
+//}
+//
+//@end
 
 // 版权属于原作者
 // http://code4app.com (cn) http://code4app.net (en)

@@ -143,7 +143,7 @@
     [popin setPopinTransitionDirection:BKTPopinTransitionDirectionTop];
     
     [self presentPopinController:popin animated:YES completion:^{
-        NSLog(@"Popin presented !");
+//        NSLog(@"Popin presented !");
     }];
 }
 

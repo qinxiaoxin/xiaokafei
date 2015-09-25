@@ -24,7 +24,7 @@
     NSString * dbPath = [PATH_OF_DOCUMENT stringByAppendingPathComponent:@"user.sqlite"];
     NSFileManager * fileManager = [NSFileManager defaultManager];
     if ([fileManager fileExistsAtPath:dbPath] == NO) {
-        debugMethod();
+//        debugMethod();
         // create it
         FMDatabase * db = [FMDatabase databaseWithPath:dbPath];
         if ([db open]) {
@@ -52,7 +52,7 @@
     NSString * dbPath = [PATH_OF_DOCUMENT stringByAppendingPathComponent:@"user.sqlite"];
     FMDatabase * db = [FMDatabase databaseWithPath:dbPath];
     if ([db open]) {
-        debugMethod();
+//        debugMethod();
         NSString * sql = [NSString stringWithFormat:@"insert into table%ld (name, price) values(?, ?) ",(long)tag];
         NSString * name = [dic valueForKeyPath:@"name"];
         NSString * price = [dic valueForKeyPath:@"price"];
@@ -72,7 +72,7 @@
     NSString * dbPath = [PATH_OF_DOCUMENT stringByAppendingPathComponent:@"user.sqlite"];
     FMDatabase * db = [FMDatabase databaseWithPath:dbPath];
     if ([db open]) {
-        debugMethod();
+//        debugMethod();
         NSString * sql = [NSString stringWithFormat:@"select * from table%ld",(long)tag];
         FMResultSet * rs = [db executeQuery:sql];
         while ([rs next]) {
@@ -93,7 +93,7 @@
     FMDatabase * db = [FMDatabase databaseWithPath:dbPath];
     NSString *userStr;
     if ([db open]) {
-        debugMethod();
+//        debugMethod();
         NSString * sql1 = [NSString stringWithFormat:@"select id from table%ld where name = ?",(long)tag];
         FMResultSet * rs = [db executeQuery:sql1,name];
         while ([rs next]) {
@@ -117,7 +117,7 @@
     NSString * dbPath = [PATH_OF_DOCUMENT stringByAppendingPathComponent:@"user.sqlite"];
     FMDatabase * db = [FMDatabase databaseWithPath:dbPath];
     if ([db open]) {
-        debugMethod();
+//        debugMethod();
         NSString * sql = [NSString stringWithFormat:@"delete from table%ld",(long)tag];
         BOOL res = [db executeUpdate:sql];
         if (!res) {
