@@ -16,9 +16,8 @@
 #import "DrinkCollectionViewController.h"
 #import "FlowerTeaCollectionViewController.h"
 #import "MilkTeaCollectionViewController.h"
-#import "ImageDetailViewController.h"
 
-@interface IndexViewController ()<IndexGoToImageDetailProtocol>
+@interface IndexViewController ()
 
 @property (nonatomic, strong) CAPSPageMenu *pageMenu;
 
@@ -74,35 +73,27 @@
 - (void)equipmentOfViewController {
     
     CoffeeCollectionViewController *coffee = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"Coffee"];
-    coffee.delegate = self;
     coffee.title = @"咖啡";
     
     JuiceCollectionViewController *juice = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"Juice"];
-    juice.delegate = self;
     juice.title = @"果汁";
     
     MilkIceCollectionViewController *milk_ice = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"MilkIce"];
-    milk_ice.delegate = self;
     milk_ice.title = @"奶昔沙冰";
     
     CakeCollectionViewController *cake = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"Cake"];
-    cake.delegate = self;
     cake.title = @"糕点";
     
     FoodCollectionViewController *food = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"Food"];
-    food.delegate = self;
     food.title = @"简餐小食";
     
     DrinkCollectionViewController *drink = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"Drink"];
-    drink.delegate = self;
     drink.title = @"鸡尾酒";
     
     FlowerTeaCollectionViewController *flower_tea = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"FlowerTea"];
-    flower_tea.delegate = self;
     flower_tea.title = @"花茶";
     
     MilkTeaCollectionViewController *milk_tea = [[UIStoryboard storyboardWithName:@"Collection" bundle:nil] instantiateViewControllerWithIdentifier:@"MilkTea"];
-    milk_tea.delegate = self;
     milk_tea.title = @"奶茶";
     
     NSArray *controllerArray = @[coffee,juice,milk_ice,cake,food,drink,flower_tea,milk_tea];
@@ -135,8 +126,6 @@
 #pragma mark - Action
 
 - (void)didTapGoToRight {
-    debugLog(@"弹出菜单");
-    
     _rightImageView.transform = CGAffineTransformMakeScale(0, 0);
     [UIView animateWithDuration:0.6 delay:0.0 usingSpringWithDamping:0.4 initialSpringVelocity:0 options:UIViewAnimationOptionAllowAnimatedContent animations:^{
         self.rightImageView.transform = CGAffineTransformMakeScale(1, 1);
@@ -159,37 +148,11 @@
 }
 
 
-#pragma mark - IndexGoToImageDetail
-
-- (void)goToImageDeatail:(UIImage *)image name:(NSString *)name price:(NSString *)price
-{
-    [self presentViewController:[self detailImageViewController:image name:name price:price] animated:true completion:nil];
-}
-
-- (UIViewController *)detailImageViewController:(UIImage *)image name:(NSString *)name price:(NSString *)price {
-    ImageDetailViewController *idvc = [[UIStoryboard storyboardWithName:@"Collection" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"ImageDetail"];
-    idvc.image = image;
-    idvc.name = name;
-    idvc.price = price;
-    [idvc setTransitioningDelegate:[RZTransitionsManager shared]];
-    // Create a dismiss interaction controller that will be attached to the presented
-    // view controller to allow for a custom dismissal
-//    RZVerticalSwipeInteractionController *dismissInteractionController = [[RZVerticalSwipeInteractionController alloc] init];
-//    [dismissInteractionController attachViewController:idvc withAction:RZTransitionAction_Dismiss];
-//    [[RZTransitionsManager shared] setInteractionController:dismissInteractionController
-//                                         fromViewController:[self class]
-//                                           toViewController:nil
-//                                                  forAction:RZTransitionAction_Dismiss];
-    return idvc;
-}
-
-
 #pragma MARK: - Action
 
 - (IBAction)myOrderButtonAction:(UIButton *)sender {
     [self didTapGoToRight];
 }
-
 
 
 @end

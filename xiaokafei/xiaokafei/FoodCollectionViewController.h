@@ -10,6 +10,4 @@
 
 @interface FoodCollectionViewController : UICollectionViewController
 
-@property (nonatomic, weak) id<IndexGoToImageDetailProtocol> delegate;
-
 @end

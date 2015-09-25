@@ -23,21 +23,3 @@
 
 @end
 
-
-@protocol ListViewButtonProtocol <NSObject>
-
-@required
-- (void)listViewButtonClick:(NSInteger)tag;
-
-@end
-
-
-
-
-@protocol IndexGoToImageDetailProtocol <NSObject>
-
-@required
-- (void)goToImageDeatail:(UIImage *)image name:(NSString *)name price:(NSString *)price;
-
-@end
-

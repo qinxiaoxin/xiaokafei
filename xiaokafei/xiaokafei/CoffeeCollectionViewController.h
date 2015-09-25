@@ -10,6 +10,4 @@
 
 @interface CoffeeCollectionViewController : UICollectionViewController
 
-@property (nonatomic, weak) id<IndexGoToImageDetailProtocol> delegate;
-
 @end
