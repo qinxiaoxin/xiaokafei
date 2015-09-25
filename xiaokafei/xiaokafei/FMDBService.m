@@ -53,7 +53,7 @@
     FMDatabase * db = [FMDatabase databaseWithPath:dbPath];
     if ([db open]) {
         debugMethod();
-        NSString * sql = [NSString stringWithFormat:@"insert into table%ld (name, price) values(?, ?) ",tag];
+        NSString * sql = [NSString stringWithFormat:@"insert into table%ld (name, price) values(?, ?) ",(long)tag];
         NSString * name = [dic valueForKeyPath:@"name"];
         NSString * price = [dic valueForKeyPath:@"price"];
         BOOL res = [db executeUpdate:sql, name, price];
@@ -73,7 +73,7 @@
     FMDatabase * db = [FMDatabase databaseWithPath:dbPath];
     if ([db open]) {
         debugMethod();
-        NSString * sql = [NSString stringWithFormat:@"select * from table%ld",tag];
+        NSString * sql = [NSString stringWithFormat:@"select * from table%ld",(long)tag];
         FMResultSet * rs = [db executeQuery:sql];
         while ([rs next]) {
             NSString * name = [rs stringForColumn:@"name"];
@@ -94,14 +94,14 @@
     NSString *userStr;
     if ([db open]) {
         debugMethod();
-        NSString * sql1 = [NSString stringWithFormat:@"select id from table%ld where name = ?",tag];
+        NSString * sql1 = [NSString stringWithFormat:@"select id from table%ld where name = ?",(long)tag];
         FMResultSet * rs = [db executeQuery:sql1,name];
         while ([rs next]) {
             int tableId = [rs intForColumn:@"id"];
             userStr = [NSString stringWithFormat:@"%d",tableId];
         }
         
-        NSString * sql2 = [NSString stringWithFormat:@"delete from table%ld where id = ?",tag];
+        NSString * sql2 = [NSString stringWithFormat:@"delete from table%ld where id = ?",(long)tag];
         BOOL res = [db executeUpdate:sql2,userStr];
         if (!res) {
             debugLog(@"error to delete db data");
@@ -118,7 +118,7 @@
     FMDatabase * db = [FMDatabase databaseWithPath:dbPath];
     if ([db open]) {
         debugMethod();
-        NSString * sql = [NSString stringWithFormat:@"delete from table%ld",tag];
+        NSString * sql = [NSString stringWithFormat:@"delete from table%ld",(long)tag];
         BOOL res = [db executeUpdate:sql];
         if (!res) {
             debugLog(@"error to delete db data");

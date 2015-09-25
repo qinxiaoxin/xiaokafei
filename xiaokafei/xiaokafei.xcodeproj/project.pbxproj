@@ -571,8 +571,8 @@
 				762026B21ADF638A00C3E62F /* xjlFont.ttf */,
 				761FD8D71A480427009D1A40 /* xiaokafei.geojson */,
 				7607EAB51A470F0300AB8E4D /* LaunchScreen.xib */,
-				7609CB831A7B5BB000B4513C /* frameworks & libraries */,
-				76C24AEC1A5A7C8B00FFF530 /* pictures */,
+				7609CB831A7B5BB000B4513C /* Frameworks & Libraries */,
+				76C24AEC1A5A7C8B00FFF530 /* Pictures */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -613,12 +613,12 @@
 			path = fmdb;
 			sourceTree = "<group>";
 		};
-		7609CB831A7B5BB000B4513C /* frameworks & libraries */ = {
+		7609CB831A7B5BB000B4513C /* Frameworks & Libraries */ = {
 			isa = PBXGroup;
 			children = (
 				7609CB811A7B5B9E00B4513C /* libsqlite3.0.dylib */,
 			);
-			name = "frameworks & libraries";
+			name = "Frameworks & Libraries";
 			sourceTree = "<group>";
 		};
 		7609CB851A7B63C200B4513C /* Service */ = {
@@ -1094,7 +1094,7 @@
 			name = TAlertView;
 			sourceTree = "<group>";
 		};
-		76C24AEC1A5A7C8B00FFF530 /* pictures */ = {
+		76C24AEC1A5A7C8B00FFF530 /* Pictures */ = {
 			isa = PBXGroup;
 			children = (
 				76898FB81AB848AA0046491F /* 咖啡 */,
@@ -1106,7 +1106,7 @@
 				76898FF31AB848AA0046491F /* 花茶 */,
 				76898FF71AB848AA0046491F /* 鸡尾酒 */,
 			);
-			name = pictures;
+			name = Pictures;
 			sourceTree = "<group>";
 		};
 		76C80CD51ABBCAD90038B975 /* TotalView */ = {
@@ -1682,7 +1682,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.qinxin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/点餐.app/点餐";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xiaokafei.app/xiaokafei";
 			};
 			name = Debug;
 		};
@@ -1695,7 +1695,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.qinxin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/点餐.app/点餐";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xiaokafei.app/xiaokafei";
 			};
 			name = Release;
 		};

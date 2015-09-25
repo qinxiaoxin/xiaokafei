@@ -91,7 +91,7 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
                                                   message:[NSString stringWithFormat:@"%@，%@，加入哪一桌的餐单？",cell.nameLabel.text,cell.priceLabel.text]
                                                   buttons:@[@"1桌", @"2桌", @"3桌", @"4桌", @"5桌", @"6桌"]
                                               andCallBack:^(TAlertView *alertView, NSInteger buttonIndex) {
-                                                  NSLog(@"%lu",buttonIndex);
+                                                  NSLog(@"%lu",(long)buttonIndex);
                                                   [self operationFmdb:buttonIndex name: cell.nameLabel.text price: cell.priceLabel.text];
                                               }];
     alert.buttonsAlign = TAlertViewButtonsAlignHorizontal;

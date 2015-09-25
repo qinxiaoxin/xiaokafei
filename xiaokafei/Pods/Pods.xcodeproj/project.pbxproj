@@ -7,195 +7,178 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D099C31368DDE17B9626422 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA117C8B35F8D8FC4959CBED /* Foundation.framework */; };
-		49C824A53E7C6FC4886CAC98 /* Pods-MaryPopin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5E4C4B3EB2C61EAF4951CE /* Pods-MaryPopin-dummy.m */; };
-		68203FEF901C50AB910CADC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA117C8B35F8D8FC4959CBED /* Foundation.framework */; };
-		6D0895D27D062A188F90A283 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1526F24B1A9E2FD3F78B518 /* UIKit.framework */; };
-		AC5F158FEB7368618EE1CBEA /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ED38F15D2BE69824F5B1A6 /* Pods-dummy.m */; };
-		C1F3AB782043AE991FCD628F /* UIViewController+MaryPopin.h in Headers */ = {isa = PBXBuildFile; fileRef = 42ECA48244A16F7AD15B2A55 /* UIViewController+MaryPopin.h */; };
-		FECDD1E71DF6E815964E5E16 /* UIViewController+MaryPopin.m in Sources */ = {isa = PBXBuildFile; fileRef = 093D95357828E63852F1DE90 /* UIViewController+MaryPopin.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		2531DF7455AF5BE802836BF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B359988AF305216D9C8037 /* UIKit.framework */; };
+		26BA2ECBD939C38E32BD9E05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298BF8D57DAA5BE314804986 /* Foundation.framework */; };
+		2A609E072C1757454C203119 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298BF8D57DAA5BE314804986 /* Foundation.framework */; };
+		58B5B94CFCA8E19B9D0F38AB /* UIViewController+MaryPopin.m in Sources */ = {isa = PBXBuildFile; fileRef = C77EB9B20661EE17FF1DA5F1 /* UIViewController+MaryPopin.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C04289B80918307F686EF921 /* UIViewController+MaryPopin.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A9AFABFA403EC5B57FDBC43 /* UIViewController+MaryPopin.h */; };
+		E0B9BBAC75D6D6C85975840A /* Pods-MaryPopin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B6BB31AE39B8F40D6DCB7 /* Pods-MaryPopin-dummy.m */; };
+		FDDCD5738668AFC5DA371F75 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFE91192E130D401F22D4A3 /* Pods-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		62ACA4E15D9D68EC179A9487 /* PBXContainerItemProxy */ = {
+		DAB64B891B74A413BACB897E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E89C4601212DF6D94A33D47A /* Project object */;
+			containerPortal = F7207B079E6F695E9DBE8B87 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D0E1314D7C650E44A5B51350;
+			remoteGlobalIDString = B7E3F940848373E8F173FC90;
 			remoteInfo = "Pods-MaryPopin";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		093D95357828E63852F1DE90 /* UIViewController+MaryPopin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MaryPopin.m"; path = "MaryPopin/UIViewController+MaryPopin.m"; sourceTree = "<group>"; };
-		1241E9F9535209E2005734C1 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		125464DF1F2A91422614D983 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		14295367B88631D91D851914 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		2349571A03B98E2A2D45E7DD /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2D8C6A68C8D5853EE3C65A51 /* libPods-MaryPopin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MaryPopin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		42ECA48244A16F7AD15B2A55 /* UIViewController+MaryPopin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MaryPopin.h"; path = "MaryPopin/UIViewController+MaryPopin.h"; sourceTree = "<group>"; };
-		556E0E81D26E8139F4F1A2E3 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		63B3538C14794E7154926133 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		922423A75C1DBD1ED103B2CF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		94A0D9286CF3FE9F32306F92 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DA5256181FFAB419D5DFF66 /* Pods-MaryPopin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaryPopin.xcconfig"; sourceTree = "<group>"; };
-		9F5E4C4B3EB2C61EAF4951CE /* Pods-MaryPopin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MaryPopin-dummy.m"; sourceTree = "<group>"; };
-		A7ED38F15D2BE69824F5B1A6 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		AF8598853917903F6FAC2F77 /* Pods-MaryPopin-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaryPopin-Private.xcconfig"; sourceTree = "<group>"; };
-		B1526F24B1A9E2FD3F78B518 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C8255208E349CB60600FEBD4 /* Pods-MaryPopin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MaryPopin-prefix.pch"; sourceTree = "<group>"; };
-		DA117C8B35F8D8FC4959CBED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		206B67490EFD2F05C86DB893 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		298BF8D57DAA5BE314804986 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2AC9ED68A17A66B6E5BE5D44 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2E3B6BB31AE39B8F40D6DCB7 /* Pods-MaryPopin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MaryPopin-dummy.m"; sourceTree = "<group>"; };
+		41720713606D992EA440D972 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7047278940D627CF7D1F12 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		50990057B84EE879CB3634C0 /* libPods-MaryPopin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MaryPopin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53307EB559AECF2F26464B35 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		6A275EEC10691FE969FB9004 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		6A9AFABFA403EC5B57FDBC43 /* UIViewController+MaryPopin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MaryPopin.h"; path = "MaryPopin/UIViewController+MaryPopin.h"; sourceTree = "<group>"; };
+		98EEBEE8D3E53BF5EDFF653A /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		A2A4B497C021238D757CDE7C /* Pods-MaryPopin-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MaryPopin-prefix.pch"; sourceTree = "<group>"; };
+		B51C9FEFAB78681656F6F78E /* Pods-MaryPopin.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaryPopin.xcconfig"; sourceTree = "<group>"; };
+		C77EB9B20661EE17FF1DA5F1 /* UIViewController+MaryPopin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MaryPopin.m"; path = "MaryPopin/UIViewController+MaryPopin.m"; sourceTree = "<group>"; };
+		CFFE91192E130D401F22D4A3 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		D4B01A8604F1018654FD34D1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		E5B359988AF305216D9C8037 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F072F47324A5813F87FDE193 /* Pods-MaryPopin-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaryPopin-Private.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6E9DDF19CA8AD51086E1CA72 /* Frameworks */ = {
+		8181B1949503FC9657DB94EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68203FEF901C50AB910CADC4 /* Foundation.framework in Frameworks */,
-				6D0895D27D062A188F90A283 /* UIKit.framework in Frameworks */,
+				2A609E072C1757454C203119 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82ED33C9130F5F531E673178 /* Frameworks */ = {
+		81BFDF589FC1A73B2F88143E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D099C31368DDE17B9626422 /* Foundation.framework in Frameworks */,
+				26BA2ECBD939C38E32BD9E05 /* Foundation.framework in Frameworks */,
+				2531DF7455AF5BE802836BF5 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F0BED9A88AD6A5BBD90C663 /* Pods */ = {
+		0192062900576D47BCBB5A61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E9B723637394CA76E94211E1 /* MaryPopin */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		332AFA6A6EB27B3388C2F52F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9DA5256181FFAB419D5DFF66 /* Pods-MaryPopin.xcconfig */,
-				AF8598853917903F6FAC2F77 /* Pods-MaryPopin-Private.xcconfig */,
-				9F5E4C4B3EB2C61EAF4951CE /* Pods-MaryPopin-dummy.m */,
-				C8255208E349CB60600FEBD4 /* Pods-MaryPopin-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-MaryPopin";
-			sourceTree = "<group>";
-		};
-		3B60CDEED691615B936B26FE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8DEAFFCC7FC1361C10F572E1 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8DEAFFCC7FC1361C10F572E1 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				DA117C8B35F8D8FC4959CBED /* Foundation.framework */,
-				B1526F24B1A9E2FD3F78B518 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		A3CA2D6D2F3A949220EC9036 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F20375FD63C1638A3BB1EDEA /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		BBC0F8AA5257A3B9615F34DA = {
-			isa = PBXGroup;
-			children = (
-				94A0D9286CF3FE9F32306F92 /* Podfile */,
-				3B60CDEED691615B936B26FE /* Frameworks */,
-				2F0BED9A88AD6A5BBD90C663 /* Pods */,
-				CB9AB5EF3B423C3605204BD4 /* Products */,
-				A3CA2D6D2F3A949220EC9036 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		CB9AB5EF3B423C3605204BD4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				63B3538C14794E7154926133 /* libPods.a */,
-				2D8C6A68C8D5853EE3C65A51 /* libPods-MaryPopin.a */,
+				41720713606D992EA440D972 /* libPods.a */,
+				50990057B84EE879CB3634C0 /* libPods-MaryPopin.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E9B723637394CA76E94211E1 /* MaryPopin */ = {
+		2C95934B921A00346CE1C763 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				42ECA48244A16F7AD15B2A55 /* UIViewController+MaryPopin.h */,
-				093D95357828E63852F1DE90 /* UIViewController+MaryPopin.m */,
-				332AFA6A6EB27B3388C2F52F /* Support Files */,
+				E4CAA02C1C33B086B606C064 /* MaryPopin */,
 			);
-			path = MaryPopin;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		F20375FD63C1638A3BB1EDEA /* Pods */ = {
+		32C47C0C6253DAFE814A6357 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				2349571A03B98E2A2D45E7DD /* Pods-acknowledgements.markdown */,
-				14295367B88631D91D851914 /* Pods-acknowledgements.plist */,
-				A7ED38F15D2BE69824F5B1A6 /* Pods-dummy.m */,
-				1241E9F9535209E2005734C1 /* Pods-environment.h */,
-				556E0E81D26E8139F4F1A2E3 /* Pods-resources.sh */,
-				125464DF1F2A91422614D983 /* Pods.debug.xcconfig */,
-				922423A75C1DBD1ED103B2CF /* Pods.release.xcconfig */,
+				298BF8D57DAA5BE314804986 /* Foundation.framework */,
+				E5B359988AF305216D9C8037 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5226BFD99E6D2FF83EFF30CB = {
+			isa = PBXGroup;
+			children = (
+				2AC9ED68A17A66B6E5BE5D44 /* Podfile */,
+				B845DB1A0FCBA53AD8526AFE /* Frameworks */,
+				2C95934B921A00346CE1C763 /* Pods */,
+				0192062900576D47BCBB5A61 /* Products */,
+				EE2DB5C38917BC3BBF3D6A67 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		6F753352AFE035606B5D3923 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				206B67490EFD2F05C86DB893 /* Pods-acknowledgements.markdown */,
+				6A275EEC10691FE969FB9004 /* Pods-acknowledgements.plist */,
+				CFFE91192E130D401F22D4A3 /* Pods-dummy.m */,
+				98EEBEE8D3E53BF5EDFF653A /* Pods-environment.h */,
+				53307EB559AECF2F26464B35 /* Pods-resources.sh */,
+				D4B01A8604F1018654FD34D1 /* Pods.debug.xcconfig */,
+				4D7047278940D627CF7D1F12 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
+		937FC70BBDB88A77BCB2DEE9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B51C9FEFAB78681656F6F78E /* Pods-MaryPopin.xcconfig */,
+				F072F47324A5813F87FDE193 /* Pods-MaryPopin-Private.xcconfig */,
+				2E3B6BB31AE39B8F40D6DCB7 /* Pods-MaryPopin-dummy.m */,
+				A2A4B497C021238D757CDE7C /* Pods-MaryPopin-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-MaryPopin";
+			sourceTree = "<group>";
+		};
+		B845DB1A0FCBA53AD8526AFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32C47C0C6253DAFE814A6357 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4CAA02C1C33B086B606C064 /* MaryPopin */ = {
+			isa = PBXGroup;
+			children = (
+				6A9AFABFA403EC5B57FDBC43 /* UIViewController+MaryPopin.h */,
+				C77EB9B20661EE17FF1DA5F1 /* UIViewController+MaryPopin.m */,
+				937FC70BBDB88A77BCB2DEE9 /* Support Files */,
+			);
+			path = MaryPopin;
+			sourceTree = "<group>";
+		};
+		EE2DB5C38917BC3BBF3D6A67 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F753352AFE035606B5D3923 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		F2FDE3A9A1084EED55E5D8DB /* Headers */ = {
+		D5365AE0C83CFA3DA2B55B03 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1F3AB782043AE991FCD628F /* UIViewController+MaryPopin.h in Headers */,
+				C04289B80918307F686EF921 /* UIViewController+MaryPopin.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		80E9ED330DF39588F7120019 /* Pods */ = {
+		B7E3F940848373E8F173FC90 /* Pods-MaryPopin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B65D8AED6B6A058A02614AB0 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 1DC7310935370D088EB7426B /* Build configuration list for PBXNativeTarget "Pods-MaryPopin" */;
 			buildPhases = (
-				D3C310296AE87A190A7D14EB /* Sources */,
-				82ED33C9130F5F531E673178 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D2BF10A354CAD4AD9AE8FC32 /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = 63B3538C14794E7154926133 /* libPods.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		D0E1314D7C650E44A5B51350 /* Pods-MaryPopin */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0B62062BE24320D181EF973E /* Build configuration list for PBXNativeTarget "Pods-MaryPopin" */;
-			buildPhases = (
-				6D08ED70611B6C9AFA26245A /* Sources */,
-				6E9DDF19CA8AD51086E1CA72 /* Frameworks */,
-				F2FDE3A9A1084EED55E5D8DB /* Headers */,
+				1BB18CF7D88C9584790CCC8B /* Sources */,
+				81BFDF589FC1A73B2F88143E /* Frameworks */,
+				D5365AE0C83CFA3DA2B55B03 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -203,68 +186,85 @@
 			);
 			name = "Pods-MaryPopin";
 			productName = "Pods-MaryPopin";
-			productReference = 2D8C6A68C8D5853EE3C65A51 /* libPods-MaryPopin.a */;
+			productReference = 50990057B84EE879CB3634C0 /* libPods-MaryPopin.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CF87D67C24F04EF525F84467 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F5A64F47BA6E6565FCCB71D /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				25478DC2893CCF8C9AA54534 /* Sources */,
+				8181B1949503FC9657DB94EA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1CB80DBDD498FA24A56DB5A /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 41720713606D992EA440D972 /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E89C4601212DF6D94A33D47A /* Project object */ = {
+		F7207B079E6F695E9DBE8B87 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
 			};
-			buildConfigurationList = 5B1536CF2F5909BBB50DE576 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = FDAA443EEEBAA099E39C4C29 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = BBC0F8AA5257A3B9615F34DA;
-			productRefGroup = CB9AB5EF3B423C3605204BD4 /* Products */;
+			mainGroup = 5226BFD99E6D2FF83EFF30CB;
+			productRefGroup = 0192062900576D47BCBB5A61 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				80E9ED330DF39588F7120019 /* Pods */,
-				D0E1314D7C650E44A5B51350 /* Pods-MaryPopin */,
+				CF87D67C24F04EF525F84467 /* Pods */,
+				B7E3F940848373E8F173FC90 /* Pods-MaryPopin */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6D08ED70611B6C9AFA26245A /* Sources */ = {
+		1BB18CF7D88C9584790CCC8B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49C824A53E7C6FC4886CAC98 /* Pods-MaryPopin-dummy.m in Sources */,
-				FECDD1E71DF6E815964E5E16 /* UIViewController+MaryPopin.m in Sources */,
+				E0B9BBAC75D6D6C85975840A /* Pods-MaryPopin-dummy.m in Sources */,
+				58B5B94CFCA8E19B9D0F38AB /* UIViewController+MaryPopin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3C310296AE87A190A7D14EB /* Sources */ = {
+		25478DC2893CCF8C9AA54534 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC5F158FEB7368618EE1CBEA /* Pods-dummy.m in Sources */,
+				FDDCD5738668AFC5DA371F75 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D2BF10A354CAD4AD9AE8FC32 /* PBXTargetDependency */ = {
+		B1CB80DBDD498FA24A56DB5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MaryPopin";
-			target = D0E1314D7C650E44A5B51350 /* Pods-MaryPopin */;
-			targetProxy = 62ACA4E15D9D68EC179A9487 /* PBXContainerItemProxy */;
+			target = B7E3F940848373E8F173FC90 /* Pods-MaryPopin */;
+			targetProxy = DAB64B891B74A413BACB897E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		116175DE6CD8F3B69D502485 /* Debug */ = {
+		143CFD2340A58684D444AC48 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 125464DF1F2A91422614D983 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = D4B01A8604F1018654FD34D1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
@@ -288,7 +288,62 @@
 			};
 			name = Debug;
 		};
-		5C8E3A9BF7CEE29AD5645D29 /* Debug */ = {
+		47775DA59F8F1F3AFC16F8E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F072F47324A5813F87FDE193 /* Pods-MaryPopin-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MaryPopin/Pods-MaryPopin-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6BBA4D0A5F6A49D1B48DFABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D7047278940D627CF7D1F12 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71CCC6ACC42189CB0467A50E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -325,37 +380,9 @@
 			};
 			name = Debug;
 		};
-		A1A1D5F2A9AE900349EC70AB /* Release */ = {
+		92972178109F5B13BAD69EB1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 922423A75C1DBD1ED103B2CF /* Pods.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_CFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNS_BLOCK_ASSERTIONS=1",
-					"$(inherited)",
-				);
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		A8D84F5010D7D97E54660E01 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF8598853917903F6FAC2F77 /* Pods-MaryPopin-Private.xcconfig */;
+			baseConfigurationReference = F072F47324A5813F87FDE193 /* Pods-MaryPopin-Private.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
@@ -382,34 +409,7 @@
 			};
 			name = Release;
 		};
-		B4746BB675750A60CFF6BFB5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF8598853917903F6FAC2F77 /* Pods-MaryPopin-Private.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/xcodeproj.dst;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MaryPopin/Pods-MaryPopin-prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		B90D1A17F9E56C1868C9E29C /* Release */ = {
+		F447107E0582AEEC70B4C71A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -443,34 +443,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B62062BE24320D181EF973E /* Build configuration list for PBXNativeTarget "Pods-MaryPopin" */ = {
+		1DC7310935370D088EB7426B /* Build configuration list for PBXNativeTarget "Pods-MaryPopin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4746BB675750A60CFF6BFB5 /* Debug */,
-				A8D84F5010D7D97E54660E01 /* Release */,
+				47775DA59F8F1F3AFC16F8E9 /* Debug */,
+				92972178109F5B13BAD69EB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B1536CF2F5909BBB50DE576 /* Build configuration list for PBXProject "Pods" */ = {
+		4F5A64F47BA6E6565FCCB71D /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5C8E3A9BF7CEE29AD5645D29 /* Debug */,
-				B90D1A17F9E56C1868C9E29C /* Release */,
+				143CFD2340A58684D444AC48 /* Debug */,
+				6BBA4D0A5F6A49D1B48DFABB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B65D8AED6B6A058A02614AB0 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		FDAA443EEEBAA099E39C4C29 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				116175DE6CD8F3B69D502485 /* Debug */,
-				A1A1D5F2A9AE900349EC70AB /* Release */,
+				71CCC6ACC42189CB0467A50E /* Debug */,
+				F447107E0582AEEC70B4C71A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E89C4601212DF6D94A33D47A /* Project object */;
+	rootObject = F7207B079E6F695E9DBE8B87 /* Project object */;
 }
