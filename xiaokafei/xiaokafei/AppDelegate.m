@@ -17,10 +17,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
-    //启动画面停留时间
-    [NSThread sleepForTimeInterval:3.f];
-    
     //init data
     [self initData];
     

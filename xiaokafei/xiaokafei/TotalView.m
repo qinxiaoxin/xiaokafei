@@ -17,17 +17,17 @@
     
     if (self) {
         
-        self.bounds = CGRectMake(0, 0, 320, 44);
+        self.bounds = CGRectMake(0, 0, 320, 66);
         
-        _totalLabel = [[UILabel alloc] initWithFrame:CGRectMake(44, 0, 44, 44)];
-        _totalLabel.font = [UIFont fontWithName:Font size:20.f];
+        _totalLabel = [[UILabel alloc] initWithFrame:CGRectMake(44, 11, 66, 44)];
+        _totalLabel.font = [UIFont fontWithName:Font size:30.f];
         _totalLabel.text = @"合计";
         _totalLabel.textColor = [UIColor brownColor];
         _totalLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:_totalLabel];
         
-        _totalPriceLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.width - 44 * 2, 0, 44, 44)];
-        _totalPriceLabel.font = [UIFont fontWithName:Font size:20.f];
+        _totalPriceLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.width - 44 * 2, 11, 66, 44)];
+        _totalPriceLabel.font = [UIFont fontWithName:Font size:30.f];
         _totalPriceLabel.textColor = [UIColor brownColor];
         _totalPriceLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:_totalPriceLabel];
