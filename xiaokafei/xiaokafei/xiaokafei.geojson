@@ -81,6 +81,18 @@
                }],
     
     "cake":[{
+            "name":"榴莲酥",
+            "ename":"",
+            "price":"¥4",
+            "image":"IMG_0027.JPG"
+            },
+            {
+            "name":"玫瑰花饼",
+            "ename":"",
+            "price":"¥4",
+            "image":"IMG_0028.JPG"
+            },
+            {
             "name":"水果蛋糕",
             "ename":"Fruit Cake",
             "price":"¥16",
@@ -136,6 +148,12 @@
             }],
     
     "drink":[{
+             "name":"百利甜牛奶",
+             "ename":"Margaret",
+             "price":"¥23",
+             "image":"IMG_0024.JPG"
+             },
+             {
              "name":"轰炸机(B52)",
              "ename":"Bomber",
              "price":"¥18",
@@ -197,22 +215,22 @@
             "image":"IMG_2663.JPG"
             },
             {
+            "name":"松子",
+            "ename":"",
+            "price":"¥18",
+            "image":"IMG_0031.JPG"
+            },
+            {
             "name":"腰果",
             "ename":"",
             "price":"¥18",
             "image":"IMG_2664.JPG"
             },
             {
-            "name":"木仁",
+            "name":"杏仁",
             "ename":"",
             "price":"¥18",
             "image":"IMG_2665.JPG"
-            },
-            {
-            "name":"花生",
-            "ename":"",
-            "price":"¥15",
-            "image":"IMG_2666.JPG"
             },
             {
             "name":"金枪鱼三明治",
@@ -281,6 +299,12 @@
             "image":"IMG_2660.JPG"
             },
             {
+            "name":"黑胡椒牛肉饭",
+            "ename":"",
+            "price":"¥20",
+            "image":"IMG_0029.JPG"
+            },
+            {
             "name":"咖喱牛肉焗饭",
             "ename":"",
             "price":"¥22",
@@ -324,6 +348,12 @@
             }],
     
     "milk_tea":[{
+                "name":"芝士奶茶",
+                "ename":"",
+                "price":"¥20",
+                "image":"IMG_0026.JPG"
+                },
+                {
                 "name":"优雅茉莉",
                 "ename":"",
                 "price":"¥20",
@@ -507,6 +537,12 @@
                   }],
     
     "juice":[{
+             "name":"柠檬红茶",
+             "ename":"",
+             "price":"¥18",
+             "image":"IMG_0025.JPG"
+             },
+             {
              "name":"西瓜汁",
              "ename":"",
              "price":"¥19",

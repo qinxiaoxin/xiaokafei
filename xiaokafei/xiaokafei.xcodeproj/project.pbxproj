@@ -69,6 +69,13 @@
 		762D1B781B53C315000C47F7 /* DrinkCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762D1B761B53C315000C47F7 /* DrinkCollectionViewController.m */; };
 		762D1B7D1B53C6BF000C47F7 /* FlowerTeaCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762D1B7B1B53C6BF000C47F7 /* FlowerTeaCollectionViewController.m */; };
 		762D1B821B53C756000C47F7 /* MilkTeaCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762D1B801B53C756000C47F7 /* MilkTeaCollectionViewController.m */; };
+		7654CE4B1BB7F54E00DD9BEB /* IMG_0029.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7654CE4A1BB7F54E00DD9BEB /* IMG_0029.JPG */; settings = {ASSET_TAGS = (); }; };
+		7654CE521BB7F5AC00DD9BEB /* IMG_0024.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7654CE511BB7F5AC00DD9BEB /* IMG_0024.JPG */; settings = {ASSET_TAGS = (); }; };
+		7654CE541BB7F5F800DD9BEB /* IMG_0025.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7654CE531BB7F5F800DD9BEB /* IMG_0025.JPG */; settings = {ASSET_TAGS = (); }; };
+		7654CE561BB7F64200DD9BEB /* IMG_0026.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7654CE551BB7F64200DD9BEB /* IMG_0026.JPG */; settings = {ASSET_TAGS = (); }; };
+		7654CE581BB7F67800DD9BEB /* IMG_0027.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7654CE571BB7F67800DD9BEB /* IMG_0027.JPG */; settings = {ASSET_TAGS = (); }; };
+		7654CE5A1BB7F6B500DD9BEB /* IMG_0028.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7654CE591BB7F6B500DD9BEB /* IMG_0028.JPG */; settings = {ASSET_TAGS = (); }; };
+		7654CE5C1BB7F99B00DD9BEB /* IMG_0031.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7654CE5B1BB7F99B00DD9BEB /* IMG_0031.JPG */; settings = {ASSET_TAGS = (); }; };
 		765FC8381AF8798D0016F1BE /* IMG_2282.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 765FC8371AF8798D0016F1BE /* IMG_2282.JPG */; };
 		7680B5B91B54B77F00894F7A /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680B5931B54B77F00894F7A /* MKAnnotationView+WebCache.m */; };
 		7680B5BA1B54B77F00894F7A /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680B5951B54B77F00894F7A /* NSData+ImageContentType.m */; };
@@ -325,6 +332,13 @@
 		762D1B7B1B53C6BF000C47F7 /* FlowerTeaCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowerTeaCollectionViewController.m; sourceTree = "<group>"; };
 		762D1B7F1B53C756000C47F7 /* MilkTeaCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MilkTeaCollectionViewController.h; sourceTree = "<group>"; };
 		762D1B801B53C756000C47F7 /* MilkTeaCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MilkTeaCollectionViewController.m; sourceTree = "<group>"; };
+		7654CE4A1BB7F54E00DD9BEB /* IMG_0029.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0029.JPG; sourceTree = "<group>"; };
+		7654CE511BB7F5AC00DD9BEB /* IMG_0024.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0024.JPG; sourceTree = "<group>"; };
+		7654CE531BB7F5F800DD9BEB /* IMG_0025.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0025.JPG; sourceTree = "<group>"; };
+		7654CE551BB7F64200DD9BEB /* IMG_0026.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0026.JPG; sourceTree = "<group>"; };
+		7654CE571BB7F67800DD9BEB /* IMG_0027.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0027.JPG; path = "../简餐小食/IMG_0027.JPG"; sourceTree = "<group>"; };
+		7654CE591BB7F6B500DD9BEB /* IMG_0028.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_0028.JPG; path = "../简餐小食/IMG_0028.JPG"; sourceTree = "<group>"; };
+		7654CE5B1BB7F99B00DD9BEB /* IMG_0031.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0031.JPG; sourceTree = "<group>"; };
 		765FC8371AF8798D0016F1BE /* IMG_2282.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2282.JPG; sourceTree = "<group>"; };
 		7674F7253FCE7F8D97A50825 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7680B5921B54B77F00894F7A /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
@@ -932,6 +946,7 @@
 		76898FC41AB848AA0046491F /* 奶茶 */ = {
 			isa = PBXGroup;
 			children = (
+				7654CE551BB7F64200DD9BEB /* IMG_0026.JPG */,
 				76898FC51AB848AA0046491F /* IMG_1514.JPG */,
 				76898FC61AB848AA0046491F /* IMG_1530.JPG */,
 				76898FC71AB848AA0046491F /* IMG_1555.JPG */,
@@ -947,6 +962,7 @@
 		76898FCA1AB848AA0046491F /* 果汁 */ = {
 			isa = PBXGroup;
 			children = (
+				7654CE531BB7F5F800DD9BEB /* IMG_0025.JPG */,
 				76898FCB1AB848AA0046491F /* IMG_1425.JPG */,
 				76898FCC1AB848AA0046491F /* IMG_1468.JPG */,
 				76898FCD1AB848AA0046491F /* IMG_1482.JPG */,
@@ -992,6 +1008,8 @@
 		76898FE21AB848AA0046491F /* 简餐小食 */ = {
 			isa = PBXGroup;
 			children = (
+				7654CE4A1BB7F54E00DD9BEB /* IMG_0029.JPG */,
+				7654CE5B1BB7F99B00DD9BEB /* IMG_0031.JPG */,
 				76C80CEE1ABBFA470038B975 /* IMG_2101.JPG */,
 				76C80CEF1ABBFA470038B975 /* IMG_2104.JPG */,
 				768F9E561AC25F72006D0A58 /* IMG_2166.JPG */,
@@ -1022,6 +1040,8 @@
 		76898FEA1AB848AA0046491F /* 糕点 */ = {
 			isa = PBXGroup;
 			children = (
+				7654CE571BB7F67800DD9BEB /* IMG_0027.JPG */,
+				7654CE591BB7F6B500DD9BEB /* IMG_0028.JPG */,
 				76898FF01AB848AA0046491F /* IMG_1643.JPG */,
 				76898FF11AB848AA0046491F /* IMG_2055.JPG */,
 				76898FF21AB848AA0046491F /* IMG_2056.JPG */,
@@ -1053,6 +1073,7 @@
 		76898FF71AB848AA0046491F /* 鸡尾酒 */ = {
 			isa = PBXGroup;
 			children = (
+				7654CE511BB7F5AC00DD9BEB /* IMG_0024.JPG */,
 				76898FF91AB848AA0046491F /* IMG_1471.JPG */,
 				76898FFA1AB848AA0046491F /* IMG_1489.JPG */,
 				76898FFB1AB848AA0046491F /* IMG_1757.JPG */,
@@ -1291,6 +1312,8 @@
 				768990381AB848AA0046491F /* IMG_1471.JPG in Resources */,
 				762026991ADEA75A00C3E62F /* IMG_2227.JPG in Resources */,
 				76998DB81B118D680072BDCD /* IMG_2388.JPG in Resources */,
+				7654CE541BB7F5F800DD9BEB /* IMG_0025.JPG in Resources */,
+				7654CE4B1BB7F54E00DD9BEB /* IMG_0029.JPG in Resources */,
 				7689901B1AB848AA0046491F /* IMG_2039.JPG in Resources */,
 				761BC2BC1ABEC33400260150 /* IMG_2138.JPG in Resources */,
 				76C80CDE1ABBF5D60038B975 /* IMG_2093.JPG in Resources */,
@@ -1317,6 +1340,7 @@
 				7689901D1AB848AA0046491F /* IMG_2044.JPG in Resources */,
 				768990071AB848AA0046491F /* IMG_2060.JPG in Resources */,
 				762026A61ADEA7CB00C3E62F /* IMG_2222.JPG in Resources */,
+				7654CE5A1BB7F6B500DD9BEB /* IMG_0028.JPG in Resources */,
 				7689901A1AB848AA0046491F /* IMG_2038.JPG in Resources */,
 				762026A51ADEA7CB00C3E62F /* IMG_2220.JPG in Resources */,
 				7689903C1AB848AA0046491F /* IMG_1803.JPG in Resources */,
@@ -1351,10 +1375,12 @@
 				768990351AB848AA0046491F /* IMG_2015.JPG in Resources */,
 				76A995371AE53E2B0051F382 /* IMG_2243.JPG in Resources */,
 				768990191AB848AA0046491F /* IMG_2037.JPG in Resources */,
+				7654CE5C1BB7F99B00DD9BEB /* IMG_0031.JPG in Resources */,
 				76A4BDC81B99D968002A2FF7 /* IMG_2659.JPG in Resources */,
 				768990321AB848AA0046491F /* IMG_2055.JPG in Resources */,
 				762026BB1ADF7BDF00C3E62F /* IMG_2236.JPG in Resources */,
 				768990201AB848AA0046491F /* IMG_2058.JPG in Resources */,
+				7654CE561BB7F64200DD9BEB /* IMG_0026.JPG in Resources */,
 				762026AE1ADEB36600C3E62F /* IMG_2208.JPG in Resources */,
 				7620268E1ADEA10800C3E62F /* IMG_2216.JPG in Resources */,
 				7689901F1AB848AA0046491F /* IMG_2057.JPG in Resources */,
@@ -1371,8 +1397,10 @@
 				762026B91ADF7BDF00C3E62F /* IMG_2232.JPG in Resources */,
 				762026B01ADEB36600C3E62F /* IMG_2218.JPG in Resources */,
 				768990121AB848AA0046491F /* IMG_1531.JPG in Resources */,
+				7654CE521BB7F5AC00DD9BEB /* IMG_0024.JPG in Resources */,
 				76A49F451AEA192D00486199 /* IMG_2252.JPG in Resources */,
 				76C80CF11ABBFA470038B975 /* IMG_2104.JPG in Resources */,
+				7654CE581BB7F67800DD9BEB /* IMG_0027.JPG in Resources */,
 				7606D23A1B2BECC5009FA24B /* IMG_2524.JPG in Resources */,
 				768990061AB848AA0046491F /* IMG_2042.JPG in Resources */,
 				7622BCE21B2303E0008166DB /* IMG_2477.JPG in Resources */,
