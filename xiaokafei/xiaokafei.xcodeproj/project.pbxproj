@@ -112,6 +112,10 @@
 		7680B61F1B54D9D900894F7A /* RZZoomPushAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680B60A1B54D9D900894F7A /* RZZoomPushAnimationController.m */; };
 		7680B6201B54D9D900894F7A /* UIImage+RZTransitionsFastImageBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680B60D1B54D9D900894F7A /* UIImage+RZTransitionsFastImageBlur.m */; };
 		7680B6211B54D9D900894F7A /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7680B60F1B54D9D900894F7A /* UIImage+RZTransitionsSnapshotHelpers.m */; };
+		7683A94E1BD353760060D6DA /* IMG_5416.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7683A94D1BD353760060D6DA /* IMG_5416.JPG */; settings = {ASSET_TAGS = (); }; };
+		7683A9561BD353880060D6DA /* IMG_5417.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7683A9541BD353880060D6DA /* IMG_5417.JPG */; settings = {ASSET_TAGS = (); }; };
+		7683A9571BD353880060D6DA /* IMG_5418.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7683A9551BD353880060D6DA /* IMG_5418.JPG */; settings = {ASSET_TAGS = (); }; };
+		7683A9591BD3538F0060D6DA /* IMG_5420.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 7683A9581BD3538F0060D6DA /* IMG_5420.JPG */; settings = {ASSET_TAGS = (); }; };
 		768990001AB848AA0046491F /* IMG_1384.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FBA1AB848AA0046491F /* IMG_1384.JPG */; };
 		768990011AB848AA0046491F /* IMG_1385.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FBB1AB848AA0046491F /* IMG_1385.JPG */; };
 		768990021AB848AA0046491F /* IMG_1386.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 76898FBC1AB848AA0046491F /* IMG_1386.JPG */; };
@@ -418,6 +422,10 @@
 		7680B60D1B54D9D900894F7A /* UIImage+RZTransitionsFastImageBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RZTransitionsFastImageBlur.m"; sourceTree = "<group>"; };
 		7680B60E1B54D9D900894F7A /* UIImage+RZTransitionsSnapshotHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RZTransitionsSnapshotHelpers.h"; sourceTree = "<group>"; };
 		7680B60F1B54D9D900894F7A /* UIImage+RZTransitionsSnapshotHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RZTransitionsSnapshotHelpers.m"; sourceTree = "<group>"; };
+		7683A94D1BD353760060D6DA /* IMG_5416.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_5416.JPG; sourceTree = "<group>"; };
+		7683A9541BD353880060D6DA /* IMG_5417.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_5417.JPG; sourceTree = "<group>"; };
+		7683A9551BD353880060D6DA /* IMG_5418.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_5418.JPG; sourceTree = "<group>"; };
+		7683A9581BD3538F0060D6DA /* IMG_5420.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_5420.JPG; sourceTree = "<group>"; };
 		76856AEF1A74AB6300DF030C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		76898FBA1AB848AA0046491F /* IMG_1384.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1384.JPG; sourceTree = "<group>"; };
 		76898FBB1AB848AA0046491F /* IMG_1385.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1385.JPG; sourceTree = "<group>"; };
@@ -1033,6 +1041,7 @@
 				76A4BDC31B99D8F1002A2FF7 /* IMG_2665.JPG */,
 				76A4BDC51B99D91D002A2FF7 /* IMG_2666.JPG */,
 				76A4BDD11B99DD2B002A2FF7 /* IMG_2693.JPG */,
+				7683A9581BD3538F0060D6DA /* IMG_5420.JPG */,
 			);
 			path = "简餐小食";
 			sourceTree = "<group>";
@@ -1051,6 +1060,8 @@
 				76A995381AE53E3B0051F382 /* IMG_2244.JPG */,
 				76A4BDCB1B99DB2D002A2FF7 /* IMG_2717.JPG */,
 				76A4BDCC1B99DB2D002A2FF7 /* IMG_2718.JPG */,
+				7683A9541BD353880060D6DA /* IMG_5417.JPG */,
+				7683A9551BD353880060D6DA /* IMG_5418.JPG */,
 			);
 			path = "糕点";
 			sourceTree = "<group>";
@@ -1085,6 +1096,7 @@
 				76998DB21B118D680072BDCD /* IMG_2387.JPG */,
 				76998DB31B118D680072BDCD /* IMG_2388.JPG */,
 				76998DB41B118D680072BDCD /* IMG_2389.JPG */,
+				7683A94D1BD353760060D6DA /* IMG_5416.JPG */,
 			);
 			path = "鸡尾酒";
 			sourceTree = "<group>";
@@ -1316,6 +1328,7 @@
 				7654CE4B1BB7F54E00DD9BEB /* IMG_0029.JPG in Resources */,
 				7689901B1AB848AA0046491F /* IMG_2039.JPG in Resources */,
 				761BC2BC1ABEC33400260150 /* IMG_2138.JPG in Resources */,
+				7683A9591BD3538F0060D6DA /* IMG_5420.JPG in Resources */,
 				76C80CDE1ABBF5D60038B975 /* IMG_2093.JPG in Resources */,
 				76C80CE71ABBF5FD0038B975 /* IMG_2126.JPG in Resources */,
 				76C80CE81ABBF5FD0038B975 /* IMG_2127.JPG in Resources */,
@@ -1340,6 +1353,7 @@
 				7689901D1AB848AA0046491F /* IMG_2044.JPG in Resources */,
 				768990071AB848AA0046491F /* IMG_2060.JPG in Resources */,
 				762026A61ADEA7CB00C3E62F /* IMG_2222.JPG in Resources */,
+				7683A94E1BD353760060D6DA /* IMG_5416.JPG in Resources */,
 				7654CE5A1BB7F6B500DD9BEB /* IMG_0028.JPG in Resources */,
 				7689901A1AB848AA0046491F /* IMG_2038.JPG in Resources */,
 				762026A51ADEA7CB00C3E62F /* IMG_2220.JPG in Resources */,
@@ -1361,6 +1375,7 @@
 				7689900D1AB848AA0046491F /* IMG_2010.JPG in Resources */,
 				7606D23C1B2C0549009FA24B /* IMG_2527.JPG in Resources */,
 				76A49F441AEA192D00486199 /* IMG_2251.JPG in Resources */,
+				7683A9561BD353880060D6DA /* IMG_5417.JPG in Resources */,
 				7607EAB41A470F0300AB8E4D /* Images.xcassets in Resources */,
 				765FC8381AF8798D0016F1BE /* IMG_2282.JPG in Resources */,
 				76C80CE11ABBF5EA0038B975 /* IMG_2111.JPG in Resources */,
@@ -1396,6 +1411,7 @@
 				7689900B1AB848AA0046491F /* IMG_1555.JPG in Resources */,
 				762026B91ADF7BDF00C3E62F /* IMG_2232.JPG in Resources */,
 				762026B01ADEB36600C3E62F /* IMG_2218.JPG in Resources */,
+				7683A9571BD353880060D6DA /* IMG_5418.JPG in Resources */,
 				768990121AB848AA0046491F /* IMG_1531.JPG in Resources */,
 				7654CE521BB7F5AC00DD9BEB /* IMG_0024.JPG in Resources */,
 				76A49F451AEA192D00486199 /* IMG_2252.JPG in Resources */,

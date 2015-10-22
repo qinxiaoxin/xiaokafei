@@ -111,6 +111,18 @@
             "image":"IMG_2216.JPG"
             },
             {
+            "name":"榴莲慕斯",
+            "ename":"Durian Mousse",
+            "price":"¥18",
+            "image":"IMG_5418.JPG"
+            },
+            {
+            "name":"卡布基诺",
+            "ename":"Gino Kapoor",
+            "price":"¥18",
+            "image":"IMG_5417.JPG"
+            },
+            {
             "name":"黑森林",
             "ename":"Black Forest",
             "price":"¥18",
@@ -206,6 +218,12 @@
              "ename":"Martini",
              "price":"¥22",
              "image":"IMG_1757.JPG"
+             },
+             {
+             "name":"长岛冰茶",
+             "ename":"Long Island Iced Tea",
+             "price":"¥29",
+             "image":"IMG_5416.JPG"
              }],
     
     "food":[{
@@ -231,6 +249,12 @@
             "ename":"",
             "price":"¥18",
             "image":"IMG_2665.JPG"
+            },
+            {
+            "name":"薯球",
+            "ename":"",
+            "price":"¥18",
+            "image":"IMG_5420.JPG"
             },
             {
             "name":"金枪鱼三明治",
