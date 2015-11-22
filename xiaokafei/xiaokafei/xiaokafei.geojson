@@ -2,6 +2,12 @@
     "type": "MultiPolygon",
     
     "coffee": [{
+               "name":"单品咖啡",
+               "ename":"",
+               "price":"¥25",
+               "image":"IMG_5605.JPG"
+               },
+               {
                 "name":"卡布奇诺",
                 "ename":"Cappuccino",
                 "price":"¥22",
@@ -30,6 +36,12 @@
                "ename":"Pot Coffee",
                "price":"¥24",
                "image":"IMG_1386.JPG"
+               },
+               {
+               "name":"爱尔兰咖啡",
+               "ename":"Ireland Coffee",
+               "price":"¥24",
+               "image":"IMG_5611.JPG"
                },
                {
                "name":"紫薯拿铁",
@@ -220,6 +232,12 @@
              "image":"IMG_1757.JPG"
              },
              {
+             "name":"蓝色天际",
+             "ename":"Blue Sky",
+             "price":"¥24",
+             "image":"IMG_5750.JPG"
+             },
+             {
              "name":"长岛冰茶",
              "ename":"Long Island Iced Tea",
              "price":"¥29",
@@ -317,6 +335,24 @@
             "image":"IMG_2472.JPG"
             },
             {
+            "name":"意式牛腩饭",
+            "ename":"",
+            "price":"¥20",
+            "image":"IMG_5563.JPG"
+            },
+            {
+            "name":"肉酱意面",
+            "ename":"",
+            "price":"¥20",
+            "image":"IMG_0087.JPG"
+            },
+            {
+            "name":"黑胡椒意面",
+            "ename":"",
+            "price":"¥20",
+            "image":"IMG_5726.JPG"
+            },
+            {
             "name":"番茄鸡肉焗饭",
             "ename":"",
             "price":"¥20",
@@ -376,6 +412,12 @@
                 "ename":"",
                 "price":"¥20",
                 "image":"IMG_0026.JPG"
+                },
+                {
+                "name":"樱花玫瑰奶茶",
+                "ename":"",
+                "price":"¥20",
+                "image":"IMG_0084.JPG"
                 },
                 {
                 "name":"优雅茉莉",
