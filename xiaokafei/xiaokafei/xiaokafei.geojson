@@ -172,6 +172,12 @@
             }],
     
     "drink":[{
+             "name":"星旗条",
+             "ename":"Netherland Flag",
+             "price":"¥24",
+             "image":"IMG_0112.JPG"
+             },
+             {
              "name":"百利甜牛奶",
              "ename":"Margaret",
              "price":"¥23",
@@ -186,7 +192,7 @@
              {
              "name":"玛格丽特",
              "ename":"Margaret",
-             "price":"¥23",
+             "price":"¥24",
              "image":"IMG_2386.JPG"
              },
              {
@@ -216,14 +222,20 @@
              {
              "name":"龙舌兰日出",
              "ename":"Tequila Sunrise",
-             "price":"¥23",
+             "price":"¥24",
              "image":"IMG_1803.JPG"
              },
              {
              "name":"椰林飘香",
              "ename":"Pina Colada",
-             "price":"¥23",
-             "image":"IMG_1804.JPG"
+             "price":"¥25",
+             "image":"IMG_0107.JPG"
+             },
+             {
+             "name":"威士忌",
+             "ename":"Whisky",
+             "price":"¥22",
+             "image":"IMG_0106.JPG"
              },
              {
              "name":"马天尼甜",
@@ -234,7 +246,7 @@
              {
              "name":"蓝色天际",
              "ename":"Blue Sky",
-             "price":"¥24",
+             "price":"¥23",
              "image":"IMG_5750.JPG"
              },
              {
@@ -343,13 +355,13 @@
             {
             "name":"肉酱意面",
             "ename":"",
-            "price":"¥20",
+            "price":"¥18",
             "image":"IMG_0087.JPG"
             },
             {
             "name":"黑胡椒意面",
             "ename":"",
-            "price":"¥20",
+            "price":"¥18",
             "image":"IMG_5726.JPG"
             },
             {
