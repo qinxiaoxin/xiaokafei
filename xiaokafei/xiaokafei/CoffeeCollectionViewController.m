@@ -60,8 +60,8 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         image = [YYImage imageNamed:[dic valueForKeyPath:@"image"]];
         dispatch_async(dispatch_get_main_queue(), ^{
-            [cell.indicator stopAnimating];
             cell.imageView.image = image;
+//            [cell.indicator stopAnimating];
         });
     });
     
