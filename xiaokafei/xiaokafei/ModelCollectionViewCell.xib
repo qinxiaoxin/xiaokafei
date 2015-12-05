@@ -43,6 +43,15 @@
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="EJM-WI-AYt">
+                        <rect key="frame" x="132" y="131" width="37" height="37"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="4SD-My-ZyS"/>
+                            <constraint firstAttribute="width" constant="37" id="BTM-qF-1Ae"/>
+                        </constraints>
+                        <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </activityIndicatorView>
                 </subviews>
                 <animations/>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -55,8 +64,10 @@
                 <constraint firstAttribute="trailing" secondItem="PX3-dZ-NFS" secondAttribute="trailing" id="9cY-EA-ePF"/>
                 <constraint firstItem="PX3-dZ-NFS" firstAttribute="top" secondItem="tN5-kx-GBs" secondAttribute="bottom" id="DjE-XZ-Pso"/>
                 <constraint firstAttribute="bottom" secondItem="PX3-dZ-NFS" secondAttribute="bottom" id="Hcr-sS-nWe"/>
+                <constraint firstItem="EJM-WI-AYt" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="JZG-E0-ct1"/>
                 <constraint firstItem="Gru-Ns-gF1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="LoT-Ox-Uwa"/>
                 <constraint firstItem="Gru-Ns-gF1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="50" id="W5l-6H-2ra"/>
+                <constraint firstItem="EJM-WI-AYt" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="XEm-Fe-Mfc"/>
                 <constraint firstItem="Gru-Ns-gF1" firstAttribute="centerX" secondItem="tN5-kx-GBs" secondAttribute="centerX" id="cXj-Iw-CAi"/>
                 <constraint firstItem="PX3-dZ-NFS" firstAttribute="leading" secondItem="tN5-kx-GBs" secondAttribute="leading" id="cdY-mq-nR5"/>
                 <constraint firstItem="tN5-kx-GBs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yjR-no-DrM"/>
@@ -64,6 +75,7 @@
             <size key="customSize" width="198" height="205"/>
             <connections>
                 <outlet property="imageView" destination="Gru-Ns-gF1" id="Gio-Xd-UoS"/>
+                <outlet property="indicator" destination="EJM-WI-AYt" id="Q3p-db-pRl"/>
                 <outlet property="nameLabel" destination="tN5-kx-GBs" id="tiC-Yt-k4V"/>
                 <outlet property="priceLabel" destination="PX3-dZ-NFS" id="LdX-Jt-bVl"/>
             </connections>

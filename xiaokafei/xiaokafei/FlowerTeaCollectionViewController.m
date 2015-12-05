@@ -55,22 +55,11 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
     NSDictionary *dic = [_array objectAtIndex:indexPath.row];
     
     __block YYImage *image;
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        ImageCached *cached = [[ImageCached alloc] init];
-        cached.str = [dic valueForKeyPath:@"image"];
-        image= [cached cachedResult];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        image = [YYImage imageNamed:[dic valueForKeyPath:@"image"]];
         dispatch_async(dispatch_get_main_queue(), ^{
-            if (image) {
-                cell.imageView.image = image;
-            }else{
-                [cached startWithCompletion:^(YYImage *image, NSError *error) {
-                    if (image && [[collectionView indexPathsForVisibleItems] containsObject:indexPath]) {
-                        [collectionView reloadItemsAtIndexPaths:@[indexPath]];
-                    }else{
-                        cell.imageView.image = image;
-                    }
-                }];
-            }
+            [cell.indicator stopAnimating];
+            cell.imageView.image = image;
         });
     });
     

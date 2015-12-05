@@ -212,7 +212,6 @@
 		76E0A9261C12FCBC0003F31F /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E0A9251C12FCBC0003F31F /* Accelerate.framework */; };
 		76E0A9281C12FCC30003F31F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E0A9271C12FCC20003F31F /* MobileCoreServices.framework */; };
 		76E0A92A1C12FCC90003F31F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E0A9291C12FCC90003F31F /* libz.tbd */; };
-		76FD27011B6B5396007A506A /* ImageCached.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FD27001B6B5396007A506A /* ImageCached.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -491,8 +490,6 @@
 		76E0A9251C12FCBC0003F31F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		76E0A9271C12FCC20003F31F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		76E0A9291C12FCC90003F31F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		76FD26FF1B6B5396007A506A /* ImageCached.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCached.h; sourceTree = "<group>"; };
-		76FD27001B6B5396007A506A /* ImageCached.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCached.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -809,7 +806,6 @@
 		7680B6361B5625FF00894F7A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				76FD26F91B6B533A007A506A /* Cached */,
 				7609CB6F1A7B5AB400B4513C /* FMDB */,
 			);
 			name = Tools;
@@ -1072,15 +1068,6 @@
 				76E0A9191C12FBE40003F31F /* YYSpriteSheetImage.m */,
 			);
 			path = YYImage;
-			sourceTree = "<group>";
-		};
-		76FD26F91B6B533A007A506A /* Cached */ = {
-			isa = PBXGroup;
-			children = (
-				76FD26FF1B6B5396007A506A /* ImageCached.h */,
-				76FD27001B6B5396007A506A /* ImageCached.m */,
-			);
-			name = Cached;
 			sourceTree = "<group>";
 		};
 		F4AFFB38A5F82C83D12F92A9 /* Frameworks */ = {
@@ -1390,7 +1377,6 @@
 				76E0A91E1C12FBE40003F31F /* YYSpriteSheetImage.m in Sources */,
 				7637B9921C130823000D9680 /* UIImage+RZTransitionsSnapshotHelpers.m in Sources */,
 				7637B9841C130823000D9680 /* RZOverscrollInteractionController.m in Sources */,
-				76FD27011B6B5396007A506A /* ImageCached.m in Sources */,
 				7609CB7B1A7B5AB400B4513C /* FMDatabase.m in Sources */,
 				762D1B471B5369FA000C47F7 /* IndexViewController.m in Sources */,
 				76E0A91D1C12FBE40003F31F /* YYImageCoder.m in Sources */,

@@ -18,7 +18,7 @@
 #import "UIViewController+MaryPopin.h"
 #import "FMDBService.h"
 #import "RZTransitions.h"
-#import "ImageCached.h"
 #import "TAlertView.h"
+#import "YYImage.h"
 
 #endif

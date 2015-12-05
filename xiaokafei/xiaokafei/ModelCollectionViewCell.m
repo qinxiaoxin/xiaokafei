@@ -15,4 +15,9 @@
     [super awakeFromNib];
 }
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    self.imageView.image = nil;
+}
+
 @end
