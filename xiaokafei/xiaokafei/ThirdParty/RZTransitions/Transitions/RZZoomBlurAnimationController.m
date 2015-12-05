@@ -27,6 +27,8 @@
 //
 
 #import "RZZoomBlurAnimationController.h"
+
+#import "NSObject+RZTransitionsViewHelpers.h"
 #import "UIImage+RZTransitionsFastImageBlur.h"
 #import <objc/runtime.h>
 
@@ -76,21 +78,24 @@ static char kRZZoomBlurImageAssocKey;
     UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     UIView *container = [transitionContext containerView];
-    
-    toViewController.view.userInteractionEnabled = YES;
-    
+
+    UIView *fromView = [(NSObject *)transitionContext rzt_fromView];
+    UIView *toView = [(NSObject *)transitionContext rzt_toView];
+
+    toView.userInteractionEnabled = YES;
+
     if (!self.isPositiveAnimation)
     {
         // This may not exist if we didn't present with this guy originally. If not, it will just do an alpha fade, no blur.
         UIImageView *blurImageView = objc_getAssociatedObject(fromViewController, &kRZZoomBlurImageAssocKey);
-        
-        fromViewController.view.backgroundColor = [UIColor clearColor];
-        fromViewController.view.opaque = NO;
-        [container insertSubview:toViewController.view belowSubview:fromViewController.view];
-        
+
+        fromView.backgroundColor = [UIColor clearColor];
+        fromView.opaque = NO;
+        [container insertSubview:toView belowSubview:fromView];
+
         if (blurImageView)
         {
-            [container insertSubview:blurImageView aboveSubview:toViewController.view];
+            [container insertSubview:blurImageView aboveSubview:toView];
         }
 
         [UIView animateWithDuration:kRZZBAnimationTransitionTime
@@ -98,12 +103,12 @@ static char kRZZoomBlurImageAssocKey;
                             options:UIViewAnimationOptionCurveEaseOut
                          animations:^{
                              blurImageView.alpha = 0.f;
-                             fromViewController.view.alpha = 0.f;
-                             fromViewController.view.transform =  CGAffineTransformMakeScale(kRZZBZoomScale, kRZZBZoomScale);
+                             fromView.alpha = 0.f;
+                             fromView.transform =  CGAffineTransformMakeScale(kRZZBZoomScale, kRZZBZoomScale);
                          }
                          completion:^(BOOL finished) {
-                             fromViewController.view.alpha = 1.f;
-                             fromViewController.view.transform = CGAffineTransformIdentity;
+                             fromView.alpha = 1.f;
+                             fromView.transform = CGAffineTransformIdentity;
                              [blurImageView removeFromSuperview];
                              objc_setAssociatedObject(fromViewController, &kRZZoomBlurImageAssocKey, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
                              [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
@@ -111,33 +116,33 @@ static char kRZZoomBlurImageAssocKey;
     }
     else
     {
-        UIImage *blurImage = [UIImage blurredImageByCapturingView:fromViewController.view withRadius:self.blurRadius tintColor:self.blurTintColor saturationDeltaFactor:self.saturationDelta];
+        UIImage *blurImage = [UIImage blurredImageByCapturingView:fromView withRadius:self.blurRadius tintColor:self.blurTintColor saturationDeltaFactor:self.saturationDelta];
         UIImageView *blurImageView = [[UIImageView alloc] initWithImage:blurImage];
         objc_setAssociatedObject(toViewController, &kRZZoomBlurImageAssocKey, blurImageView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-        
+
         [container addSubview:blurImageView];
         blurImageView.alpha = 0.f;
-        
-        UIColor *originalBGColor = [toViewController.view backgroundColor];
-        toViewController.view.frame = fromViewController.view.frame;
-        toViewController.view.backgroundColor = [UIColor clearColor];
-        toViewController.view.opaque = NO;
-        toViewController.view.alpha = 0.f;
-        toViewController.view.transform = CGAffineTransformMakeScale(kRZZBZoomScale, kRZZBZoomScale);
-        [container addSubview:toViewController.view];
-        
+
+        UIColor *originalBGColor = [toView backgroundColor];
+        toView.frame = fromView.frame;
+        toView.backgroundColor = [UIColor clearColor];
+        toView.opaque = NO;
+        toView.alpha = 0.f;
+        toView.transform = CGAffineTransformMakeScale(kRZZBZoomScale, kRZZBZoomScale);
+        [container addSubview:toView];
+
         [UIView animateWithDuration:kRZZBAnimationTransitionTime
                               delay:0
                             options:UIViewAnimationOptionCurveEaseIn
                          animations:^{
                              blurImageView.alpha = 1.f;
-                             toViewController.view.alpha = 1.f;
-                             toViewController.view.transform = CGAffineTransformIdentity;
+                             toView.alpha = 1.f;
+                             toView.transform = CGAffineTransformIdentity;
                          }
                          completion:^(BOOL finished) {
-                             toViewController.view.backgroundColor = originalBGColor;
-                             toViewController.view.opaque = YES;
-                             [toViewController.view insertSubview:blurImageView atIndex:0];
+                             toView.backgroundColor = originalBGColor;
+                             toView.opaque = YES;
+                             [toView insertSubview:blurImageView atIndex:0];
                              [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
                          }];
     }

@@ -52,22 +52,25 @@ static NSString * const reuseIdentifier = @"ModelCollectionViewCell";
     // Configure the cell
     NSDictionary *dic = [_array objectAtIndex:indexPath.row];
     
-    ImageCached *cached = [[ImageCached alloc] init];
-    cached.str = [dic valueForKeyPath:@"image"];
-    UIImage *image = [cached cachedResult];
-    
-    if (image) {
-        cell.imageView.image = image;
-    }else{
-        [cached startWithCompletion:^(UIImage *image, NSError *error) {
+    __block YYImage *image;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        ImageCached *cached = [[ImageCached alloc] init];
+        cached.str = [dic valueForKeyPath:@"image"];
+        image= [cached cachedResult];
+        dispatch_async(dispatch_get_main_queue(), ^{
             if (image) {
                 cell.imageView.image = image;
             }else{
-                cell.imageView.image = image;
+                [cached startWithCompletion:^(YYImage *image, NSError *error) {
+                    if (image && [[collectionView indexPathsForVisibleItems] containsObject:indexPath]) {
+                        [collectionView reloadItemsAtIndexPaths:@[indexPath]];
+                    }else{
+                        cell.imageView.image = image;
+                    }
+                }];
             }
-
-        }];
-    }
+        });
+    });
     
     NSString *name = [dic valueForKeyPath:@"name"];
     cell.nameLabel.text = name;

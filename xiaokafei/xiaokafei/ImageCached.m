@@ -41,14 +41,14 @@ NSCache *_imageCache;
     return _imageCache;
 }
 
-- (UIImage *)cachedResult
+- (YYImage *)cachedResult
 {
     return [self.imageCache objectForKey:self.str];
 }
 
 - (void)startWithCompletion:(CompletionBlock)completion
 {
-    UIImage *image = [self cachedResult];
+    YYImage *image = [self cachedResult];
     if (image) {
         return completion(image,nil);
     }
@@ -59,7 +59,7 @@ NSCache *_imageCache;
     }else{
         if (self.str) {
             [self.inflight setObject:[NSMutableArray arrayWithObject:completion] forKey:self.str];
-            UIImage *image = [UIImage imageNamed:self.str];
+            YYImage *image = [YYImage imageNamed:self.str];
             [self.imageCache setObject:image forKey:self.str];
             
             id value = [self.inflight objectForKey:self.str];

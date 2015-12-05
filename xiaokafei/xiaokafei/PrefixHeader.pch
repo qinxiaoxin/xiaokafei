@@ -15,13 +15,9 @@
 #import "AppDelegate.h"
 #import "MacroUtils.h"
 #import "MyOrderViewController.h"
-#import <MaryPopin/UIViewController+MaryPopin.h>
+#import "UIViewController+MaryPopin.h"
 #import "FMDBService.h"
-#import "UIImageView+WebCache.h"
-#import "RZTransitionsInteractionControllers.h"
-#import "RZTransitionsAnimationControllers.h"
-#import "RZTransitionInteractionControllerProtocol.h"
-#import "RZTransitionsManager.h"
+#import "RZTransitions.h"
 #import "ImageCached.h"
 #import "TAlertView.h"
 

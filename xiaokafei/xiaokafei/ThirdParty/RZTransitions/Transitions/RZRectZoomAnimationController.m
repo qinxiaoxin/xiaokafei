@@ -27,15 +27,14 @@
 //
 
 #import "RZRectZoomAnimationController.h"
+#import "NSObject+RZTransitionsViewHelpers.h"
+#import <UIKit/UIKit.h>
 
 static const CGFloat kRZRectZoomAnimationTime             = 0.7f;
 static const CGFloat kRZRectZoomDefaultFadeAnimationTime  = 0.2f;
 static const CGFloat kRZRectZoomDefaultSpringDampening    = 0.6f;
 static const CGFloat kRZRectZoomDefaultSpringVelocity     = 15.0f;
 
-@interface RZRectZoomAnimationController ()
-
-@end
 
 @implementation RZRectZoomAnimationController
 
@@ -43,10 +42,10 @@ static const CGFloat kRZRectZoomDefaultSpringVelocity     = 15.0f;
 
 #pragma mark - Animation Transition
 
-- (id)init
+- (instancetype)init
 {
     self = [super init];
-    if (self) {
+    if ( self ) {
         _shouldFadeBackgroundViewController = YES;
         _animationSpringDampening = kRZRectZoomDefaultSpringDampening;
         _animationSpringVelocity = kRZRectZoomDefaultSpringVelocity;
@@ -56,24 +55,26 @@ static const CGFloat kRZRectZoomDefaultSpringVelocity     = 15.0f;
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
 {
-    UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
-    UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    UIView *fromView = [(NSObject *)transitionContext rzt_fromView];
+    UIView *toView = [(NSObject *)transitionContext rzt_toView];
     UIView *container = [transitionContext containerView];
 
-    __block CGRect originalFrame = toViewController.view.frame;
-    __block CGRect cellFrame = CGRectZero;
-    if ( (self.rectZoomDelegate != nil) && [self.rectZoomDelegate respondsToSelector:@selector(rectZoomPosition)] ) {
+    CGRect originalFrame = fromView.frame;
+    CGRect cellFrame = CGRectZero;
+
+    if ( [self.rectZoomDelegate respondsToSelector:@selector(rectZoomPosition)] ) {
         cellFrame = [self.rectZoomDelegate rectZoomPosition];
     }
     
     if ( self.isPositiveAnimation ) {
-        UIView *resizableSnapshotView = [toViewController.view resizableSnapshotViewFromRect:toViewController.view.bounds afterScreenUpdates:YES withCapInsets:UIEdgeInsetsZero];
+        toView.frame = fromView.frame;
+        UIView *resizableSnapshotView = [toView resizableSnapshotViewFromRect:toView.bounds afterScreenUpdates:YES withCapInsets:UIEdgeInsetsZero];
         resizableSnapshotView.frame = cellFrame;
         [container addSubview:resizableSnapshotView];
         
         [UIView animateWithDuration:kRZRectZoomDefaultFadeAnimationTime animations:^{
-            if (self.shouldFadeBackgroundViewController) {
-                fromViewController.view.alpha = 0.0f;
+            if ( self.shouldFadeBackgroundViewController ) {
+                fromView.alpha = 0.0f;
             }
         }];
         
@@ -85,26 +86,25 @@ static const CGFloat kRZRectZoomDefaultSpringVelocity     = 15.0f;
                          animations:^{
                              resizableSnapshotView.frame = originalFrame;
                          } completion:^(BOOL finished) {
-                             [container addSubview:toViewController.view];
+                             [container addSubview:toView];
                              [resizableSnapshotView removeFromSuperview];
-                            if (self.shouldFadeBackgroundViewController) {
-                                fromViewController.view.alpha = 1.0f;
-                            }
-                            [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
+                             if ( self.shouldFadeBackgroundViewController ) {
+                                 fromView.alpha = 1.0f;
+                             }
+                             [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
         }];
     }
     else {
-        UIView *resizableSnapshotView = [fromViewController.view resizableSnapshotViewFromRect:fromViewController.view.bounds afterScreenUpdates:YES withCapInsets:UIEdgeInsetsZero];
-        resizableSnapshotView.frame = fromViewController.view.frame;
+        UIView *resizableSnapshotView = [fromView resizableSnapshotViewFromRect:fromView.bounds afterScreenUpdates:YES withCapInsets:UIEdgeInsetsZero];
+        resizableSnapshotView.frame = fromView.frame;
         
-        [container insertSubview:resizableSnapshotView aboveSubview:fromViewController.view];
-        [container insertSubview:toViewController.view belowSubview:resizableSnapshotView];
+        [container insertSubview:resizableSnapshotView aboveSubview:fromView];
+        [container insertSubview:toView belowSubview:resizableSnapshotView];
 
-        toViewController.view.alpha = 0.0f;
-        [toViewController viewWillAppear:YES];
-        
+        toView.alpha = 0.0f;
+
         [UIView animateWithDuration:kRZRectZoomDefaultFadeAnimationTime animations:^{
-            toViewController.view.alpha = 1.0f;
+            toView.alpha = 1.0f;
         }];
         
         [UIView animateWithDuration:kRZRectZoomAnimationTime
@@ -119,7 +119,7 @@ static const CGFloat kRZRectZoomDefaultSpringVelocity     = 15.0f;
                                  resizableSnapshotView.alpha = 0.0f;
                              } completion:^(BOOL finished) {
                                  [resizableSnapshotView removeFromSuperview];
-                                 [container addSubview:fromViewController.view];
+                                 [container addSubview:fromView];
                                  [transitionContext completeTransition:!transitionContext.transitionWasCancelled];
                              }];
         }];

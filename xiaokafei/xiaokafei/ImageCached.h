@@ -7,15 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "YYImage.h"
 
 #define kIMAGE_REQUEST_CACHE_LIMIT          100
-typedef void (^CompletionBlock) (UIImage *image, NSError *error);
+typedef void (^CompletionBlock) (YYImage *image, NSError *error);
 
 @interface ImageCached : NSObject
 
 @property(nonatomic, strong) NSString *str;
 
-- (UIImage *)cachedResult;
+- (YYImage *)cachedResult;
 - (void)startWithCompletion:(CompletionBlock)completion;
 
 @end
