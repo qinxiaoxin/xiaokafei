@@ -172,6 +172,54 @@
             }],
     
     "drink":[{
+             "name":"天使的翅膀",
+             "ename":"Angle's Wings",
+             "price":"¥24",
+             "image":"IMG_0136.JPG"
+             },
+             {
+             "name":"紫罗兰之恋",
+             "ename":"",
+             "price":"¥25",
+             "image":"IMG_0151.JPG"
+             },
+             {
+             "name":"马天尼",
+             "ename":"",
+             "price":"¥23",
+             "image":"IMG_0131.JPG"
+             },
+             {
+             "name":"自由古巴",
+             "ename":"Freedom",
+             "price":"¥23",
+             "image":"IMG_5989.JPG"
+             },
+             {
+             "name":"月亮湾",
+             "ename":"",
+             "price":"¥24",
+             "image":"IMG_5939.JPG"
+             },
+             {
+             "name":"环游世界",
+             "ename":"",
+             "price":"¥33",
+             "image":"IMG_5931.JPG"
+             },
+             {
+             "name":"冰美人",
+             "ename":"",
+             "price":"¥24",
+             "image":"IMG_5918.JPG"
+             },
+             {
+             "name":"彩虹酒",
+             "ename":"",
+             "price":"¥39",
+             "image":"IMG_5998.JPG"
+             },
+             {
              "name":"星旗条",
              "ename":"Netherland Flag",
              "price":"¥24",
@@ -236,12 +284,6 @@
              "ename":"Whisky",
              "price":"¥22",
              "image":"IMG_0106.JPG"
-             },
-             {
-             "name":"马天尼甜",
-             "ename":"Martini",
-             "price":"¥22",
-             "image":"IMG_1757.JPG"
              },
              {
              "name":"蓝色天际",
@@ -420,6 +462,12 @@
             }],
     
     "milk_tea":[{
+                "name":"热巧克力",
+                "ename":"",
+                "price":"¥22",
+                "image":"IMG_5997.JPG"
+                },
+                {
                 "name":"芝士奶茶",
                 "ename":"",
                 "price":"¥20",
