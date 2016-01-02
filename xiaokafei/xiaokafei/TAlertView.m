@@ -45,7 +45,7 @@ typedef NS_ENUM(NSUInteger, TAlertViewDisplayStyle) {
     
     TAlertView *appearance          = [self appearance];
     appearance.alertBackgroundColor = RGBA(31, 33, 36, 1);
-    appearance.titleFont            = [UIFont fontWithName:Font size:30];
+    appearance.titleFont            = [UIFont fontWithName:Font size:50];
     appearance.messageColor         = [UIColor orangeColor];
     appearance.messageFont          = [UIFont fontWithName:Font size:30];
     appearance.buttonsTextColor     = [UIColor orangeColor];
@@ -426,7 +426,7 @@ typedef NS_ENUM(NSUInteger, TAlertViewDisplayStyle) {
         for (NSString *buttonTitle in _buttonsTexts) {
             
             CGFloat width = aletViewFrame.size.width;
-            CGFloat height = 40;
+            CGFloat height = 60;
             
             UIView *separatorsLine = [[UIView alloc] initWithFrame:CGRectMake(xPos, yPos, width, 1)];
             separatorsLine.backgroundColor = _separatorsLinesColor;
@@ -594,7 +594,7 @@ typedef NS_ENUM(NSUInteger, TAlertViewDisplayStyle) {
 //                      options:NSStringDrawingUsesLineFragmentOrigin
 //                      attributes:@{NSFontAttributeName:label.font}
 //                      context:nil];
-    labelRect.size.height = 40;
+    labelRect.size.height = 80;
     label.frame = labelRect;
     label.text = text;
 }

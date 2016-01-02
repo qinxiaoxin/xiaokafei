@@ -1153,7 +1153,7 @@
 		7607EA951A470F0300AB8E4D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Xin Qin";
 				TargetAttributes = {
 					7607EA9C1A470F0300AB8E4D = {
@@ -1527,7 +1527,6 @@
 		7607EAC71A470F0300AB8E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: ZICHEN WANG (CE27WTEZZH)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1554,7 +1553,6 @@
 		7607EAC81A470F0300AB8E4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: ZICHEN WANG (CE27WTEZZH)";
 				FRAMEWORK_SEARCH_PATHS = (

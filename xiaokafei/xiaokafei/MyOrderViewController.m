@@ -65,7 +65,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-
     return self.dbArray.count;
 }
 
@@ -95,6 +94,7 @@
     NSString *name = [dic valueForKeyPath:@"name"];
     NSString *avString = [NSString stringWithFormat:@"delete the %@ ？",name];
     UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Tip" message:avString delegate:self cancelButtonTitle:@"no" otherButtonTitles:@"yes", nil];
+    av.tag = 102;
     [av show];
     
 }
@@ -134,19 +134,39 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    if (buttonIndex == 0) {
-        return;
-    }else{
-        for (UIButton *button in _buttonArray) {
-            if (button.selected == true) {
-                NSDictionary *dic = [self.dbArray objectAtIndex:prepareDeleteArrayIndex];
-                NSString *name = [dic valueForKeyPath:@"name"];
-                [_dbService deleteData:name tableTag:button.tag];
-                self.dbArray = [_dbService queryData:button.tag];
-                [self.tableView reloadData];
+    switch (alertView.tag) {
+        case 102:
+            if (buttonIndex == 0) {
+                return;
+            }else{
+                for (UIButton *button in _buttonArray) {
+                    if (button.selected == true) {
+                        NSDictionary *dic = [self.dbArray objectAtIndex:prepareDeleteArrayIndex];
+                        NSString *name = [dic valueForKeyPath:@"name"];
+                        [_dbService deleteData:name tableTag:button.tag];
+                        self.dbArray = [_dbService queryData:button.tag];
+                        [self.tableView reloadData];
+                    }
+                }
             }
-        }
+            break;
+        case 101:
+            if (buttonIndex == 0) {
+                return;
+            }else{
+                for(UIButton *button in _buttonArray) {
+                    if (button.selected == true) {
+                        [_dbService clearAllData:button.tag];
+                        _dbArray = [_dbService queryData:button.tag];
+                        [self.tableView reloadData];
+                    }
+                }
+            }
+            break;
+        default:
+            break;
     }
+   
 }
 
 
@@ -155,13 +175,9 @@
 
 - (IBAction)clearOrder:(id)sender
 {
-    for(UIButton *button in _buttonArray) {
-        if (button.selected == true) {
-            [_dbService clearAllData:button.tag];
-            _dbArray = [_dbService queryData:button.tag];
-            [self.tableView reloadData];
-        }
-    }
+    UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Tip" message:@"remove all ?" delegate:self cancelButtonTitle:@"no" otherButtonTitles:@"yes", nil];
+    av.tag = 101;
+    [av show];
 }
 
 - (IBAction)table1Action:(id)sender {
